@@ -147,11 +147,27 @@ p { color: var(--muted); margin: .75rem 0 0; }
   box-shadow: var(--shadow);
 }
 .hero-logo img { width: min(72%, 22rem); height: auto; }
+.home-hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 2rem) 0 clamp(1rem, 3vw, 2.5rem);
+}
+.home-hero img {
+  width: min(100%, 58rem);
+  max-height: 30rem;
+  object-fit: contain;
+}
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: .75rem;
   margin-top: 1.4rem;
+}
+.actions.centered {
+  justify-content: center;
+  margin-top: .25rem;
 }
 .button {
   display: inline-flex;

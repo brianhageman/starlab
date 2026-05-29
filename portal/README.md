@@ -32,7 +32,7 @@ Recommended locations:
 - Slide decks: `STARLAB_Slide_Decks_All/`
 - Student handouts: the relevant unit's `Student Handouts/` or `Student_Handouts/` folder
 - Teaching guides: the relevant unit's `Teaching Guides/` or `Teaching_Guides/` folder
-- Appendixes: the relevant unit's `Appendixes/` folder
+- Appendix materials: the relevant unit's `Appendixes/` folder
 - Coursewide teacher resources: `Teacher Resources (Start Here)/`
 
 ## Deploy

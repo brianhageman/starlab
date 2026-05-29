@@ -206,6 +206,15 @@ function previewLink(item, label = item.title, className = "") {
   return `<a class="${className}" href="#preview-${item.id}" data-resource-id="${item.id}">${escapeHtml(label)}</a>`;
 }
 
+function resourceTypeHeading(type) {
+  return {
+    "Appendix": "Appendices",
+    "Rubric": "Rubrics",
+    "Teacher Guide": "Teacher Guides",
+    "Student Handout": "Student Handouts"
+  }[type] || `${type}s`;
+}
+
 function page(title, subtitle, body) {
   app.innerHTML = `
     <section class="page">
@@ -235,6 +244,7 @@ function breadcrumbs() {
   } else {
     const labels = {
       slides: "Slide Deck Library",
+      about: "About STARLAB",
       handouts: "Handout Library",
       appendixes: "Appendix Library",
       teacher: "Teacher Resources",
@@ -276,18 +286,14 @@ function home() {
   ];
   app.innerHTML = `
     <section class="page">
-      <div class="hero">
-        <div>
-          <p class="eyebrow">${escapeHtml(manifest.program.fullName)}</p>
-          <h1>STARLAB</h1>
-          <p class="lead">STARLAB is a yearlong student research course designed to help high school students develop, conduct, analyze, and present authentic scientific or engineering research. This portal gives teachers the complete curriculum, slide decks, student handouts, implementation tools, approval systems, assessment resources, and showcase planning materials needed to launch a STARLAB chapter.</p>
-          <div class="actions">
-            <a class="button primary" href="#start">New Teacher</a>
-            <a class="button" href="#new-teacher">New Teacher Mode</a>
-            <a class="button" href="#index">Search All Resources</a>
-          </div>
+      <div class="home-hero">
+        <img src="${manifest.program.logo}" alt="STARLAB logo">
+        <p class="eyebrow">${escapeHtml(manifest.program.fullName)}</p>
+        <div class="actions centered">
+          <a class="button primary" href="#start">New Teacher</a>
+          <a class="button" href="#new-teacher">New Teacher Mode</a>
+          <a class="button" href="#index">Search All Resources</a>
         </div>
-        <div class="hero-logo"><img src="${manifest.program.logo}" alt="STARLAB logo"></div>
       </div>
       <div class="section">${stats()}</div>
       <section class="section split">
@@ -309,6 +315,42 @@ function home() {
     </section>
   `;
   setActiveNav();
+}
+
+function aboutPage() {
+  page("About STARLAB", "Science Through Advanced Research, Learning, Application, and Building.", `
+    <section class="section split">
+      <div class="card">
+        <h2>What STARLAB Is</h2>
+        <p>STARLAB is a yearlong student research course designed to help high school students develop, conduct, analyze, and present authentic scientific or engineering research.</p>
+        <p>This portal gives teachers the complete curriculum, slide decks, student handouts, implementation tools, approval systems, assessment resources, and showcase planning materials needed to launch a STARLAB chapter.</p>
+      </div>
+      <div class="card">
+        <h2>What Makes It Different</h2>
+        <ul class="list">
+          <li>Students move through a real research cycle instead of isolated lab activities.</li>
+          <li>Project approval, safety, mentoring, analysis, reporting, and presentation are built into the course structure.</li>
+          <li>Teachers get a full implementation system, not just lesson files.</li>
+          <li>The course culminates in public presentation, reflection, and portfolio work.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Course Arc</h2>
+      <div class="grid">${unitCards()}</div>
+    </section>
+    <section class="section split">
+      <div class="card">
+        <h2>Primary Audience</h2>
+        <p>STARLAB is built for teachers who want to help students launch, manage, and complete authentic research while keeping the classroom workflow organized and safe.</p>
+      </div>
+      <div class="card">
+        <h2>Best First Step</h2>
+        <p>New teachers should begin with the Start Here path, then use This Week's Materials once the course is underway.</p>
+        <div class="actions"><a class="button primary" href="#start">Start Here</a><a class="button" href="#week">This Week's Materials</a></div>
+      </div>
+    </section>
+  `);
 }
 
 function unitCards() {
@@ -360,7 +402,7 @@ function newTeacherMode() {
       <div class="grid">
         ${[
           ["Later units", "You do not need Unit 4 analysis or Unit 6 showcase materials during the first planning pass."],
-          ["Every appendix", "Appendixes are support tools. Open them when the weekly guide points you there."],
+          ["Every appendix", "Appendices are support tools. Open them when the weekly guide points you there."],
           ["Full resource index", "Use search when needed, but do not start by browsing all files."],
           ["Perfect mentor system", "Have a basic outreach plan now; refine mentor workflows once student projects take shape."]
         ].map(([title, body]) => `<article class="card"><strong>${title}</strong><p>${body}</p></article>`).join("")}
@@ -470,7 +512,7 @@ function weekPage(selectedWeek = 1) {
     ${weekSection("Teacher Guide", teacherGuides)}
     ${weekSection("Slide Decks", slides)}
     ${weekSection("Student Handouts", handouts)}
-    ${weekSection("Appendixes, Rubrics, and Trackers", support)}
+    ${weekSection("Appendices, Rubrics, and Trackers", support)}
   `);
   document.querySelector("#week-select")?.addEventListener("change", (event) => {
     location.hash = `#week-${event.target.value}`;
@@ -537,7 +579,7 @@ function unitDetail(number) {
     </section>
     ${buckets.map(([type, items]) => `
       <section class="section">
-        <h2>${type}s</h2>
+        <h2>${resourceTypeHeading(type)}</h2>
         <div class="grid">${items.length ? items.map(card).join("") : `<p>No ${type.toLowerCase()} resources found in the manifest.</p>`}</div>
       </section>
     `).join("")}
@@ -1111,6 +1153,7 @@ function route() {
   navToggle.setAttribute("aria-expanded", "false");
   const hash = location.hash.replace("#", "") || "home";
   if (hash === "home") return home();
+  if (hash === "about") return aboutPage();
   if (hash === "new-teacher") return newTeacherMode();
   if (hash === "start") return startHere();
   if (hash === "week") return weekPage(1);
@@ -1119,7 +1162,7 @@ function route() {
   if (hash.startsWith("unit-")) return unitDetail(hash.split("-")[1]);
   if (hash === "slides") return slides();
   if (hash === "handouts") return library("Handout Library", "Student-facing handouts organized by unit and searchable from the master index.", { type: "Student Handout" });
-  if (hash === "appendixes") return library("Appendix Library", "Supplemental appendixes, rubrics, checklists, and implementation references.", { type: "Appendix" });
+  if (hash === "appendixes") return library("Appendix Library", "Supplemental appendices, rubrics, checklists, and implementation references.", { type: "Appendix" });
   if (hash === "teacher") return teacherResources();
   if (["assessment", "approval", "mentors", "showcase", "templates"].includes(hash)) return topicPage(hash);
   if (hash === "index") return indexPage();
