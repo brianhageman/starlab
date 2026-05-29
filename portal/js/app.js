@@ -57,6 +57,42 @@ const weekDecks = {
   24: [13], 25: [14], 26: [14], 27: [15], 28: [16, 17], 29: [17],
   30: [17], 31: [18], 32: [16, 18], 33: [18], 34: [19]
 };
+const weekHandoutPlan = {
+  1: { queries: ["course launch reflection", "science identity", "research interest inventory", "ethics and integrity agreement"], note: "Launch week handouts establish research culture, student identity, interests, and ethics norms." },
+  2: { queries: ["experimental design practice", "from topic to research question", "question quality test", "preliminary project pitch"], note: "Week 2 handouts move students from broad interests toward feasible research questions." },
+  3: { queries: ["project refinement workshop", "background research notes", "hypothesis and design criteria builder", "variables, controls, criteria"], note: "Week 3 handouts help students turn project ideas into a testable plan." },
+  4: { queries: ["evidence planning tool", "materials and equipment planner", "procedure and testing protocol builder", "data collection plan", "safety and risk assessment", "ethics and approval screening", "project timeline planner", "formal research plan template", "research plan conference form"], note: "Week 4 is the major planning, safety, ethics, and approval packet." },
+  5: { continue: "No new handouts are required. Students begin using approved plans, research journals, and data collection tools from Unit 2." },
+  6: { continue: "No new handouts are required. Students continue pilot testing and documenting observations in their research journals." },
+  7: { continue: "No new handouts are required. Students revise methods and data tools based on pilot testing evidence." },
+  8: { continue: "No new handouts are required. Students continue using their research journals and data collection plans." },
+  9: { continue: "No new handouts are required. Students continue data collection and quality monitoring." },
+  10: { continue: "No new handouts are required. Students use prior documentation while troubleshooting and seeking mentor feedback." },
+  11: { continue: "No new handouts are required. Students continue trials, repetition, and reliability checks." },
+  12: { continue: "No new handouts are required. Use conference prompts and progress-report tools as needed." },
+  13: { continue: "No new handouts are required. Students continue data collection after feedback." },
+  14: { continue: "No new handouts are required. Students complete major trials or prototype iterations." },
+  15: { continue: "No new handouts are required. Students organize data and audit completeness." },
+  16: { queries: ["readiness for analysis review", "research journal self-assessment"], note: "Week 16 closes Unit 3 and checks readiness for analysis." },
+  17: { queries: ["raw data inventory", "clean data set builder", "data cleaning decision log", "week 17 data audit"], note: "Week 17 focuses on organizing raw data and building clean data sets." },
+  18: { queries: ["data type and analysis match", "data analysis plan", "calculation and statistics record", "engineering performance analysis"], note: "Week 18 handouts support analysis method selection and calculations." },
+  19: { queries: ["graph and visual selection tool", "graph construction checklist", "error uncertainty and limitations review", "figure caption drafting"], note: "Week 19 materials support graphing, visual ethics, and uncertainty." },
+  20: { queries: ["claim evidence reasoning organizer", "hypothesis or design criteria review", "interpretation and conclusion draft notes", "unit 4 analysis summary", "unit 5 readiness checklist"], note: "Week 20 moves students from analysis into reporting readiness." },
+  21: { queries: ["scientific report dissection", "my research report planning map"], note: "Week 21 introduces the structure and planning map for the scientific report." },
+  22: { queries: ["introduction builder"], note: "Week 22 focuses on the report introduction." },
+  23: { queries: ["methods section builder"], note: "Week 23 focuses on the methods section." },
+  24: { queries: ["results and visuals builder"], note: "Week 24 focuses on results, figures, tables, and captions." },
+  25: { queries: ["discussion builder"], note: "Week 25 focuses on discussion and interpretation." },
+  26: { queries: ["conclusion and full draft assembly"], note: "Week 26 assembles the full report draft." },
+  27: { queries: ["peer review protocol", "revision plan"], note: "Week 27 focuses on peer review and revision." },
+  28: { queries: ["presentation planning guide", "practice presentation feedback form"], note: "Week 28 shifts students toward presentation design and practice." },
+  29: { queries: ["final presentation readiness check", "research story refinement", "three length presentation practice"], note: "Week 29 begins final presentation readiness and message refinement." },
+  30: { queries: ["practice presentation feedback form", "audience adaptation planner", "presentation revision log"], note: "Week 30 focuses on practice presentations and audience adaptation." },
+  31: { queries: ["q&a preparation guide", "mock q&a reflection", "evidence defense organizer"], note: "Week 31 prepares students for evidence defense and Q&A." },
+  32: { queries: ["final showcase readiness checklist", "presentation product final check", "professionalism and showcase expectations"], note: "Week 32 prepares students for the final showcase." },
+  33: { queries: ["audience feedback collection form", "post presentation reflection"], note: "Week 33 supports public presentation and audience feedback collection." },
+  34: { queries: ["final research process reflection", "starlab portfolio checklist", "optional next step plan", "course feedback and legacy reflection"], note: "Week 34 closes with portfolio, reflection, and next steps." }
+};
 
 navToggle.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -106,15 +142,27 @@ function resourcesForWeek(week) {
   const unitItems = resources({ unit });
   const direct = unitItems.filter((item) => weekNumberFromResource(item) === Number(week));
   const slides = manifest.resources.filter((item) => item.type === "Slide Deck" && deckLabels.includes(item.relatedDeck));
+  const plannedHandouts = plannedHandoutsForWeek(week);
   const likely = unitItems.filter((item) => {
     if (direct.includes(item)) return false;
+    if (plannedHandouts.includes(item)) return false;
     const title = normalize(item.title);
-    if (item.type === "Student Handout" && Number(week) <= 4) return true;
-    if (item.type === "Student Handout" && Number(week) >= 29 && title.includes("presentation")) return true;
     if (item.type === "Appendix" && ["approval", "safety", "rubric", "checklist", "guide", "mentor", "graph", "report", "showcase"].some((word) => title.includes(word))) return true;
     return false;
   }).slice(0, 10);
-  return [...new Map([...direct, ...slides, ...likely].map((item) => [item.id, item])).values()];
+  return [...new Map([...direct, ...slides, ...plannedHandouts, ...likely].map((item) => [item.id, item])).values()];
+}
+
+function plannedHandoutsForWeek(week) {
+  const plan = weekHandoutPlan[Number(week)];
+  if (!plan?.queries) return [];
+  const unit = unitForWeek(week);
+  return plan.queries.map((query) => {
+    return resources({ unit }).find((item) => {
+      const haystack = normalize(`${item.title} ${item.folder} ${item.type}`);
+      return (item.type === "Student Handout" || item.folder.includes("Student")) && haystack.includes(normalize(query));
+    });
+  }).filter(Boolean);
 }
 
 function resourceBadges(item) {
@@ -340,6 +388,7 @@ function unitsPage() {
 function weekPage(selectedWeek = 1) {
   const week = Number(selectedWeek) || 1;
   const unit = unitForWeek(week);
+  const handoutPlan = weekHandoutPlan[week] || {};
   const items = resourcesForWeek(week);
   const teacherGuides = items.filter((item) => item.type === "Teacher Guide" || (item.type === "Document" && item.folder.includes("Teaching")));
   const slides = items.filter((item) => item.type === "Slide Deck");
@@ -357,6 +406,7 @@ function weekPage(selectedWeek = 1) {
       <div class="card">
         <h2>Week ${week} Focus</h2>
         <p>${escapeHtml(weekFocus[week])}</p>
+        <p>${escapeHtml(handoutPlan.note || handoutPlan.continue || "Use the resources below to plan this week.")}</p>
         <ul class="list">
           <li>Open the teacher guide first, then the slide deck.</li>
           <li>Preview handouts before printing or sharing with students.</li>
@@ -366,7 +416,7 @@ function weekPage(selectedWeek = 1) {
       <div class="card">
         <h2>Print Checklist</h2>
         <ul class="list">
-          ${handouts.slice(0, 6).map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No week-specific handouts were inferred. Use the unit handout library for this week.</li>"}
+          ${handouts.map((item) => `<li>${previewLink(item)}</li>`).join("") || `<li>${escapeHtml(handoutPlan.continue || "No new handouts are assigned for this week.")}</li>`}
         </ul>
       </div>
     </section>

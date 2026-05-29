@@ -53,13 +53,13 @@ button, input, select { font: inherit; }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: .8rem;
+  gap: .65rem;
   text-decoration: none;
-  min-width: 13rem;
+  min-width: 10.5rem;
 }
 .brand img {
-  width: 3rem;
-  height: 3rem;
+  width: 2.55rem;
+  height: 2.55rem;
   object-fit: contain;
 }
 .brand strong {
@@ -74,17 +74,19 @@ button, input, select { font: inherit; }
 }
 .main-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   gap: .25rem;
+  white-space: nowrap;
 }
 .main-nav a, .nav-toggle {
-  min-height: 2.55rem;
-  padding: .6rem .82rem;
+  min-height: 2.35rem;
+  padding: .5rem .62rem;
   border-radius: 6px;
   color: var(--muted);
   text-decoration: none;
   border: 1px solid transparent;
+  font-size: .92rem;
 }
 .main-nav a:hover, .main-nav a.active, .nav-toggle:hover {
   color: var(--white);
