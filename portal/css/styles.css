@@ -451,6 +451,30 @@ td a { color: var(--white); font-weight: 750; }
 .mode-banner strong { color: var(--white); }
 .mode-banner span { color: var(--muted); }
 .card .actions { margin-top: 1rem; }
+.game-shell {
+  display: grid;
+  gap: 1rem;
+}
+.game-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, .11);
+  border-radius: 8px;
+  background: rgba(17, 17, 19, .86);
+}
+.game-toolbar strong, .game-toolbar span { display: block; }
+.game-toolbar span, .game-note { color: var(--muted); }
+#asteroids-canvas {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 8px;
+  background: #050506;
+  box-shadow: var(--shadow);
+}
 
 .preview-backdrop {
   position: fixed;

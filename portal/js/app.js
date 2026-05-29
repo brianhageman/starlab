@@ -3,6 +3,8 @@ const nav = document.querySelector(".main-nav");
 const navToggle = document.querySelector(".nav-toggle");
 
 let manifest;
+let gameCleanup = null;
+let eggBuffer = "";
 
 const unitOrder = ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Unit 6"];
 const resourceTypes = ["Teacher Guide", "Student Handout", "Appendix", "Slide Deck", "Teacher Resource", "Tracker", "Rubric", "Communication Template", "Safety/Approval Resource", "Showcase Resource"];
@@ -97,6 +99,15 @@ const weekHandoutPlan = {
 navToggle.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
   navToggle.setAttribute("aria-expanded", String(open));
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.metaKey || event.ctrlKey || event.altKey) return;
+  eggBuffer = `${eggBuffer}${event.key.toLowerCase()}`.slice(-7);
+  if (eggBuffer === "starlab") {
+    location.hash = "#asteroids";
+    eggBuffer = "";
+  }
 });
 
 function escapeHtml(value = "") {
@@ -228,6 +239,13 @@ function page(title, subtitle, body) {
   setActiveNav();
 }
 
+function cleanupGame() {
+  if (gameCleanup) {
+    gameCleanup();
+    gameCleanup = null;
+  }
+}
+
 function breadcrumbs() {
   const hash = location.hash.replace("#", "") || "home";
   const crumbs = [["Home", "#home"]];
@@ -351,6 +369,299 @@ function aboutPage() {
       </div>
     </section>
   `);
+}
+
+function asteroidsPage() {
+  page("STARLAB Field Test", "An off-the-books systems check from the outer edge of the curriculum.", `
+    <section class="section game-shell">
+      <div class="game-toolbar">
+        <div>
+          <strong>Asteroid Lab</strong>
+          <span>Arrow keys or WASD to fly. Space to fire. Enter to restart.</span>
+        </div>
+        <a class="button" href="#home">Exit to Portal</a>
+      </div>
+      <canvas id="asteroids-canvas" width="960" height="540" aria-label="STARLAB asteroids mini game"></canvas>
+      <p class="game-note">Hidden route: type STARLAB anywhere in the portal to return here.</p>
+    </section>
+  `);
+  startAsteroids();
+}
+
+function startAsteroids() {
+  const canvas = document.querySelector("#asteroids-canvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  const keys = new Set();
+  const state = {
+    ship: { x: 480, y: 270, vx: 0, vy: 0, angle: -Math.PI / 2, cooldown: 0, invulnerable: 120 },
+    bullets: [],
+    asteroids: [],
+    particles: [],
+    score: 0,
+    lives: 3,
+    level: 1,
+    over: false,
+    frame: 0,
+    raf: 0
+  };
+
+  function resetLevel() {
+    state.bullets = [];
+    state.asteroids = [];
+    const count = 4 + state.level;
+    for (let i = 0; i < count; i++) {
+      const edge = Math.floor(Math.random() * 4);
+      const x = edge === 0 ? 0 : edge === 1 ? canvas.width : Math.random() * canvas.width;
+      const y = edge === 2 ? 0 : edge === 3 ? canvas.height : Math.random() * canvas.height;
+      state.asteroids.push(makeAsteroid(x, y, 42 + Math.random() * 26));
+    }
+  }
+
+  function makeAsteroid(x, y, radius) {
+    const speed = 0.6 + Math.random() * 1.4 + state.level * 0.08;
+    const angle = Math.random() * Math.PI * 2;
+    return {
+      x, y, radius,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed,
+      spin: (Math.random() - 0.5) * 0.025,
+      angle: Math.random() * Math.PI * 2,
+      nodes: Array.from({ length: 10 }, () => 0.76 + Math.random() * 0.34)
+    };
+  }
+
+  function wrap(obj) {
+    if (obj.x < -40) obj.x = canvas.width + 40;
+    if (obj.x > canvas.width + 40) obj.x = -40;
+    if (obj.y < -40) obj.y = canvas.height + 40;
+    if (obj.y > canvas.height + 40) obj.y = -40;
+  }
+
+  function fire() {
+    if (state.ship.cooldown > 0 || state.over) return;
+    state.ship.cooldown = 14;
+    state.bullets.push({
+      x: state.ship.x + Math.cos(state.ship.angle) * 18,
+      y: state.ship.y + Math.sin(state.ship.angle) * 18,
+      vx: state.ship.vx + Math.cos(state.ship.angle) * 7,
+      vy: state.ship.vy + Math.sin(state.ship.angle) * 7,
+      life: 58
+    });
+  }
+
+  function burst(x, y, color = "#e31b23") {
+    for (let i = 0; i < 16; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 1 + Math.random() * 4;
+      state.particles.push({ x, y, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed, life: 28 + Math.random() * 18, color });
+    }
+  }
+
+  function damageShip() {
+    if (state.ship.invulnerable > 0 || state.over) return;
+    state.lives -= 1;
+    burst(state.ship.x, state.ship.y, "#ffffff");
+    if (state.lives <= 0) {
+      state.over = true;
+      return;
+    }
+    Object.assign(state.ship, { x: 480, y: 270, vx: 0, vy: 0, angle: -Math.PI / 2, cooldown: 0, invulnerable: 140 });
+  }
+
+  function restart() {
+    Object.assign(state.ship, { x: 480, y: 270, vx: 0, vy: 0, angle: -Math.PI / 2, cooldown: 0, invulnerable: 120 });
+    state.bullets = [];
+    state.particles = [];
+    state.score = 0;
+    state.lives = 3;
+    state.level = 1;
+    state.over = false;
+    resetLevel();
+  }
+
+  function update() {
+    state.frame += 1;
+    if (keys.has("arrowleft") || keys.has("a")) state.ship.angle -= 0.075;
+    if (keys.has("arrowright") || keys.has("d")) state.ship.angle += 0.075;
+    if (keys.has("arrowup") || keys.has("w")) {
+      state.ship.vx += Math.cos(state.ship.angle) * 0.16;
+      state.ship.vy += Math.sin(state.ship.angle) * 0.16;
+    }
+    if (keys.has(" ")) fire();
+    if (state.ship.cooldown > 0) state.ship.cooldown -= 1;
+    if (state.ship.invulnerable > 0) state.ship.invulnerable -= 1;
+
+    state.ship.x += state.ship.vx;
+    state.ship.y += state.ship.vy;
+    state.ship.vx *= 0.992;
+    state.ship.vy *= 0.992;
+    wrap(state.ship);
+
+    state.bullets.forEach((bullet) => {
+      bullet.x += bullet.vx;
+      bullet.y += bullet.vy;
+      bullet.life -= 1;
+      wrap(bullet);
+    });
+    state.bullets = state.bullets.filter((bullet) => bullet.life > 0);
+
+    state.asteroids.forEach((asteroid) => {
+      asteroid.x += asteroid.vx;
+      asteroid.y += asteroid.vy;
+      asteroid.angle += asteroid.spin;
+      wrap(asteroid);
+    });
+
+    state.particles.forEach((particle) => {
+      particle.x += particle.vx;
+      particle.y += particle.vy;
+      particle.life -= 1;
+    });
+    state.particles = state.particles.filter((particle) => particle.life > 0);
+
+    for (const bullet of [...state.bullets]) {
+      for (const asteroid of [...state.asteroids]) {
+        if (Math.hypot(bullet.x - asteroid.x, bullet.y - asteroid.y) < asteroid.radius) {
+          state.bullets.splice(state.bullets.indexOf(bullet), 1);
+          splitAsteroid(asteroid);
+          break;
+        }
+      }
+    }
+
+    for (const asteroid of state.asteroids) {
+      if (Math.hypot(state.ship.x - asteroid.x, state.ship.y - asteroid.y) < asteroid.radius + 12) damageShip();
+    }
+
+    if (!state.over && state.asteroids.length === 0) {
+      state.level += 1;
+      resetLevel();
+    }
+  }
+
+  function splitAsteroid(asteroid) {
+    const index = state.asteroids.indexOf(asteroid);
+    if (index >= 0) state.asteroids.splice(index, 1);
+    state.score += Math.round(120 - asteroid.radius);
+    burst(asteroid.x, asteroid.y);
+    if (asteroid.radius > 24) {
+      state.asteroids.push(makeAsteroid(asteroid.x, asteroid.y, asteroid.radius * 0.58));
+      state.asteroids.push(makeAsteroid(asteroid.x, asteroid.y, asteroid.radius * 0.58));
+    }
+  }
+
+  function drawShip() {
+    const flicker = state.ship.invulnerable > 0 && Math.floor(state.frame / 6) % 2 === 0;
+    if (flicker) return;
+    ctx.save();
+    ctx.translate(state.ship.x, state.ship.y);
+    ctx.rotate(state.ship.angle);
+    ctx.strokeStyle = "#ffffff";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(18, 0);
+    ctx.lineTo(-13, -10);
+    ctx.lineTo(-7, 0);
+    ctx.lineTo(-13, 10);
+    ctx.closePath();
+    ctx.stroke();
+    if (keys.has("arrowup") || keys.has("w")) {
+      ctx.strokeStyle = "#e31b23";
+      ctx.beginPath();
+      ctx.moveTo(-12, -5);
+      ctx.lineTo(-24 - Math.random() * 8, 0);
+      ctx.lineTo(-12, 5);
+      ctx.stroke();
+    }
+    ctx.restore();
+  }
+
+  function drawAsteroid(asteroid) {
+    ctx.save();
+    ctx.translate(asteroid.x, asteroid.y);
+    ctx.rotate(asteroid.angle);
+    ctx.strokeStyle = "#b9bac3";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    asteroid.nodes.forEach((node, index) => {
+      const angle = index / asteroid.nodes.length * Math.PI * 2;
+      const radius = asteroid.radius * node;
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      if (index === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    });
+    ctx.closePath();
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function draw() {
+    ctx.fillStyle = "#050506";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "rgba(255,255,255,.5)";
+    for (let i = 0; i < 70; i++) {
+      const x = (i * 137 + state.frame * 0.15) % canvas.width;
+      const y = (i * 89) % canvas.height;
+      ctx.fillRect(x, y, 1.4, 1.4);
+    }
+
+    state.asteroids.forEach(drawAsteroid);
+    ctx.fillStyle = "#ffffff";
+    state.bullets.forEach((bullet) => {
+      ctx.beginPath();
+      ctx.arc(bullet.x, bullet.y, 2.5, 0, Math.PI * 2);
+      ctx.fill();
+    });
+    state.particles.forEach((particle) => {
+      ctx.globalAlpha = Math.max(0, particle.life / 40);
+      ctx.fillStyle = particle.color;
+      ctx.fillRect(particle.x, particle.y, 3, 3);
+      ctx.globalAlpha = 1;
+    });
+    drawShip();
+
+    ctx.fillStyle = "#ffffff";
+    ctx.font = "18px system-ui, sans-serif";
+    ctx.fillText(`Score ${state.score}`, 24, 34);
+    ctx.fillText(`Lives ${state.lives}`, 24, 60);
+    ctx.fillText(`Level ${state.level}`, 24, 86);
+    if (state.over) {
+      ctx.fillStyle = "rgba(0,0,0,.72)";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#ffffff";
+      ctx.font = "42px system-ui, sans-serif";
+      ctx.textAlign = "center";
+      ctx.fillText("Field Test Complete", canvas.width / 2, canvas.height / 2 - 18);
+      ctx.font = "18px system-ui, sans-serif";
+      ctx.fillText("Press Enter to run another trial", canvas.width / 2, canvas.height / 2 + 22);
+      ctx.textAlign = "left";
+    }
+  }
+
+  function loop() {
+    if (!state.over) update();
+    draw();
+    state.raf = requestAnimationFrame(loop);
+  }
+
+  const keydown = (event) => {
+    const key = event.key.toLowerCase();
+    if (["arrowup", "arrowdown", "arrowleft", "arrowright", " ", "w", "a", "s", "d"].includes(key)) event.preventDefault();
+    if (key === "enter" && state.over) restart();
+    keys.add(key);
+  };
+  const keyup = (event) => keys.delete(event.key.toLowerCase());
+  window.addEventListener("keydown", keydown);
+  window.addEventListener("keyup", keyup);
+  resetLevel();
+  loop();
+  gameCleanup = () => {
+    cancelAnimationFrame(state.raf);
+    window.removeEventListener("keydown", keydown);
+    window.removeEventListener("keyup", keyup);
+  };
 }
 
 function unitCards() {
@@ -1149,9 +1460,11 @@ function setActiveNav() {
 }
 
 function route() {
+  cleanupGame();
   nav.classList.remove("open");
   navToggle.setAttribute("aria-expanded", "false");
   const hash = location.hash.replace("#", "") || "home";
+  if (hash === "asteroids") return asteroidsPage();
   if (hash === "home") return home();
   if (hash === "about") return aboutPage();
   if (hash === "new-teacher") return newTeacherMode();
