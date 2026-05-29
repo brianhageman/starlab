@@ -191,6 +191,23 @@ p { color: var(--muted); margin: .75rem 0 0; }
   font-size: .78rem;
 }
 .pill.red { border-color: rgba(227, 27, 35, .55); color: #ffb4b8; }
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .8rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.45rem;
+  padding: .18rem .45rem;
+  border-radius: 4px;
+  background: rgba(227, 27, 35, .14);
+  color: #ffd7d9;
+  font-size: .72rem;
+  font-weight: 750;
+}
 
 .stats {
   display: grid;
@@ -314,6 +331,79 @@ td a { color: var(--white); font-weight: 750; }
   margin-top: .25rem;
   font-size: .88rem;
 }
+.path-list {
+  display: grid;
+  gap: 1rem;
+}
+.path-step {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, .11);
+  border-radius: 8px;
+  background: rgba(17, 17, 19, .86);
+}
+.path-step > span {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 900;
+}
+.path-step p { margin-top: .45rem; }
+.path-step h2 { font-size: 1.25rem; margin-bottom: 0; }
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: .75rem;
+}
+.week-card {
+  min-height: 7rem;
+  padding: .9rem;
+  border: 1px solid rgba(255, 255, 255, .11);
+  border-radius: 8px;
+  background: rgba(17, 17, 19, .86);
+  text-decoration: none;
+}
+.week-card strong, .week-card span { display: block; }
+.week-card strong { color: var(--white); }
+.week-card span { color: var(--muted); margin-top: .35rem; }
+.week-card:hover {
+  border-color: rgba(227, 27, 35, .55);
+  transform: translateY(-1px);
+}
+.field-label {
+  display: block;
+  color: var(--white);
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+.week-select {
+  width: 100%;
+  min-height: 3rem;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 6px;
+  background: #0e0e10;
+  color: var(--white);
+  padding: .7rem .8rem;
+}
+.mode-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-left: 4px solid var(--red);
+  background: rgba(255, 255, 255, .055);
+}
+.mode-banner strong { color: var(--white); }
+.mode-banner span { color: var(--muted); }
+.card .actions { margin-top: 1rem; }
 
 .preview-backdrop {
   position: fixed;

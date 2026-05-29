@@ -6,6 +6,57 @@ let manifest;
 
 const unitOrder = ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Unit 6"];
 const resourceTypes = ["Teacher Guide", "Student Handout", "Appendix", "Slide Deck", "Teacher Resource", "Tracker", "Rubric", "Communication Template", "Safety/Approval Resource", "Showcase Resource"];
+const unitWeeks = {
+  "Unit 1": [1, 2],
+  "Unit 2": [3, 4],
+  "Unit 3": [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+  "Unit 4": [17, 18, 19, 20],
+  "Unit 5": [21, 22, 23, 24, 25, 26, 27, 28],
+  "Unit 6": [29, 30, 31, 32, 33, 34]
+};
+const weekFocus = {
+  1: "Course launch, research culture, curiosity, and ethics",
+  2: "Experimental design, feasibility, and preliminary research questions",
+  3: "From project idea to testable plan",
+  4: "Formal research plan, safety, ethics, and approval",
+  5: "Launching pilot testing and research journals",
+  6: "Pilot testing, observation, and troubleshooting",
+  7: "Revising methods and data collection tools",
+  8: "Beginning systematic data collection",
+  9: "Continuing data collection and monitoring quality",
+  10: "Troubleshooting, iteration, and mentor feedback",
+  11: "Expanding trials and checking reliability",
+  12: "Midpoint review and progress reporting",
+  13: "Continued data collection after feedback",
+  14: "Completing major trials or prototype iterations",
+  15: "Data organization and completeness audit",
+  16: "Unit 3 closure and readiness for analysis",
+  17: "Data organization, cleaning, and audit",
+  18: "Calculations, statistics, and analysis methods",
+  19: "Graphs, tables, visuals, error, and uncertainty",
+  20: "Interpretation, claims, and transition to reporting",
+  21: "Understanding scientific reports",
+  22: "Writing the introduction",
+  23: "Writing the methods section",
+  24: "Results, figures, tables, and captions",
+  25: "Writing the discussion",
+  26: "Conclusion and full report assembly",
+  27: "Peer review and revision",
+  28: "Presentation design and practice",
+  29: "Final presentation readiness and message refinement",
+  30: "Practice presentations and audience adaptation",
+  31: "Q&A preparation and defense of evidence",
+  32: "Final showcase preparation",
+  33: "Public presentation showcase or final defense",
+  34: "Final reflection, portfolio, and next steps"
+};
+const weekDecks = {
+  1: [1], 2: [2], 3: [3, 4], 4: [5], 5: [6], 6: [6], 7: [7], 8: [7],
+  9: [7], 10: [8], 11: [8], 12: [8], 13: [8], 14: [8], 15: [9], 16: [9],
+  17: [9], 18: [10], 19: [11, 12], 20: [12], 21: [13], 22: [13], 23: [13],
+  24: [13], 25: [14], 26: [14], 27: [15], 28: [16, 17], 29: [17],
+  30: [17], 31: [18], 32: [16, 18], 33: [18], 34: [19]
+};
 
 navToggle.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -34,11 +85,58 @@ function resources(filter = {}) {
   });
 }
 
+function unitForWeek(week) {
+  return Object.entries(unitWeeks).find(([, weeks]) => weeks.includes(Number(week)))?.[0] || "Coursewide";
+}
+
+function weekNumberFromResource(item) {
+  const match = `${item.whenUsed} ${item.title} ${item.path}`.match(/Week\s*[_ -]?(\d+)/i);
+  return match ? Number(match[1]) : null;
+}
+
+function deckNumberFromResource(item) {
+  const match = `${item.relatedDeck} ${item.title}`.match(/(?:Deck\s*)?(\d{1,2})/i);
+  return item.type === "Slide Deck" && match ? Number(match[1]) : null;
+}
+
+function resourcesForWeek(week) {
+  const unit = unitForWeek(week);
+  const decks = weekDecks[week] || [];
+  const deckLabels = decks.map((deck) => `Deck ${deck}`);
+  const unitItems = resources({ unit });
+  const direct = unitItems.filter((item) => weekNumberFromResource(item) === Number(week));
+  const slides = manifest.resources.filter((item) => item.type === "Slide Deck" && deckLabels.includes(item.relatedDeck));
+  const likely = unitItems.filter((item) => {
+    if (direct.includes(item)) return false;
+    const title = normalize(item.title);
+    if (item.type === "Student Handout" && Number(week) <= 4) return true;
+    if (item.type === "Student Handout" && Number(week) >= 29 && title.includes("presentation")) return true;
+    if (item.type === "Appendix" && ["approval", "safety", "rubric", "checklist", "guide", "mentor", "graph", "report", "showcase"].some((word) => title.includes(word))) return true;
+    return false;
+  }).slice(0, 10);
+  return [...new Map([...direct, ...slides, ...likely].map((item) => [item.id, item])).values()];
+}
+
+function resourceBadges(item) {
+  const badges = [];
+  if (item.audience === "Student") badges.push("Student-facing");
+  if (item.audience === "Teacher") badges.push("Teacher-only");
+  if (["DOCX", "PPTX", "XLSX"].includes(item.extension)) badges.push("Editable");
+  if (["PDF", "PNG", "MP4", "TXT", "MD"].includes(item.extension)) badges.push("Preview");
+  if (["Student Handout", "Appendix", "Rubric"].includes(item.type)) badges.push("Print");
+  if (["Teacher Guide", "Slide Deck"].includes(item.type)) badges.push("Teach");
+  if (["Rubric", "Tracker"].includes(item.type) || normalize(item.title).includes("assessment")) badges.push("Assessment");
+  if (normalize(item.title).includes("checklist")) badges.push("Checklist");
+  if (normalize(item.title).includes("approval") || normalize(item.title).includes("safety")) badges.push("Approval");
+  return [...new Set(badges)].slice(0, 4);
+}
+
 function card(item) {
   return `
     <article class="card">
       ${previewLink(item, item.title, "title")}
       <p>${escapeHtml(item.description)}</p>
+      <div class="badges">${resourceBadges(item).map((badge) => `<span class="badge">${escapeHtml(badge)}</span>`).join("")}</div>
       <div class="meta">
         <span class="pill red">${escapeHtml(item.type)}</span>
         <span class="pill">${escapeHtml(item.unit)}</span>
@@ -87,7 +185,7 @@ function stats() {
 function home() {
   const quick = [
     ["I am new to STARLAB", "#start"],
-    ["I need this week's materials", "#units"],
+    ["I need this week's materials", "#week"],
     ["Find a handout", "#handouts"],
     ["Open slide deck library", "#slides"],
     ["Check project approval process", "#approval"],
@@ -105,6 +203,7 @@ function home() {
           <p class="lead">STARLAB is a yearlong student research course designed to help high school students develop, conduct, analyze, and present authentic scientific or engineering research. This portal gives teachers the complete curriculum, slide decks, student handouts, implementation tools, approval systems, assessment resources, and showcase planning materials needed to launch a STARLAB chapter.</p>
           <div class="actions">
             <a class="button primary" href="#start">New Teacher</a>
+            <a class="button" href="#new-teacher">New Teacher Mode</a>
             <a class="button" href="#index">Search All Resources</a>
           </div>
         </div>
@@ -146,26 +245,85 @@ function unitCards() {
   }).join("");
 }
 
+function newTeacherMode() {
+  page("New Teacher Mode", "A simplified path through only the essentials for launching STARLAB without getting buried in the full curriculum archive.", `
+    <section class="section">
+      <div class="mode-banner">
+        <strong>Focus on these first.</strong>
+        <span>The complete portal is still available, but this page keeps the starting path intentionally narrow.</span>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Essential First Opens</h2>
+      <ul class="resource-link-list">
+        ${toolkitLinks([
+          ["Teacher Start Here Guide", "teacher start here guide"],
+          ["Course Operations Manual", "course operations manual"],
+          ["Full Course Implementation Calendar", "full course implementation calendar"],
+          ["Master Print Packet Index", "master print packet index"],
+          ["Student Onboarding Packet", "student onboarding packet"],
+          ["Grading and Assessment Guide", "grading assessment guide"]
+        ])}
+      </ul>
+    </section>
+    <section class="section">
+      <h2>Launch Dashboard</h2>
+      <div class="grid">
+        <article class="card"><strong>Plan the course</strong><p>Start with pacing, operations, grading, and onboarding.</p><div class="actions"><a class="button" href="#start">Start Here</a></div></article>
+        <article class="card"><strong>Teach Week 1</strong><p>Open the first week’s guide, deck, and student launch materials.</p><div class="actions"><a class="button" href="#week-1">Week 1 Materials</a></div></article>
+        <article class="card"><strong>Prepare approval</strong><p>Understand how projects become safe, feasible, and ready to test.</p><div class="actions"><a class="button" href="#approval">Approval & Safety</a></div></article>
+        <article class="card"><strong>Find a file</strong><p>Use the searchable index only when you need a specific resource.</p><div class="actions"><a class="button" href="#index">Resource Index</a></div></article>
+      </div>
+    </section>
+    <section class="section">
+      <h2>What To Ignore For Now</h2>
+      <div class="grid">
+        ${[
+          ["Later units", "You do not need Unit 4 analysis or Unit 6 showcase materials during the first planning pass."],
+          ["Every appendix", "Appendixes are support tools. Open them when the weekly guide points you there."],
+          ["Full resource index", "Use search when needed, but do not start by browsing all files."],
+          ["Perfect mentor system", "Have a basic outreach plan now; refine mentor workflows once student projects take shape."]
+        ].map(([title, body]) => `<article class="card"><strong>${title}</strong><p>${body}</p></article>`).join("")}
+      </div>
+    </section>
+  `);
+}
+
 function startHere() {
   page("Start Here", "A guided launch path for teachers opening STARLAB for the first time.", `
+    <section class="section">
+      <div class="path-list">
+        ${[
+          ["1", "Understand the course", `Read the ${resourceLink("teacher start here guide", "Teacher Start Here Guide")} and ${resourceLink("course operations manual", "Course Operations Manual")} to see the yearlong arc, teacher role, and classroom systems.`],
+          ["2", "Set up pacing and printing", `Review the ${resourceLink("full course implementation calendar", "implementation calendar")} and ${resourceLink("master print packet index", "print packet index")} before making copies or calendar commitments.`],
+          ["3", "Prepare the first two weeks", `Open <a href="#unit-1">Unit 1</a>, <a href="#week-1">Week 1 materials</a>, and the <a href="#slides">slide deck library</a> so the launch feels coherent.`],
+          ["4", "Prepare approval systems", `Skim <a href="#approval">Project Approval & Safety</a>, the ${resourceLink("project approval tracker", "approval tracker")}, and the Unit 2 approval materials before students design projects.`],
+          ["5", "Plan communication and support", `Prepare the ${resourceLink("student onboarding packet", "student onboarding packet")}, ${resourceLink("parent guardian communication pack", "parent/guardian pack")}, and <a href="#mentors">mentor workflow</a>.`]
+        ].map(([step, title, detail]) => `
+          <article class="path-step">
+            <span>${step}</span>
+            <div><h2>${title}</h2><p>${detail}</p></div>
+          </article>
+        `).join("")}
+      </div>
+    </section>
     <section class="section split">
       <div class="card">
-        <h2>Recommended Launch Sequence</h2>
+        <h2>Before The Course Begins</h2>
         <ul class="list">
-          <li>Read the ${resourceLink("teacher start here guide", "Teacher Start Here Guide")} and ${resourceLink("course operations manual", "Course Operations Manual")}.</li>
-          <li>Review the ${resourceLink("full course implementation calendar", "implementation calendar")} and ${resourceLink("master print packet index", "print packet index")}.</li>
-          <li>Prepare the ${resourceLink("student onboarding packet", "student onboarding packet")} and ${resourceLink("parent guardian communication pack", "parent or guardian communication resources")}.</li>
-          <li>Open <a href="#unit-1">Unit 1</a> and <a href="#slides">Deck 1</a> before planning the first week.</li>
-          <li>Skim the <a href="#approval">approval and safety page</a> before students begin project planning.</li>
+          <li>Confirm the yearlong pacing and major deliverables.</li>
+          <li>Decide how students will store journals, data, drafts, and approvals.</li>
+          <li>Prepare the first print packet and student onboarding materials.</li>
+          <li>Identify likely mentor, safety, or showcase partners.</li>
         </ul>
       </div>
       <div class="card">
-        <h2>Common New Teacher Pitfalls</h2>
+        <h2>First Two Weeks</h2>
         <ul class="list">
-          <li>Letting students collect data before approval is complete.</li>
-          <li>Skipping research journal expectations early in the course.</li>
-          <li>Waiting too long to line up mentors and showcase logistics.</li>
-          <li>Treating STARLAB as a file collection instead of a paced research system.</li>
+          <li>Establish STARLAB research culture and documentation norms.</li>
+          <li>Use Unit 1 handouts to move from curiosity to researchable questions.</li>
+          <li>Begin feasibility conversations before students become attached to unsafe or unworkable plans.</li>
+          <li>Preview the approval process before Unit 2 begins.</li>
         </ul>
       </div>
     </section>
@@ -179,12 +337,67 @@ function unitsPage() {
   page("Curriculum by Unit", "Browse the six-unit STARLAB course sequence by weeks, focus, deliverables, and materials.", `<section class="section"><div class="grid">${unitCards()}</div></section>`);
 }
 
+function weekPage(selectedWeek = 1) {
+  const week = Number(selectedWeek) || 1;
+  const unit = unitForWeek(week);
+  const items = resourcesForWeek(week);
+  const teacherGuides = items.filter((item) => item.type === "Teacher Guide" || (item.type === "Document" && item.folder.includes("Teaching")));
+  const slides = items.filter((item) => item.type === "Slide Deck");
+  const handouts = items.filter((item) => item.type === "Student Handout" || (item.folder.includes("Student") && item.extension === "DOCX"));
+  const support = items.filter((item) => !teacherGuides.includes(item) && !slides.includes(item) && !handouts.includes(item));
+  page("This Week's Materials", "Choose a course week and open the teacher guide, slides, handouts, appendices, and print-ready resources from one place.", `
+    <section class="section card">
+      <label class="field-label" for="week-select">Choose week</label>
+      <select class="week-select" id="week-select">
+        ${Array.from({ length: 34 }, (_, index) => index + 1).map((number) => `<option value="${number}" ${number === week ? "selected" : ""}>Week ${number}: ${escapeHtml(weekFocus[number])}</option>`).join("")}
+      </select>
+      <div class="meta"><span class="pill red">${escapeHtml(unit)}</span><span class="pill">${escapeHtml(manifest.units[unit]?.weeks || "")}</span></div>
+    </section>
+    <section class="section split">
+      <div class="card">
+        <h2>Week ${week} Focus</h2>
+        <p>${escapeHtml(weekFocus[week])}</p>
+        <ul class="list">
+          <li>Open the teacher guide first, then the slide deck.</li>
+          <li>Preview handouts before printing or sharing with students.</li>
+          <li>Check support resources for rubrics, appendices, trackers, or safety tools.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Print Checklist</h2>
+        <ul class="list">
+          ${handouts.slice(0, 6).map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No week-specific handouts were inferred. Use the unit handout library for this week.</li>"}
+        </ul>
+      </div>
+    </section>
+    ${weekSection("Teacher Guide", teacherGuides)}
+    ${weekSection("Slide Decks", slides)}
+    ${weekSection("Student Handouts", handouts)}
+    ${weekSection("Appendixes, Rubrics, and Trackers", support)}
+  `);
+  document.querySelector("#week-select")?.addEventListener("change", (event) => {
+    location.hash = `#week-${event.target.value}`;
+  });
+}
+
+function weekSection(title, items) {
+  return `
+    <section class="section">
+      <h2>${escapeHtml(title)}</h2>
+      <div class="grid">${items.length ? items.map(card).join("") : `<p>No ${escapeHtml(title.toLowerCase())} found for this week.</p>`}</div>
+    </section>
+  `;
+}
+
 function unitDetail(number) {
   const unit = `Unit ${number}`;
   const meta = manifest.units[unit];
   if (!meta) return unitsPage();
   const deckList = manifest.decks.filter((deck) => deck.unit === unit);
   const buckets = ["Teacher Guide", "Student Handout", "Appendix", "Rubric"].map((type) => [type, resources({ unit, type })]);
+  const weeks = unitWeeks[unit] || [];
+  const unitItems = resources({ unit });
+  const printItems = unitItems.filter((item) => ["Student Handout", "Appendix", "Rubric"].includes(item.type)).slice(0, 8);
   page(`${unit}: ${meta.title}`, `${meta.weeks}. ${meta.focus}`, `
     <section class="section split">
       <div class="card">
@@ -195,6 +408,34 @@ function unitDetail(number) {
         <h2>Suggested Teacher Workflow</h2>
         <p>${escapeHtml(meta.workflow)}</p>
         <div class="meta">${deckList.map((deck) => `<span class="pill red">Deck ${Number(deck.number)}: ${escapeHtml(deck.title)}</span>`).join("")}</div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Week-by-Week Teaching Path</h2>
+      <div class="week-grid">
+        ${weeks.map((week) => `
+          <a class="week-card" href="#week-${week}">
+            <strong>Week ${week}</strong>
+            <span>${escapeHtml(weekFocus[week])}</span>
+          </a>
+        `).join("")}
+      </div>
+    </section>
+    <section class="section split">
+      <div class="card">
+        <h2>Teacher Prep Checklist</h2>
+        <ul class="list">
+          <li>Open the unit overview and first weekly guide before planning lessons.</li>
+          <li>Preview associated slide decks and decide what students need printed.</li>
+          <li>Identify the unit's major deliverables and assessment evidence.</li>
+          <li>Check for safety, approval, mentor, or showcase needs before they become urgent.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Print Checklist</h2>
+        <ul class="list">
+          ${printItems.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No print resources found for this unit.</li>"}
+        </ul>
       </div>
     </section>
     ${buckets.map(([type, items]) => `
@@ -749,7 +990,10 @@ function route() {
   navToggle.setAttribute("aria-expanded", "false");
   const hash = location.hash.replace("#", "") || "home";
   if (hash === "home") return home();
+  if (hash === "new-teacher") return newTeacherMode();
   if (hash === "start") return startHere();
+  if (hash === "week") return weekPage(1);
+  if (hash.startsWith("week-")) return weekPage(hash.split("-")[1]);
   if (hash === "units") return unitsPage();
   if (hash.startsWith("unit-")) return unitDetail(hash.split("-")[1]);
   if (hash === "slides") return slides();
