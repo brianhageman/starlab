@@ -209,6 +209,7 @@ function previewLink(item, label = item.title, className = "") {
 function page(title, subtitle, body) {
   app.innerHTML = `
     <section class="page">
+      ${breadcrumbs()}
       <p class="eyebrow">STARLAB Portal</p>
       <h1>${escapeHtml(title)}</h1>
       ${subtitle ? `<p class="lead">${escapeHtml(subtitle)}</p>` : ""}
@@ -216,6 +217,37 @@ function page(title, subtitle, body) {
     </section>
   `;
   setActiveNav();
+}
+
+function breadcrumbs() {
+  const hash = location.hash.replace("#", "") || "home";
+  const crumbs = [["Home", "#home"]];
+  if (hash === "home") return "";
+  if (hash === "start") crumbs.push(["Start Here", "#start"]);
+  else if (hash === "new-teacher") crumbs.push(["New Teacher Mode", "#new-teacher"]);
+  else if (hash === "units") crumbs.push(["Curriculum by Unit", "#units"]);
+  else if (hash.startsWith("unit-")) {
+    const unit = `Unit ${hash.split("-")[1]}`;
+    crumbs.push(["Curriculum by Unit", "#units"], [unit, `#${hash}`]);
+  } else if (hash === "week" || hash.startsWith("week-")) {
+    const week = hash.startsWith("week-") ? hash.split("-")[1] : "1";
+    crumbs.push(["This Week's Materials", "#week"], [`Week ${week}`, `#week-${week}`]);
+  } else {
+    const labels = {
+      slides: "Slide Deck Library",
+      handouts: "Handout Library",
+      appendixes: "Appendix Library",
+      teacher: "Teacher Resources",
+      assessment: "Assessment & Rubrics",
+      approval: "Project Approval & Safety",
+      mentors: "Mentors & Community Partners",
+      showcase: "Showcase Planning",
+      templates: "Templates & Trackers",
+      index: "Resource Index"
+    };
+    crumbs.push([labels[hash] || "Portal", `#${hash}`]);
+  }
+  return `<nav class="breadcrumbs" aria-label="Breadcrumb">${crumbs.map(([label, href], index) => index === crumbs.length - 1 ? `<span>${escapeHtml(label)}</span>` : `<a href="${href}">${escapeHtml(label)}</a>`).join("<span>/</span>")}</nav>`;
 }
 
 function stats() {
@@ -401,6 +433,10 @@ function weekPage(selectedWeek = 1) {
         ${Array.from({ length: 34 }, (_, index) => index + 1).map((number) => `<option value="${number}" ${number === week ? "selected" : ""}>Week ${number}: ${escapeHtml(weekFocus[number])}</option>`).join("")}
       </select>
       <div class="meta"><span class="pill red">${escapeHtml(unit)}</span><span class="pill">${escapeHtml(manifest.units[unit]?.weeks || "")}</span></div>
+      <div class="week-nav">
+        ${week > 1 ? `<a class="button" href="#week-${week - 1}">Previous Week</a>` : `<span></span>`}
+        ${week < 34 ? `<a class="button primary" href="#week-${week + 1}">Next Week</a>` : `<a class="button primary" href="#home">Return Home</a>`}
+      </div>
     </section>
     <section class="section split">
       <div class="card">
@@ -418,6 +454,17 @@ function weekPage(selectedWeek = 1) {
         <ul class="list">
           ${handouts.map((item) => `<li>${previewLink(item)}</li>`).join("") || `<li>${escapeHtml(handoutPlan.continue || "No new handouts are assigned for this week.")}</li>`}
         </ul>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Teacher Prep</h2>
+      <div class="grid">
+        ${[
+          ["Open the teacher guide", teacherGuides.length ? `Start with ${teacherGuides.length} teacher-facing guide resource${teacherGuides.length === 1 ? "" : "s"} for this week.` : "No week-specific guide was inferred; use the unit overview and related resources."],
+          ["Preview slides", slides.length ? `Preview ${slides.length} slide deck${slides.length === 1 ? "" : "s"} before teaching.` : "No week-specific slide deck was mapped."],
+          ["Print or share student materials", handouts.length ? `${handouts.length} student handout${handouts.length === 1 ? "" : "s"} assigned for this week.` : handoutPlan.continue || "No new handouts assigned."],
+          ["Check support needs", support.length ? "Review appendices, rubrics, trackers, or safety resources before class." : "No extra support resources were inferred for this week."]
+        ].map(([title, detail]) => `<article class="card"><strong>${title}</strong><p>${escapeHtml(detail)}</p></article>`).join("")}
       </div>
     </section>
     ${weekSection("Teacher Guide", teacherGuides)}
@@ -1008,16 +1055,21 @@ function indexPage(preset = {}) {
         <select name="audience" aria-label="Filter by audience">${options(["Teacher", "Student", "Parent/Guardian", "Mentor/Partner", "Administrator", "Visitor"], preset.audience)}</select>
         <select name="deck" aria-label="Filter by deck">${options(manifest.decks.map((deck) => `Deck ${Number(deck.number)}`), preset.deck)}</select>
       </form>
+      <div class="view-toggle" role="group" aria-label="Resource index view">
+        <button class="button primary" type="button" data-view="table">Table View</button>
+        <button class="button" type="button" data-view="cards">Card View</button>
+      </div>
       <section class="section" id="results"></section>
     </section>
   `;
   const form = document.querySelector("#filters");
+  let view = "table";
   const render = () => {
     const data = Object.fromEntries(new FormData(form).entries());
     const items = resources(data);
     document.querySelector("#results").innerHTML = `
       <h2>${items.length} Resources</h2>
-      <div class="table-wrap">
+      ${view === "cards" ? `<div class="grid">${items.map(card).join("")}</div>` : `<div class="table-wrap">
         <table>
           <thead><tr><th>Resource Name</th><th>Unit</th><th>Type</th><th>Audience</th><th>When Used</th><th>Related Deck</th><th>File Location</th><th>Tags</th></tr></thead>
           <tbody>${items.map((item) => `
@@ -1032,9 +1084,16 @@ function indexPage(preset = {}) {
               <td>${item.tags.map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ")}</td>
             </tr>`).join("")}</tbody>
         </table>
-      </div>
+      </div>`}
     `;
   };
+  document.querySelectorAll("[data-view]").forEach((button) => {
+    button.addEventListener("click", () => {
+      view = button.dataset.view;
+      document.querySelectorAll("[data-view]").forEach((control) => control.classList.toggle("primary", control === button));
+      render();
+    });
+  });
   form.addEventListener("input", render);
   render();
   setActiveNav();

@@ -124,6 +124,20 @@ h2 { font-size: clamp(1.7rem, 3vw, 2.6rem); margin-bottom: .9rem; }
 h3 { font-size: 1.08rem; }
 p { color: var(--muted); margin: .75rem 0 0; }
 .lead { font-size: clamp(1.05rem, 1.6vw, 1.25rem); max-width: 58rem; }
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: .88rem;
+}
+.breadcrumbs a {
+  color: var(--white);
+  text-decoration: none;
+}
+.breadcrumbs a:hover { color: #ffb4b8; }
 .hero-logo {
   display: grid;
   place-items: center;
@@ -238,6 +252,16 @@ p { color: var(--muted); margin: .75rem 0 0; }
   background: #0e0e10;
   color: var(--white);
   padding: .65rem .75rem;
+}
+.view-toggle, .week-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+.week-nav {
+  justify-content: space-between;
 }
 .table-wrap {
   overflow-x: auto;
