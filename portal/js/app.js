@@ -447,7 +447,7 @@ function unitDetail(number) {
   const buckets = ["Teacher Guide", "Student Handout", "Appendix", "Rubric"].map((type) => [type, resources({ unit, type })]);
   const weeks = unitWeeks[unit] || [];
   const unitItems = resources({ unit });
-  const printItems = unitItems.filter((item) => ["Student Handout", "Appendix", "Rubric"].includes(item.type)).slice(0, 8);
+  const printItems = unitPrintItems(unitItems);
   page(`${unit}: ${meta.title}`, `${meta.weeks}. ${meta.focus}`, `
     <section class="section split">
       <div class="card">
@@ -483,7 +483,7 @@ function unitDetail(number) {
       </div>
       <div class="card">
         <h2>Print Checklist</h2>
-        <ul class="list">
+        <ul class="list scroll-list">
           ${printItems.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No print resources found for this unit.</li>"}
         </ul>
       </div>
@@ -495,6 +495,18 @@ function unitDetail(number) {
       </section>
     `).join("")}
   `);
+}
+
+function unitPrintItems(items) {
+  const printable = items.filter((item) => {
+    const title = normalize(item.title);
+    if (title.includes("readme") || title.includes("folder index")) return false;
+    return ["Student Handout", "Appendix", "Rubric"].includes(item.type) || item.folder.includes("Student");
+  });
+  return printable.sort((a, b) => {
+    const rank = (item) => item.type === "Student Handout" || item.folder.includes("Student") ? 0 : item.type === "Rubric" ? 1 : 2;
+    return rank(a) - rank(b) || a.title.localeCompare(b.title, undefined, { numeric: true });
+  }).slice(0, 12);
 }
 
 function library(title, subtitle, filter) {

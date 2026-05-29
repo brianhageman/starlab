@@ -295,6 +295,11 @@ td a { color: var(--white); font-weight: 750; }
   border-left: 3px solid var(--red);
   background: rgba(255, 255, 255, .045);
 }
+.scroll-list {
+  max-height: 24rem;
+  overflow: auto;
+  padding-right: .35rem;
+}
 .decision-list {
   display: grid;
   gap: .85rem;
