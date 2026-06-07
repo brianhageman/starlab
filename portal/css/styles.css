@@ -451,6 +451,14 @@ td a { color: var(--white); font-weight: 750; }
 .mode-banner strong { color: var(--white); }
 .mode-banner span { color: var(--muted); }
 .card .actions { margin-top: 1rem; }
+.first-time-cta {
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(227, 27, 35, .35);
+  border-radius: 8px;
+  background: rgba(227, 27, 35, .09);
+}
+.first-time-cta .button { margin-top: 1rem; }
 .game-shell {
   display: grid;
   gap: 1rem;

@@ -724,6 +724,11 @@ function newTeacherMode() {
         ].map(([title, body]) => `<article class="card"><strong>${title}</strong><p>${body}</p></article>`).join("")}
       </div>
     </section>
+    <section class="section first-time-cta">
+      <h2>Ready for the full launch path?</h2>
+      <p>Use Start Here when you are ready to move from the essentials into the complete setup sequence.</p>
+      <a class="button primary" href="#start">Go to Start Here</a>
+    </section>
   `);
 }
 
