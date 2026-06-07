@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-07T16:25:58.298Z",
+  "generatedAt": "2026-06-07T16:41:39.886Z",
   "description": "Curated metadata overrides merged into portal/data/resources.json by portal/tools/generate-manifest.mjs. Edit entries here to improve teacher search and resource guidance.",
   "resources": {
     "STARLAB Logo 2026.png": {
@@ -3279,392 +3279,6 @@
       "useCategory": "reference",
       "notes": ""
     },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_01_Raw_Data_Inventory.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_02_Clean_Data_Set_Builder.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_03_Data_Cleaning_Decision_Log.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_04_Week_17_Data_Audit.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_05_Data_Type_and_Analysis_Match.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_06_Data_Analysis_Plan.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_07_Calculation_and_Statistics_Record.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_08_Engineering_Performance_Analysis.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_09_Graph_and_Visual_Selection_Tool.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_10_Graph_Construction_Checklist.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_11_Error_Uncertainty_and_Limitations_Review.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_12_Figure_Caption_Drafting.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_13_Claim_Evidence_Reasoning_Organizer.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_14_Hypothesis_or_Design_Criteria_Review.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_15_Interpretation_and_Conclusion_Draft_Notes.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_16_Unit_4_Analysis_Summary.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Student_Handouts/Student_Handout_17_Unit_5_Readiness_Checklist.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Teaching_Guides/Unit_4_Overview_and_Preparation.docx": {
-      "titleOverride": "",
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Teaching_Guides/Week_17_Data_Organization_Cleaning_and_Audit.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Teaching_Guides/Week_18_Calculations_Statistics_and_Analysis_Methods.docx": {
-      "titleOverride": "",
-      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "drafting",
-        "graphing",
-        "interpretation",
-        "report",
-        "revision",
-        "scientific writing",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Teaching_Guides/Week_19_Graphs_Tables_Visuals_and_Error_Uncertainty.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "analysis",
-        "data",
-        "document",
-        "graphing",
-        "interpretation",
-        "statistics",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
-    "STARLAB_Unit_4/Teaching_Guides/Week_20_Interpretation_Claims_and_Transition_to_Reporting.docx": {
-      "titleOverride": "",
-      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
-      "teacherUse": "Use when this resource supports the current unit, week, or workflow.",
-      "studentUse": "",
-      "keywords": [
-        "document",
-        "drafting",
-        "report",
-        "revision",
-        "scientific writing",
-        "unit 4"
-      ],
-      "required": false,
-      "printRecommended": false,
-      "useCategory": "reference",
-      "notes": ""
-    },
     "STARLAB_Unit_4/README_Index.txt": {
       "titleOverride": "",
       "purpose": "STARLAB curriculum or implementation resource.",
@@ -3700,6 +3314,480 @@
       "required": true,
       "printRecommended": true,
       "useCategory": "assessment",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_01_Raw_Data_Inventory.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_02_Clean_Data_Set_Builder.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_03_Data_Cleaning_Decision_Log.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_04_Week_17_Data_Audit.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_05_Data_Type_and_Analysis_Match.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_06_Data_Analysis_Plan.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_07_Calculation_and_Statistics_Record.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_08_Engineering_Performance_Analysis.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_09_Graph_and_Visual_Selection_Tool.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_10_Graph_Construction_Checklist.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_11_Error_Uncertainty_and_Limitations_Review.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_12_Figure_Caption_Drafting.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_13_Claim_Evidence_Reasoning_Organizer.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_14_Hypothesis_or_Design_Criteria_Review.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_15_Interpretation_and_Conclusion_Draft_Notes.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_16_Unit_4_Analysis_Summary.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Student_Handouts/Student_Handout_17_Unit_5_Readiness_Checklist.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 4"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Teaching_Guides/Unit_4_Overview_and_Preparation.docx": {
+      "titleOverride": "",
+      "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
+      "teacherUse": "Open before teaching the associated week or unit.",
+      "studentUse": "",
+      "keywords": [
+        "lesson planning",
+        "pacing",
+        "teacher guide",
+        "teacher prep",
+        "unit 4",
+        "weekly guide"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Teaching_Guides/Week_17_Data_Organization_Cleaning_and_Audit.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Open before teaching the associated week or unit.",
+      "studentUse": "",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "interpretation",
+        "lesson planning",
+        "pacing",
+        "statistics",
+        "teacher guide",
+        "teacher prep",
+        "unit 4",
+        "weekly guide"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Teaching_Guides/Week_18_Calculations_Statistics_and_Analysis_Methods.docx": {
+      "titleOverride": "",
+      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
+      "teacherUse": "Open before teaching the associated week or unit.",
+      "studentUse": "",
+      "keywords": [
+        "analysis",
+        "data",
+        "drafting",
+        "graphing",
+        "interpretation",
+        "lesson planning",
+        "pacing",
+        "report",
+        "revision",
+        "scientific writing",
+        "statistics",
+        "teacher guide",
+        "teacher prep",
+        "unit 4",
+        "weekly guide"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Teaching_Guides/Week_19_Graphs_Tables_Visuals_and_Error_Uncertainty.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Open before teaching the associated week or unit.",
+      "studentUse": "",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "interpretation",
+        "lesson planning",
+        "pacing",
+        "statistics",
+        "teacher guide",
+        "teacher prep",
+        "unit 4",
+        "weekly guide"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_4/Teaching_Guides/Week_20_Interpretation_Claims_and_Transition_to_Reporting.docx": {
+      "titleOverride": "",
+      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
+      "teacherUse": "Open before teaching the associated week or unit.",
+      "studentUse": "",
+      "keywords": [
+        "drafting",
+        "lesson planning",
+        "pacing",
+        "report",
+        "revision",
+        "scientific writing",
+        "teacher guide",
+        "teacher prep",
+        "unit 4",
+        "weekly guide"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "core",
       "notes": ""
     },
     "STARLAB_Unit_5/Appendixes/Appendix_A_Scientific_Report_Section_Guide.docx": {

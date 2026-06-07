@@ -100,7 +100,7 @@ function inferUnit(parts, name) {
 }
 
 function inferType(parts, ext, title) {
-  const folder = parts.join(" ").toLowerCase();
+  const folder = parts.join(" ").toLowerCase().replace(/[_-]+/g, " ");
   const lowered = title.toLowerCase();
   if (ext === ".pptx") return "Slide Deck";
   if (folder.includes("student handout")) return "Student Handout";
