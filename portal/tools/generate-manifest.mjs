@@ -1,9 +1,10 @@
-import { readdir, stat, writeFile } from "node:fs/promises";
+import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const curriculumRoot = path.resolve(new URL(".", import.meta.url).pathname, "../..");
 const portalRoot = path.join(curriculumRoot, "portal");
 const outputFile = path.join(portalRoot, "data", "resources.json");
+const metadataFile = path.join(portalRoot, "data", "resource-metadata.json");
 
 const unitMeta = {
   "Unit 1": {
@@ -169,7 +170,7 @@ async function walk(dir) {
   const entries = await readdir(dir);
   const files = [];
   for (const entry of entries) {
-    if (entry.startsWith(".") || entry === "portal") continue;
+    if (entry.startsWith(".") || entry === "portal" || entry === "PD_Presentation" || entry === "index.html" || entry.startsWith("STARLAB_District_PD_")) continue;
     const full = path.join(dir, entry);
     const info = await stat(full);
     if (info.isDirectory()) {
@@ -182,6 +183,13 @@ async function walk(dir) {
 }
 
 const files = await walk(curriculumRoot);
+let metadata = { resources: {} };
+try {
+  metadata = JSON.parse(await readFile(metadataFile, "utf8"));
+} catch {
+  metadata = { resources: {} };
+}
+
 const resources = files.map(({ full, info }, index) => {
   const relativePath = path.relative(curriculumRoot, full);
   const webPath = `../${relativePath.split(path.sep).map(encodeURIComponent).join("/")}`;
@@ -212,6 +220,32 @@ const resources = files.map(({ full, info }, index) => {
   };
   resource.tags = inferTags(title, type, unit, parts);
   resource.description = describe(resource);
+  const overrides = metadata.resources?.[relativePath] || {};
+  if (overrides.titleOverride) resource.title = overrides.titleOverride;
+  resource.purpose = overrides.purpose || resource.description;
+  resource.teacherUse = overrides.teacherUse || "";
+  resource.studentUse = overrides.studentUse || "";
+  resource.keywords = Array.isArray(overrides.keywords) ? overrides.keywords : [];
+  resource.required = Boolean(overrides.required);
+  resource.printRecommended = Boolean(overrides.printRecommended);
+  resource.useCategory = overrides.useCategory || "";
+  resource.notes = overrides.notes || "";
+  resource.searchText = [
+    resource.title,
+    resource.description,
+    resource.purpose,
+    resource.teacherUse,
+    resource.studentUse,
+    resource.unit,
+    resource.type,
+    resource.audience,
+    resource.whenUsed,
+    resource.relatedDeck,
+    resource.folder,
+    resource.tags.join(" "),
+    resource.keywords.join(" "),
+    resource.useCategory
+  ].join(" ");
   return resource;
 }).sort((a, b) => a.unit.localeCompare(b.unit, undefined, { numeric: true }) || a.type.localeCompare(b.type) || a.title.localeCompare(b.title, undefined, { numeric: true }));
 

@@ -25,7 +25,20 @@ Add new files to the existing curriculum folders, then rerun:
 node portal/tools/generate-manifest.mjs
 ```
 
-The generator scans the curriculum root, skips hidden files and the `portal/` folder, and writes `portal/data/resources.json`.
+The generator scans the curriculum root, skips hidden files, portal source files, and PD working files, then writes `portal/data/resources.json`.
+
+Metadata lives in:
+
+```text
+portal/data/resource-metadata.json
+```
+
+That file adds teacher-friendly purposes, keywords, required/optional flags, print guidance, and usage notes. If you add many new resources, run:
+
+```bash
+node portal/tools/generate-metadata.mjs
+node portal/tools/generate-manifest.mjs
+```
 
 Recommended locations:
 

@@ -125,8 +125,11 @@ function resources(filter = {}) {
     if (filter.audience && item.audience !== filter.audience) return false;
     if (filter.deck && item.relatedDeck !== filter.deck) return false;
     if (filter.query) {
-      const haystack = normalize([item.title, item.description, item.unit, item.type, item.audience, item.whenUsed, item.relatedDeck, item.folder, item.tags.join(" ")].join(" "));
-      if (!haystack.includes(normalize(filter.query))) return false;
+      const haystack = normalize(item.searchText || [item.title, item.description, item.purpose, item.teacherUse, item.studentUse, item.unit, item.type, item.audience, item.whenUsed, item.relatedDeck, item.folder, item.tags?.join(" "), item.keywords?.join(" "), item.useCategory].join(" "));
+      const query = normalize(filter.query);
+      const terms = query.split(/\s+/).filter(Boolean);
+      const words = haystack.split(/[^a-z0-9&]+/).filter(Boolean);
+      if (!haystack.includes(query) && !terms.every((term) => words.includes(term))) return false;
     }
     return true;
   });
@@ -187,6 +190,9 @@ function resourceBadges(item) {
   if (["Rubric", "Tracker"].includes(item.type) || normalize(item.title).includes("assessment")) badges.push("Assessment");
   if (normalize(item.title).includes("checklist")) badges.push("Checklist");
   if (normalize(item.title).includes("approval") || normalize(item.title).includes("safety")) badges.push("Approval");
+  if (item.required) badges.push("Required");
+  if (item.useCategory === "optional") badges.push("Optional");
+  if (item.printRecommended) badges.push("Print-ready");
   return [...new Set(badges)].slice(0, 4);
 }
 
@@ -194,7 +200,7 @@ function card(item) {
   return `
     <article class="card">
       ${previewLink(item, item.title, "title")}
-      <p>${escapeHtml(item.description)}</p>
+      <p>${escapeHtml(item.purpose || item.description)}</p>
       <div class="badges">${resourceBadges(item).map((badge) => `<span class="badge">${escapeHtml(badge)}</span>`).join("")}</div>
       <div class="meta">
         <span class="pill red">${escapeHtml(item.type)}</span>
@@ -251,7 +257,7 @@ function breadcrumbs() {
   const crumbs = [["Home", "#home"]];
   if (hash === "home") return "";
   if (hash === "start") crumbs.push(["Start Here", "#start"]);
-  else if (hash === "new-teacher") crumbs.push(["New Teacher Mode", "#new-teacher"]);
+  else if (hash === "new-teacher") crumbs.push(["First Time User", "#new-teacher"]);
   else if (hash === "units") crumbs.push(["Curriculum by Unit", "#units"]);
   else if (hash.startsWith("unit-")) {
     const unit = `Unit ${hash.split("-")[1]}`;
@@ -308,8 +314,7 @@ function home() {
         <img src="${manifest.program.logo}" alt="STARLAB logo">
         <p class="eyebrow">${escapeHtml(manifest.program.fullName)}</p>
         <div class="actions centered">
-          <a class="button primary" href="#start">New Teacher</a>
-          <a class="button" href="#new-teacher">New Teacher Mode</a>
+          <a class="button primary" href="#new-teacher">First Time User</a>
           <a class="button" href="#index">Search All Resources</a>
         </div>
       </div>
@@ -679,7 +684,7 @@ function unitCards() {
 }
 
 function newTeacherMode() {
-  page("New Teacher Mode", "A simplified path through only the essentials for launching STARLAB without getting buried in the full curriculum archive.", `
+  page("First Time User", "A simplified path through only the essentials for launching STARLAB without getting buried in the full curriculum archive.", `
     <section class="section">
       <div class="mode-banner">
         <strong>Focus on these first.</strong>
@@ -1427,14 +1432,14 @@ function indexPage(preset = {}) {
           <thead><tr><th>Resource Name</th><th>Unit</th><th>Type</th><th>Audience</th><th>When Used</th><th>Related Deck</th><th>File Location</th><th>Tags</th></tr></thead>
           <tbody>${items.map((item) => `
             <tr>
-              <td>${previewLink(item)}<br>${escapeHtml(item.description)}</td>
+              <td>${previewLink(item)}<br>${escapeHtml(item.purpose || item.description)}</td>
               <td>${escapeHtml(item.unit)}</td>
               <td>${escapeHtml(item.type)}</td>
               <td>${escapeHtml(item.audience)}</td>
               <td>${escapeHtml(item.whenUsed || "TBD")}</td>
               <td>${escapeHtml(item.relatedDeck || "TBD")}</td>
               <td>${escapeHtml(item.folder)}</td>
-              <td>${item.tags.map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ")}</td>
+              <td>${[...(item.keywords || []), ...(item.tags || [])].slice(0, 8).map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ")}</td>
             </tr>`).join("")}</tbody>
         </table>
       </div>`}
@@ -1515,7 +1520,7 @@ function openPreview(item) {
       <div class="preview-header">
         <p class="eyebrow">${escapeHtml(item.type)} · ${escapeHtml(item.unit)}</p>
         <h2 id="preview-title">${escapeHtml(item.title)}</h2>
-        <p>${escapeHtml(item.description)}</p>
+        <p>${escapeHtml(item.purpose || item.description)}</p>
         <div class="meta">
           <span class="pill red">${escapeHtml(item.extension)}</span>
           <span class="pill">${escapeHtml(item.sizeLabel)}</span>
