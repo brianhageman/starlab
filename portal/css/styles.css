@@ -556,6 +556,15 @@ td a { color: var(--white); font-weight: 750; }
   background: rgba(255, 255, 255, .04);
 }
 .preview-unavailable p { max-width: 48rem; }
+.office-preview-card {
+  justify-items: start;
+}
+.office-preview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin: .4rem 0 .6rem;
+}
 
 @media (max-width: 860px) {
   .site-header { align-items: flex-start; }

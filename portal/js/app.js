@@ -1518,6 +1518,7 @@ document.addEventListener("keydown", (event) => {
 
 function openPreview(item) {
   closePreview();
+  const primaryActionLabel = officeFile(item) ? `Download Editable ${escapeHtml(item.extension)}` : "Open / Download File";
   document.body.insertAdjacentHTML("beforeend", `
     <div class="preview-backdrop" role="presentation" data-close-preview></div>
     <section class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title">
@@ -1535,7 +1536,7 @@ function openPreview(item) {
       </div>
       <div class="preview-body">${previewContent(item)}</div>
       <div class="preview-actions">
-        <a class="button primary" href="${item.href}" target="_blank" rel="noopener">Open / Download File</a>
+        <a class="button primary" href="${item.href}" target="_blank" rel="noopener">${primaryActionLabel}</a>
         <button class="button" type="button" data-close-preview>Back to Portal</button>
       </div>
     </section>
@@ -1551,7 +1552,6 @@ function closePreview() {
 
 function previewContent(item) {
   const ext = item.extension.toLowerCase();
-  const officeExts = ["doc", "docx", "ppt", "pptx", "xls", "xlsx"];
   if (["png", "jpg", "jpeg", "gif", "webp"].includes(ext)) {
     return `<img class="preview-media" src="${item.href}" alt="${escapeHtml(item.title)} preview">`;
   }
@@ -1561,17 +1561,24 @@ function previewContent(item) {
   if (["pdf", "txt", "md"].includes(ext)) {
     return `<iframe class="preview-frame" src="${item.href}" title="${escapeHtml(item.title)} preview"></iframe>`;
   }
-  if (officeExts.includes(ext)) {
+  if (officeFile(item)) {
     const publicUrl = publicResourceUrl(item);
-    if (publicUrl) {
-      const viewerUrl = `https://view.officeapps.live.com/op/embed.aspx?src=${encodeURIComponent(publicUrl)}`;
-      return `<iframe class="preview-frame" src="${viewerUrl}" title="${escapeHtml(item.title)} Microsoft Office preview"></iframe>`;
-    }
+    const viewerUrl = publicUrl ? `https://view.officeapps.live.com/op/view.aspx?src=${encodeURIComponent(publicUrl)}` : "";
+    const previewHelp = viewerUrl
+      ? "Microsoft's online preview sometimes fails with GitHub Pages-hosted Office files. The document is still available; use the buttons below if the preview service cannot open it."
+      : "Office previews need a publicly reachable HTTPS file URL. This local preview address cannot be reached by Microsoft's online viewer.";
+    const viewerLink = viewerUrl
+      ? `<a class="button" href="${viewerUrl}" target="_blank" rel="noopener">Try Microsoft Preview</a>`
+      : "";
     return `
-      <div class="preview-unavailable">
-        <h3>Online Preview Available After Deployment</h3>
-        <p>${escapeHtml(item.extension)} previews need a publicly reachable HTTPS file URL. This local server address cannot be reached by Microsoft Office Viewer.</p>
-        <p>Once this portal is deployed to the web, this same preview window can embed Word, PowerPoint, and Excel files before teachers open or download them.</p>
+      <div class="preview-unavailable office-preview-card">
+        <h3>Office Document Preview</h3>
+        <p>${escapeHtml(previewHelp)}</p>
+        <div class="office-preview-actions">
+          ${viewerLink}
+          <a class="button primary" href="${item.href}" target="_blank" rel="noopener">Download Editable ${escapeHtml(item.extension)}</a>
+        </div>
+        <p><strong>Best teacher workflow:</strong> download the editable file, then open it in Word, PowerPoint, Excel, or Google Drive.</p>
         <p><strong>File location:</strong> ${escapeHtml(item.folder)}</p>
       </div>
     `;
@@ -1584,6 +1591,11 @@ function previewContent(item) {
       <p><strong>File location:</strong> ${escapeHtml(item.folder)}</p>
     </div>
   `;
+}
+
+function officeFile(item) {
+  const officeExts = ["doc", "docx", "ppt", "pptx", "xls", "xlsx"];
+  return officeExts.includes(item.extension.toLowerCase());
 }
 
 function publicResourceUrl(item) {
