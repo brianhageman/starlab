@@ -7,6 +7,27 @@ Folder structure:
 - Student Handouts: Student-facing handouts separated into individual files.
 - Appendixes: Appendix resources separated into individual files.
 
+Student Handouts/
+  - Student_Handout_01_Pilot_Test_Plan.docx
+  - Student_Handout_02_Research_Journal_Setup.docx
+  - Student_Handout_03_Daily_Research_Journal_Entry_Template.docx
+  - Student_Handout_04_Pilot_Test_Reflection_and_Troubleshooting_Log.docx
+  - Student_Handout_05_Method_Revision_Decision_Chart.docx
+  - Student_Handout_06_Revised_Procedure_Template.docx
+  - Student_Handout_07_Data_Table_Audit.docx
+  - Student_Handout_08_Formal_Data_Collection_Log.docx
+  - Student_Handout_09_Weekly_Progress_Check-In.docx
+  - Student_Handout_10_Data_Quality_Review.docx
+  - Student_Handout_11_Troubleshooting_Conference_Prep.docx
+  - Student_Handout_12_Mentor_or_Expert_Feedback_Log.docx
+  - Student_Handout_13_Reliability_and_Completeness_Check.docx
+  - Student_Handout_14_Mid-Project_Progress_Report.docx
+  - Student_Handout_15_Post-Progress_Report_Action_Plan.docx
+  - Student_Handout_16_Major_Data_Collection_Completion_Check.docx
+  - Student_Handout_17_Data_Audit_and_Organization_Checklist.docx
+  - Student_Handout_18_Unit 3 Readiness for Analysis Review.docx
+  - Student_Handout_19_Research Journal Self-Assessment.docx
+
 Teaching Guides/
   - 00_Unit_3_Overview_and_Preparation.docx
   - Week_05_Launching Pilot Testing and Research Journals.docx
@@ -22,30 +43,5 @@ Teaching Guides/
   - Week_15_Data Organization and Completeness Audit.docx
   - Week_16_Unit 3 Closure and Readiness for Analysis.docx
 
-Student Handouts/
-  - Student_Handout_18_Unit 3 Readiness for Analysis Review.docx
-  - Student_Handout_19_Research Journal Self-Assessment.docx
-
 Appendixes/
-  - Appendix_A_What Is Pilot Testing.docx
-  - Appendix_B_Research Journal Standards.docx
-  - Appendix_C_Safety Check Before Testing.docx
-  - Appendix_D_Types of Research Problems.docx
-  - Appendix_E_Troubleshooting Sentence Frames.docx
-  - Appendix_F_Procedure Revision Checklist.docx
-  - Appendix_G_Data Table Design Guide.docx
-  - Appendix_H_Raw Data Standards.docx
-  - Appendix_I_Teacher Data Check Conference Prompts.docx
-  - Appendix_J_Common Data Quality Problems.docx
-  - Appendix_K_Responsible Project Pivots.docx
-  - Appendix_L_Mentor Communication Guidelines.docx
-  - Appendix_M_Trials, Sample Size, and Repetition Guide.docx
-  - Appendix_N_Progress Report Rubric.docx
-  - Appendix_O_Midpoint Conference Questions.docx
-  - Appendix_P_Recovery Plan Options.docx
-  - Appendix_Q_File and Data Organization Standards.docx
-  - Appendix_R_Raw Data vs. Clean Data.docx
-  - Appendix_S_Unit 3 Teacher Checklist.docx
-  - Appendix_T_Transition to Unit 4 Guidance.docx
-  - Appendix_U_Differentiation and Implementation Notes.docx
-
+  - See folder for appendix A through U support resources.

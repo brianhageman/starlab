@@ -64,17 +64,17 @@ const weekHandoutPlan = {
   2: { queries: ["experimental design practice", "from topic to research question", "question quality test", "preliminary project pitch"], note: "Week 2 handouts move students from broad interests toward feasible research questions." },
   3: { queries: ["project refinement workshop", "background research notes", "hypothesis and design criteria builder", "variables, controls, criteria"], note: "Week 3 handouts help students turn project ideas into a testable plan." },
   4: { queries: ["evidence planning tool", "materials and equipment planner", "procedure and testing protocol builder", "data collection plan", "safety and risk assessment", "ethics and approval screening", "project timeline planner", "formal research plan template", "research plan conference form"], note: "Week 4 is the major planning, safety, ethics, and approval packet." },
-  5: { continue: "No new handouts are required. Students begin using approved plans, research journals, and data collection tools from Unit 2." },
-  6: { continue: "No new handouts are required. Students continue pilot testing and documenting observations in their research journals." },
-  7: { continue: "No new handouts are required. Students revise methods and data tools based on pilot testing evidence." },
-  8: { continue: "No new handouts are required. Students continue using their research journals and data collection plans." },
-  9: { continue: "No new handouts are required. Students continue data collection and quality monitoring." },
-  10: { continue: "No new handouts are required. Students use prior documentation while troubleshooting and seeking mentor feedback." },
-  11: { continue: "No new handouts are required. Students continue trials, repetition, and reliability checks." },
-  12: { continue: "No new handouts are required. Use conference prompts and progress-report tools as needed." },
-  13: { continue: "No new handouts are required. Students continue data collection after feedback." },
-  14: { continue: "No new handouts are required. Students complete major trials or prototype iterations." },
-  15: { continue: "No new handouts are required. Students organize data and audit completeness." },
+  5: { queries: ["pilot test plan", "research journal setup", "daily research journal entry template"], note: "Week 5 launches pilot testing and establishes research journal routines." },
+  6: { queries: ["pilot test reflection and troubleshooting log", "method revision decision chart"], note: "Week 6 uses pilot evidence to troubleshoot and decide whether methods need revision." },
+  7: { queries: ["revised procedure template", "data table audit"], note: "Week 7 turns pilot learning into a revised procedure and stronger data tools." },
+  8: { queries: ["formal data collection log", "weekly progress check"], note: "Week 8 begins systematic data collection and weekly progress monitoring." },
+  9: { queries: ["weekly progress check", "data quality review"], note: "Week 9 checks data quality while collection continues." },
+  10: { queries: ["troubleshooting conference prep", "mentor or expert feedback log"], note: "Week 10 supports troubleshooting, teacher conferences, and mentor feedback." },
+  11: { queries: ["reliability and completeness check", "weekly progress check"], note: "Week 11 focuses on repeated trials, reliability, and completeness." },
+  12: { queries: ["mid project progress report"], note: "Week 12 is the midpoint review and progress-report checkpoint." },
+  13: { queries: ["post progress report action plan", "weekly progress check"], note: "Week 13 turns midpoint feedback into an action plan." },
+  14: { queries: ["major data collection completion check", "weekly progress check"], note: "Week 14 checks whether major trials or prototype iterations are complete." },
+  15: { queries: ["data audit and organization checklist"], note: "Week 15 organizes and audits data before analysis." },
   16: { queries: ["readiness for analysis review", "research journal self-assessment"], note: "Week 16 closes Unit 3 and checks readiness for analysis." },
   17: { queries: ["raw data inventory", "clean data set builder", "data cleaning decision log", "week 17 data audit"], note: "Week 17 focuses on organizing raw data and building clean data sets." },
   18: { queries: ["data type and analysis match", "data analysis plan", "calculation and statistics record", "engineering performance analysis"], note: "Week 18 handouts support analysis method selection and calculations." },
@@ -115,7 +115,7 @@ function escapeHtml(value = "") {
 }
 
 function normalize(value = "") {
-  return String(value).toLowerCase();
+  return String(value).toLowerCase().replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
 }
 
 function resources(filter = {}) {

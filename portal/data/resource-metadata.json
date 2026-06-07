@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-30T16:30:11.616Z",
+  "generatedAt": "2026-06-07T16:25:58.298Z",
   "description": "Curated metadata overrides merged into portal/data/resources.json by portal/tools/generate-manifest.mjs. Edit entries here to improve teacher search and resource guidance.",
   "resources": {
     "STARLAB Logo 2026.png": {
@@ -2263,6 +2263,363 @@
       "required": true,
       "printRecommended": true,
       "useCategory": "assessment",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_01_Pilot_Test_Plan.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_02_Research_Journal_Setup.docx": {
+      "titleOverride": "",
+      "purpose": "Supports research journal expectations, documentation habits, or self-assessment.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "documentation",
+        "evidence trail",
+        "handout",
+        "journal",
+        "print",
+        "reflection",
+        "research journal",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_03_Daily_Research_Journal_Entry_Template.docx": {
+      "titleOverride": "",
+      "purpose": "Supports research journal expectations, documentation habits, or self-assessment.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "documentation",
+        "evidence trail",
+        "handout",
+        "journal",
+        "print",
+        "reflection",
+        "research journal",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_04_Pilot_Test_Reflection_and_Troubleshooting_Log.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "reflection",
+        "student handout",
+        "student work",
+        "student-facing",
+        "troubleshooting",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_05_Method_Revision_Decision_Chart.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_06_Revised_Procedure_Template.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_07_Data_Table_Audit.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_08_Formal_Data_Collection_Log.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_09_Weekly_Progress_Check-In.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_10_Data_Quality_Review.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_11_Troubleshooting_Conference_Prep.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "troubleshooting",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_12_Mentor_or_Expert_Feedback_Log.docx": {
+      "titleOverride": "",
+      "purpose": "Supports mentor, expert, or community partner communication and feedback.",
+      "teacherUse": "Use when recruiting, preparing, guiding, or documenting mentor involvement.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "communication",
+        "community partner",
+        "expert feedback",
+        "feedback",
+        "handout",
+        "mentor",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "support",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_13_Reliability_and_Completeness_Check.docx": {
+      "titleOverride": "",
+      "purpose": "Student-facing organizer, activity, checklist, or planning document for the research process.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "handout",
+        "print",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_14_Mid-Project_Progress_Report.docx": {
+      "titleOverride": "",
+      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "drafting",
+        "handout",
+        "print",
+        "report",
+        "revision",
+        "scientific writing",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_15_Post-Progress_Report_Action_Plan.docx": {
+      "titleOverride": "",
+      "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "drafting",
+        "handout",
+        "print",
+        "report",
+        "revision",
+        "scientific writing",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_16_Major_Data_Collection_Completion_Check.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
+      "notes": ""
+    },
+    "STARLAB_Unit_3/Student Handouts/Student_Handout_17_Data_Audit_and_Organization_Checklist.docx": {
+      "titleOverride": "",
+      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
+      "teacherUse": "Print or share with students when the related unit or week is taught.",
+      "studentUse": "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.",
+      "keywords": [
+        "analysis",
+        "data",
+        "graphing",
+        "handout",
+        "interpretation",
+        "print",
+        "statistics",
+        "student handout",
+        "student work",
+        "student-facing",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": true,
+      "useCategory": "core",
       "notes": ""
     },
     "STARLAB_Unit_3/Student Handouts/Student_Handout_18_Unit 3 Readiness for Analysis Review.docx": {
