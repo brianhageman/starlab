@@ -1458,22 +1458,23 @@ function route() {
   nav.classList.remove("open");
   navToggle.setAttribute("aria-expanded", "false");
   const hash = location.hash.replace("#", "") || "home";
-  if (hash === "asteroids") return asteroidsPage();
-  if (hash === "home") return home();
-  if (hash === "about") return aboutPage();
-  if (hash === "new-teacher") return newTeacherMode();
-  if (hash === "start") return startHere();
-  if (hash === "week") return weekPage(1);
-  if (hash.startsWith("week-")) return weekPage(hash.split("-")[1]);
-  if (hash === "units") return unitsPage();
-  if (hash.startsWith("unit-")) return unitDetail(hash.split("-")[1]);
-  if (hash === "slides") return slides();
-  if (hash === "handouts") return library("Handout Library", "Student-facing handouts organized by unit and searchable from the master index.", { type: "Student Handout" });
-  if (hash === "appendixes") return library("Appendix Library", "Supplemental appendices, rubrics, checklists, and implementation references.", { type: "Appendix" });
-  if (hash === "teacher") return teacherResources();
-  if (["assessment", "approval", "mentors", "showcase", "templates"].includes(hash)) return topicPage(hash);
-  if (hash === "index") return indexPage();
-  return home();
+  if (hash === "asteroids") asteroidsPage();
+  else if (hash === "home") home();
+  else if (hash === "about") aboutPage();
+  else if (hash === "new-teacher") newTeacherMode();
+  else if (hash === "start") startHere();
+  else if (hash === "week") weekPage(1);
+  else if (hash.startsWith("week-")) weekPage(hash.split("-")[1]);
+  else if (hash === "units") unitsPage();
+  else if (hash.startsWith("unit-")) unitDetail(hash.split("-")[1]);
+  else if (hash === "slides") slides();
+  else if (hash === "handouts") library("Handout Library", "Student-facing handouts organized by unit and searchable from the master index.", { type: "Student Handout" });
+  else if (hash === "appendixes") library("Appendix Library", "Supplemental appendices, rubrics, checklists, and implementation references.", { type: "Appendix" });
+  else if (hash === "teacher") teacherResources();
+  else if (["assessment", "approval", "mentors", "showcase", "templates"].includes(hash)) topicPage(hash);
+  else if (hash === "index") indexPage();
+  else home();
+  requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
 }
 
 fetch("data/resources.json")
