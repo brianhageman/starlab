@@ -661,7 +661,6 @@ function unitCards() {
         <a class="title" href="#unit-${unit.split(" ")[1]}">${unit}: ${escapeHtml(meta.title)}</a>
         <p><strong>${escapeHtml(meta.weeks)}</strong></p>
         <p>${escapeHtml(meta.focus)}</p>
-        <div class="meta"><span class="pill red">${resources({ unit }).length} resources</span></div>
       </article>
     `;
   }).join("");
