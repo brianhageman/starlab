@@ -310,7 +310,7 @@ function home() {
         </div>
       </div>
       <section class="section">
-        <h2>What Should I Open First?</h2>
+        <h2>Quick Links</h2>
         <div class="grid">
           ${quick.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("")}
         </div>
