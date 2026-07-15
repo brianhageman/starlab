@@ -159,6 +159,10 @@ p { color: var(--muted); margin: .75rem 0 0; }
   max-height: 30rem;
   object-fit: contain;
 }
+.home-video {
+  width: min(100%, 56rem);
+  margin-top: .75rem;
+}
 .actions {
   display: flex;
   flex-wrap: wrap;

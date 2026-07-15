@@ -305,17 +305,14 @@ function home() {
           <a class="button primary" href="#new-teacher">First Time User</a>
           <a class="button" href="#index">Search All Resources</a>
         </div>
-      </div>
-      <section class="section split">
-        <div>
-          <h2>What Should I Open First?</h2>
-          <div class="grid">
-            ${quick.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("")}
-          </div>
-        </div>
-        <div>
-          <h2>Promo Video</h2>
+        <div class="home-video">
           <div class="video-frame"><iframe src="${manifest.program.video}" title="STARLAB promotional video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+      </div>
+      <section class="section">
+        <h2>What Should I Open First?</h2>
+        <div class="grid">
+          ${quick.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("")}
         </div>
       </section>
       <section class="section">
