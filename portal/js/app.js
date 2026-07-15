@@ -284,18 +284,6 @@ function breadcrumbs() {
   return `<nav class="breadcrumbs" aria-label="Breadcrumb">${crumbs.map(([label, href], index) => index === crumbs.length - 1 ? `<span>${escapeHtml(label)}</span>` : `<a href="${href}">${escapeHtml(label)}</a>`).join("<span>/</span>")}</nav>`;
 }
 
-function stats() {
-  const s = manifest.summary;
-  return `
-    <div class="stats">
-      <div class="stat"><b>${s.totalResources}</b><span>Total resources</span></div>
-      <div class="stat"><b>${s.byType["Slide Deck"] || 0}</b><span>Slide decks</span></div>
-      <div class="stat"><b>${s.byType["Student Handout"] || 0}</b><span>Student handouts</span></div>
-      <div class="stat"><b>${s.byType["Teacher Guide"] || 0}</b><span>Teaching guides</span></div>
-    </div>
-  `;
-}
-
 function home() {
   const quick = [
     ["I am new to STARLAB", "#start"],
@@ -318,7 +306,6 @@ function home() {
           <a class="button" href="#index">Search All Resources</a>
         </div>
       </div>
-      <div class="section">${stats()}</div>
       <section class="section split">
         <div>
           <h2>What Should I Open First?</h2>

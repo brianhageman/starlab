@@ -241,19 +241,6 @@ p { color: var(--muted); margin: .75rem 0 0; }
   font-weight: 750;
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-  gap: .8rem;
-}
-.stat {
-  padding: 1rem;
-  border-left: 4px solid var(--red);
-  background: rgba(255, 255, 255, .055);
-}
-.stat b { display: block; font-size: 1.75rem; }
-.stat span { color: var(--muted); }
-
 .toolbar {
   display: grid;
   grid-template-columns: minmax(15rem, 1fr) repeat(4, minmax(9rem, 12rem));
