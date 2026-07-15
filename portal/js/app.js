@@ -285,16 +285,27 @@ function breadcrumbs() {
 }
 
 function home() {
-  const quick = [
-    ["I am new to STARLAB", "#start"],
-    ["I need this week's materials", "#week"],
-    ["Find a handout", "#handouts"],
-    ["Open slide deck library", "#slides"],
-    ["Check project approval process", "#approval"],
-    ["Plan the showcase", "#showcase"],
-    ["Review assessment & rubrics", "#assessment"],
-    ["Coordinate mentors", "#mentors"],
-    ["Open templates & trackers", "#templates"]
+  const quickGroups = [
+    ["Start", [
+      ["Start Here", "#start"],
+      ["First Time User", "#new-teacher"]
+    ]],
+    ["Teach", [
+      ["This Week's Materials", "#week"],
+      ["Slide Decks", "#slides"],
+      ["Student Handouts", "#handouts"]
+    ]],
+    ["Manage Projects", [
+      ["Project Approval & Safety", "#approval"],
+      ["Mentors & Community Partners", "#mentors"],
+      ["Templates & Trackers", "#templates"]
+    ]],
+    ["Assess", [
+      ["Assessment & Rubrics", "#assessment"]
+    ]],
+    ["Showcase", [
+      ["Showcase Planning", "#showcase"]
+    ]]
   ];
   app.innerHTML = `
     <section class="page">
@@ -311,8 +322,15 @@ function home() {
       </div>
       <section class="section">
         <h2>Quick Links</h2>
-        <div class="grid">
-          ${quick.map(([label, href]) => `<a class="button" href="${href}">${label}</a>`).join("")}
+        <div class="quick-link-groups">
+          ${quickGroups.map(([group, links]) => `
+            <article class="quick-link-card">
+              <h3>${escapeHtml(group)}</h3>
+              <div class="quick-link-list">
+                ${links.map(([label, href], index) => `<a class="button${index === 0 ? " primary" : ""}" href="${href}">${escapeHtml(label)}</a>`).join("")}
+              </div>
+            </article>
+          `).join("")}
         </div>
       </section>
       <section class="section">

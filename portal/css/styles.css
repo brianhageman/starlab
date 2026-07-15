@@ -195,6 +195,27 @@ p { color: var(--muted); margin: .75rem 0 0; }
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
+.quick-link-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+}
+.quick-link-card {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, .11);
+  border-radius: 8px;
+  background: rgba(17, 17, 19, .86);
+}
+.quick-link-card h3 {
+  margin: 0 0 .8rem;
+}
+.quick-link-list {
+  display: grid;
+  gap: .65rem;
+}
+.quick-link-list .button {
+  width: 100%;
+}
 .card {
   min-height: 100%;
   padding: 1rem;
