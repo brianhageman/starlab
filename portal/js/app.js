@@ -17,85 +17,6 @@ const unitWeeks = {
   "Unit 5": [21, 22, 23, 24, 25, 26, 27, 28],
   "Unit 6": [29, 30, 31, 32, 33, 34]
 };
-const weekFocus = {
-  1: "Course launch, research culture, curiosity, and ethics",
-  2: "Experimental design, feasibility, and preliminary research questions",
-  3: "From project idea to testable plan",
-  4: "Formal research plan, safety, ethics, and approval",
-  5: "Launching pilot testing and research journals",
-  6: "Pilot testing, observation, and troubleshooting",
-  7: "Revising methods and data collection tools",
-  8: "Beginning systematic data collection",
-  9: "Continuing data collection and monitoring quality",
-  10: "Troubleshooting, iteration, and mentor feedback",
-  11: "Expanding trials and checking reliability",
-  12: "Midpoint review and progress reporting",
-  13: "Continued data collection after feedback",
-  14: "Completing major trials or prototype iterations",
-  15: "Data organization and completeness audit",
-  16: "Unit 3 closure and readiness for analysis",
-  17: "Data organization, cleaning, and audit",
-  18: "Calculations, statistics, and analysis methods",
-  19: "Graphs, tables, visuals, error, and uncertainty",
-  20: "Interpretation, claims, and transition to reporting",
-  21: "Understanding scientific reports",
-  22: "Writing the introduction",
-  23: "Writing the methods section",
-  24: "Results, figures, tables, and captions",
-  25: "Writing the discussion",
-  26: "Conclusion and full report assembly",
-  27: "Peer review and revision",
-  28: "Presentation design and practice",
-  29: "Final presentation readiness and message refinement",
-  30: "Practice presentations and audience adaptation",
-  31: "Q&A preparation and defense of evidence",
-  32: "Final showcase preparation",
-  33: "Required public presentation or showcase",
-  34: "Final reflection, portfolio, and next steps"
-};
-const weekDecks = {
-  1: [1], 2: [2], 3: [3, 4], 4: [5], 5: [6], 6: [6], 7: [7], 8: [7],
-  9: [7], 10: [8], 11: [8], 12: [8], 13: [8], 14: [8], 15: [9], 16: [9],
-  17: [9], 18: [10], 19: [11, 12], 20: [12], 21: [13], 22: [13], 23: [13],
-  24: [13], 25: [14], 26: [14], 27: [15], 28: [16, 17], 29: [17],
-  30: [17], 31: [18], 32: [16, 18], 33: [18], 34: [19]
-};
-const weekHandoutPlan = {
-  1: { queries: ["course launch reflection", "science identity", "research interest inventory", "ethics and integrity agreement"], note: "Launch week handouts establish research culture, student identity, interests, and ethics norms." },
-  2: { queries: ["experimental design practice", "from topic to research question", "question quality test", "preliminary project pitch"], note: "Week 2 handouts move students from broad interests toward feasible research questions." },
-  3: { queries: ["project refinement workshop", "background research notes", "hypothesis and design criteria builder", "variables, controls, criteria"], note: "Week 3 handouts help students turn project ideas into a testable plan." },
-  4: { queries: ["evidence planning tool", "materials and equipment planner", "procedure and testing protocol builder", "data collection plan", "safety and risk assessment", "ethics and approval screening", "project timeline planner", "formal research plan template", "research plan conference form"], note: "Week 4 is the major planning, safety, ethics, and approval packet." },
-  5: { queries: ["pilot test plan", "research journal setup", "daily research journal entry template"], note: "Week 5 launches pilot testing and establishes research journal routines." },
-  6: { queries: ["pilot test reflection and troubleshooting log", "method revision decision chart"], note: "Week 6 uses pilot evidence to troubleshoot and decide whether methods need revision." },
-  7: { queries: ["revised procedure template", "data table audit"], note: "Week 7 turns pilot learning into a revised procedure and stronger data tools." },
-  8: { queries: ["formal data collection log", "weekly progress check"], note: "Week 8 begins systematic data collection and weekly progress monitoring." },
-  9: { queries: ["weekly progress check", "data quality review"], note: "Week 9 checks data quality while collection continues." },
-  10: { queries: ["troubleshooting conference prep", "mentor or expert feedback log"], note: "Week 10 supports troubleshooting, teacher conferences, and mentor feedback." },
-  11: { queries: ["reliability and completeness check", "weekly progress check"], note: "Week 11 focuses on repeated trials, reliability, and completeness." },
-  12: { queries: ["mid project progress report"], note: "Week 12 is the midpoint review and progress-report checkpoint." },
-  13: { queries: ["post progress report action plan", "weekly progress check"], note: "Week 13 turns midpoint feedback into an action plan." },
-  14: { queries: ["major data collection completion check", "weekly progress check"], note: "Week 14 checks whether major trials or prototype iterations are complete." },
-  15: { queries: ["data audit and organization checklist"], note: "Week 15 organizes and audits data before analysis." },
-  16: { queries: ["readiness for analysis review", "research journal self-assessment"], note: "Week 16 closes Unit 3 and checks readiness for analysis." },
-  17: { queries: ["raw data inventory", "clean data set builder", "data cleaning decision log", "week 17 data audit"], note: "Week 17 focuses on organizing raw data and building clean data sets." },
-  18: { queries: ["data type and analysis match", "data analysis plan", "calculation and statistics record", "engineering performance analysis"], note: "Week 18 handouts support analysis method selection and calculations." },
-  19: { queries: ["graph and visual selection tool", "graph construction checklist", "error uncertainty and limitations review", "figure caption drafting"], note: "Week 19 materials support graphing, visual ethics, and uncertainty." },
-  20: { queries: ["claim evidence reasoning organizer", "hypothesis or design criteria review", "interpretation and conclusion draft notes", "unit 4 analysis summary", "unit 5 readiness checklist"], note: "Week 20 moves students from analysis into reporting readiness." },
-  21: { queries: ["scientific report dissection", "my research report planning map"], note: "Week 21 introduces the structure and planning map for the scientific report." },
-  22: { queries: ["introduction builder"], note: "Week 22 focuses on the report introduction." },
-  23: { queries: ["methods section builder"], note: "Week 23 focuses on the methods section." },
-  24: { queries: ["results and visuals builder"], note: "Week 24 focuses on results, figures, tables, and captions." },
-  25: { queries: ["discussion builder"], note: "Week 25 focuses on discussion and interpretation." },
-  26: { queries: ["conclusion and full draft assembly"], note: "Week 26 assembles the full report draft." },
-  27: { queries: ["peer review protocol", "revision plan"], note: "Week 27 focuses on peer review and revision." },
-  28: { queries: ["presentation planning guide", "practice presentation feedback form"], note: "Week 28 shifts students toward presentation design and practice." },
-  29: { queries: ["final presentation readiness check", "research story refinement", "three length presentation practice"], note: "Week 29 begins final presentation readiness and message refinement." },
-  30: { queries: ["practice presentation feedback form", "audience adaptation planner", "presentation revision log"], note: "Week 30 focuses on practice presentations and audience adaptation." },
-  31: { queries: ["q&a preparation guide", "mock q&a reflection", "evidence defense organizer"], note: "Week 31 prepares students for evidence defense and Q&A." },
-  32: { queries: ["final showcase readiness checklist", "presentation product final check", "professionalism and showcase expectations"], note: "Week 32 prepares students for the final showcase." },
-  33: { queries: ["audience feedback collection form", "post presentation reflection"], note: "Week 33 supports public presentation and audience feedback collection." },
-  34: { queries: ["final research process reflection", "starlab portfolio checklist", "optional next step plan", "course feedback and legacy reflection"], note: "Week 34 closes with portfolio, reflection, and next steps." }
-};
 
 navToggle.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -779,7 +700,8 @@ function weekPage(selectedWeek = 1) {
   const unit = mapping?.unit || unitForWeek(week);
   const items = resourcesForWeek(week);
   const teacherGuides = items.filter((item) => item.type === "Teacher Guide" || (item.type === "Document" && item.folder.includes("Teaching")));
-  const slides = items.filter((item) => item.type === "Slide Deck");
+  const primarySlides = resourcesByCatalogRefs((mapping?.primaryDecks || []).map((number) => `D${number}`));
+  const secondarySlides = resourcesByCatalogRefs((mapping?.secondaryDecks || []).map((number) => `D${number}`));
   const requiredItems = resourcesByCatalogRefs(mapping?.required || []);
   const optionalItems = resourcesByCatalogRefs(mapping?.optional || []);
   const handouts = requiredItems.filter((item) => item.type === "Student Handout");
@@ -800,7 +722,7 @@ function weekPage(selectedWeek = 1) {
     <section class="section split">
       <div class="card">
         <h2>Week ${week} Focus</h2>
-        <p>${escapeHtml(mapping?.focus || weekFocus[week])}</p>
+        <p>${escapeHtml(mapping?.focus || "See the implementation calendar for this week's focus.")}</p>
         <p>${escapeHtml(mapping?.note || "Use the resources below to plan this week.")}</p>
         <ul class="list">
           <li>Open the teacher guide first, then the slide deck.</li>
@@ -809,9 +731,9 @@ function weekPage(selectedWeek = 1) {
         </ul>
       </div>
       <div class="card">
-        <h2>Required Student Copies</h2>
+        <h2>Required Weekly Materials</h2>
         <ul class="list">
-          ${requiredPrint.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No new required student copies this week. Students may continue using materials already issued.</li>"}
+          ${requiredPrint.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No new required materials this week. Students may continue using resources already issued.</li>"}
         </ul>
       </div>
     </section>
@@ -820,14 +742,15 @@ function weekPage(selectedWeek = 1) {
       <div class="grid">
         ${[
           ["Open the teacher guide", teacherGuides.length ? `Start with ${teacherGuides.length} teacher-facing guide resource${teacherGuides.length === 1 ? "" : "s"} for this week.` : "No week-specific guide was inferred; use the unit overview and related resources."],
-          ["Preview slides", slides.length ? `Preview ${slides.length} slide deck${slides.length === 1 ? "" : "s"} before teaching.` : "No week-specific slide deck was mapped."],
-          ["Print or share student materials", requiredPrint.length ? `${requiredPrint.length} required student cop${requiredPrint.length === 1 ? "y" : "ies"} assigned for this week.` : "No new required student copies; students may continue using materials already issued."],
+          ["Preview slides", primarySlides.length ? `Preview ${primarySlides.length} primary slide deck${primarySlides.length === 1 ? "" : "s"} before teaching.${secondarySlides.length ? ` Revisit ${secondarySlides.length} earlier deck${secondarySlides.length === 1 ? "" : "s"} as needed.` : ""}` : secondarySlides.length ? `No new core deck is assigned; revisit ${secondarySlides.length} earlier deck${secondarySlides.length === 1 ? "" : "s"} as needed.` : "No week-specific slide deck was mapped."],
+          ["Print or share student materials", requiredPrint.length ? `${requiredPrint.length} required weekly material${requiredPrint.length === 1 ? "" : "s"} assigned.` : "No new required materials; students may continue using resources already issued."],
           ["Check support needs", optionalItems.length ? "Review the optional and teacher-reference resources before class." : "No additional optional resources are mapped for this week."]
         ].map(([title, detail]) => `<article class="card"><strong>${title}</strong><p>${escapeHtml(detail)}</p></article>`).join("")}
       </div>
     </section>
     ${weekSection("Teacher Guide", teacherGuides)}
-    ${weekSection("Slide Decks", slides)}
+    ${weekSection("Primary Slide Decks", primarySlides)}
+      ${secondarySlides.length ? weekSection("Revisit / Reference Decks", secondarySlides) : ""}
     ${weekSection("Student Handouts", handouts)}
     ${weekSection("Required Appendices and Rubrics", support)}
     ${weekSection("Optional / Teacher Reference", optionalItems)}
@@ -872,7 +795,7 @@ function unitDetail(number) {
         ${weeks.map((week) => `
           <a class="week-card" href="#week-${week}">
             <strong>Week ${week}</strong>
-            <span>${escapeHtml(weekFocus[week])}</span>
+            <span>${escapeHtml(courseWeek(week)?.focus || "See the implementation calendar for this week's focus.")}</span>
           </a>
         `).join("")}
       </div>
@@ -1569,8 +1492,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-2").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-2").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-3").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-3").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;
