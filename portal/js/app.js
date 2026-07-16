@@ -964,6 +964,71 @@ function assessmentPage() {
       <p class="section-note">Unit-level percentage tables are optional local suggestions for breaking down work within a unit. They do not replace these six official syllabus categories or add a seventh course category.</p>
     </section>
 
+    <section class="section">
+      <h2>How Unit Scores Enter the Gradebook</h2>
+      <p class="section-note">Use the percentages in each unit overview only to choose local point values and balance evidence within that unit. Enter each score in the official syllabus category shown below.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th>Evidence Collected</th>
+              <th>Official Gradebook Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Unit 1</td>
+              <td>Research identity, ethics, experimental-design practice, topic development, question evaluation, and preliminary pitch</td>
+              <td>Project Proposal</td>
+            </tr>
+            <tr>
+              <td>Unit 2</td>
+              <td>Background research, hypothesis or criteria, procedure, data plan, safety and ethics screening, timeline, and formal research plan</td>
+              <td>Project Proposal</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Unit 3</td>
+              <td>Journals, pilot reflections, revised procedures, troubleshooting records, and weekly check-ins</td>
+              <td>Research Journal / Documentation</td>
+            </tr>
+            <tr>
+              <td>Data-collection system and preserved raw data</td>
+              <td>Data Analysis and Interpretation</td>
+            </tr>
+            <tr>
+              <td>Mid-project progress report</td>
+              <td>Mid-Project Progress Report</td>
+            </tr>
+            <tr>
+              <td>Unit 4</td>
+              <td>Clean data, analysis plan, calculations, graphs, uncertainty, limitations, interpretation, and analysis summary</td>
+              <td>Data Analysis and Interpretation</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Unit 5</td>
+              <td>Report drafts, peer review, revision, and final scientific report</td>
+              <td>Final Research Report</td>
+            </tr>
+            <tr>
+              <td>Visual aid, presentation planning, practice, and reflection</td>
+              <td>Oral Presentation</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Unit 6</td>
+              <td>Presentation product, delivery, Q&amp;A, showcase professionalism, and final presentation reflection</td>
+              <td>Oral Presentation</td>
+            </tr>
+            <tr>
+              <td>Portfolio evidence and optional next-step planning, when scored</td>
+              <td>Research Journal / Documentation</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">If the final research report is completed during Unit 6, record it under Final Research Report. Do not create a separate unit category or score the same report twice.</p>
+    </section>
+
     <section class="section split">
       <div class="card">
         <h2>What to Collect</h2>
@@ -1515,8 +1580,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-6").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-6").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-7").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-7").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;
