@@ -76,7 +76,7 @@
         "status",
         "teacher review"
       ],
-      "required": true,
+      "required": false,
       "printRecommended": false,
       "useCategory": "reference",
       "audienceOverride": "",
@@ -2489,6 +2489,30 @@
       "printClassification": "optional-or-teacher-reference",
       "notes": ""
     },
+    "STARLAB_Unit_3/Appendixes/Appendix_V_Research_Journal_Rubric.docx": {
+      "titleOverride": "Appendix V: Research Journal Rubric",
+      "purpose": "Authoritative teacher scoring instrument for research-journal evidence across Units 3-6.",
+      "teacherUse": "Use at journal checkpoints to score completeness, specificity, integrity, evidence links, and actionable next steps.",
+      "studentUse": "Review the criteria before journal checkpoints; use Student Handout 19 for the aligned self-assessment.",
+      "keywords": [
+        "assessment",
+        "criteria",
+        "documentation",
+        "evidence trail",
+        "feedback",
+        "grading",
+        "research journal",
+        "rubric",
+        "scientific integrity",
+        "unit 3"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "assessment",
+      "audienceOverride": "",
+      "printClassification": "optional-teacher-scoring-reference",
+      "notes": "Authoritative Research Journal / Documentation scoring rubric. Teacher use is required when the final journal evidence is scored, but printing is optional. Student Handout 19 is the aligned self-assessment, not the teacher rubric."
+    },
     "STARLAB_Unit_3/README_Unit_3_Index.txt": {
       "titleOverride": "",
       "purpose": "STARLAB curriculum or implementation resource.",
@@ -3664,10 +3688,10 @@
       "notes": ""
     },
     "STARLAB_Unit_4/Appendixes/Appendix_N_Unit_4_Analysis_Rubric.docx": {
-      "titleOverride": "",
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when scoring, conferencing, or giving feedback on the related student product.",
-      "studentUse": "Use to understand expectations before submitting or presenting work.",
+      "titleOverride": "Appendix N: Data Analysis and Interpretation Rubric",
+      "purpose": "Authoritative scoring instrument for the Data Analysis and Interpretation category, including preserved raw data and Unit 4 analysis evidence.",
+      "teacherUse": "Use to score raw-data preservation, organization, method selection, calculations, visuals, uncertainty, limitations, and interpretation across Units 3-4.",
+      "studentUse": "Use to understand the complete Data Analysis and Interpretation criteria before submitting Unit 4 evidence.",
       "keywords": [
         "analysis",
         "assessment",
@@ -3686,7 +3710,7 @@
       "useCategory": "assessment",
       "audienceOverride": "",
       "printClassification": "required-when-assessed",
-      "notes": ""
+      "notes": "Authoritative course rubric for the 20% Data Analysis and Interpretation category."
     },
     "STARLAB_Unit_4/Student_Handouts/Student_Handout_01_Raw_Data_Inventory.docx": {
       "titleOverride": "",
@@ -4560,6 +4584,30 @@
       "audienceOverride": "",
       "printClassification": "optional-or-teacher-reference",
       "notes": ""
+    },
+    "STARLAB_Unit_5/Appendixes/Appendix_T_Peer_Review_Quality_Rubric.docx": {
+      "titleOverride": "Appendix T: Peer Review Quality Rubric",
+      "purpose": "Standalone scoring instrument for the quality of scientific peer feedback produced during Unit 5.",
+      "teacherUse": "Use with Student Handout 8 when the local Unit 5 plan assigns a score for peer-review quality.",
+      "studentUse": "Use to provide specific, scientifically grounded, actionable, complete, and professional feedback.",
+      "keywords": [
+        "assessment",
+        "criteria",
+        "feedback",
+        "final research report",
+        "grading",
+        "peer review",
+        "revision",
+        "rubric",
+        "scientific writing",
+        "unit 5"
+      ],
+      "required": false,
+      "printRecommended": false,
+      "useCategory": "assessment",
+      "audienceOverride": "",
+      "printClassification": "optional-local-scoring-reference",
+      "notes": "Use only when peer-review quality is locally scored. Student Handout 8 is the evidence source; Appendix M supplies optional sentence stems."
     },
     "STARLAB_Unit_5/README_Unit_5_Index.docx": {
       "titleOverride": "",

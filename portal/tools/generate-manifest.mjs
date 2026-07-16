@@ -135,6 +135,20 @@ const curatedUsage = {
     units: unitOrder,
     requirementStatus: "Required grading reference"
   },
+  researchJournalRubric: {
+    units: ["Unit 3", "Unit 4", "Unit 5", "Unit 6"],
+    audiences: ["Teacher", "Student"],
+    requirementStatus: "Authoritative scoring tool; printing optional"
+  },
+  analysisRubric: {
+    units: ["Unit 3", "Unit 4"],
+    audiences: ["Teacher", "Student"]
+  },
+  peerReviewQualityRubric: {
+    units: ["Unit 5"],
+    audiences: ["Teacher", "Student"],
+    requirementStatus: "Optional local scoring tool; printing optional"
+  },
   mentorToolkit: {
     whenUsed: "Weeks 3-16; Weeks 28-33 as needed",
     relatedDecks: [5, 7, 8, 17, 18],
@@ -635,17 +649,21 @@ for (const resource of resources) {
 
   const curated = curatedUsageByPath.get(resource.path);
   if (curated) {
-    resource.whenUsed = curated.whenUsed;
-    resource.units = sortUnits(curated.units || resource.units);
-    resource.relatedDecks = sortDeckLabels((curated.relatedDecks || []).map((deck) => `Deck ${deck}`));
-    resource.relatedDeck = resource.relatedDecks[0] || "";
+    if (curated.whenUsed) resource.whenUsed = curated.whenUsed;
+    if (curated.units) resource.units = sortUnits(curated.units);
+    if (curated.relatedDecks) {
+      resource.relatedDecks = sortDeckLabels(curated.relatedDecks.map((deck) => `Deck ${deck}`));
+      resource.relatedDeck = resource.relatedDecks[0] || "";
+    }
     if (curated.audiences) {
       resource.audiences = unique(curated.audiences);
       resource.audience = resource.audiences[0];
     }
-    resource.requirementStatus = curated.requirementStatus;
-    resource.required = curated.requirementStatus.startsWith("Required");
-    resource.usageNotes = curated.whenUsed;
+    if (curated.requirementStatus) {
+      resource.requirementStatus = curated.requirementStatus;
+      resource.required = curated.requirementStatus.startsWith("Required");
+    }
+    if (curated.whenUsed) resource.usageNotes = curated.whenUsed;
     if (curated.purpose) {
       resource.purpose = curated.purpose;
       resource.description = curated.purpose;

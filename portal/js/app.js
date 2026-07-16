@@ -960,10 +960,12 @@ function assessmentPage() {
     ["STARLAB Syllabus", "starlab syllabus"],
     ["Weekly Progress Tracker", "weekly progress tracker"],
     ["Research Journal Standards", "research journal standards"],
+    ["Research Journal Rubric", "research journal rubric"],
     ["Research Journal Self-Assessment", "journal self assessment"],
     ["Progress Report Rubric", "progress report rubric"],
-    ["Unit 4 Analysis Rubric", "unit 4 analysis rubric"],
+    ["Data Analysis and Interpretation Rubric", "data analysis interpretation rubric"],
     ["Scientific Report Rubric", "scientific report rubric"],
+    ["Peer Review Quality Rubric", "peer review quality rubric"],
     ["Oral Presentation Rubric", "oral presentation rubric"],
     ["Showcase Rubric", "showcase rubric"],
     ["Project Approval Tracker", "project approval tracker"]
@@ -1089,7 +1091,7 @@ function assessmentPage() {
 
     <section class="section">
       <h2>Assessment Toolkit</h2>
-      <p><strong>Official presentation instruments:</strong> Unit 6 Appendix L is the final summative Oral Presentation rubric. Unit 6 Appendix M scores the public showcase presentation within that same syllabus category.</p>
+      <p><strong>Authoritative scoring instruments:</strong> Unit 3 Appendix V scores research journals; Unit 4 Appendix N scores Data Analysis and Interpretation, including preserved raw data; Unit 5 Appendix T scores peer-review quality when that optional local item is graded; Unit 6 Appendix L is the final summative Oral Presentation rubric; and Unit 6 Appendix M scores the public showcase presentation within that same syllabus category.</p>
       <ul class="resource-link-list">${toolkitLinks(toolkit)}</ul>
     </section>
   `);
@@ -1127,10 +1129,13 @@ const curatedAliases = {
   "ethics approval screening": "ethicsScreeningHandout",
   "formal research plan safety ethics approval": "week4Guide",
   "research journal standards": "researchJournalStandards",
+  "research journal rubric": "researchJournalRubric",
   "journal self assessment": "researchJournalSelfAssessment",
   "progress report rubric": "progressReportRubric",
   "unit 4 analysis rubric": "analysisRubric",
+  "data analysis interpretation rubric": "analysisRubric",
   "scientific report rubric": "scientificReportRubric",
+  "peer review quality rubric": "peerReviewQualityRubric",
   "oral presentation rubric": "oralPresentationRubric",
   "showcase rubric": "showcaseRubric",
   "showcase planning guide for teachers": "showcaseTeacherGuide",

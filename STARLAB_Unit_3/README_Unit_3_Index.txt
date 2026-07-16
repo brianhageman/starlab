@@ -44,4 +44,5 @@ Teaching Guides/
   - Week_16_Unit 3 Closure and Readiness for Analysis.docx
 
 Appendixes/
-  - See folder for appendix A through U support resources.
+  - See folder for appendix A through V support resources.
+  - Appendix V is the authoritative Research Journal Rubric for teacher scoring.

@@ -166,9 +166,9 @@ const highVisibilityMappings = {
   2: { primaryDecks: [2, 4], secondaryDecks: [], required: ["U1 H5", "U1 H6", "U1 H7", "U1 H8", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppH"], optional: ["U1 AppI", "U1 AppK"] },
   3: { primaryDecks: [5], secondaryDecks: [4], required: ["U2 H1", "U2 H2", "U2 H3", "U2 H4", "U2 H5", "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD"], optional: ["U2 AppK"] },
   4: { primaryDecks: [5], secondaryDecks: [3], required: ["U2 H6", "U2 H7", "U2 H8", "U2 H9", "U2 H10", "U2 H11", "U2 H12", "U2 H13", "U2 AppE", "U2 AppF", "U2 AppG", "U2 AppH"], optional: ["U2 AppI", "U2 AppJ", "U2 AppL"] },
-  5: { primaryDecks: [6, 7], secondaryDecks: [], required: ["U3 H1", "U3 H2", "U3 H3", "U3 AppA", "U3 AppB", "U3 AppC"], optional: [] },
+  5: { primaryDecks: [6, 7], secondaryDecks: [], required: ["U3 H1", "U3 H2", "U3 H3", "U3 AppA", "U3 AppB", "U3 AppC"], optional: ["U3 AppV"] },
   6: { primaryDecks: [8], secondaryDecks: [], required: ["U3 H4", "U3 H5", "U3 AppD", "U3 AppE"], optional: [] },
-  16: { primaryDecks: [], secondaryDecks: [9], required: ["U3 H18", "U3 H19"], optional: ["U3 AppS", "U3 AppT", "U3 AppU"] },
+  16: { primaryDecks: [], secondaryDecks: [9], required: ["U3 H18", "U3 H19"], optional: ["U3 AppS", "U3 AppT", "U3 AppU", "U3 AppV"] },
   34: { primaryDecks: [19], secondaryDecks: [], required: ["U6 H15", "U6 H16", "U6 H18"], optional: ["U6 H17", "U6 AppO", "U6 AppP", "U6 AppQ", "U6 AppR", "U6 AppS"] }
 };
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T20:44:06.273Z",
+  "generatedAt": "2026-07-16T22:31:55.319Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -244,7 +244,7 @@
       "searchText": "STARLAB Logo 2026 STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Coursewide Coursewide Brand Asset Teacher Teacher Portal branding      Root  brand asset coursewide reference Portal asset Used by the portal interface rather than a scheduled instructional week."
     },
     {
-      "id": "res-267",
+      "id": "res-269",
       "title": "08 STARLAB Mentor and Community Partner Toolkit",
       "fileName": "08_STARLAB_Mentor_and_Community_Partner_Toolkit.docx",
       "unit": "Coursewide",
@@ -306,7 +306,7 @@
       "searchText": "08 STARLAB Mentor and Community Partner Toolkit STARLAB curriculum or implementation resource. Supports mentor, expert, or community partner communication and feedback. Use when recruiting, preparing, guiding, or documenting mentor involvement.  Coursewide Unit 2 Unit 3 Unit 5 Unit 6 Communication Template Teacher Teacher Mentor/Partner Weeks 3-16; Weeks 28-33 as needed Deck 5 Deck 5 Deck 7 Deck 8 Deck 17 Deck 18    Teacher Resources (Start Here) communication mentor communication communication template community partner coursewide expert feedback mentor support Optional / As needed Weeks 3-16; Weeks 28-33 as needed"
     },
     {
-      "id": "res-275",
+      "id": "res-277",
       "title": "11 STARLAB Parent Guardian Communication Pack",
       "fileName": "11_STARLAB_Parent_Guardian_Communication_Pack.docx",
       "unit": "Coursewide",
@@ -364,7 +364,7 @@
       "searchText": "11 STARLAB Parent Guardian Communication Pack STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Customize and distribute to families through district-approved teacher communication channels.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Communication Template Teacher Teacher Parent/Guardian Before Week 1; teacher distribution as needed Deck 1 Deck 1    Teacher Resources (Start Here) communication communication communication template coursewide family communication teacher distribution teacher-distribution Optional / Teacher distributed Before Week 1; teacher distribution as needed"
     },
     {
-      "id": "res-280",
+      "id": "res-282",
       "title": "16 STARLAB Safety Scope Guide by Project Type",
       "fileName": "16_STARLAB_Safety_Scope_Guide_by_Project_Type.docx",
       "unit": "Coursewide",
@@ -427,7 +427,7 @@
       "searchText": "16 STARLAB Safety Scope Guide by Project Type STARLAB curriculum or implementation resource. Supports safety, risk, ethics, and feasibility decisions for student research. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Coursewide Unit 2 Unit 3 Safety/Approval Resource Teacher Teacher Weeks 3-5; before any testing or data collection Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) approval safety approval before testing coursewide ethics project approval red flags risk safety safety/approval resource screening status teacher review reference Required approval reference Weeks 3-5; before any testing or data collection"
     },
     {
-      "id": "res-269",
+      "id": "res-271",
       "title": "STARLAB District Approval and Escalation Addendum",
       "fileName": "STARLAB_District_Approval_and_Escalation_Addendum.docx",
       "unit": "Coursewide",
@@ -486,7 +486,7 @@
       "searchText": "STARLAB District Approval and Escalation Addendum Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available. Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available. Complete with administrators before Unit 2, then use it to route projects that need safety, ethics, mentor, privacy, fieldwork, equipment, or external review.  Coursewide Unit 2 Unit 3 Safety/Approval Resource Administrator Administrator Teacher Before Unit 2; review annually and whenever district policy changes Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval safety district approval escalation interim procedure written evidence local forms stop work reapproval  Required local setup before Unit 2 Before Unit 2; review annually and whenever district policy changes"
     },
     {
-      "id": "res-270",
+      "id": "res-272",
       "title": "STARLAB Project Approval System",
       "fileName": "STARLAB_Project_Approval_System.docx",
       "unit": "Coursewide",
@@ -549,7 +549,7 @@
       "searchText": "STARLAB Project Approval System STARLAB curriculum or implementation resource. Supports safety, risk, ethics, and feasibility decisions for student research. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Coursewide Unit 2 Unit 3 Safety/Approval Resource Teacher Teacher Weeks 3-5; before any testing or data collection Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval safety approval before testing coursewide ethics project approval red flags risk safety safety/approval resource screening status teacher review reference Required approval reference Weeks 3-5; before any testing or data collection"
     },
     {
-      "id": "res-281",
+      "id": "res-283",
       "title": "17 STARLAB Showcase Planning Kit",
       "fileName": "17_STARLAB_Showcase_Planning_Kit.docx",
       "unit": "Coursewide",
@@ -607,7 +607,7 @@
       "searchText": "17 STARLAB Showcase Planning Kit STARLAB curriculum or implementation resource. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Coursewide Unit 5 Unit 6 Showcase Resource Teacher Teacher Weeks 21-34 Deck 16 Deck 16 Deck 17 Deck 18 Deck 19    Teacher Resources (Start Here) showcase audience coursewide final presentation public presentation showcase showcase resource visitor showcase Recommended teacher planning resource Weeks 21-34"
     },
     {
-      "id": "res-260",
+      "id": "res-262",
       "title": "01 STARLAB Start Here Guide",
       "fileName": "01_STARLAB_Start_Here_Guide.docx",
       "unit": "Coursewide",
@@ -662,7 +662,7 @@
       "searchText": "01 STARLAB Start Here Guide First-stop guide for launching and orienting to STARLAB. First-stop guide for understanding STARLAB and launching the course. Open first when preparing to teach or evaluate STARLAB.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Before course launch; ongoing reference      Teacher Resources (Start Here)  coursewide first steps launch new teacher orientation start here teacher resource core Required before launch Before course launch; ongoing reference"
     },
     {
-      "id": "res-261",
+      "id": "res-263",
       "title": "02 STARLAB Course Proposal",
       "fileName": "02_STARLAB Course Proposal.pdf",
       "unit": "Coursewide",
@@ -716,7 +716,7 @@
       "searchText": "02 STARLAB Course Proposal STARLAB curriculum or implementation resource. Program-facing course proposal for explaining STARLAB to administrators or stakeholders. Use when discussing course adoption, approval, or program expansion.  Coursewide Coursewide Teacher Resource Administrator Administrator Teacher District adoption and course setup      Teacher Resources (Start Here) proposal administrator course proposal course rationale coursewide district program approval proposal teacher resource administrator Reference for adoption District adoption and course setup"
     },
     {
-      "id": "res-262",
+      "id": "res-264",
       "title": "03 STARLAB Syllabus",
       "fileName": "03_STARLAB Syllabus.pdf",
       "unit": "Coursewide",
@@ -774,7 +774,7 @@
       "searchText": "03 STARLAB Syllabus Course overview and grading structure for stakeholders. Course syllabus describing expectations, grading categories, and course structure. Use when communicating course expectations to students, families, administrators, or counselors.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Administrator Administrator Teacher Student Before course launch; Week 1; grading checkpoints Deck 1 Deck 1    Teacher Resources (Start Here)  course expectations coursewide grading weights student expectations syllabus teacher resource core Required before launch Before course launch; Week 1; grading checkpoints"
     },
     {
-      "id": "res-263",
+      "id": "res-265",
       "title": "04 STARLAB Course Operations Manual",
       "fileName": "04_STARLAB_Course_Operations_Manual.docx",
       "unit": "Coursewide",
@@ -828,7 +828,7 @@
       "searchText": "04 STARLAB Course Operations Manual STARLAB curriculum or implementation resource. Teacher operations guide for managing the course structure, routines, and implementation systems. Use during course setup and whenever implementation questions arise.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Before course launch; ongoing reference      Teacher Resources (Start Here)  course systems coursewide implementation operations manual teacher resource teacher workflow operations Required before launch Before course launch; ongoing reference"
     },
     {
-      "id": "res-266",
+      "id": "res-268",
       "title": "07 STARLAB Grading and Assessment Guide",
       "fileName": "07_STARLAB_Grading_and_Assessment_Guide.docx",
       "unit": "Coursewide",
@@ -857,7 +857,7 @@
       "path": "Teacher Resources (Start Here)/07_STARLAB_Grading_and_Assessment_Guide.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/07_STARLAB_Grading_and_Assessment_Guide.docx",
       "extension": "DOCX",
-      "sizeBytes": 51536,
+      "sizeBytes": 51874,
       "sizeLabel": "51 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
@@ -886,7 +886,7 @@
       "searchText": "07 STARLAB Grading and Assessment Guide STARLAB curriculum or implementation resource. Teacher guide for grading, assessment categories, evidence collection, and feedback in STARLAB. Use when planning grading practices, explaining assessment, or scoring major products.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Before course launch; major assessment checkpoints      Teacher Resources (Start Here) assessment assessment coursewide evidence feedback grading rubrics scoring teacher resource assessment Required grading reference Before course launch; major assessment checkpoints"
     },
     {
-      "id": "res-276",
+      "id": "res-278",
       "title": "12 STARLAB Student Onboarding Packet",
       "fileName": "12_STARLAB_Student_Onboarding_Packet.docx",
       "unit": "Coursewide",
@@ -939,7 +939,7 @@
       "searchText": "12 STARLAB Student Onboarding Packet STARLAB curriculum or implementation resource. Student onboarding packet for introducing expectations, routines, and the STARLAB research process. Use at the beginning of the course or when orienting new students. Use to understand course expectations and early research routines. Coursewide Unit 1 Teacher Resource Student Student Teacher Week 1 Deck 1 Deck 1 Deck 3    Teacher Resources (Start Here)  coursewide first week onboarding student launch student orientation teacher resource reference Required at course launch Week 1"
     },
     {
-      "id": "res-277",
+      "id": "res-279",
       "title": "13 STARLAB Sample Student Project Library",
       "fileName": "13_STARLAB_Sample_Student_Project_Library.docx",
       "unit": "Coursewide",
@@ -995,7 +995,7 @@
       "searchText": "13 STARLAB Sample Student Project Library STARLAB curriculum or implementation resource. Reference library of sample student projects for inspiration, calibration, and feasibility conversations. Use to help students understand possible project directions and appropriate scope.  Coursewide Unit 1 Unit 2 Teacher Resource Teacher Teacher Student Weeks 1-4 as needed Deck 1 Deck 1 Deck 2 Deck 4 Deck 5    Teacher Resources (Start Here)  coursewide examples model projects sample projects student project ideas teacher resource reference Optional / As needed Weeks 1-4 as needed"
     },
     {
-      "id": "res-278",
+      "id": "res-280",
       "title": "14 STARLAB Common Problems and What To Do Guide",
       "fileName": "14_STARLAB_Common_Problems_and_What_To_Do_Guide.docx",
       "unit": "Coursewide",
@@ -1056,7 +1056,7 @@
       "searchText": "14 STARLAB Common Problems and What To Do Guide STARLAB curriculum or implementation resource. Troubleshooting guide for common STARLAB implementation and student research problems. Use when students get stuck, projects drift, or classroom systems need adjustment.  Coursewide Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Weeks 5-34 as needed Deck 6 Deck 6 Deck 8 Deck 9 Deck 10 Deck 12 Deck 13 Deck 17 Deck 18    Teacher Resources (Start Here)  common problems coursewide intervention teacher resource teacher support troubleshooting support Optional / As needed Weeks 5-34 as needed"
     },
     {
-      "id": "res-279",
+      "id": "res-281",
       "title": "15 STARLAB AI Use Policy",
       "fileName": "15_STARLAB_AI_Use_Policy.docx",
       "unit": "Coursewide",
@@ -1114,7 +1114,7 @@
       "searchText": "15 STARLAB AI Use Policy STARLAB curriculum or implementation resource. Policy guidance for appropriate AI use in STARLAB research, writing, and documentation. Use when setting expectations for student AI use and academic integrity.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Student Student Teacher Week 1; ongoing reference Deck 3 Deck 3    Teacher Resources (Start Here)  academic integrity ai ai policy coursewide guidelines student use teacher resource policy Required course policy Week 1; ongoing reference"
     },
     {
-      "id": "res-272",
+      "id": "res-274",
       "title": "How to Plan and Schedule Your STARLAB Project",
       "fileName": "How to Plan and Schedule Your STARLAB Project.docx",
       "unit": "Coursewide",
@@ -1169,7 +1169,7 @@
       "searchText": "How to Plan and Schedule Your STARLAB Project STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Coursewide Unit 2 Unit 3 Teacher Resource Student Student Teacher Weeks 3-16 Deck 5 Deck 5 Deck 6 Deck 7 Deck 8    Teacher Resources (Start Here) / 10_STARLAB_Project_Tracker_System_Package tracker coursewide teacher resource tracker reference Optional planning support Weeks 3-16"
     },
     {
-      "id": "res-268",
+      "id": "res-270",
       "title": "README",
       "fileName": "README.txt",
       "unit": "Coursewide",
@@ -1226,7 +1226,7 @@
       "searchText": "README STARLAB curriculum or implementation resource. Supports the project approval workflow before students begin pilot testing or data collection. Use before approving, pausing, redirecting, or escalating a student project.  Coursewide Unit 2 Unit 3 Teacher Resource Teacher Teacher Weeks 3-5; approval system setup Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval approval before testing coursewide project approval status teacher resource teacher review reference Optional package reference Use when setting up the project approval package."
     },
     {
-      "id": "res-273",
+      "id": "res-275",
       "title": "STARLAB Research Weekly Progress Tracker Student Guide",
       "fileName": "STARLAB Research Weekly Progress Tracker Student Guide.docx",
       "unit": "Coursewide",
@@ -1279,7 +1279,7 @@
       "searchText": "STARLAB Research Weekly Progress Tracker Student Guide STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Coursewide Unit 3 Teacher Resource Student Student Teacher Weeks 5-16 Deck 7 Deck 7 Deck 8 Deck 9    Teacher Resources (Start Here) / 10_STARLAB_Project_Tracker_System_Package tracker coursewide teacher resource tracker reference Optional student support Weeks 5-16"
     },
     {
-      "id": "res-264",
+      "id": "res-266",
       "title": "05 STARLAB Full Course Implementation Calendar",
       "fileName": "05_STARLAB_Full_Course_Implementation_Calendar.xlsx",
       "unit": "Coursewide",
@@ -1328,7 +1328,7 @@
       "path": "Teacher Resources (Start Here)/05_STARLAB_Full_Course_Implementation_Calendar.xlsx",
       "href": "../Teacher%20Resources%20(Start%20Here)/05_STARLAB_Full_Course_Implementation_Calendar.xlsx",
       "extension": "XLSX",
-      "sizeBytes": 56421,
+      "sizeBytes": 56487,
       "sizeLabel": "56 KB",
       "description": "Spreadsheet tracker or planning tool for course implementation.",
       "tags": [
@@ -1360,7 +1360,7 @@
       "searchText": "05 STARLAB Full Course Implementation Calendar Spreadsheet tracker or planning tool for course implementation. Supports course pacing and yearlong implementation planning. Use as an operational dashboard or record-keeping tool.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Tracker Teacher Teacher Before course launch; Weeks 1-34 Deck 1 Deck 1 Deck 2 Deck 3 Deck 4 Deck 5 Deck 6 Deck 7 Deck 8 Deck 9 Deck 10 Deck 11 Deck 12 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17 Deck 18 Deck 19    Teacher Resources (Start Here) calendar tracker calendar coursewide implementation management monitoring operations pacing spreadsheet tracker year plan operations Required planning tool Before course launch; Weeks 1-34"
     },
     {
-      "id": "res-265",
+      "id": "res-267",
       "title": "06 STARLAB Master Print Packet Index",
       "fileName": "06_STARLAB_Master_Print_Packet_Index.xlsx",
       "unit": "Coursewide",
@@ -1409,8 +1409,8 @@
       "path": "Teacher Resources (Start Here)/06_STARLAB_Master_Print_Packet_Index.xlsx",
       "href": "../Teacher%20Resources%20(Start%20Here)/06_STARLAB_Master_Print_Packet_Index.xlsx",
       "extension": "XLSX",
-      "sizeBytes": 29646,
-      "sizeLabel": "29 KB",
+      "sizeBytes": 29717,
+      "sizeLabel": "30 KB",
       "description": "Spreadsheet tracker or planning tool for course implementation.",
       "tags": [
         "tracker"
@@ -1440,7 +1440,7 @@
       "searchText": "06 STARLAB Master Print Packet Index Spreadsheet tracker or planning tool for course implementation. Spreadsheet or tracker for monitoring course implementation, approvals, progress, printing, or planning. Use as an operational dashboard or record-keeping tool.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Tracker Teacher Teacher Before each assigned week or deck Deck 1 Deck 1 Deck 2 Deck 3 Deck 4 Deck 5 Deck 6 Deck 7 Deck 8 Deck 9 Deck 10 Deck 11 Deck 12 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17 Deck 18 Deck 19    Teacher Resources (Start Here) tracker copies coursewide management materials prep monitoring operations packet print spreadsheet tracker operations Required planning tool Before each assigned week or deck"
     },
     {
-      "id": "res-271",
+      "id": "res-273",
       "title": "STARLAB Project Approval Tracker",
       "fileName": "STARLAB_Project_Approval_Tracker.xlsx",
       "unit": "Coursewide",
@@ -1502,7 +1502,7 @@
       "searchText": "STARLAB Project Approval Tracker Spreadsheet tracker or planning tool for course implementation. Supports the project approval workflow before students begin pilot testing or data collection. Use before approving, pausing, redirecting, or escalating a student project.  Coursewide Unit 2 Unit 3 Tracker Teacher Teacher Weeks 3-5; update before any testing or data collection Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval tracker approval before testing coursewide management monitoring operations project approval spreadsheet status teacher review tracker operations Required official record Weeks 3-5; update before any testing or data collection"
     },
     {
-      "id": "res-274",
+      "id": "res-276",
       "title": "STARLAB Weekly Progress Tracker (1)",
       "fileName": "STARLAB_Weekly_Progress_Tracker (1).xlsx",
       "unit": "Coursewide",
@@ -6375,7 +6375,7 @@
       "searchText": "Appendix U Differentiation and Implementation Notes Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Keep as an optional teacher reference; it is not a required student print material.  Unit 3 Unit 3 Appendix Teacher Teacher Week 16 Deck 9 Deck 9  Deck 9 U3 AppU STARLAB_Unit_3 / Appendixes  appendix implementation support optional support reference support teacher reference unit 3 teacher-reference Optional / Teacher reference Optional/reference: Week 16. Revisit/reference deck alignment: Deck 9"
     },
     {
-      "id": "res-101",
+      "id": "res-102",
       "title": "README Unit 3 Index",
       "fileName": "README_Unit_3_Index.txt",
       "unit": "Unit 3",
@@ -6404,7 +6404,7 @@
       "path": "STARLAB_Unit_3/README_Unit_3_Index.txt",
       "href": "../STARLAB_Unit_3/README_Unit_3_Index.txt",
       "extension": "TXT",
-      "sizeBytes": 2308,
+      "sizeBytes": 2389,
       "sizeLabel": "3 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -6481,6 +6481,79 @@
       "requirementStatus": "Required",
       "usageNotes": "Required: Week 12. No new or revisited deck is assigned in the mapped week.",
       "searchText": "Appendix N Progress Report Rubric Assessment criteria or scoring guidance for a major STARLAB product. Supports scientific report planning, drafting, revision, or formatting. Use when scoring, conferencing, or giving feedback on the related student product. Use to understand expectations before submitting or presenting work. Unit 3 Unit 3 Rubric Teacher Teacher Student Week 12     U3 AppN STARLAB_Unit_3 / Appendixes rubric assessment criteria drafting feedback grading report revision rubric scientific writing unit 3 assessment Required Required: Week 12. No new or revisited deck is assigned in the mapped week."
+    },
+    {
+      "id": "res-101",
+      "title": "Appendix V: Research Journal Rubric",
+      "fileName": "Appendix_V_Research_Journal_Rubric.docx",
+      "unit": "Unit 3",
+      "units": [
+        "Unit 3",
+        "Unit 4",
+        "Unit 5",
+        "Unit 6"
+      ],
+      "type": "Rubric",
+      "audience": "Teacher",
+      "audiences": [
+        "Teacher",
+        "Student"
+      ],
+      "whenUsed": "Week 5, Week 12, Week 16",
+      "relatedDeck": "Deck 6",
+      "relatedDecks": [
+        "Deck 6",
+        "Deck 7",
+        "Deck 9"
+      ],
+      "relatedPrimaryDecks": [
+        "Deck 6",
+        "Deck 7"
+      ],
+      "relatedRevisitDecks": [
+        "Deck 9"
+      ],
+      "weeksRequired": [],
+      "weeksOptional": [
+        5,
+        12,
+        16
+      ],
+      "catalogRef": "U3 AppV",
+      "folder": "STARLAB_Unit_3 / Appendixes",
+      "path": "STARLAB_Unit_3/Appendixes/Appendix_V_Research_Journal_Rubric.docx",
+      "href": "../STARLAB_Unit_3/Appendixes/Appendix_V_Research_Journal_Rubric.docx",
+      "extension": "DOCX",
+      "sizeBytes": 39982,
+      "sizeLabel": "40 KB",
+      "description": "Assessment criteria or scoring guidance for a major STARLAB product.",
+      "tags": [
+        "journal",
+        "rubric"
+      ],
+      "purpose": "Authoritative teacher scoring instrument for research-journal evidence across Units 3-6.",
+      "teacherUse": "Use at journal checkpoints to score completeness, specificity, integrity, evidence links, and actionable next steps.",
+      "studentUse": "Review the criteria before journal checkpoints; use Student Handout 19 for the aligned self-assessment.",
+      "keywords": [
+        "assessment",
+        "criteria",
+        "documentation",
+        "evidence trail",
+        "feedback",
+        "grading",
+        "research journal",
+        "rubric",
+        "scientific integrity",
+        "unit 3"
+      ],
+      "required": false,
+      "printRecommended": false,
+      "useCategory": "assessment",
+      "printClassification": "optional-practice-reference",
+      "notes": "Authoritative Research Journal / Documentation scoring rubric. Teacher use is required when the final journal evidence is scored, but printing is optional. Student Handout 19 is the aligned self-assessment, not the teacher rubric.",
+      "requirementStatus": "Authoritative scoring tool; printing optional",
+      "usageNotes": "Optional/reference: Week 5, Week 12, Week 16. Primary deck alignment: Deck 6, Deck 7. Revisit/reference deck alignment: Deck 9",
+      "searchText": "Appendix V: Research Journal Rubric Assessment criteria or scoring guidance for a major STARLAB product. Authoritative teacher scoring instrument for research-journal evidence across Units 3-6. Use at journal checkpoints to score completeness, specificity, integrity, evidence links, and actionable next steps. Review the criteria before journal checkpoints; use Student Handout 19 for the aligned self-assessment. Unit 3 Unit 3 Unit 4 Unit 5 Unit 6 Rubric Teacher Teacher Student Week 5, Week 12, Week 16 Deck 6 Deck 6 Deck 7 Deck 9 Deck 6 Deck 7 Deck 9 U3 AppV STARLAB_Unit_3 / Appendixes journal rubric assessment criteria documentation evidence trail feedback grading research journal rubric scientific integrity unit 3 assessment Authoritative scoring tool; printing optional Optional/reference: Week 5, Week 12, Week 16. Primary deck alignment: Deck 6, Deck 7. Revisit/reference deck alignment: Deck 9"
     },
     {
       "id": "res-007",
@@ -6665,7 +6738,7 @@
       "searchText": "08 Troubleshooting Responsible Project Pivots Support iteration, problem solving, and justified pivots. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13 Deck 8 Deck 8   D8 STARLAB_Slide_Decks_All troubleshooting classroom teaching coursewide direct instruction presentation slide deck slides troubleshooting core Required when assigned Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13"
     },
     {
-      "id": "res-102",
+      "id": "res-103",
       "title": "Student Handout 01 Pilot Test Plan",
       "fileName": "Student_Handout_01_Pilot_Test_Plan.docx",
       "unit": "Unit 3",
@@ -6722,7 +6795,7 @@
       "searchText": "Student Handout 01 Pilot Test Plan Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 5 Deck 6 Deck 6 Deck 7 Deck 6 Deck 7  U3 H1 STARLAB_Unit_3 / Student Handouts  handout print student handout student work student-facing unit 3 core Required Required: Week 5. Primary deck alignment: Deck 6, Deck 7"
     },
     {
-      "id": "res-103",
+      "id": "res-104",
       "title": "Student Handout 02 Research Journal Setup",
       "fileName": "Student_Handout_02_Research_Journal_Setup.docx",
       "unit": "Unit 3",
@@ -6786,7 +6859,7 @@
       "searchText": "Student Handout 02 Research Journal Setup Student-facing activity, organizer, checklist, or planning document. Supports research journal expectations, documentation habits, or self-assessment. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 5 Deck 6 Deck 6 Deck 7 Deck 6 Deck 7  U3 H2 STARLAB_Unit_3 / Student Handouts journal documentation evidence trail handout journal print reflection research journal student handout student work student-facing unit 3 core Required Required: Week 5. Primary deck alignment: Deck 6, Deck 7"
     },
     {
-      "id": "res-104",
+      "id": "res-105",
       "title": "Student Handout 03 Daily Research Journal Entry Template",
       "fileName": "Student_Handout_03_Daily_Research_Journal_Entry_Template.docx",
       "unit": "Unit 3",
@@ -6850,7 +6923,7 @@
       "searchText": "Student Handout 03 Daily Research Journal Entry Template Student-facing activity, organizer, checklist, or planning document. Supports research journal expectations, documentation habits, or self-assessment. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 5 Deck 6 Deck 6 Deck 7 Deck 6 Deck 7  U3 H3 STARLAB_Unit_3 / Student Handouts journal documentation evidence trail handout journal print reflection research journal student handout student work student-facing unit 3 core Required Required: Week 5. Primary deck alignment: Deck 6, Deck 7"
     },
     {
-      "id": "res-105",
+      "id": "res-106",
       "title": "Student Handout 04 Pilot Test Reflection and Troubleshooting Log",
       "fileName": "Student_Handout_04_Pilot_Test_Reflection_and_Troubleshooting_Log.docx",
       "unit": "Unit 3",
@@ -6910,7 +6983,7 @@
       "searchText": "Student Handout 04 Pilot Test Reflection and Troubleshooting Log Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 6 Deck 8 Deck 8 Deck 8  U3 H4 STARLAB_Unit_3 / Student Handouts reflection troubleshooting handout print reflection student handout student work student-facing troubleshooting unit 3 core Required Required: Week 6. Primary deck alignment: Deck 8"
     },
     {
-      "id": "res-106",
+      "id": "res-107",
       "title": "Student Handout 05 Method Revision Decision Chart",
       "fileName": "Student_Handout_05_Method_Revision_Decision_Chart.docx",
       "unit": "Unit 3",
@@ -6965,7 +7038,7 @@
       "searchText": "Student Handout 05 Method Revision Decision Chart Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 6 Deck 8 Deck 8 Deck 8  U3 H5 STARLAB_Unit_3 / Student Handouts  handout print student handout student work student-facing unit 3 core Required Required: Week 6. Primary deck alignment: Deck 8"
     },
     {
-      "id": "res-107",
+      "id": "res-108",
       "title": "Student Handout 06 Revised Procedure Template",
       "fileName": "Student_Handout_06_Revised_Procedure_Template.docx",
       "unit": "Unit 3",
@@ -7020,7 +7093,7 @@
       "searchText": "Student Handout 06 Revised Procedure Template Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 7 Deck 8 Deck 8  Deck 8 U3 H6 STARLAB_Unit_3 / Student Handouts  handout print student handout student work student-facing unit 3 core Required Required: Week 7. Revisit/reference deck alignment: Deck 8"
     },
     {
-      "id": "res-108",
+      "id": "res-109",
       "title": "Student Handout 07 Data Table Audit",
       "fileName": "Student_Handout_07_Data_Table_Audit.docx",
       "unit": "Unit 3",
@@ -7082,7 +7155,7 @@
       "searchText": "Student Handout 07 Data Table Audit Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 7 Deck 8 Deck 8  Deck 8 U3 H7 STARLAB_Unit_3 / Student Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 7. Revisit/reference deck alignment: Deck 8"
     },
     {
-      "id": "res-109",
+      "id": "res-110",
       "title": "Student Handout 08 Formal Data Collection Log",
       "fileName": "Student_Handout_08_Formal_Data_Collection_Log.docx",
       "unit": "Unit 3",
@@ -7140,7 +7213,7 @@
       "searchText": "Student Handout 08 Formal Data Collection Log Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 8     U3 H8 STARLAB_Unit_3 / Student Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 8. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-110",
+      "id": "res-111",
       "title": "Student Handout 09 Weekly Progress Check-In",
       "fileName": "Student_Handout_09_Weekly_Progress_Check-In.docx",
       "unit": "Unit 3",
@@ -7201,7 +7274,7 @@
       "searchText": "Student Handout 09 Weekly Progress Check-In Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Weeks 8-9, Week 11, Weeks 13-14 Deck 8 Deck 8 Deck 9  Deck 8 Deck 9 U3 H9 STARLAB_Unit_3 / Student Handouts  handout print student handout student work student-facing unit 3 core Required Required: Weeks 8-9, Week 11, Weeks 13-14. Revisit/reference deck alignment: Deck 8, Deck 9"
     },
     {
-      "id": "res-111",
+      "id": "res-112",
       "title": "Student Handout 10 Data Quality Review",
       "fileName": "Student_Handout_10_Data_Quality_Review.docx",
       "unit": "Unit 3",
@@ -7263,7 +7336,7 @@
       "searchText": "Student Handout 10 Data Quality Review Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 9 Deck 9 Deck 9  Deck 9 U3 H10 STARLAB_Unit_3 / Student Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 9. Revisit/reference deck alignment: Deck 9"
     },
     {
-      "id": "res-112",
+      "id": "res-113",
       "title": "Student Handout 11 Troubleshooting Conference Prep",
       "fileName": "Student_Handout_11_Troubleshooting_Conference_Prep.docx",
       "unit": "Unit 3",
@@ -7321,7 +7394,7 @@
       "searchText": "Student Handout 11 Troubleshooting Conference Prep Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 10 Deck 8 Deck 8  Deck 8 U3 H11 STARLAB_Unit_3 / Student Handouts troubleshooting handout print student handout student work student-facing troubleshooting unit 3 core Required Required: Week 10. Revisit/reference deck alignment: Deck 8"
     },
     {
-      "id": "res-113",
+      "id": "res-114",
       "title": "Student Handout 12 Mentor or Expert Feedback Log",
       "fileName": "Student_Handout_12_Mentor_or_Expert_Feedback_Log.docx",
       "unit": "Unit 3",
@@ -7384,7 +7457,7 @@
       "searchText": "Student Handout 12 Mentor or Expert Feedback Log Student-facing activity, organizer, checklist, or planning document. Supports mentor, expert, or community partner communication and feedback. Use when recruiting, preparing, guiding, or documenting mentor involvement. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 10 Deck 8 Deck 8  Deck 8 U3 H12 STARLAB_Unit_3 / Student Handouts feedback mentor communication community partner expert feedback feedback handout mentor print student handout student work student-facing unit 3 support Required Required: Week 10. Revisit/reference deck alignment: Deck 8"
     },
     {
-      "id": "res-114",
+      "id": "res-115",
       "title": "Student Handout 13 Reliability and Completeness Check",
       "fileName": "Student_Handout_13_Reliability_and_Completeness_Check.docx",
       "unit": "Unit 3",
@@ -7435,7 +7508,7 @@
       "searchText": "Student Handout 13 Reliability and Completeness Check Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 11     U3 H13 STARLAB_Unit_3 / Student Handouts  handout print student handout student work student-facing unit 3 core Required Required: Week 11. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-115",
+      "id": "res-116",
       "title": "Student Handout 14 Mid-Project Progress Report",
       "fileName": "Student_Handout_14_Mid-Project_Progress_Report.docx",
       "unit": "Unit 3",
@@ -7490,7 +7563,7 @@
       "searchText": "Student Handout 14 Mid-Project Progress Report Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 12     U3 H14 STARLAB_Unit_3 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 3 core Required Required: Week 12. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-116",
+      "id": "res-117",
       "title": "Student Handout 15 Post-Progress Report Action Plan",
       "fileName": "Student_Handout_15_Post-Progress_Report_Action_Plan.docx",
       "unit": "Unit 3",
@@ -7549,7 +7622,7 @@
       "searchText": "Student Handout 15 Post-Progress Report Action Plan Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 13 Deck 8 Deck 8  Deck 8 U3 H15 STARLAB_Unit_3 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 3 core Required Required: Week 13. Revisit/reference deck alignment: Deck 8"
     },
     {
-      "id": "res-117",
+      "id": "res-118",
       "title": "Student Handout 16 Major Data Collection Completion Check",
       "fileName": "Student_Handout_16_Major_Data_Collection_Completion_Check.docx",
       "unit": "Unit 3",
@@ -7607,7 +7680,7 @@
       "searchText": "Student Handout 16 Major Data Collection Completion Check Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 14     U3 H16 STARLAB_Unit_3 / Student Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 14. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-118",
+      "id": "res-119",
       "title": "Student Handout 17 Data Audit and Organization Checklist",
       "fileName": "Student_Handout_17_Data_Audit_and_Organization_Checklist.docx",
       "unit": "Unit 3",
@@ -7669,7 +7742,7 @@
       "searchText": "Student Handout 17 Data Audit and Organization Checklist Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 15 Deck 9 Deck 9 Deck 9  U3 H17 STARLAB_Unit_3 / Student Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 15. Primary deck alignment: Deck 9"
     },
     {
-      "id": "res-119",
+      "id": "res-120",
       "title": "Student Handout 18 Unit 3 Readiness for Analysis Review",
       "fileName": "Student_Handout_18_Unit 3 Readiness for Analysis Review.docx",
       "unit": "Unit 3",
@@ -7731,7 +7804,7 @@
       "searchText": "Student Handout 18 Unit 3 Readiness for Analysis Review Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 16 Deck 9 Deck 9  Deck 9 U3 H18 STARLAB_Unit_3 / Student Handouts analysis analysis data graphing handout interpretation print statistics student handout student work student-facing unit 3 core Required Required: Week 16. Revisit/reference deck alignment: Deck 9"
     },
     {
-      "id": "res-120",
+      "id": "res-121",
       "title": "Student Handout 19 Research Journal Self-Assessment",
       "fileName": "Student_Handout_19_Research Journal Self-Assessment.docx",
       "unit": "Unit 3",
@@ -7795,7 +7868,7 @@
       "searchText": "Student Handout 19 Research Journal Self-Assessment Student-facing activity, organizer, checklist, or planning document. Supports research journal expectations, documentation habits, or self-assessment. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 3 Unit 3 Student Handout Student Student Week 16 Deck 9 Deck 9  Deck 9 U3 H19 STARLAB_Unit_3 / Student Handouts assessment journal assessment documentation evidence trail handout journal print reflection research journal student handout student work student-facing unit 3 core Required Required: Week 16. Revisit/reference deck alignment: Deck 9"
     },
     {
-      "id": "res-121",
+      "id": "res-122",
       "title": "00 Unit 3 Overview and Preparation",
       "fileName": "00_Unit_3_Overview_and_Preparation.docx",
       "unit": "Unit 3",
@@ -7832,7 +7905,7 @@
       "path": "STARLAB_Unit_3/Teaching Guides/00_Unit_3_Overview_and_Preparation.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/00_Unit_3_Overview_and_Preparation.docx",
       "extension": "DOCX",
-      "sizeBytes": 16954,
+      "sizeBytes": 17001,
       "sizeLabel": "17 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
@@ -7857,7 +7930,7 @@
       "searchText": "00 Unit 3 Overview and Preparation Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Weeks 5-16 planning Deck 6 Deck 6 Deck 7 Deck 8 Deck 9 Deck 6 Deck 7 Deck 8 Deck 9 Deck 8 Deck 9  STARLAB_Unit_3 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 3 weekly guide core Required unit planning resource Use before and during Weeks 5-16."
     },
     {
-      "id": "res-122",
+      "id": "res-123",
       "title": "Week 05 Launching Pilot Testing and Research Journals",
       "fileName": "Week_05_Launching Pilot Testing and Research Journals.docx",
       "unit": "Unit 3",
@@ -7887,7 +7960,7 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_05_Launching Pilot Testing and Research Journals.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_05_Launching%20Pilot%20Testing%20and%20Research%20Journals.docx",
       "extension": "DOCX",
-      "sizeBytes": 12805,
+      "sizeBytes": 12848,
       "sizeLabel": "13 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
@@ -7919,7 +7992,7 @@
       "searchText": "Week 05 Launching Pilot Testing and Research Journals Teacher-facing lesson guidance, pacing, and implementation notes. Supports research journal expectations, documentation habits, or self-assessment. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 5 Deck 6 Deck 6 Deck 7 Deck 6 Deck 7  U3 TG W5 STARLAB_Unit_3 / Teaching Guides journal documentation evidence trail journal lesson planning pacing reflection research journal teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 5; aligned to Deck 6, Deck 7."
     },
     {
-      "id": "res-123",
+      "id": "res-124",
       "title": "Week 06 Pilot Testing, Observation, and Troubleshooting",
       "fileName": "Week_06_Pilot Testing, Observation, and Troubleshooting.docx",
       "unit": "Unit 3",
@@ -7975,7 +8048,7 @@
       "searchText": "Week 06 Pilot Testing, Observation, and Troubleshooting Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 6 Deck 8 Deck 8 Deck 8  U3 TG W6 STARLAB_Unit_3 / Teaching Guides troubleshooting lesson planning pacing teacher guide teacher prep troubleshooting unit 3 weekly guide core Required planning resource Teacher guide for Week 6; aligned to Deck 8."
     },
     {
-      "id": "res-124",
+      "id": "res-125",
       "title": "Week 07 Revising Methods and Data Collection Tools",
       "fileName": "Week_07_Revising Methods and Data Collection Tools.docx",
       "unit": "Unit 3",
@@ -8039,7 +8112,7 @@
       "searchText": "Week 07 Revising Methods and Data Collection Tools Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 7 Deck 8 Deck 8  Deck 8 U3 TG W7 STARLAB_Unit_3 / Teaching Guides data analysis data drafting graphing interpretation lesson planning pacing report revision scientific writing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 7; aligned to Deck 8."
     },
     {
-      "id": "res-125",
+      "id": "res-126",
       "title": "Week 08 Beginning Systematic Data Collection",
       "fileName": "Week_08_Beginning Systematic Data Collection.docx",
       "unit": "Unit 3",
@@ -8095,7 +8168,7 @@
       "searchText": "Week 08 Beginning Systematic Data Collection Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 8     U3 TG W8 STARLAB_Unit_3 / Teaching Guides data analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 8; no new or revisited deck is assigned."
     },
     {
-      "id": "res-126",
+      "id": "res-127",
       "title": "Week 09 Continuing Data Collection and Monitoring Quality",
       "fileName": "Week_09_Continuing Data Collection and Monitoring Quality.docx",
       "unit": "Unit 3",
@@ -8155,7 +8228,7 @@
       "searchText": "Week 09 Continuing Data Collection and Monitoring Quality Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 9 Deck 9 Deck 9  Deck 9 U3 TG W9 STARLAB_Unit_3 / Teaching Guides data analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 9; aligned to Deck 9."
     },
     {
-      "id": "res-127",
+      "id": "res-128",
       "title": "Week 10 Troubleshooting, Iteration, and Mentor Feedback",
       "fileName": "Week_10_Troubleshooting, Iteration, and Mentor Feedback.docx",
       "unit": "Unit 3",
@@ -8218,7 +8291,7 @@
       "searchText": "Week 10 Troubleshooting, Iteration, and Mentor Feedback Teacher-facing lesson guidance, pacing, and implementation notes. Supports mentor, expert, or community partner communication and feedback. Use when recruiting, preparing, guiding, or documenting mentor involvement.  Unit 3 Unit 3 Teacher Guide Mentor/Partner Mentor/Partner Week 10 Deck 8 Deck 8  Deck 8 U3 TG W10 STARLAB_Unit_3 / Teaching Guides feedback mentor troubleshooting communication community partner expert feedback feedback lesson planning mentor pacing teacher guide teacher prep troubleshooting unit 3 weekly guide support Required planning resource Teacher guide for Week 10; aligned to Deck 8."
     },
     {
-      "id": "res-128",
+      "id": "res-129",
       "title": "Week 11 Expanding Trials and Checking Reliability",
       "fileName": "Week_11_Expanding Trials and Checking Reliability.docx",
       "unit": "Unit 3",
@@ -8267,7 +8340,7 @@
       "searchText": "Week 11 Expanding Trials and Checking Reliability Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 11     U3 TG W11 STARLAB_Unit_3 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 11; no new or revisited deck is assigned."
     },
     {
-      "id": "res-129",
+      "id": "res-130",
       "title": "Week 12 Midpoint Review and Progress Reporting",
       "fileName": "Week_12_Midpoint Review and Progress Reporting.docx",
       "unit": "Unit 3",
@@ -8291,7 +8364,7 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_12_Midpoint Review and Progress Reporting.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_12_Midpoint%20Review%20and%20Progress%20Reporting.docx",
       "extension": "DOCX",
-      "sizeBytes": 11797,
+      "sizeBytes": 11830,
       "sizeLabel": "12 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
@@ -8320,7 +8393,7 @@
       "searchText": "Week 12 Midpoint Review and Progress Reporting Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 12     U3 TG W12 STARLAB_Unit_3 / Teaching Guides  drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 12; no new or revisited deck is assigned."
     },
     {
-      "id": "res-130",
+      "id": "res-131",
       "title": "Week 13 Continued Data Collection After Feedback",
       "fileName": "Week_13_Continued Data Collection After Feedback.docx",
       "unit": "Unit 3",
@@ -8382,7 +8455,7 @@
       "searchText": "Week 13 Continued Data Collection After Feedback Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 13 Deck 8 Deck 8  Deck 8 U3 TG W13 STARLAB_Unit_3 / Teaching Guides data feedback analysis data feedback graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 13; aligned to Deck 8."
     },
     {
-      "id": "res-131",
+      "id": "res-132",
       "title": "Week 14 Completing Major Trials or Prototype Iterations",
       "fileName": "Week_14_Completing Major Trials or Prototype Iterations.docx",
       "unit": "Unit 3",
@@ -8431,7 +8504,7 @@
       "searchText": "Week 14 Completing Major Trials or Prototype Iterations Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 14     U3 TG W14 STARLAB_Unit_3 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 14; no new or revisited deck is assigned."
     },
     {
-      "id": "res-132",
+      "id": "res-133",
       "title": "Week 15 Data Organization and Completeness Audit",
       "fileName": "Week_15_Data Organization and Completeness Audit.docx",
       "unit": "Unit 3",
@@ -8491,7 +8564,7 @@
       "searchText": "Week 15 Data Organization and Completeness Audit Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 15 Deck 9 Deck 9 Deck 9  U3 TG W15 STARLAB_Unit_3 / Teaching Guides data analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 15; aligned to Deck 9."
     },
     {
-      "id": "res-133",
+      "id": "res-134",
       "title": "Week 16 Unit 3 Closure and Readiness for Analysis",
       "fileName": "Week_16_Unit 3 Closure and Readiness for Analysis.docx",
       "unit": "Unit 3",
@@ -8519,7 +8592,7 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_16_Unit 3 Closure and Readiness for Analysis.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_16_Unit%203%20Closure%20and%20Readiness%20for%20Analysis.docx",
       "extension": "DOCX",
-      "sizeBytes": 15117,
+      "sizeBytes": 15164,
       "sizeLabel": "15 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
@@ -8551,7 +8624,7 @@
       "searchText": "Week 16 Unit 3 Closure and Readiness for Analysis Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 3 Unit 3 Teacher Guide Teacher Teacher Week 16 Deck 9 Deck 9  Deck 9 U3 TG W16 STARLAB_Unit_3 / Teaching Guides analysis analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 3 weekly guide core Required planning resource Teacher guide for Week 16; aligned to Deck 9."
     },
     {
-      "id": "res-134",
+      "id": "res-135",
       "title": "Appendix A Raw Data vs Clean Data",
       "fileName": "Appendix_A_Raw_Data_vs_Clean_Data.docx",
       "unit": "Unit 4",
@@ -8613,7 +8686,7 @@
       "searchText": "Appendix A Raw Data vs Clean Data Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 AppA STARLAB_Unit_4 / Appendixes data analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-135",
+      "id": "res-136",
       "title": "Appendix B Data Cleaning Rules",
       "fileName": "Appendix_B_Data_Cleaning_Rules.docx",
       "unit": "Unit 4",
@@ -8675,7 +8748,7 @@
       "searchText": "Appendix B Data Cleaning Rules Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 AppB STARLAB_Unit_4 / Appendixes data analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-136",
+      "id": "res-137",
       "title": "Appendix C Common Data Organization Problems",
       "fileName": "Appendix_C_Common_Data_Organization_Problems.docx",
       "unit": "Unit 4",
@@ -8737,7 +8810,7 @@
       "searchText": "Appendix C Common Data Organization Problems Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 AppC STARLAB_Unit_4 / Appendixes data analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-137",
+      "id": "res-138",
       "title": "Appendix D Basic Statistics Guide",
       "fileName": "Appendix_D_Basic_Statistics_Guide.docx",
       "unit": "Unit 4",
@@ -8795,7 +8868,7 @@
       "searchText": "Appendix D Basic Statistics Guide Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 AppD STARLAB_Unit_4 / Appendixes  analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-138",
+      "id": "res-139",
       "title": "Appendix E Choosing an Analysis Method",
       "fileName": "Appendix_E_Choosing_an_Analysis_Method.docx",
       "unit": "Unit 4",
@@ -8855,7 +8928,7 @@
       "searchText": "Appendix E Choosing an Analysis Method Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 AppE STARLAB_Unit_4 / Appendixes analysis analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-139",
+      "id": "res-140",
       "title": "Appendix F Engineering and Design Analysis Guide",
       "fileName": "Appendix_F_Engineering_and_Design_Analysis_Guide.docx",
       "unit": "Unit 4",
@@ -8915,7 +8988,7 @@
       "searchText": "Appendix F Engineering and Design Analysis Guide Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 AppF STARLAB_Unit_4 / Appendixes analysis analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-140",
+      "id": "res-141",
       "title": "Appendix G Qualitative and Observational Data Guide",
       "fileName": "Appendix_G_Qualitative_and_Observational_Data_Guide.docx",
       "unit": "Unit 4",
@@ -8975,7 +9048,7 @@
       "searchText": "Appendix G Qualitative and Observational Data Guide Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 AppG STARLAB_Unit_4 / Appendixes data analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-141",
+      "id": "res-142",
       "title": "Appendix H Graph Selection Guide",
       "fileName": "Appendix_H_Graph_Selection_Guide.docx",
       "unit": "Unit 4",
@@ -9035,7 +9108,7 @@
       "searchText": "Appendix H Graph Selection Guide Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 AppH STARLAB_Unit_4 / Appendixes  analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-142",
+      "id": "res-143",
       "title": "Appendix I Graphing Standards",
       "fileName": "Appendix_I_Graphing_Standards.docx",
       "unit": "Unit 4",
@@ -9097,7 +9170,7 @@
       "searchText": "Appendix I Graphing Standards Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 AppI STARLAB_Unit_4 / Appendixes graphing analysis appendix data graphing interpretation reference statistics support unit 4 reference Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-143",
+      "id": "res-144",
       "title": "Appendix J Error Bars and Uncertainty Basics",
       "fileName": "Appendix_J_Error_Bars_and_Uncertainty_Basics.docx",
       "unit": "Unit 4",
@@ -9152,7 +9225,7 @@
       "searchText": "Appendix J Error Bars and Uncertainty Basics Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 AppJ STARLAB_Unit_4 / Appendixes  appendix reference support unit 4 reference Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-144",
+      "id": "res-145",
       "title": "Appendix K Misleading Graphs and Visual Ethics",
       "fileName": "Appendix_K_Misleading_Graphs_and_Visual_Ethics.docx",
       "unit": "Unit 4",
@@ -9219,7 +9292,7 @@
       "searchText": "Appendix K Misleading Graphs and Visual Ethics Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Unit 4 Unit 4 Appendix Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 AppK STARLAB_Unit_4 / Appendixes ethics analysis appendix data ethics graphing interpretation red flags reference risk safety screening statistics support unit 4 reference Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-145",
+      "id": "res-146",
       "title": "Appendix L Scientific Interpretation Sentence Frames",
       "fileName": "Appendix_L_Scientific_Interpretation_Sentence_Frames.docx",
       "unit": "Unit 4",
@@ -9272,7 +9345,7 @@
       "searchText": "Appendix L Scientific Interpretation Sentence Frames Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 AppL STARLAB_Unit_4 / Appendixes  appendix reference support unit 4 reference Optional Optional/reference: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-146",
+      "id": "res-147",
       "title": "Appendix M Avoiding Overclaiming",
       "fileName": "Appendix_M_Avoiding_Overclaiming.docx",
       "unit": "Unit 4",
@@ -9325,7 +9398,7 @@
       "searchText": "Appendix M Avoiding Overclaiming Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 AppM STARLAB_Unit_4 / Appendixes  appendix reference support unit 4 reference Optional Optional/reference: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-148",
+      "id": "res-149",
       "title": "Appendix O Teacher Conference Questions for Interpretation",
       "fileName": "Appendix_O_Teacher_Conference_Questions_for_Interpretation.docx",
       "unit": "Unit 4",
@@ -9378,7 +9451,7 @@
       "searchText": "Appendix O Teacher Conference Questions for Interpretation Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 4 Unit 4 Appendix Teacher Teacher Week 20 Deck 12 Deck 12  Deck 12 U4 AppO STARLAB_Unit_4 / Appendixes  appendix reference support unit 4 reference Optional / Teacher reference Optional/reference: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-149",
+      "id": "res-150",
       "title": "Appendix P Differentiation and Implementation Notes",
       "fileName": "Appendix_P_Differentiation_and_Implementation_Notes.docx",
       "unit": "Unit 4",
@@ -9434,7 +9507,7 @@
       "searchText": "Appendix P Differentiation and Implementation Notes Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Keep as an optional teacher reference; it is not a required student print material.  Unit 4 Unit 4 Appendix Teacher Teacher Week 20 Deck 12 Deck 12  Deck 12 U4 AppP STARLAB_Unit_4 / Appendixes  appendix implementation support optional support reference support teacher reference unit 4 teacher-reference Optional / Teacher reference Optional/reference: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-150",
+      "id": "res-151",
       "title": "Appendix Q Unit 4 Teacher Checklist",
       "fileName": "Appendix_Q_Unit_4_Teacher_Checklist.docx",
       "unit": "Unit 4",
@@ -9490,7 +9563,7 @@
       "searchText": "Appendix Q Unit 4 Teacher Checklist Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Keep as an optional teacher reference; it is not a required student print material.  Unit 4 Unit 4 Appendix Teacher Teacher Week 20 Deck 12 Deck 12  Deck 12 U4 AppQ STARLAB_Unit_4 / Appendixes  appendix implementation support optional support reference support teacher reference unit 4 teacher-reference Optional / Teacher reference Optional/reference: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-151",
+      "id": "res-152",
       "title": "README Index",
       "fileName": "README_Index.docx",
       "unit": "Unit 4",
@@ -9540,7 +9613,7 @@
       "searchText": "README Index STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Unit 4 Unit 4 Document Teacher Teacher Weeks 17-20 reference Deck 9 Deck 9 Deck 10 Deck 11 Deck 12    STARLAB_Unit_4  document unit 4 reference Optional folder reference Folder index for Unit 4."
     },
     {
-      "id": "res-152",
+      "id": "res-153",
       "title": "README Index",
       "fileName": "README_Index.txt",
       "unit": "Unit 4",
@@ -9590,11 +9663,12 @@
       "searchText": "README Index STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Unit 4 Unit 4 Index Teacher Teacher Weeks 17-20 reference Deck 9 Deck 9 Deck 10 Deck 11 Deck 12    STARLAB_Unit_4  index unit 4 reference Optional folder reference Folder index for Unit 4."
     },
     {
-      "id": "res-147",
-      "title": "Appendix N Unit 4 Analysis Rubric",
+      "id": "res-148",
+      "title": "Appendix N: Data Analysis and Interpretation Rubric",
       "fileName": "Appendix_N_Unit_4_Analysis_Rubric.docx",
       "unit": "Unit 4",
       "units": [
+        "Unit 3",
         "Unit 4"
       ],
       "type": "Rubric",
@@ -9621,16 +9695,16 @@
       "path": "STARLAB_Unit_4/Appendixes/Appendix_N_Unit_4_Analysis_Rubric.docx",
       "href": "../STARLAB_Unit_4/Appendixes/Appendix_N_Unit_4_Analysis_Rubric.docx",
       "extension": "DOCX",
-      "sizeBytes": 38327,
+      "sizeBytes": 38731,
       "sizeLabel": "38 KB",
       "description": "Assessment criteria or scoring guidance for a major STARLAB product.",
       "tags": [
         "analysis",
         "rubric"
       ],
-      "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
-      "teacherUse": "Use when scoring, conferencing, or giving feedback on the related student product.",
-      "studentUse": "Use to understand expectations before submitting or presenting work.",
+      "purpose": "Authoritative scoring instrument for the Data Analysis and Interpretation category, including preserved raw data and Unit 4 analysis evidence.",
+      "teacherUse": "Use to score raw-data preservation, organization, method selection, calculations, visuals, uncertainty, limitations, and interpretation across Units 3-4.",
+      "studentUse": "Use to understand the complete Data Analysis and Interpretation criteria before submitting Unit 4 evidence.",
       "keywords": [
         "analysis",
         "assessment",
@@ -9648,10 +9722,10 @@
       "printRecommended": true,
       "useCategory": "assessment",
       "printClassification": "required-when-assessed",
-      "notes": "",
+      "notes": "Authoritative course rubric for the 20% Data Analysis and Interpretation category.",
       "requirementStatus": "Required",
       "usageNotes": "Required: Week 20. Revisit/reference deck alignment: Deck 12",
-      "searchText": "Appendix N Unit 4 Analysis Rubric Assessment criteria or scoring guidance for a major STARLAB product. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use when scoring, conferencing, or giving feedback on the related student product. Use to understand expectations before submitting or presenting work. Unit 4 Unit 4 Rubric Teacher Teacher Student Week 20 Deck 12 Deck 12  Deck 12 U4 AppN STARLAB_Unit_4 / Appendixes analysis rubric analysis assessment criteria data feedback grading graphing interpretation rubric statistics unit 4 assessment Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
+      "searchText": "Appendix N: Data Analysis and Interpretation Rubric Assessment criteria or scoring guidance for a major STARLAB product. Authoritative scoring instrument for the Data Analysis and Interpretation category, including preserved raw data and Unit 4 analysis evidence. Use to score raw-data preservation, organization, method selection, calculations, visuals, uncertainty, limitations, and interpretation across Units 3-4. Use to understand the complete Data Analysis and Interpretation criteria before submitting Unit 4 evidence. Unit 4 Unit 3 Unit 4 Rubric Teacher Teacher Student Week 20 Deck 12 Deck 12  Deck 12 U4 AppN STARLAB_Unit_4 / Appendixes analysis rubric analysis assessment criteria data feedback grading graphing interpretation rubric statistics unit 4 assessment Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
       "id": "res-010",
@@ -9917,7 +9991,7 @@
       "searchText": "12 Error Uncertainty Limitations Interpret uncertainty without overclaiming. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Slide Deck Teacher Teacher Student Primary: Week 19; Revisit/reference: Week 20 Deck 12 Deck 12   D12 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 19; Revisit/reference: Week 20"
     },
     {
-      "id": "res-153",
+      "id": "res-154",
       "title": "Student Handout 01 Raw Data Inventory",
       "fileName": "Student_Handout_01_Raw_Data_Inventory.docx",
       "unit": "Unit 4",
@@ -9981,7 +10055,7 @@
       "searchText": "Student Handout 01 Raw Data Inventory Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 H1 STARLAB_Unit_4 / Student_Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-154",
+      "id": "res-155",
       "title": "Student Handout 02 Clean Data Set Builder",
       "fileName": "Student_Handout_02_Clean_Data_Set_Builder.docx",
       "unit": "Unit 4",
@@ -10045,7 +10119,7 @@
       "searchText": "Student Handout 02 Clean Data Set Builder Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 H2 STARLAB_Unit_4 / Student_Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-155",
+      "id": "res-156",
       "title": "Student Handout 03 Data Cleaning Decision Log",
       "fileName": "Student_Handout_03_Data_Cleaning_Decision_Log.docx",
       "unit": "Unit 4",
@@ -10109,7 +10183,7 @@
       "searchText": "Student Handout 03 Data Cleaning Decision Log Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 H3 STARLAB_Unit_4 / Student_Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-156",
+      "id": "res-157",
       "title": "Student Handout 04 Week 17 Data Audit",
       "fileName": "Student_Handout_04_Week_17_Data_Audit.docx",
       "unit": "Unit 4",
@@ -10173,7 +10247,7 @@
       "searchText": "Student Handout 04 Week 17 Data Audit Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 H4 STARLAB_Unit_4 / Student_Handouts data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 17. Primary deck alignment: Deck 9, Deck 10"
     },
     {
-      "id": "res-157",
+      "id": "res-158",
       "title": "Student Handout 05 Data Type and Analysis Match",
       "fileName": "Student_Handout_05_Data_Type_and_Analysis_Match.docx",
       "unit": "Unit 4",
@@ -10236,7 +10310,7 @@
       "searchText": "Student Handout 05 Data Type and Analysis Match Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 H5 STARLAB_Unit_4 / Student_Handouts analysis data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-158",
+      "id": "res-159",
       "title": "Student Handout 06 Data Analysis Plan",
       "fileName": "Student_Handout_06_Data_Analysis_Plan.docx",
       "unit": "Unit 4",
@@ -10299,7 +10373,7 @@
       "searchText": "Student Handout 06 Data Analysis Plan Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 H6 STARLAB_Unit_4 / Student_Handouts analysis data analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-159",
+      "id": "res-160",
       "title": "Student Handout 07 Calculation and Statistics Record",
       "fileName": "Student_Handout_07_Calculation_and_Statistics_Record.docx",
       "unit": "Unit 4",
@@ -10359,7 +10433,7 @@
       "searchText": "Student Handout 07 Calculation and Statistics Record Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 H7 STARLAB_Unit_4 / Student_Handouts  analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-160",
+      "id": "res-161",
       "title": "Student Handout 08 Engineering Performance Analysis",
       "fileName": "Student_Handout_08_Engineering_Performance_Analysis.docx",
       "unit": "Unit 4",
@@ -10421,7 +10495,7 @@
       "searchText": "Student Handout 08 Engineering Performance Analysis Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 18 Deck 10 Deck 10 Deck 10  U4 H8 STARLAB_Unit_4 / Student_Handouts analysis analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 18. Primary deck alignment: Deck 10"
     },
     {
-      "id": "res-161",
+      "id": "res-162",
       "title": "Student Handout 09 Graph and Visual Selection Tool",
       "fileName": "Student_Handout_09_Graph_and_Visual_Selection_Tool.docx",
       "unit": "Unit 4",
@@ -10483,7 +10557,7 @@
       "searchText": "Student Handout 09 Graph and Visual Selection Tool Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 H9 STARLAB_Unit_4 / Student_Handouts  analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-162",
+      "id": "res-163",
       "title": "Student Handout 10 Graph Construction Checklist",
       "fileName": "Student_Handout_10_Graph_Construction_Checklist.docx",
       "unit": "Unit 4",
@@ -10545,7 +10619,7 @@
       "searchText": "Student Handout 10 Graph Construction Checklist Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 H10 STARLAB_Unit_4 / Student_Handouts  analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-163",
+      "id": "res-164",
       "title": "Student Handout 11 Error Uncertainty and Limitations Review",
       "fileName": "Student_Handout_11_Error_Uncertainty_and_Limitations_Review.docx",
       "unit": "Unit 4",
@@ -10602,7 +10676,7 @@
       "searchText": "Student Handout 11 Error Uncertainty and Limitations Review Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 H11 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-164",
+      "id": "res-165",
       "title": "Student Handout 12 Figure Caption Drafting",
       "fileName": "Student_Handout_12_Figure_Caption_Drafting.docx",
       "unit": "Unit 4",
@@ -10659,7 +10733,7 @@
       "searchText": "Student Handout 12 Figure Caption Drafting Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 H12 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 19. Primary deck alignment: Deck 11, Deck 12"
     },
     {
-      "id": "res-165",
+      "id": "res-166",
       "title": "Student Handout 13 Claim Evidence Reasoning Organizer",
       "fileName": "Student_Handout_13_Claim_Evidence_Reasoning_Organizer.docx",
       "unit": "Unit 4",
@@ -10714,7 +10788,7 @@
       "searchText": "Student Handout 13 Claim Evidence Reasoning Organizer Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 H13 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-166",
+      "id": "res-167",
       "title": "Student Handout 14 Hypothesis or Design Criteria Review",
       "fileName": "Student_Handout_14_Hypothesis_or_Design_Criteria_Review.docx",
       "unit": "Unit 4",
@@ -10769,7 +10843,7 @@
       "searchText": "Student Handout 14 Hypothesis or Design Criteria Review Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 H14 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-167",
+      "id": "res-168",
       "title": "Student Handout 15 Interpretation and Conclusion Draft Notes",
       "fileName": "Student_Handout_15_Interpretation_and_Conclusion_Draft_Notes.docx",
       "unit": "Unit 4",
@@ -10824,7 +10898,7 @@
       "searchText": "Student Handout 15 Interpretation and Conclusion Draft Notes Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 H15 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-168",
+      "id": "res-169",
       "title": "Student Handout 16 Unit 4 Analysis Summary",
       "fileName": "Student_Handout_16_Unit_4_Analysis_Summary.docx",
       "unit": "Unit 4",
@@ -10886,7 +10960,7 @@
       "searchText": "Student Handout 16 Unit 4 Analysis Summary Student-facing activity, organizer, checklist, or planning document. Supports data organization, analysis, graphing, interpretation, or uncertainty. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 H16 STARLAB_Unit_4 / Student_Handouts analysis analysis data graphing handout interpretation print statistics student handout student work student-facing unit 4 core Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-169",
+      "id": "res-170",
       "title": "Student Handout 17 Unit 5 Readiness Checklist",
       "fileName": "Student_Handout_17_Unit_5_Readiness_Checklist.docx",
       "unit": "Unit 4",
@@ -10941,7 +11015,7 @@
       "searchText": "Student Handout 17 Unit 5 Readiness Checklist Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 4 Unit 4 Student Handout Student Student Week 20 Deck 12 Deck 12  Deck 12 U4 H17 STARLAB_Unit_4 / Student_Handouts  handout print student handout student work student-facing unit 4 core Required Required: Week 20. Revisit/reference deck alignment: Deck 12"
     },
     {
-      "id": "res-170",
+      "id": "res-171",
       "title": "Unit 4 Overview and Preparation",
       "fileName": "Unit_4_Overview_and_Preparation.docx",
       "unit": "Unit 4",
@@ -11002,7 +11076,7 @@
       "searchText": "Unit 4 Overview and Preparation Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 4 Unit 4 Teacher Guide Teacher Teacher Weeks 17-20 planning Deck 9 Deck 9 Deck 10 Deck 11 Deck 12 Deck 9 Deck 10 Deck 11 Deck 12 Deck 12  STARLAB_Unit_4 / Teaching_Guides  lesson planning pacing teacher guide teacher prep unit 4 weekly guide core Required unit planning resource Use before and during Weeks 17-20."
     },
     {
-      "id": "res-171",
+      "id": "res-172",
       "title": "Week 17 Data Organization Cleaning and Audit",
       "fileName": "Week_17_Data_Organization_Cleaning_and_Audit.docx",
       "unit": "Unit 4",
@@ -11064,7 +11138,7 @@
       "searchText": "Week 17 Data Organization Cleaning and Audit Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 4 Unit 4 Teacher Guide Teacher Teacher Week 17 Deck 9 Deck 9 Deck 10 Deck 9 Deck 10  U4 TG W17 STARLAB_Unit_4 / Teaching_Guides data analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 4 weekly guide core Required planning resource Teacher guide for Week 17; aligned to Deck 9, Deck 10."
     },
     {
-      "id": "res-172",
+      "id": "res-173",
       "title": "Week 18 Calculations Statistics and Analysis Methods",
       "fileName": "Week_18_Calculations_Statistics_and_Analysis_Methods.docx",
       "unit": "Unit 4",
@@ -11128,7 +11202,7 @@
       "searchText": "Week 18 Calculations Statistics and Analysis Methods Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 4 Unit 4 Teacher Guide Teacher Teacher Week 18 Deck 10 Deck 10 Deck 10  U4 TG W18 STARLAB_Unit_4 / Teaching_Guides analysis analysis data drafting graphing interpretation lesson planning pacing report revision scientific writing statistics teacher guide teacher prep unit 4 weekly guide core Required planning resource Teacher guide for Week 18; aligned to Deck 10."
     },
     {
-      "id": "res-173",
+      "id": "res-174",
       "title": "Week 19 Graphs Tables Visuals and Error Uncertainty",
       "fileName": "Week_19_Graphs_Tables_Visuals_and_Error_Uncertainty.docx",
       "unit": "Unit 4",
@@ -11188,7 +11262,7 @@
       "searchText": "Week 19 Graphs Tables Visuals and Error Uncertainty Teacher-facing lesson guidance, pacing, and implementation notes. Supports data organization, analysis, graphing, interpretation, or uncertainty. Open before teaching the associated week or unit.  Unit 4 Unit 4 Teacher Guide Teacher Teacher Week 19 Deck 11 Deck 11 Deck 12 Deck 11 Deck 12  U4 TG W19 STARLAB_Unit_4 / Teaching_Guides  analysis data graphing interpretation lesson planning pacing statistics teacher guide teacher prep unit 4 weekly guide core Required planning resource Teacher guide for Week 19; aligned to Deck 11, Deck 12."
     },
     {
-      "id": "res-174",
+      "id": "res-175",
       "title": "Week 20 Interpretation Claims and Transition to Reporting",
       "fileName": "Week_20_Interpretation_Claims_and_Transition_to_Reporting.docx",
       "unit": "Unit 4",
@@ -11245,7 +11319,7 @@
       "searchText": "Week 20 Interpretation Claims and Transition to Reporting Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 4 Unit 4 Teacher Guide Teacher Teacher Week 20 Deck 12 Deck 12  Deck 12 U4 TG W20 STARLAB_Unit_4 / Teaching_Guides  drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 4 weekly guide core Required planning resource Teacher guide for Week 20; aligned to Deck 12."
     },
     {
-      "id": "res-175",
+      "id": "res-176",
       "title": "Appendix A Scientific Report Section Guide",
       "fileName": "Appendix_A_Scientific_Report_Section_Guide.docx",
       "unit": "Unit 5",
@@ -11302,7 +11376,7 @@
       "searchText": "Appendix A Scientific Report Section Guide Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 21 Deck 13 Deck 13 Deck 13  U5 AppA STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 21. Primary deck alignment: Deck 13"
     },
     {
-      "id": "res-176",
+      "id": "res-177",
       "title": "Appendix B Introduction Sentence Frames",
       "fileName": "Appendix_B_Introduction_Sentence_Frames.docx",
       "unit": "Unit 5",
@@ -11359,7 +11433,7 @@
       "searchText": "Appendix B Introduction Sentence Frames Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 22 Deck 13 Deck 13  Deck 13 U5 AppB STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 22. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-177",
+      "id": "res-178",
       "title": "Appendix C Research Question and Hypothesis Guide",
       "fileName": "Appendix_C_Research_Question_and_Hypothesis_Guide.docx",
       "unit": "Unit 5",
@@ -11412,7 +11486,7 @@
       "searchText": "Appendix C Research Question and Hypothesis Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 22 Deck 13 Deck 13  Deck 13 U5 AppC STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Required Required: Week 22. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-178",
+      "id": "res-179",
       "title": "Appendix D Methods Checklist",
       "fileName": "Appendix_D_Methods_Checklist.docx",
       "unit": "Unit 5",
@@ -11469,7 +11543,7 @@
       "searchText": "Appendix D Methods Checklist Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 23 Deck 13 Deck 13  Deck 13 U5 AppD STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 23. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-179",
+      "id": "res-180",
       "title": "Appendix E Variables and Controls Guide",
       "fileName": "Appendix_E_Variables_and_Controls_Guide.docx",
       "unit": "Unit 5",
@@ -11522,7 +11596,7 @@
       "searchText": "Appendix E Variables and Controls Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 23 Deck 13 Deck 13  Deck 13 U5 AppE STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Required Required: Week 23. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-180",
+      "id": "res-181",
       "title": "Appendix F Graphing Standards",
       "fileName": "Appendix_F_Graphing_Standards.docx",
       "unit": "Unit 5",
@@ -11582,7 +11656,7 @@
       "searchText": "Appendix F Graphing Standards Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 24 Deck 11 Deck 11  Deck 11 U5 AppF STARLAB_Unit_5 / Appendixes graphing analysis appendix data graphing interpretation reference statistics support unit 5 reference Required Required: Week 24. Revisit/reference deck alignment: Deck 11"
     },
     {
-      "id": "res-181",
+      "id": "res-182",
       "title": "Appendix G Figure and Table Caption Guide",
       "fileName": "Appendix_G_Figure_and_Table_Caption_Guide.docx",
       "unit": "Unit 5",
@@ -11635,7 +11709,7 @@
       "searchText": "Appendix G Figure and Table Caption Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 24 Deck 11 Deck 11  Deck 11 U5 AppG STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Required Required: Week 24. Revisit/reference deck alignment: Deck 11"
     },
     {
-      "id": "res-182",
+      "id": "res-183",
       "title": "Appendix H Claim-Evidence-Reasoning Guide",
       "fileName": "Appendix_H_Claim-Evidence-Reasoning_Guide.docx",
       "unit": "Unit 5",
@@ -11688,7 +11762,7 @@
       "searchText": "Appendix H Claim-Evidence-Reasoning Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 25 Deck 14 Deck 14 Deck 14  U5 AppH STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Required Required: Week 25. Primary deck alignment: Deck 14"
     },
     {
-      "id": "res-183",
+      "id": "res-184",
       "title": "Appendix I Limitations and Error Analysis Guide",
       "fileName": "Appendix_I_Limitations_and_Error_Analysis_Guide.docx",
       "unit": "Unit 5",
@@ -11748,7 +11822,7 @@
       "searchText": "Appendix I Limitations and Error Analysis Guide Supplemental implementation, reference, or instructional support material. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 25 Deck 14 Deck 14 Deck 14  U5 AppI STARLAB_Unit_5 / Appendixes analysis analysis appendix data graphing interpretation reference statistics support unit 5 reference Required Required: Week 25. Primary deck alignment: Deck 14"
     },
     {
-      "id": "res-184",
+      "id": "res-185",
       "title": "Appendix J Full Report Checklist",
       "fileName": "Appendix_J_Full_Report_Checklist.docx",
       "unit": "Unit 5",
@@ -11805,7 +11879,7 @@
       "searchText": "Appendix J Full Report Checklist Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 26 Deck 13 Deck 13  Deck 13 U5 AppJ STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 26. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-185",
+      "id": "res-186",
       "title": "Appendix K Report Formatting Guide",
       "fileName": "Appendix_K_Report_Formatting_Guide.docx",
       "unit": "Unit 5",
@@ -11862,7 +11936,7 @@
       "searchText": "Appendix K Report Formatting Guide Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 26 Deck 13 Deck 13  Deck 13 U5 AppK STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 26. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-186",
+      "id": "res-187",
       "title": "Appendix L Scientific Report Template",
       "fileName": "Appendix_L_Scientific_Report_Template.docx",
       "unit": "Unit 5",
@@ -11922,7 +11996,7 @@
       "searchText": "Appendix L Scientific Report Template Supplemental implementation, reference, or instructional support material. Supports scientific report planning, drafting, revision, or formatting. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 21, Week 26 Deck 13 Deck 13 Deck 13 Deck 13 U5 AppL STARLAB_Unit_5 / Appendixes  appendix drafting reference report revision scientific writing support unit 5 reference Required Required: Week 21, Week 26. Primary deck alignment: Deck 13. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-187",
+      "id": "res-188",
       "title": "Appendix M Peer Review Sentence Stems",
       "fileName": "Appendix_M_Peer_Review_Sentence_Stems.docx",
       "unit": "Unit 5",
@@ -11975,7 +12049,7 @@
       "searchText": "Appendix M Peer Review Sentence Stems Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 27 Deck 15 Deck 15 Deck 15  U5 AppM STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Required Required: Week 27. Primary deck alignment: Deck 15"
     },
     {
-      "id": "res-189",
+      "id": "res-190",
       "title": "Appendix O Presentation Design Standards",
       "fileName": "Appendix_O_Presentation_Design_Standards.docx",
       "unit": "Unit 5",
@@ -12037,7 +12111,7 @@
       "searchText": "Appendix O Presentation Design Standards Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 28 Deck 16 Deck 16 Deck 17 Deck 16 Deck 17 U5 AppO STARLAB_Unit_5 / Appendixes presentation appendix evidence defense oral communication presentation q&a reference support unit 5 reference Required Required: Week 28. Primary deck alignment: Deck 16. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-190",
+      "id": "res-191",
       "title": "Appendix Q Question Bank for Practice Presentations",
       "fileName": "Appendix_Q_Question_Bank_for_Practice_Presentations.docx",
       "unit": "Unit 5",
@@ -12099,7 +12173,7 @@
       "searchText": "Appendix Q Question Bank for Practice Presentations Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Student Student Week 28 Deck 16 Deck 16 Deck 17 Deck 16 Deck 17 U5 AppQ STARLAB_Unit_5 / Appendixes presentation appendix evidence defense oral communication presentation q&a reference support unit 5 reference Optional Optional/reference: Week 28. Primary deck alignment: Deck 16. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-191",
+      "id": "res-192",
       "title": "Appendix R Teacher Implementation Notes for New STARLAB Chapters",
       "fileName": "Appendix_R_Teacher_Implementation_Notes_for_New_STARLAB_Chapters.docx",
       "unit": "Unit 5",
@@ -12152,7 +12226,7 @@
       "searchText": "Appendix R Teacher Implementation Notes for New STARLAB Chapters Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 5 Unit 5 Appendix Teacher Teacher Week 21 Deck 13 Deck 13 Deck 13  U5 AppR STARLAB_Unit_5 / Appendixes  appendix reference support unit 5 reference Optional / Teacher reference Optional/reference: Week 21. Primary deck alignment: Deck 13"
     },
     {
-      "id": "res-192",
+      "id": "res-193",
       "title": "Appendix S Optional Extension - STARLAB Research Showcase Preparation",
       "fileName": "Appendix_S_Optional_Extension_-_STARLAB_Research_Showcase_Preparation.docx",
       "unit": "Unit 5",
@@ -12214,7 +12288,7 @@
       "searchText": "Appendix S Optional Extension - STARLAB Research Showcase Preparation Supplemental implementation, reference, or instructional support material. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 5 Unit 5 Appendix Teacher Teacher Week 21 Deck 13 Deck 13 Deck 13  U5 AppS STARLAB_Unit_5 / Appendixes showcase appendix audience extension final presentation optional public presentation reference showcase support unit 5 visitor optional Optional / Teacher reference Optional/reference: Week 21. Primary deck alignment: Deck 13"
     },
     {
-      "id": "res-193",
+      "id": "res-195",
       "title": "README Unit 5 Index",
       "fileName": "README_Unit_5_Index.docx",
       "unit": "Unit 5",
@@ -12245,7 +12319,7 @@
       "path": "STARLAB_Unit_5/README_Unit_5_Index.docx",
       "href": "../STARLAB_Unit_5/README_Unit_5_Index.docx",
       "extension": "DOCX",
-      "sizeBytes": 37491,
+      "sizeBytes": 37505,
       "sizeLabel": "37 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -12266,7 +12340,7 @@
       "searchText": "README Unit 5 Index STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Unit 5 Unit 5 Document Teacher Teacher Weeks 21-28 reference Deck 11 Deck 11 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17    STARLAB_Unit_5  document unit 5 reference Optional folder reference Folder index for Unit 5."
     },
     {
-      "id": "res-194",
+      "id": "res-196",
       "title": "README Unit 5 Index",
       "fileName": "README_Unit_5_Index.txt",
       "unit": "Unit 5",
@@ -12297,7 +12371,7 @@
       "path": "STARLAB_Unit_5/README_Unit_5_Index.txt",
       "href": "../STARLAB_Unit_5/README_Unit_5_Index.txt",
       "extension": "TXT",
-      "sizeBytes": 1904,
+      "sizeBytes": 1950,
       "sizeLabel": "2 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -12318,7 +12392,7 @@
       "searchText": "README Unit 5 Index STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Unit 5 Unit 5 Index Teacher Teacher Weeks 21-28 reference Deck 11 Deck 11 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17    STARLAB_Unit_5  index unit 5 reference Optional folder reference Folder index for Unit 5."
     },
     {
-      "id": "res-188",
+      "id": "res-189",
       "title": "Appendix N Scientific Report Rubric",
       "fileName": "Appendix_N_Scientific_Report_Rubric.docx",
       "unit": "Unit 5",
@@ -12378,6 +12452,68 @@
       "requirementStatus": "Required",
       "usageNotes": "Required: Week 27. Primary deck alignment: Deck 15",
       "searchText": "Appendix N Scientific Report Rubric Assessment criteria or scoring guidance for a major STARLAB product. Supports scientific report planning, drafting, revision, or formatting. Use when scoring, conferencing, or giving feedback on the related student product. Use to understand expectations before submitting or presenting work. Unit 5 Unit 5 Rubric Teacher Teacher Student Week 27 Deck 15 Deck 15 Deck 15  U5 AppN STARLAB_Unit_5 / Appendixes rubric assessment criteria drafting feedback grading report revision rubric scientific writing unit 5 assessment Required Required: Week 27. Primary deck alignment: Deck 15"
+    },
+    {
+      "id": "res-194",
+      "title": "Appendix T: Peer Review Quality Rubric",
+      "fileName": "Appendix_T_Peer_Review_Quality_Rubric.docx",
+      "unit": "Unit 5",
+      "units": [
+        "Unit 5"
+      ],
+      "type": "Rubric",
+      "audience": "Teacher",
+      "audiences": [
+        "Teacher",
+        "Student"
+      ],
+      "whenUsed": "Week 27",
+      "relatedDeck": "Deck 15",
+      "relatedDecks": [
+        "Deck 15"
+      ],
+      "relatedPrimaryDecks": [
+        "Deck 15"
+      ],
+      "relatedRevisitDecks": [],
+      "weeksRequired": [],
+      "weeksOptional": [
+        27
+      ],
+      "catalogRef": "U5 AppT",
+      "folder": "STARLAB_Unit_5 / Appendixes",
+      "path": "STARLAB_Unit_5/Appendixes/Appendix_T_Peer_Review_Quality_Rubric.docx",
+      "href": "../STARLAB_Unit_5/Appendixes/Appendix_T_Peer_Review_Quality_Rubric.docx",
+      "extension": "DOCX",
+      "sizeBytes": 40089,
+      "sizeLabel": "40 KB",
+      "description": "Assessment criteria or scoring guidance for a major STARLAB product.",
+      "tags": [
+        "rubric"
+      ],
+      "purpose": "Standalone scoring instrument for the quality of scientific peer feedback produced during Unit 5.",
+      "teacherUse": "Use with Student Handout 8 when the local Unit 5 plan assigns a score for peer-review quality.",
+      "studentUse": "Use to provide specific, scientifically grounded, actionable, complete, and professional feedback.",
+      "keywords": [
+        "assessment",
+        "criteria",
+        "feedback",
+        "final research report",
+        "grading",
+        "peer review",
+        "revision",
+        "rubric",
+        "scientific writing",
+        "unit 5"
+      ],
+      "required": false,
+      "printRecommended": false,
+      "useCategory": "assessment",
+      "printClassification": "optional-practice-reference",
+      "notes": "Use only when peer-review quality is locally scored. Student Handout 8 is the evidence source; Appendix M supplies optional sentence stems.",
+      "requirementStatus": "Optional local scoring tool; printing optional",
+      "usageNotes": "Optional/reference: Week 27. Primary deck alignment: Deck 15",
+      "searchText": "Appendix T: Peer Review Quality Rubric Assessment criteria or scoring guidance for a major STARLAB product. Standalone scoring instrument for the quality of scientific peer feedback produced during Unit 5. Use with Student Handout 8 when the local Unit 5 plan assigns a score for peer-review quality. Use to provide specific, scientifically grounded, actionable, complete, and professional feedback. Unit 5 Unit 5 Rubric Teacher Teacher Student Week 27 Deck 15 Deck 15 Deck 15  U5 AppT STARLAB_Unit_5 / Appendixes rubric assessment criteria feedback final research report grading peer review revision rubric scientific writing unit 5 assessment Optional local scoring tool; printing optional Optional/reference: Week 27. Primary deck alignment: Deck 15"
     },
     {
       "id": "res-014",
@@ -12692,7 +12828,7 @@
       "searchText": "17 Oral Presentation Skills for Research Develop formal scientific speaking skills. Supports presentation design, practice, Q&A preparation, or evidence defense. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 29; Revisit/reference: Week 28, Week 30 Deck 17 Deck 17   D17 STARLAB_Slide_Decks_All presentation classroom teaching coursewide direct instruction evidence defense oral communication presentation q&a slide deck slides core Required when assigned Primary: Week 29; Revisit/reference: Week 28, Week 30"
     },
     {
-      "id": "res-195",
+      "id": "res-197",
       "title": "Handout 01 Scientific Report Dissection",
       "fileName": "Handout_01_Scientific_Report_Dissection.docx",
       "unit": "Unit 5",
@@ -12751,7 +12887,7 @@
       "searchText": "Handout 01 Scientific Report Dissection Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 21 Deck 13 Deck 13 Deck 13  U5 H1 STARLAB_Unit_5 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 5 core Required Required: Week 21. Primary deck alignment: Deck 13"
     },
     {
-      "id": "res-196",
+      "id": "res-198",
       "title": "Handout 02 My Research Report Planning Map",
       "fileName": "Handout_02_My_Research_Report_Planning_Map.docx",
       "unit": "Unit 5",
@@ -12810,7 +12946,7 @@
       "searchText": "Handout 02 My Research Report Planning Map Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 21 Deck 13 Deck 13 Deck 13  U5 H2 STARLAB_Unit_5 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 5 core Required Required: Week 21. Primary deck alignment: Deck 13"
     },
     {
-      "id": "res-197",
+      "id": "res-199",
       "title": "Handout 03 Introduction Builder",
       "fileName": "Handout_03_Introduction_Builder.docx",
       "unit": "Unit 5",
@@ -12869,7 +13005,7 @@
       "searchText": "Handout 03 Introduction Builder Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 22 Deck 13 Deck 13  Deck 13 U5 H3 STARLAB_Unit_5 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 5 core Required Required: Week 22. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-198",
+      "id": "res-200",
       "title": "Handout 04 Methods Section Builder",
       "fileName": "Handout_04_Methods_Section_Builder.docx",
       "unit": "Unit 5",
@@ -12928,7 +13064,7 @@
       "searchText": "Handout 04 Methods Section Builder Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 23 Deck 13 Deck 13  Deck 13 U5 H4 STARLAB_Unit_5 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 5 core Required Required: Week 23. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-199",
+      "id": "res-201",
       "title": "Handout 05 Results and Visuals Builder",
       "fileName": "Handout_05_Results_and_Visuals_Builder.docx",
       "unit": "Unit 5",
@@ -12983,7 +13119,7 @@
       "searchText": "Handout 05 Results and Visuals Builder Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 24 Deck 11 Deck 11  Deck 11 U5 H5 STARLAB_Unit_5 / Student Handouts  handout print student handout student work student-facing unit 5 core Required Required: Week 24. Revisit/reference deck alignment: Deck 11"
     },
     {
-      "id": "res-200",
+      "id": "res-202",
       "title": "Handout 06 Discussion Builder",
       "fileName": "Handout_06_Discussion_Builder.docx",
       "unit": "Unit 5",
@@ -13042,7 +13178,7 @@
       "searchText": "Handout 06 Discussion Builder Student-facing activity, organizer, checklist, or planning document. Supports scientific report planning, drafting, revision, or formatting. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 25 Deck 14 Deck 14 Deck 14  U5 H6 STARLAB_Unit_5 / Student Handouts  drafting handout print report revision scientific writing student handout student work student-facing unit 5 core Required Required: Week 25. Primary deck alignment: Deck 14"
     },
     {
-      "id": "res-201",
+      "id": "res-203",
       "title": "Handout 07 Conclusion and Full Draft Assembly",
       "fileName": "Handout_07_Conclusion_and_Full_Draft_Assembly.docx",
       "unit": "Unit 5",
@@ -13097,7 +13233,7 @@
       "searchText": "Handout 07 Conclusion and Full Draft Assembly Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 26 Deck 13 Deck 13  Deck 13 U5 H7 STARLAB_Unit_5 / Student Handouts  handout print student handout student work student-facing unit 5 core Required Required: Week 26. Revisit/reference deck alignment: Deck 13"
     },
     {
-      "id": "res-202",
+      "id": "res-204",
       "title": "Handout 08 Peer Review Protocol",
       "fileName": "Handout_08_Peer_Review_Protocol.docx",
       "unit": "Unit 5",
@@ -13152,7 +13288,7 @@
       "searchText": "Handout 08 Peer Review Protocol Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 27 Deck 15 Deck 15 Deck 15  U5 H8 STARLAB_Unit_5 / Student Handouts  handout print student handout student work student-facing unit 5 core Required Required: Week 27. Primary deck alignment: Deck 15"
     },
     {
-      "id": "res-203",
+      "id": "res-205",
       "title": "Handout 09 Revision Plan",
       "fileName": "Handout_09_Revision_Plan.docx",
       "unit": "Unit 5",
@@ -13207,7 +13343,7 @@
       "searchText": "Handout 09 Revision Plan Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 27 Deck 15 Deck 15 Deck 15  U5 H9 STARLAB_Unit_5 / Student Handouts  handout print student handout student work student-facing unit 5 core Required Required: Week 27. Primary deck alignment: Deck 15"
     },
     {
-      "id": "res-204",
+      "id": "res-206",
       "title": "Handout 10 Presentation Planning Guide",
       "fileName": "Handout_10_Presentation_Planning_Guide.docx",
       "unit": "Unit 5",
@@ -13271,7 +13407,7 @@
       "searchText": "Handout 10 Presentation Planning Guide Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 28 Deck 16 Deck 16 Deck 17 Deck 16 Deck 17 U5 H10 STARLAB_Unit_5 / Student Handouts presentation evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 5 core Required Required: Week 28. Primary deck alignment: Deck 16. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-205",
+      "id": "res-207",
       "title": "Handout 11 Practice Presentation Feedback Form",
       "fileName": "Handout_11_Practice_Presentation_Feedback_Form.docx",
       "unit": "Unit 5",
@@ -13337,7 +13473,7 @@
       "searchText": "Handout 11 Practice Presentation Feedback Form Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 5 Unit 5 Student Handout Student Student Week 28 Deck 16 Deck 16 Deck 17 Deck 16 Deck 17 U5 H11 STARLAB_Unit_5 / Student Handouts feedback presentation evidence defense feedback handout oral communication presentation print q&a student handout student work student-facing unit 5 core Required Required: Week 28. Primary deck alignment: Deck 16. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-206",
+      "id": "res-208",
       "title": "Unit 5 Overview and Preparation",
       "fileName": "Unit_5_Overview_and_Preparation.docx",
       "unit": "Unit 5",
@@ -13377,7 +13513,7 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Unit_5_Overview_and_Preparation.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Unit_5_Overview_and_Preparation.docx",
       "extension": "DOCX",
-      "sizeBytes": 40044,
+      "sizeBytes": 40074,
       "sizeLabel": "40 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
@@ -13402,7 +13538,7 @@
       "searchText": "Unit 5 Overview and Preparation Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Weeks 21-28 planning Deck 11 Deck 11 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17 Deck 13 Deck 14 Deck 15 Deck 16 Deck 11 Deck 13 Deck 17  STARLAB_Unit_5 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 5 weekly guide core Required unit planning resource Use before and during Weeks 21-28."
     },
     {
-      "id": "res-207",
+      "id": "res-209",
       "title": "Week 21 Understanding Scientific Reports",
       "fileName": "Week_21_Understanding_Scientific_Reports.docx",
       "unit": "Unit 5",
@@ -13459,7 +13595,7 @@
       "searchText": "Week 21 Understanding Scientific Reports Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 21 Deck 13 Deck 13 Deck 13  U5 TG W21 STARLAB_Unit_5 / Teaching Guides  drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 5 weekly guide core Required planning resource Teacher guide for Week 21; aligned to Deck 13."
     },
     {
-      "id": "res-208",
+      "id": "res-210",
       "title": "Week 22 Writing the Introduction",
       "fileName": "Week_22_Writing_the_Introduction.docx",
       "unit": "Unit 5",
@@ -13519,7 +13655,7 @@
       "searchText": "Week 22 Writing the Introduction Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 22 Deck 13 Deck 13  Deck 13 U5 TG W22 STARLAB_Unit_5 / Teaching Guides writing drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 5 weekly guide writing core Required planning resource Teacher guide for Week 22; aligned to Deck 13."
     },
     {
-      "id": "res-209",
+      "id": "res-211",
       "title": "Week 23 Writing the Methods Section",
       "fileName": "Week_23_Writing_the_Methods_Section.docx",
       "unit": "Unit 5",
@@ -13579,7 +13715,7 @@
       "searchText": "Week 23 Writing the Methods Section Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 23 Deck 13 Deck 13  Deck 13 U5 TG W23 STARLAB_Unit_5 / Teaching Guides writing drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 5 weekly guide writing core Required planning resource Teacher guide for Week 23; aligned to Deck 13."
     },
     {
-      "id": "res-210",
+      "id": "res-212",
       "title": "Week 24 Results Figures Tables and Captions",
       "fileName": "Week_24_Results_Figures_Tables_and_Captions.docx",
       "unit": "Unit 5",
@@ -13632,7 +13768,7 @@
       "searchText": "Week 24 Results Figures Tables and Captions Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 24 Deck 11 Deck 11  Deck 11 U5 TG W24 STARLAB_Unit_5 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 5 weekly guide core Required planning resource Teacher guide for Week 24; aligned to Deck 11."
     },
     {
-      "id": "res-211",
+      "id": "res-213",
       "title": "Week 25 Writing the Discussion",
       "fileName": "Week_25_Writing_the_Discussion.docx",
       "unit": "Unit 5",
@@ -13692,7 +13828,7 @@
       "searchText": "Week 25 Writing the Discussion Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 25 Deck 14 Deck 14 Deck 14  U5 TG W25 STARLAB_Unit_5 / Teaching Guides writing drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 5 weekly guide writing core Required planning resource Teacher guide for Week 25; aligned to Deck 14."
     },
     {
-      "id": "res-212",
+      "id": "res-214",
       "title": "Week 26 Conclusion and Full Report Assembly",
       "fileName": "Week_26_Conclusion_and_Full_Report_Assembly.docx",
       "unit": "Unit 5",
@@ -13749,7 +13885,7 @@
       "searchText": "Week 26 Conclusion and Full Report Assembly Teacher-facing lesson guidance, pacing, and implementation notes. Supports scientific report planning, drafting, revision, or formatting. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 26 Deck 13 Deck 13  Deck 13 U5 TG W26 STARLAB_Unit_5 / Teaching Guides  drafting lesson planning pacing report revision scientific writing teacher guide teacher prep unit 5 weekly guide core Required planning resource Teacher guide for Week 26; aligned to Deck 13."
     },
     {
-      "id": "res-213",
+      "id": "res-215",
       "title": "Week 27 Peer Review and Revision",
       "fileName": "Week_27_Peer_Review_and_Revision.docx",
       "unit": "Unit 5",
@@ -13777,7 +13913,7 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_27_Peer_Review_and_Revision.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_27_Peer_Review_and_Revision.docx",
       "extension": "DOCX",
-      "sizeBytes": 38317,
+      "sizeBytes": 38347,
       "sizeLabel": "38 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
@@ -13802,7 +13938,7 @@
       "searchText": "Week 27 Peer Review and Revision Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 27 Deck 15 Deck 15 Deck 15  U5 TG W27 STARLAB_Unit_5 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 5 weekly guide core Required planning resource Teacher guide for Week 27; aligned to Deck 15."
     },
     {
-      "id": "res-214",
+      "id": "res-216",
       "title": "Week 28 Presentation Design and Practice",
       "fileName": "Week_28_Presentation_Design_and_Practice.docx",
       "unit": "Unit 5",
@@ -13864,7 +14000,7 @@
       "searchText": "Week 28 Presentation Design and Practice Teacher-facing lesson guidance, pacing, and implementation notes. Supports presentation design, practice, Q&A preparation, or evidence defense. Open before teaching the associated week or unit.  Unit 5 Unit 5 Teacher Guide Teacher Teacher Week 28 Deck 16 Deck 16 Deck 17 Deck 16 Deck 17 U5 TG W28 STARLAB_Unit_5 / Teaching Guides presentation evidence defense lesson planning oral communication pacing presentation q&a teacher guide teacher prep unit 5 weekly guide core Required planning resource Teacher guide for Week 28; aligned to Deck 16, Deck 17."
     },
     {
-      "id": "res-215",
+      "id": "res-217",
       "title": "Appendix A Presentation Structure Guide",
       "fileName": "Appendix_A_Presentation_Structure_Guide.docx",
       "unit": "Unit 6",
@@ -13923,7 +14059,7 @@
       "searchText": "Appendix A Presentation Structure Guide Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 AppA STARLAB_Unit_6 / Appendixes presentation appendix evidence defense oral communication presentation q&a reference support unit 6 reference Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-216",
+      "id": "res-218",
       "title": "Appendix B Common Final Presentation Problems",
       "fileName": "Appendix_B_Common_Final_Presentation_Problems.docx",
       "unit": "Unit 6",
@@ -13982,7 +14118,7 @@
       "searchText": "Appendix B Common Final Presentation Problems Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 AppB STARLAB_Unit_6 / Appendixes presentation appendix evidence defense oral communication presentation q&a reference support unit 6 reference Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-217",
+      "id": "res-219",
       "title": "Appendix C Speaking Notes Guide",
       "fileName": "Appendix_C_Speaking_Notes_Guide.docx",
       "unit": "Unit 6",
@@ -14035,7 +14171,7 @@
       "searchText": "Appendix C Speaking Notes Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 AppC STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-218",
+      "id": "res-220",
       "title": "Appendix D Feedback Norms for Practice Presentations",
       "fileName": "Appendix_D_Feedback_Norms_for_Practice_Presentations.docx",
       "unit": "Unit 6",
@@ -14096,7 +14232,7 @@
       "searchText": "Appendix D Feedback Norms for Practice Presentations Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 30 Deck 17 Deck 17  Deck 17 U6 AppD STARLAB_Unit_6 / Appendixes feedback presentation appendix evidence defense feedback oral communication presentation q&a reference support unit 6 reference Required Required: Week 30. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-219",
+      "id": "res-221",
       "title": "Appendix E Audience Types and Communication Strategies",
       "fileName": "Appendix_E_Audience_Types_and_Communication_Strategies.docx",
       "unit": "Unit 6",
@@ -14157,7 +14293,7 @@
       "searchText": "Appendix E Audience Types and Communication Strategies Supplemental implementation, reference, or instructional support material. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Appendix Student Student Week 30 Deck 17 Deck 17  Deck 17 U6 AppE STARLAB_Unit_6 / Appendixes communication appendix audience communication final presentation public presentation reference showcase support unit 6 visitor showcase Required Required: Week 30. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-220",
+      "id": "res-222",
       "title": "Appendix F Question Bank for Research Presentations",
       "fileName": "Appendix_F_Question_Bank_for_Research_Presentations.docx",
       "unit": "Unit 6",
@@ -14216,7 +14352,7 @@
       "searchText": "Appendix F Question Bank for Research Presentations Supplemental implementation, reference, or instructional support material. Supports presentation design, practice, Q&A preparation, or evidence defense. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 AppF STARLAB_Unit_6 / Appendixes presentation appendix evidence defense oral communication presentation q&a reference support unit 6 reference Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-221",
+      "id": "res-223",
       "title": "Appendix G Answering Difficult Questions",
       "fileName": "Appendix_G_Answering_Difficult_Questions.docx",
       "unit": "Unit 6",
@@ -14269,7 +14405,7 @@
       "searchText": "Appendix G Answering Difficult Questions Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 AppG STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-222",
+      "id": "res-224",
       "title": "Appendix H Scientific Humility and Professional Language",
       "fileName": "Appendix_H_Scientific_Humility_and_Professional_Language.docx",
       "unit": "Unit 6",
@@ -14322,7 +14458,7 @@
       "searchText": "Appendix H Scientific Humility and Professional Language Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 AppH STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-223",
+      "id": "res-225",
       "title": "Appendix I Showcase Planning Guide for Teachers",
       "fileName": "Appendix_I_Showcase_Planning_Guide_for_Teachers.docx",
       "unit": "Unit 6",
@@ -14384,7 +14520,7 @@
       "searchText": "Appendix I Showcase Planning Guide for Teachers Supplemental implementation, reference, or instructional support material. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Appendix Teacher Teacher Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 AppI STARLAB_Unit_6 / Appendixes showcase appendix audience final presentation public presentation reference showcase support unit 6 visitor showcase Optional / Teacher reference Optional/reference: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-224",
+      "id": "res-226",
       "title": "Appendix J Sample Showcase Schedule",
       "fileName": "Appendix_J_Sample_Showcase_Schedule.docx",
       "unit": "Unit 6",
@@ -14446,7 +14582,7 @@
       "searchText": "Appendix J Sample Showcase Schedule Supplemental implementation, reference, or instructional support material. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Appendix Teacher Teacher Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 AppJ STARLAB_Unit_6 / Appendixes showcase appendix audience final presentation public presentation reference showcase support unit 6 visitor showcase Optional / Teacher reference Optional/reference: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-225",
+      "id": "res-227",
       "title": "Appendix K Visitor Question Guide",
       "fileName": "Appendix_K_Visitor_Question_Guide.docx",
       "unit": "Unit 6",
@@ -14506,7 +14642,7 @@
       "searchText": "Appendix K Visitor Question Guide Supplemental implementation, reference, or instructional support material. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Appendix Visitor Visitor Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 AppK STARLAB_Unit_6 / Appendixes  appendix audience final presentation public presentation reference showcase support unit 6 visitor showcase Optional Optional/reference: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-228",
+      "id": "res-230",
       "title": "Appendix N Teacher Event Facilitation Checklist",
       "fileName": "Appendix_N_Teacher_Event_Facilitation_Checklist.docx",
       "unit": "Unit 6",
@@ -14555,7 +14691,7 @@
       "searchText": "Appendix N Teacher Event Facilitation Checklist Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Teacher Teacher Week 33     U6 AppN STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Optional / Teacher reference Optional/reference: Week 33. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-229",
+      "id": "res-231",
       "title": "Appendix O Portfolio Artifact Guide",
       "fileName": "Appendix_O_Portfolio_Artifact_Guide.docx",
       "unit": "Unit 6",
@@ -14611,7 +14747,7 @@
       "searchText": "Appendix O Portfolio Artifact Guide Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 AppO STARLAB_Unit_6 / Appendixes portfolio appendix portfolio reference support unit 6 reference Optional Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-230",
+      "id": "res-232",
       "title": "Appendix P Competition Fair and Publication Pathways",
       "fileName": "Appendix_P_Competition_Fair_and_Publication_Pathways.docx",
       "unit": "Unit 6",
@@ -14664,7 +14800,7 @@
       "searchText": "Appendix P Competition Fair and Publication Pathways Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 AppP STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Optional Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-231",
+      "id": "res-233",
       "title": "Appendix Q Student Legacy Options",
       "fileName": "Appendix_Q_Student_Legacy_Options.docx",
       "unit": "Unit 6",
@@ -14717,7 +14853,7 @@
       "searchText": "Appendix Q Student Legacy Options Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 6 Unit 6 Appendix Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 AppQ STARLAB_Unit_6 / Appendixes  appendix reference support unit 6 reference Optional Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-232",
+      "id": "res-234",
       "title": "Appendix R Unit 6 Teacher Checklist",
       "fileName": "Appendix_R_Unit_6_Teacher_Checklist.docx",
       "unit": "Unit 6",
@@ -14773,7 +14909,7 @@
       "searchText": "Appendix R Unit 6 Teacher Checklist Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Keep as an optional teacher reference; it is not a required student print material.  Unit 6 Unit 6 Appendix Teacher Teacher Week 34 Deck 19 Deck 19 Deck 19  U6 AppR STARLAB_Unit_6 / Appendixes  appendix implementation support optional support reference support teacher reference unit 6 teacher-reference Optional / Teacher reference Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-233",
+      "id": "res-235",
       "title": "Appendix S Differentiation and Implementation Notes",
       "fileName": "Appendix_S_Differentiation_and_Implementation_Notes.docx",
       "unit": "Unit 6",
@@ -14829,7 +14965,7 @@
       "searchText": "Appendix S Differentiation and Implementation Notes Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Keep as an optional teacher reference; it is not a required student print material.  Unit 6 Unit 6 Appendix Teacher Teacher Week 34 Deck 19 Deck 19 Deck 19  U6 AppS STARLAB_Unit_6 / Appendixes  appendix implementation support optional support reference support teacher reference unit 6 teacher-reference Optional / Teacher reference Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-234",
+      "id": "res-236",
       "title": "README Index",
       "fileName": "README_Index.docx",
       "unit": "Unit 6",
@@ -14879,7 +15015,7 @@
       "searchText": "README Index STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Use when this resource supports the current unit, week, or workflow.  Unit 6 Unit 6 Document Teacher Teacher Weeks 29-34 reference Deck 16 Deck 16 Deck 17 Deck 18 Deck 19    STARLAB_Unit_6  document unit 6 reference Optional folder reference Folder index for Unit 6."
     },
     {
-      "id": "res-226",
+      "id": "res-228",
       "title": "Appendix L Oral Presentation Rubric",
       "fileName": "Appendix_L_Oral_Presentation_Rubric.docx",
       "unit": "Unit 6",
@@ -14957,7 +15093,7 @@
       "searchText": "Appendix L Oral Presentation Rubric Assessment criteria or scoring guidance for a major STARLAB product. Supports presentation design, practice, Q&A preparation, or evidence defense. Use when scoring, conferencing, or giving feedback on the related student product. Use to understand expectations before submitting or presenting work. Unit 6 Unit 5 Unit 6 Rubric Teacher Teacher Student Weeks 28-33 Deck 16 Deck 16 Deck 17 Deck 18 Deck 16 Deck 17 Deck 18 Deck 16 Deck 17 Deck 18 U6 AppL STARLAB_Unit_6 / Appendixes presentation rubric assessment criteria evidence defense feedback grading oral communication presentation q&a rubric unit 6 assessment Required Week 33; optional/reference Weeks 28-32 Required: Week 33. Optional/reference: Weeks 28-32. Primary deck alignment: Deck 16, Deck 17, Deck 18. Revisit/reference deck alignment: Deck 16, Deck 17, Deck 18"
     },
     {
-      "id": "res-227",
+      "id": "res-229",
       "title": "Appendix M Showcase Rubric",
       "fileName": "Appendix_M_Showcase_Rubric.docx",
       "unit": "Unit 6",
@@ -15136,7 +15272,7 @@
       "searchText": "19 Final Reflection and Research Portfolio Close the course with portfolio and reflection. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 6 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 34 Deck 19 Deck 19   D19 STARLAB_Slide_Decks_All portfolio reflection classroom teaching coursewide direct instruction portfolio presentation reflection slide deck slides core Required when assigned Primary: Week 34"
     },
     {
-      "id": "res-235",
+      "id": "res-237",
       "title": "Student Handout 01 Final Presentation Readiness Check",
       "fileName": "Student_Handout_01_Final_Presentation_Readiness_Check.docx",
       "unit": "Unit 6",
@@ -15197,7 +15333,7 @@
       "searchText": "Student Handout 01 Final Presentation Readiness Check Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 H1 STARLAB_Unit_6 / Student Handouts presentation evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-236",
+      "id": "res-238",
       "title": "Student Handout 02 Research Story Refinement",
       "fileName": "Student_Handout_02_Research_Story_Refinement.docx",
       "unit": "Unit 6",
@@ -15252,7 +15388,7 @@
       "searchText": "Student Handout 02 Research Story Refinement Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 H2 STARLAB_Unit_6 / Student Handouts  handout print student handout student work student-facing unit 6 core Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-237",
+      "id": "res-239",
       "title": "Student Handout 03 Three Length Presentation Practice",
       "fileName": "Student_Handout_03_Three_Length_Presentation_Practice.docx",
       "unit": "Unit 6",
@@ -15313,7 +15449,7 @@
       "searchText": "Student Handout 03 Three Length Presentation Practice Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 29 Deck 17 Deck 17 Deck 17  U6 H3 STARLAB_Unit_6 / Student Handouts presentation evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 29. Primary deck alignment: Deck 17"
     },
     {
-      "id": "res-238",
+      "id": "res-240",
       "title": "Student Handout 04 Practice Presentation Feedback Form",
       "fileName": "Student_Handout_04_Practice_Presentation_Feedback_Form.docx",
       "unit": "Unit 6",
@@ -15376,7 +15512,7 @@
       "searchText": "Student Handout 04 Practice Presentation Feedback Form Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 30 Deck 17 Deck 17  Deck 17 U6 H4 STARLAB_Unit_6 / Student Handouts feedback presentation evidence defense feedback handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 30. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-239",
+      "id": "res-241",
       "title": "Student Handout 05 Audience Adaptation Planner",
       "fileName": "Student_Handout_05_Audience_Adaptation_Planner.docx",
       "unit": "Unit 6",
@@ -15436,7 +15572,7 @@
       "searchText": "Student Handout 05 Audience Adaptation Planner Student-facing activity, organizer, checklist, or planning document. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 30 Deck 17 Deck 17  Deck 17 U6 H5 STARLAB_Unit_6 / Student Handouts  audience final presentation handout print public presentation showcase student handout student work student-facing unit 6 visitor showcase Required Required: Week 30. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-240",
+      "id": "res-242",
       "title": "Student Handout 06 Presentation Revision Log",
       "fileName": "Student_Handout_06_Presentation_Revision_Log.docx",
       "unit": "Unit 6",
@@ -15497,7 +15633,7 @@
       "searchText": "Student Handout 06 Presentation Revision Log Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 30 Deck 17 Deck 17  Deck 17 U6 H6 STARLAB_Unit_6 / Student Handouts presentation evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 30. Revisit/reference deck alignment: Deck 17"
     },
     {
-      "id": "res-241",
+      "id": "res-243",
       "title": "Student Handout 07 Q&A Preparation Guide",
       "fileName": "Student_Handout_07_QandA_Preparation_Guide.docx",
       "unit": "Unit 6",
@@ -15556,7 +15692,7 @@
       "searchText": "Student Handout 07 Q&A Preparation Guide Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 H7 STARLAB_Unit_6 / Student Handouts  evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-242",
+      "id": "res-244",
       "title": "Student Handout 08 Mock Q&A Reflection",
       "fileName": "Student_Handout_08_Mock_QandA_Reflection.docx",
       "unit": "Unit 6",
@@ -15618,7 +15754,7 @@
       "searchText": "Student Handout 08 Mock Q&A Reflection Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 H8 STARLAB_Unit_6 / Student Handouts reflection evidence defense handout oral communication presentation print q&a reflection student handout student work student-facing unit 6 core Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-243",
+      "id": "res-245",
       "title": "Student Handout 09 Evidence Defense Organizer",
       "fileName": "Student_Handout_09_Evidence_Defense_Organizer.docx",
       "unit": "Unit 6",
@@ -15673,7 +15809,7 @@
       "searchText": "Student Handout 09 Evidence Defense Organizer Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 31 Deck 18 Deck 18 Deck 18  U6 H9 STARLAB_Unit_6 / Student Handouts  handout print student handout student work student-facing unit 6 core Required Required: Week 31. Primary deck alignment: Deck 18"
     },
     {
-      "id": "res-244",
+      "id": "res-246",
       "title": "Student Handout 10 Final Showcase Readiness Checklist",
       "fileName": "Student_Handout_10_Final_Showcase_Readiness_Checklist.docx",
       "unit": "Unit 6",
@@ -15737,7 +15873,7 @@
       "searchText": "Student Handout 10 Final Showcase Readiness Checklist Student-facing activity, organizer, checklist, or planning document. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 H10 STARLAB_Unit_6 / Student Handouts showcase audience final presentation handout print public presentation showcase student handout student work student-facing unit 6 visitor showcase Required Required: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-245",
+      "id": "res-247",
       "title": "Student Handout 11 Presentation Product Final Check",
       "fileName": "Student_Handout_11_Presentation_Product_Final_Check.docx",
       "unit": "Unit 6",
@@ -15800,7 +15936,7 @@
       "searchText": "Student Handout 11 Presentation Product Final Check Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 H11 STARLAB_Unit_6 / Student Handouts presentation evidence defense handout oral communication presentation print q&a student handout student work student-facing unit 6 core Required Required: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-246",
+      "id": "res-248",
       "title": "Student Handout 12 Professionalism and Showcase Expectations",
       "fileName": "Student_Handout_12_Professionalism_and_Showcase_Expectations.docx",
       "unit": "Unit 6",
@@ -15864,7 +16000,7 @@
       "searchText": "Student Handout 12 Professionalism and Showcase Expectations Student-facing activity, organizer, checklist, or planning document. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 H12 STARLAB_Unit_6 / Student Handouts showcase audience final presentation handout print public presentation showcase student handout student work student-facing unit 6 visitor showcase Required Required: Week 32. Revisit/reference deck alignment: Deck 16, Deck 18"
     },
     {
-      "id": "res-247",
+      "id": "res-249",
       "title": "Student Handout 13 Audience Feedback Collection Form",
       "fileName": "Student_Handout_13_Audience_Feedback_Collection_Form.docx",
       "unit": "Unit 6",
@@ -15923,7 +16059,7 @@
       "searchText": "Student Handout 13 Audience Feedback Collection Form Student-facing activity, organizer, checklist, or planning document. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 33     U6 H13 STARLAB_Unit_6 / Student Handouts feedback audience feedback final presentation handout print public presentation showcase student handout student work student-facing unit 6 visitor showcase Required Required: Week 33. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-248",
+      "id": "res-250",
       "title": "Student Handout 14 Post Presentation Reflection",
       "fileName": "Student_Handout_14_Post_Presentation_Reflection.docx",
       "unit": "Unit 6",
@@ -15982,7 +16118,7 @@
       "searchText": "Student Handout 14 Post Presentation Reflection Student-facing activity, organizer, checklist, or planning document. Supports presentation design, practice, Q&A preparation, or evidence defense. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 33     U6 H14 STARLAB_Unit_6 / Student Handouts presentation reflection evidence defense handout oral communication presentation print q&a reflection student handout student work student-facing unit 6 core Required Required: Week 33. No new or revisited deck is assigned in the mapped week."
     },
     {
-      "id": "res-249",
+      "id": "res-251",
       "title": "Student Handout 15 Final Research Process Reflection",
       "fileName": "Student_Handout_15_Final_Research_Process_Reflection.docx",
       "unit": "Unit 6",
@@ -16040,7 +16176,7 @@
       "searchText": "Student Handout 15 Final Research Process Reflection Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 H15 STARLAB_Unit_6 / Student Handouts reflection handout print reflection student handout student work student-facing unit 6 core Required Required: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-250",
+      "id": "res-252",
       "title": "Student Handout 16 STARLAB Portfolio Checklist",
       "fileName": "Student_Handout_16_STARLAB_Portfolio_Checklist.docx",
       "unit": "Unit 6",
@@ -16098,7 +16234,7 @@
       "searchText": "Student Handout 16 STARLAB Portfolio Checklist Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 H16 STARLAB_Unit_6 / Student Handouts portfolio handout portfolio print student handout student work student-facing unit 6 core Required Required: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-251",
+      "id": "res-253",
       "title": "Student Handout 17 Optional Next Step Plan",
       "fileName": "Student_Handout_17_Optional_Next_Step_Plan.docx",
       "unit": "Unit 6",
@@ -16155,7 +16291,7 @@
       "searchText": "Student Handout 17 Optional Next Step Plan Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 H17 STARLAB_Unit_6 / Student Handouts  extension handout optional print student handout student work student-facing unit 6 optional Optional Optional/reference: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-252",
+      "id": "res-254",
       "title": "Student Handout 18 Course Feedback and Legacy Reflection",
       "fileName": "Student_Handout_18_Course_Feedback_and_Legacy_Reflection.docx",
       "unit": "Unit 6",
@@ -16215,7 +16351,7 @@
       "searchText": "Student Handout 18 Course Feedback and Legacy Reflection Student-facing activity, organizer, checklist, or planning document. Student-facing organizer, activity, checklist, or planning document for the research process. Print or share with students when the related unit or week is taught. Complete during class, conferences, planning, data collection, analysis, reporting, or reflection. Unit 6 Unit 6 Student Handout Student Student Week 34 Deck 19 Deck 19 Deck 19  U6 H18 STARLAB_Unit_6 / Student Handouts feedback reflection feedback handout print reflection student handout student work student-facing unit 6 core Required Required: Week 34. Primary deck alignment: Deck 19"
     },
     {
-      "id": "res-253",
+      "id": "res-255",
       "title": "00 Unit 6 Overview and Preparation",
       "fileName": "00_Unit_6_Overview_and_Preparation.docx",
       "unit": "Unit 6",
@@ -16277,7 +16413,7 @@
       "searchText": "00 Unit 6 Overview and Preparation Teacher-facing lesson guidance, pacing, and implementation notes. Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions. Open before teaching the associated week or unit.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Weeks 29-34 planning Deck 16 Deck 16 Deck 17 Deck 18 Deck 19 Deck 17 Deck 18 Deck 19 Deck 16 Deck 17 Deck 18  STARLAB_Unit_6 / Teaching Guides  lesson planning pacing teacher guide teacher prep unit 6 weekly guide core Required unit planning resource Use before and during Weeks 29-34."
     },
     {
-      "id": "res-254",
+      "id": "res-256",
       "title": "Week 29 Final Presentation Readiness and Message Refinement",
       "fileName": "Week_29_Final_Presentation_Readiness_and_Message_Refinement.docx",
       "unit": "Unit 6",
@@ -16336,7 +16472,7 @@
       "searchText": "Week 29 Final Presentation Readiness and Message Refinement Teacher-facing lesson guidance, pacing, and implementation notes. Supports presentation design, practice, Q&A preparation, or evidence defense. Open before teaching the associated week or unit.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Week 29 Deck 17 Deck 17 Deck 17  U6 TG W29 STARLAB_Unit_6 / Teaching Guides presentation evidence defense lesson planning oral communication pacing presentation q&a teacher guide teacher prep unit 6 weekly guide core Required planning resource Teacher guide for Week 29; aligned to Deck 17."
     },
     {
-      "id": "res-255",
+      "id": "res-257",
       "title": "Week 30 Practice Presentations and Audience Adaptation",
       "fileName": "Week_30_Practice_Presentations_and_Audience_Adaptation.docx",
       "unit": "Unit 6",
@@ -16400,7 +16536,7 @@
       "searchText": "Week 30 Practice Presentations and Audience Adaptation Teacher-facing lesson guidance, pacing, and implementation notes. Supports presentation design, practice, Q&A preparation, or evidence defense. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Week 30 Deck 17 Deck 17  Deck 17 U6 TG W30 STARLAB_Unit_6 / Teaching Guides presentation audience evidence defense final presentation lesson planning oral communication pacing presentation public presentation q&a showcase teacher guide teacher prep unit 6 visitor weekly guide showcase Required planning resource Teacher guide for Week 30; aligned to Deck 17."
     },
     {
-      "id": "res-256",
+      "id": "res-258",
       "title": "Week 31 Q&A Preparation and Defense of Evidence",
       "fileName": "Week_31_QandA_Preparation_and_Defense_of_Evidence.docx",
       "unit": "Unit 6",
@@ -16457,7 +16593,7 @@
       "searchText": "Week 31 Q&A Preparation and Defense of Evidence Teacher-facing lesson guidance, pacing, and implementation notes. Supports presentation design, practice, Q&A preparation, or evidence defense. Open before teaching the associated week or unit.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Week 31 Deck 18 Deck 18 Deck 18  U6 TG W31 STARLAB_Unit_6 / Teaching Guides  evidence defense lesson planning oral communication pacing presentation q&a teacher guide teacher prep unit 6 weekly guide core Required planning resource Teacher guide for Week 31; aligned to Deck 18."
     },
     {
-      "id": "res-257",
+      "id": "res-259",
       "title": "Week 32 Final Showcase Preparation",
       "fileName": "Week_32_Final_Showcase_Preparation.docx",
       "unit": "Unit 6",
@@ -16519,7 +16655,7 @@
       "searchText": "Week 32 Final Showcase Preparation Teacher-facing lesson guidance, pacing, and implementation notes. Supports final showcase planning, visitor experience, student readiness, or audience feedback. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Week 32 Deck 16 Deck 16 Deck 18  Deck 16 Deck 18 U6 TG W32 STARLAB_Unit_6 / Teaching Guides showcase audience final presentation lesson planning pacing public presentation showcase teacher guide teacher prep unit 6 visitor weekly guide showcase Required planning resource Teacher guide for Week 32; aligned to Deck 16, Deck 18."
     },
     {
-      "id": "res-258",
+      "id": "res-260",
       "title": "Week 33 Public Presentation Showcase or Final Defense",
       "fileName": "Week_33_Public_Presentation_Showcase_or_Final_Defense.docx",
       "unit": "Unit 6",
@@ -16580,7 +16716,7 @@
       "searchText": "Week 33 Public Presentation Showcase or Final Defense Teacher-facing lesson guidance, pacing, and implementation notes. Supports presentation design, practice, Q&A preparation, or evidence defense. Use while preparing students, logistics, visitors, feedback, and final presentation expectations.  Unit 6 Unit 6 Teacher Guide Teacher Teacher Week 33     U6 TG W33 STARLAB_Unit_6 / Teaching Guides presentation showcase audience evidence defense final presentation lesson planning oral communication pacing presentation public presentation q&a showcase teacher guide teacher prep unit 6 visitor weekly guide showcase Required planning resource Teacher guide for Week 33; no new or revisited deck is assigned."
     },
     {
-      "id": "res-259",
+      "id": "res-261",
       "title": "Week 34 Final Reflection Portfolio and Next Steps",
       "fileName": "Week_34_Final_Reflection_Portfolio_and_Next_Steps.docx",
       "unit": "Unit 6",
@@ -16639,7 +16775,7 @@
     }
   ],
   "summary": {
-    "totalResources": 281,
+    "totalResources": 283,
     "byType": {
       "Brand Asset": 1,
       "Communication Template": 2,
@@ -16654,15 +16790,15 @@
       "Teacher Guide": 40,
       "Index": 4,
       "PDF": 6,
-      "Rubric": 5
+      "Rubric": 7
     },
     "byUnit": {
       "Coursewide": 23,
       "Unit 1": 26,
       "Unit 2": 38,
-      "Unit 3": 57,
+      "Unit 3": 58,
       "Unit 4": 45,
-      "Unit 5": 45,
+      "Unit 5": 46,
       "Unit 6": 47
     }
   }
