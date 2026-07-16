@@ -1107,6 +1107,8 @@ const curatedAliases = {
   "course proposal": "courseProposal",
   "project approval system": "approvalSystem",
   "starlab project approval system": "approvalSystem",
+  "district approval escalation addendum": "districtApprovalAddendum",
+  "district approval and escalation addendum": "districtApprovalAddendum",
   "project approval tracker": "approvalTracker",
   "safety scope guide": "safetyScopeGuide",
   "ai use policy": "aiPolicy",
@@ -1164,6 +1166,7 @@ function curatedResource(keyOrAlias) {
 
 function approvalResourceLinks() {
   const links = [
+    ["District Approval and Escalation Addendum - Complete Before Unit 2", "districtApprovalAddendum"],
     ["Project Approval System", "approvalSystem"],
     ["Project Approval Tracker - Official Approval Record", "approvalTracker"],
     ["Safety Scope Guide by Project Type", "safetyScopeGuide"],
@@ -1181,9 +1184,14 @@ function approvalResourceLinks() {
 }
 
 function approvalPage() {
+  const districtAddendum = curatedResource("districtApprovalAddendum");
+  const districtAddendumLink = districtAddendum
+    ? previewLink(districtAddendum, "Open the District Approval and Escalation Addendum")
+    : "District Approval and Escalation Addendum";
   page("Project Approval & Safety", "A decision-support workflow for approving, pausing, redirecting, or escalating student research projects before testing begins.", `
     <section class="section">
-      <div class="mode-banner"><strong>The Project Approval Tracker is the official approval record.</strong><span>The Safety Scope Guide and screening resources help teachers complete that tracker. Any additional consent, media, fieldwork, equipment, chemical, drone, human-participant, or data-privacy forms are supplied by the district.</span></div>
+      <div class="mode-banner"><strong>The Project Approval Tracker is the official approval record.</strong><span>The Safety Scope Guide and screening resources help teachers complete that tracker. Formal consent, media, fieldwork, equipment, chemical, drone, human-participant, data-privacy, or other required forms are supplied by the district.</span></div>
+      <div class="mode-banner"><strong>Local setup is required before Unit 2.</strong><span>Name the district reviewers, interim written-evidence rules, secure storage location, review turnaround, and stop-work contact before project approval conferences. ${districtAddendumLink}.</span></div>
     </section>
     <section class="section split">
       <div class="card">
@@ -1602,8 +1610,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-10").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-10").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-11").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-11").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;

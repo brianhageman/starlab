@@ -7,10 +7,14 @@ Included files:
 2. STARLAB_Project_Approval_Tracker.xlsx
    Companion tracker workbook with tabs for approval status, safety/ethics flags, conference notes, mentor review, and dropdown lists.
 
+3. STARLAB_District_Approval_and_Escalation_Addendum.docx
+   District setup template for naming local reviewers, escalation triggers, acceptable interim written evidence, record storage, review turnaround, stop-work contacts, reapproval rules, and local forms as they become available.
+
 Recommended use:
 - Place this package in the teacher portal under Project Approval and Safety Center.
 - Use the DOCX as the teacher guide.
 - Copy the XLSX once per class section or school year.
+- Complete the District Approval and Escalation Addendum before Unit 2 and review it annually or whenever district policy changes.
 - Update approval status immediately after conferences, method changes, safety/ethics reviews, and mentor feedback.
 
 Status authority:

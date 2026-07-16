@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T19:28:05.781Z",
+  "generatedAt": "2026-07-16T19:59:34.231Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -306,7 +306,7 @@
       "searchText": "08 STARLAB Mentor and Community Partner Toolkit STARLAB curriculum or implementation resource. Supports mentor, expert, or community partner communication and feedback. Use when recruiting, preparing, guiding, or documenting mentor involvement.  Coursewide Unit 2 Unit 3 Unit 5 Unit 6 Communication Template Teacher Teacher Mentor/Partner Weeks 3-16; Weeks 28-33 as needed Deck 5 Deck 5 Deck 7 Deck 8 Deck 17 Deck 18    Teacher Resources (Start Here) communication mentor communication communication template community partner coursewide expert feedback mentor support Optional / As needed Weeks 3-16; Weeks 28-33 as needed"
     },
     {
-      "id": "res-274",
+      "id": "res-275",
       "title": "11 STARLAB Parent Guardian Communication Pack",
       "fileName": "11_STARLAB_Parent_Guardian_Communication_Pack.docx",
       "unit": "Coursewide",
@@ -364,7 +364,7 @@
       "searchText": "11 STARLAB Parent Guardian Communication Pack STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Customize and distribute to families through district-approved teacher communication channels.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Communication Template Teacher Teacher Parent/Guardian Before Week 1; teacher distribution as needed Deck 1 Deck 1    Teacher Resources (Start Here) communication communication communication template coursewide family communication teacher distribution teacher-distribution Optional / Teacher distributed Before Week 1; teacher distribution as needed"
     },
     {
-      "id": "res-279",
+      "id": "res-280",
       "title": "16 STARLAB Safety Scope Guide by Project Type",
       "fileName": "16_STARLAB_Safety_Scope_Guide_by_Project_Type.docx",
       "unit": "Coursewide",
@@ -428,6 +428,65 @@
     },
     {
       "id": "res-269",
+      "title": "STARLAB District Approval and Escalation Addendum",
+      "fileName": "STARLAB_District_Approval_and_Escalation_Addendum.docx",
+      "unit": "Coursewide",
+      "units": [
+        "Unit 2",
+        "Unit 3"
+      ],
+      "type": "Safety/Approval Resource",
+      "audience": "Administrator",
+      "audiences": [
+        "Administrator",
+        "Teacher"
+      ],
+      "whenUsed": "Before Unit 2; review annually and whenever district policy changes",
+      "relatedDeck": "Deck 3",
+      "relatedDecks": [
+        "Deck 3",
+        "Deck 5",
+        "Deck 6"
+      ],
+      "relatedPrimaryDecks": [],
+      "relatedRevisitDecks": [],
+      "weeksRequired": [],
+      "weeksOptional": [],
+      "catalogRef": "",
+      "folder": "Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package",
+      "path": "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/STARLAB_District_Approval_and_Escalation_Addendum.docx",
+      "href": "../Teacher%20Resources%20(Start%20Here)/09_STARLAB_Project_Approval_System_Package/STARLAB_District_Approval_and_Escalation_Addendum.docx",
+      "extension": "DOCX",
+      "sizeBytes": 46058,
+      "sizeLabel": "45 KB",
+      "description": "Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available.",
+      "tags": [
+        "approval",
+        "safety"
+      ],
+      "purpose": "Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available.",
+      "teacherUse": "Complete with administrators before Unit 2, then use it to route projects that need safety, ethics, mentor, privacy, fieldwork, equipment, or external review.",
+      "studentUse": "",
+      "keywords": [
+        "district approval",
+        "escalation",
+        "interim procedure",
+        "written evidence",
+        "local forms",
+        "stop work",
+        "reapproval"
+      ],
+      "required": true,
+      "printRecommended": false,
+      "useCategory": "",
+      "printClassification": "",
+      "notes": "",
+      "requirementStatus": "Required local setup before Unit 2",
+      "usageNotes": "Before Unit 2; review annually and whenever district policy changes",
+      "searchText": "STARLAB District Approval and Escalation Addendum Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available. Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available. Complete with administrators before Unit 2, then use it to route projects that need safety, ethics, mentor, privacy, fieldwork, equipment, or external review.  Coursewide Unit 2 Unit 3 Safety/Approval Resource Administrator Administrator Teacher Before Unit 2; review annually and whenever district policy changes Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval safety district approval escalation interim procedure written evidence local forms stop work reapproval  Required local setup before Unit 2 Before Unit 2; review annually and whenever district policy changes"
+    },
+    {
+      "id": "res-270",
       "title": "STARLAB Project Approval System",
       "fileName": "STARLAB_Project_Approval_System.docx",
       "unit": "Coursewide",
@@ -490,7 +549,7 @@
       "searchText": "STARLAB Project Approval System STARLAB curriculum or implementation resource. Supports safety, risk, ethics, and feasibility decisions for student research. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Coursewide Unit 2 Unit 3 Safety/Approval Resource Teacher Teacher Weeks 3-5; before any testing or data collection Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval safety approval before testing coursewide ethics project approval red flags risk safety safety/approval resource screening status teacher review reference Required approval reference Weeks 3-5; before any testing or data collection"
     },
     {
-      "id": "res-280",
+      "id": "res-281",
       "title": "17 STARLAB Showcase Planning Kit",
       "fileName": "17_STARLAB_Showcase_Planning_Kit.docx",
       "unit": "Coursewide",
@@ -827,7 +886,7 @@
       "searchText": "07 STARLAB Grading and Assessment Guide STARLAB curriculum or implementation resource. Teacher guide for grading, assessment categories, evidence collection, and feedback in STARLAB. Use when planning grading practices, explaining assessment, or scoring major products.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Before course launch; major assessment checkpoints      Teacher Resources (Start Here) assessment assessment coursewide evidence feedback grading rubrics scoring teacher resource assessment Required grading reference Before course launch; major assessment checkpoints"
     },
     {
-      "id": "res-275",
+      "id": "res-276",
       "title": "12 STARLAB Student Onboarding Packet",
       "fileName": "12_STARLAB_Student_Onboarding_Packet.docx",
       "unit": "Coursewide",
@@ -880,7 +939,7 @@
       "searchText": "12 STARLAB Student Onboarding Packet STARLAB curriculum or implementation resource. Student onboarding packet for introducing expectations, routines, and the STARLAB research process. Use at the beginning of the course or when orienting new students. Use to understand course expectations and early research routines. Coursewide Unit 1 Teacher Resource Student Student Teacher Week 1 Deck 1 Deck 1 Deck 3    Teacher Resources (Start Here)  coursewide first week onboarding student launch student orientation teacher resource reference Required at course launch Week 1"
     },
     {
-      "id": "res-276",
+      "id": "res-277",
       "title": "13 STARLAB Sample Student Project Library",
       "fileName": "13_STARLAB_Sample_Student_Project_Library.docx",
       "unit": "Coursewide",
@@ -936,7 +995,7 @@
       "searchText": "13 STARLAB Sample Student Project Library STARLAB curriculum or implementation resource. Reference library of sample student projects for inspiration, calibration, and feasibility conversations. Use to help students understand possible project directions and appropriate scope.  Coursewide Unit 1 Unit 2 Teacher Resource Teacher Teacher Student Weeks 1-4 as needed Deck 1 Deck 1 Deck 2 Deck 4 Deck 5    Teacher Resources (Start Here)  coursewide examples model projects sample projects student project ideas teacher resource reference Optional / As needed Weeks 1-4 as needed"
     },
     {
-      "id": "res-277",
+      "id": "res-278",
       "title": "14 STARLAB Common Problems and What To Do Guide",
       "fileName": "14_STARLAB_Common_Problems_and_What_To_Do_Guide.docx",
       "unit": "Coursewide",
@@ -997,7 +1056,7 @@
       "searchText": "14 STARLAB Common Problems and What To Do Guide STARLAB curriculum or implementation resource. Troubleshooting guide for common STARLAB implementation and student research problems. Use when students get stuck, projects drift, or classroom systems need adjustment.  Coursewide Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Teacher Teacher Weeks 5-34 as needed Deck 6 Deck 6 Deck 8 Deck 9 Deck 10 Deck 12 Deck 13 Deck 17 Deck 18    Teacher Resources (Start Here)  common problems coursewide intervention teacher resource teacher support troubleshooting support Optional / As needed Weeks 5-34 as needed"
     },
     {
-      "id": "res-278",
+      "id": "res-279",
       "title": "15 STARLAB AI Use Policy",
       "fileName": "15_STARLAB_AI_Use_Policy.docx",
       "unit": "Coursewide",
@@ -1055,7 +1114,7 @@
       "searchText": "15 STARLAB AI Use Policy STARLAB curriculum or implementation resource. Policy guidance for appropriate AI use in STARLAB research, writing, and documentation. Use when setting expectations for student AI use and academic integrity.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Teacher Resource Student Student Teacher Week 1; ongoing reference Deck 3 Deck 3    Teacher Resources (Start Here)  academic integrity ai ai policy coursewide guidelines student use teacher resource policy Required course policy Week 1; ongoing reference"
     },
     {
-      "id": "res-271",
+      "id": "res-272",
       "title": "How to Plan and Schedule Your STARLAB Project",
       "fileName": "How to Plan and Schedule Your STARLAB Project.docx",
       "unit": "Coursewide",
@@ -1139,7 +1198,7 @@
       "path": "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/README.txt",
       "href": "../Teacher%20Resources%20(Start%20Here)/09_STARLAB_Project_Approval_System_Package/README.txt",
       "extension": "TXT",
-      "sizeBytes": 1493,
+      "sizeBytes": 1911,
       "sizeLabel": "2 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
@@ -1167,7 +1226,7 @@
       "searchText": "README STARLAB curriculum or implementation resource. Supports the project approval workflow before students begin pilot testing or data collection. Use before approving, pausing, redirecting, or escalating a student project.  Coursewide Unit 2 Unit 3 Teacher Resource Teacher Teacher Weeks 3-5; approval system setup Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval approval before testing coursewide project approval status teacher resource teacher review reference Optional package reference Use when setting up the project approval package."
     },
     {
-      "id": "res-272",
+      "id": "res-273",
       "title": "STARLAB Research Weekly Progress Tracker Student Guide",
       "fileName": "STARLAB Research Weekly Progress Tracker Student Guide.docx",
       "unit": "Coursewide",
@@ -1381,7 +1440,7 @@
       "searchText": "06 STARLAB Master Print Packet Index Spreadsheet tracker or planning tool for course implementation. Spreadsheet or tracker for monitoring course implementation, approvals, progress, printing, or planning. Use as an operational dashboard or record-keeping tool.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Tracker Teacher Teacher Before each assigned week or deck Deck 1 Deck 1 Deck 2 Deck 3 Deck 4 Deck 5 Deck 6 Deck 7 Deck 8 Deck 9 Deck 10 Deck 11 Deck 12 Deck 13 Deck 14 Deck 15 Deck 16 Deck 17 Deck 18 Deck 19    Teacher Resources (Start Here) tracker copies coursewide management materials prep monitoring operations packet print spreadsheet tracker operations Required planning tool Before each assigned week or deck"
     },
     {
-      "id": "res-270",
+      "id": "res-271",
       "title": "STARLAB Project Approval Tracker",
       "fileName": "STARLAB_Project_Approval_Tracker.xlsx",
       "unit": "Coursewide",
@@ -1443,7 +1502,7 @@
       "searchText": "STARLAB Project Approval Tracker Spreadsheet tracker or planning tool for course implementation. Supports the project approval workflow before students begin pilot testing or data collection. Use before approving, pausing, redirecting, or escalating a student project.  Coursewide Unit 2 Unit 3 Tracker Teacher Teacher Weeks 3-5; update before any testing or data collection Deck 3 Deck 3 Deck 5 Deck 6    Teacher Resources (Start Here) / 09_STARLAB_Project_Approval_System_Package approval tracker approval before testing coursewide management monitoring operations project approval spreadsheet status teacher review tracker operations Required official record Weeks 3-5; update before any testing or data collection"
     },
     {
-      "id": "res-273",
+      "id": "res-274",
       "title": "STARLAB Weekly Progress Tracker (1)",
       "fileName": "STARLAB_Weekly_Progress_Tracker (1).xlsx",
       "unit": "Coursewide",
@@ -16580,11 +16639,11 @@
     }
   ],
   "summary": {
-    "totalResources": 280,
+    "totalResources": 281,
     "byType": {
       "Brand Asset": 1,
       "Communication Template": 2,
-      "Safety/Approval Resource": 2,
+      "Safety/Approval Resource": 3,
       "Showcase Resource": 1,
       "Teacher Resource": 12,
       "Tracker": 4,
@@ -16598,7 +16657,7 @@
       "Rubric": 5
     },
     "byUnit": {
-      "Coursewide": 22,
+      "Coursewide": 23,
       "Unit 1": 26,
       "Unit 2": 38,
       "Unit 3": 57,

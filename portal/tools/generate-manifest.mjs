@@ -148,6 +148,16 @@ const curatedUsage = {
     units: ["Unit 2", "Unit 3"],
     requirementStatus: "Required approval reference"
   },
+  districtApprovalAddendum: {
+    whenUsed: "Before Unit 2; review annually and whenever district policy changes",
+    relatedDecks: [3, 5, 6],
+    units: ["Unit 2", "Unit 3"],
+    audiences: ["Administrator", "Teacher"],
+    requirementStatus: "Required local setup before Unit 2",
+    purpose: "Records district-specific project reviewers, escalation pathways, interim written-evidence rules, secure record storage, stop-work contacts, and local forms as they become available.",
+    teacherUse: "Complete with administrators before Unit 2, then use it to route projects that need safety, ethics, mentor, privacy, fieldwork, equipment, or external review.",
+    keywords: ["district approval", "escalation", "interim procedure", "written evidence", "local forms", "stop work", "reapproval"]
+  },
   approvalTracker: {
     whenUsed: "Weeks 3-5; update before any testing or data collection",
     relatedDecks: [3, 5, 6],
@@ -636,6 +646,12 @@ for (const resource of resources) {
     resource.requirementStatus = curated.requirementStatus;
     resource.required = curated.requirementStatus.startsWith("Required");
     resource.usageNotes = curated.whenUsed;
+    if (curated.purpose) {
+      resource.purpose = curated.purpose;
+      resource.description = curated.purpose;
+    }
+    if (curated.teacherUse) resource.teacherUse = curated.teacherUse;
+    if (curated.keywords) resource.keywords = unique([...resource.keywords, ...curated.keywords]);
   }
 
   if (resource.path === "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/README.txt") {

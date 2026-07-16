@@ -34,6 +34,9 @@ if (manifest.resources.some((item) => item.path.includes("STARLAB_Arduino_Smart_
 if (manifest.resources.some((item) => item.path.includes("STARLAB_Unit_5/Appendixes/Appendix_P_Oral_Presentation_Rubric"))) {
   fail("Retired Unit 5 Appendix P is still present in the manifest.");
 }
+if (!courseMap.curatedResources.districtApprovalAddendum) {
+  fail("District Approval and Escalation Addendum is missing from curated resources.");
+}
 if (courseMap.weeks.length !== 34) fail(`Expected 34 mapped weeks; found ${courseMap.weeks.length}.`);
 
 const expectedShowcaseMilestoneWeeks = [21, 24, 27, 30, 31, 32, 33, 34];
@@ -227,6 +230,33 @@ for (const [week, expected] of Object.entries(highVisibilityMappings)) {
 
 for (const [key, resourcePath] of Object.entries(courseMap.curatedResources)) {
   if (!byPath.has(resourcePath)) fail(`Curated resource ${key} points to a missing manifest path: ${resourcePath}`);
+}
+const districtApprovalAddendum = byPath.get(courseMap.curatedResources.districtApprovalAddendum);
+if (districtApprovalAddendum) {
+  if (districtApprovalAddendum.whenUsed !== "Before Unit 2; review annually and whenever district policy changes") {
+    fail("District Approval and Escalation Addendum has incorrect whenUsed metadata.");
+  }
+  if (districtApprovalAddendum.requirementStatus !== "Required local setup before Unit 2" || !districtApprovalAddendum.required) {
+    fail("District Approval and Escalation Addendum must be required local setup before Unit 2.");
+  }
+  if (JSON.stringify(districtApprovalAddendum.audiences) !== JSON.stringify(["Administrator", "Teacher"])) {
+    fail("District Approval and Escalation Addendum has incorrect audience metadata.");
+  }
+  if (JSON.stringify(districtApprovalAddendum.relatedDecks) !== JSON.stringify(["Deck 3", "Deck 5", "Deck 6"])) {
+    fail("District Approval and Escalation Addendum has incorrect deck relationships.");
+  }
+  if (!districtApprovalAddendum.purpose.includes("district-specific project reviewers")) {
+    fail("District Approval and Escalation Addendum is missing its high-use purpose metadata.");
+  }
+  if (!districtApprovalAddendum.keywords.includes("interim procedure") || !districtApprovalAddendum.keywords.includes("reapproval")) {
+    fail("District Approval and Escalation Addendum is missing searchable implementation keywords.");
+  }
+}
+if (!appSource.includes("Local setup is required before Unit 2.")) {
+  fail("Project Approval & Safety page is missing the local setup notice.");
+}
+if (!appSource.includes("Open the District Approval and Escalation Addendum")) {
+  fail("Project Approval & Safety page is missing the addendum link.");
 }
 for (const [key, resourcePath] of Object.entries(courseMap.authority)) {
   if (key.endsWith("Rubric")) {
