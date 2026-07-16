@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T03:11:26.029Z",
+  "generatedAt": "2026-07-16T10:50:53.015Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -1193,8 +1193,8 @@
     },
     {
       "id": "res-260",
-      "title": "01 STARLAB Teacher Start Here Guide",
-      "fileName": "01_STARLAB_Teacher_Start_Here_Guide.docx",
+      "title": "01 STARLAB Start Here Guide",
+      "fileName": "01_STARLAB_Start_Here_Guide.docx",
       "unit": "Coursewide",
       "type": "Teacher Resource",
       "audience": "Teacher",
@@ -1202,10 +1202,10 @@
       "relatedDeck": "",
       "catalogRef": "",
       "folder": "Teacher Resources (Start Here)",
-      "path": "Teacher Resources (Start Here)/01_STARLAB_Teacher_Start_Here_Guide.docx",
-      "href": "../Teacher%20Resources%20(Start%20Here)/01_STARLAB_Teacher_Start_Here_Guide.docx",
+      "path": "Teacher Resources (Start Here)/01_STARLAB_Start_Here_Guide.docx",
+      "href": "../Teacher%20Resources%20(Start%20Here)/01_STARLAB_Start_Here_Guide.docx",
       "extension": "DOCX",
-      "sizeBytes": 498324,
+      "sizeBytes": 498301,
       "sizeLabel": "487 KB",
       "description": "First-stop guide for launching and orienting to STARLAB.",
       "tags": [],
@@ -1226,7 +1226,7 @@
       "useCategory": "core",
       "printClassification": "",
       "notes": "",
-      "searchText": "01 STARLAB Teacher Start Here Guide First-stop guide for launching and orienting to STARLAB. First-stop guide for understanding STARLAB and launching the course. Open first when preparing to teach or evaluate STARLAB.  Coursewide Teacher Resource Teacher    Teacher Resources (Start Here)  coursewide first steps launch new teacher orientation start here teacher resource core"
+      "searchText": "01 STARLAB Start Here Guide First-stop guide for launching and orienting to STARLAB. First-stop guide for understanding STARLAB and launching the course. Open first when preparing to teach or evaluate STARLAB.  Coursewide Teacher Resource Teacher    Teacher Resources (Start Here)  coursewide first steps launch new teacher orientation start here teacher resource core"
     },
     {
       "id": "res-261",
@@ -1318,7 +1318,7 @@
       "path": "Teacher Resources (Start Here)/04_STARLAB_Course_Operations_Manual.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/04_STARLAB_Course_Operations_Manual.docx",
       "extension": "DOCX",
-      "sizeBytes": 214846,
+      "sizeBytes": 214843,
       "sizeLabel": "210 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -1466,7 +1466,7 @@
       "path": "Teacher Resources (Start Here)/14_STARLAB_Common_Problems_and_What_To_Do_Guide.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/14_STARLAB_Common_Problems_and_What_To_Do_Guide.docx",
       "extension": "DOCX",
-      "sizeBytes": 52218,
+      "sizeBytes": 52214,
       "sizeLabel": "51 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -1502,7 +1502,7 @@
       "path": "Teacher Resources (Start Here)/15_STARLAB_AI_Use_Policy.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/15_STARLAB_AI_Use_Policy.docx",
       "extension": "DOCX",
-      "sizeBytes": 44295,
+      "sizeBytes": 44293,
       "sizeLabel": "44 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],

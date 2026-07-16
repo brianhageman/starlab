@@ -688,7 +688,7 @@ function newTeacherMode() {
       <h2>Essential First Opens</h2>
       <ul class="resource-link-list">
         ${toolkitLinks([
-          ["Teacher Start Here Guide", "teacher start here guide"],
+          ["Start Here Guide", "start here guide"],
           ["Course Operations Manual", "course operations manual"],
           ["Full Course Implementation Calendar", "full course implementation calendar"],
           ["Master Print Packet Index", "master print packet index"],
@@ -730,7 +730,7 @@ function startHere() {
     <section class="section">
       <div class="path-list">
         ${[
-          ["1", "Understand the course", `Read the ${resourceLink("teacher start here guide", "Teacher Start Here Guide")} and ${resourceLink("course operations manual", "Course Operations Manual")} to see the yearlong arc, teacher role, and classroom systems.`],
+          ["1", "Understand the course", `Read the ${resourceLink("start here guide", "Start Here Guide")} and ${resourceLink("course operations manual", "Course Operations Manual")} to see the yearlong arc, teacher role, and classroom systems.`],
           ["2", "Set up pacing and printing", `Review the ${resourceLink("full course implementation calendar", "implementation calendar")} and ${resourceLink("master print packet index", "print packet index")} before making copies or calendar commitments.`],
           ["3", "Prepare the first two weeks", `Open <a href="#unit-1">Unit 1</a>, <a href="#week-1">Week 1 materials</a>, and the <a href="#slides">slide deck library</a> so the launch feels coherent.`],
           ["4", "Prepare approval systems", `Skim <a href="#approval">Project Approval & Safety</a>, the ${resourceLink("project approval tracker", "approval tracker")}, and the Unit 2 approval materials before students design projects.`],
@@ -944,7 +944,7 @@ function slides() {
 function teacherResources() {
   const categories = [
     ["Start Here and Implementation", [
-      ["Teacher Start Here Guide", "teacher start here guide"],
+      ["Start Here Guide", "start here guide"],
       ["Course Operations Manual", "course operations manual"],
       ["Full Course Implementation Calendar", "full course implementation calendar"],
       ["Master Print Packet Index", "master print packet index"],
@@ -1065,7 +1065,7 @@ function assessmentPage() {
 }
 
 const curatedAliases = {
-  "teacher start here guide": "teacherStartHere",
+  "start here guide": "startHereGuide",
   "course operations manual": "courseOperations",
   "full course implementation calendar": "implementationCalendar",
   "master print packet index": "masterPrintIndex",
@@ -1567,8 +1567,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json").then((response) => response.json()),
-  fetch("data/course-map.json").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-1").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-1").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T03:11:25.707Z",
+  "generatedAt": "2026-07-16T10:50:32.585Z",
   "description": "Curated metadata overrides merged into portal/data/resources.json by portal/tools/generate-manifest.mjs. Edit entries here to improve teacher search and resource guidance.",
   "resources": {
     "STARLAB Logo 2026.png": {
@@ -558,7 +558,7 @@
       "printClassification": "",
       "notes": ""
     },
-    "Teacher Resources (Start Here)/01_STARLAB_Teacher_Start_Here_Guide.docx": {
+    "Teacher Resources (Start Here)/01_STARLAB_Start_Here_Guide.docx": {
       "titleOverride": "",
       "purpose": "First-stop guide for understanding STARLAB and launching the course.",
       "teacherUse": "Open first when preparing to teach or evaluate STARLAB.",
