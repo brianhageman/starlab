@@ -58,13 +58,60 @@ for (let week = 1; week <= 34; week += 1) {
 const highVisibilityMappings = {
   1: { primaryDecks: [1, 3], secondaryDecks: [], required: ["U1 H1", "U1 H2", "U1 H3", "U1 H4", "U1 AppA", "U1 AppB", "U1 AppC"], optional: [] },
   2: { primaryDecks: [2, 4], secondaryDecks: [], required: ["U1 H5", "U1 H6", "U1 H7", "U1 H8", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppH"], optional: ["U1 AppI"] },
-  3: { primaryDecks: [5], secondaryDecks: [], required: ["U2 H1", "U2 H2", "U2 H3", "U2 H4", "U2 H5", "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD"], optional: [] },
-  4: { primaryDecks: [5], secondaryDecks: [], required: ["U2 H6", "U2 H7", "U2 H8", "U2 H9", "U2 H10", "U2 H11", "U2 H12", "U2 H13", "U2 AppE", "U2 AppF", "U2 AppG", "U2 AppH"], optional: ["U2 AppI", "U2 AppJ"] },
+  3: { primaryDecks: [5], secondaryDecks: [4], required: ["U2 H1", "U2 H2", "U2 H3", "U2 H4", "U2 H5", "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD"], optional: [] },
+  4: { primaryDecks: [5], secondaryDecks: [3], required: ["U2 H6", "U2 H7", "U2 H8", "U2 H9", "U2 H10", "U2 H11", "U2 H12", "U2 H13", "U2 AppE", "U2 AppF", "U2 AppG", "U2 AppH"], optional: ["U2 AppI", "U2 AppJ"] },
   5: { primaryDecks: [6, 7], secondaryDecks: [], required: ["U3 H1", "U3 H2", "U3 H3", "U3 AppA", "U3 AppB", "U3 AppC"], optional: [] },
   6: { primaryDecks: [8], secondaryDecks: [], required: ["U3 H4", "U3 H5", "U3 AppD", "U3 AppE"], optional: [] },
   16: { primaryDecks: [], secondaryDecks: [9], required: ["U3 H18", "U3 H19"], optional: ["U3 AppS", "U3 AppT", "U3 AppU"] },
   34: { primaryDecks: [19], secondaryDecks: [], required: ["U6 H15", "U6 H16", "U6 H18"], optional: ["U6 H17", "U6 AppO", "U6 AppP", "U6 AppQ", "U6 AppR", "U6 AppS"] }
 };
+
+const authoritativeDeckMappings = {
+  1: [[1, 3], []],
+  2: [[2, 4], []],
+  3: [[5], [4]],
+  4: [[5], [3]],
+  5: [[6, 7], []],
+  6: [[8], []],
+  7: [[], [8]],
+  8: [[], []],
+  9: [[], [9]],
+  10: [[], [8]],
+  11: [[], []],
+  12: [[], []],
+  13: [[], [8]],
+  14: [[], []],
+  15: [[9], []],
+  16: [[], [9]],
+  17: [[9, 10], []],
+  18: [[10], []],
+  19: [[11, 12], []],
+  20: [[], [12]],
+  21: [[13], []],
+  22: [[], [13]],
+  23: [[], [13]],
+  24: [[], [11]],
+  25: [[14], []],
+  26: [[], [13]],
+  27: [[15], []],
+  28: [[16], [17]],
+  29: [[17], []],
+  30: [[], [17]],
+  31: [[18], []],
+  32: [[], [16, 18]],
+  33: [[], []],
+  34: [[19], []]
+};
+
+for (const [week, [primaryDecks, secondaryDecks]] of Object.entries(authoritativeDeckMappings)) {
+  const actual = courseMap.weeks.find((item) => item.week === Number(week));
+  if (JSON.stringify(actual?.primaryDecks) !== JSON.stringify(primaryDecks)) {
+    fail(`Week ${week} primary deck assignment no longer matches the implementation calendar.`);
+  }
+  if (JSON.stringify(actual?.secondaryDecks) !== JSON.stringify(secondaryDecks)) {
+    fail(`Week ${week} revisit/reference deck assignment no longer matches the implementation calendar.`);
+  }
+}
 
 for (const [week, expected] of Object.entries(highVisibilityMappings)) {
   const actual = courseMap.weeks.find((item) => item.week === Number(week));

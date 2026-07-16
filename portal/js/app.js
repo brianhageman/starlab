@@ -694,6 +694,23 @@ function unitsPage() {
   page("Curriculum by Unit", "Browse the six-unit STARLAB course sequence by weeks, focus, deliverables, and materials.", `<section class="section"><div class="grid">${unitCards()}</div></section>`);
 }
 
+function formatDeckNumbers(numbers) {
+  if (!numbers.length) return "";
+  const labels = numbers.map((number) => `Deck ${number}`);
+  if (labels.length === 1) return labels[0];
+  return `${labels.slice(0, -1).join(", ")} and ${labels.at(-1)}`;
+}
+
+function deckUseSummary(mapping) {
+  const primary = mapping?.primaryDecks || [];
+  const secondary = mapping?.secondaryDecks || [];
+  const parts = [];
+  if (primary.length) parts.push(`Primary - ${formatDeckNumbers(primary)}`);
+  if (secondary.length) parts.push(`Revisit / Reference - ${formatDeckNumbers(secondary)}`);
+  if (!primary.length) parts.unshift("No New Deck");
+  return parts.join("; ");
+}
+
 function weekPage(selectedWeek = 1) {
   const week = Number(selectedWeek) || 1;
   const mapping = courseWeek(week);
@@ -723,9 +740,10 @@ function weekPage(selectedWeek = 1) {
       <div class="card">
         <h2>Week ${week} Focus</h2>
         <p>${escapeHtml(mapping?.focus || "See the implementation calendar for this week's focus.")}</p>
+        <p><strong>Deck Use:</strong> ${escapeHtml(deckUseSummary(mapping))}</p>
         <p>${escapeHtml(mapping?.note || "Use the resources below to plan this week.")}</p>
         <ul class="list">
-          <li>Open the teacher guide first, then the slide deck.</li>
+          <li>Open the teacher guide first${primarySlides.length || secondarySlides.length ? ", then preview the mapped deck use." : "."}</li>
           <li>Preview handouts before printing or sharing with students.</li>
           <li>Check support resources for rubrics, appendices, trackers, or safety tools.</li>
         </ul>
@@ -749,8 +767,13 @@ function weekPage(selectedWeek = 1) {
       </div>
     </section>
     ${weekSection("Teacher Guide", teacherGuides)}
-    ${weekSection("Primary Slide Decks", primarySlides)}
-      ${secondarySlides.length ? weekSection("Revisit / Reference Decks", secondarySlides) : ""}
+    ${primarySlides.length ? weekSection("Primary Slide Decks", primarySlides) : `
+      <section class="section">
+        <h2>No New Deck</h2>
+        <p>${secondarySlides.length ? "Use the earlier deck below only as a targeted revisit or reference." : "This week is intentionally organized around work sessions, checkpoints, or the public showcase."}</p>
+      </section>
+    `}
+    ${secondarySlides.length ? weekSection("Revisit / Reference Decks", secondarySlides) : ""}
     ${weekSection("Student Handouts", handouts)}
     ${weekSection("Required Appendices and Rubrics", support)}
     ${weekSection("Optional / Teacher Reference", optionalItems)}
@@ -1492,8 +1515,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-3").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-3").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-4").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-4").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;
