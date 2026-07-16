@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T18:40:03.119Z",
+  "generatedAt": "2026-07-16T19:28:05.781Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -628,8 +628,8 @@
       "path": "Teacher Resources (Start Here)/02_STARLAB Course Proposal.pdf",
       "href": "../Teacher%20Resources%20(Start%20Here)/02_STARLAB%20Course%20Proposal.pdf",
       "extension": "PDF",
-      "sizeBytes": 322833,
-      "sizeLabel": "316 KB",
+      "sizeBytes": 302571,
+      "sizeLabel": "296 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
         "proposal"

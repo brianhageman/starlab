@@ -1602,8 +1602,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-9").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-9").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-10").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-10").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;
