@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T10:50:53.015Z",
+  "generatedAt": "2026-07-16T14:45:31.224Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -365,7 +365,7 @@
       "path": "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/STARLAB_Project_Approval_System.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/09_STARLAB_Project_Approval_System_Package/STARLAB_Project_Approval_System.docx",
       "extension": "DOCX",
-      "sizeBytes": 45618,
+      "sizeBytes": 45813,
       "sizeLabel": "45 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
@@ -601,8 +601,8 @@
       "path": "STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan_2.0.pptx",
       "href": "../STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan_2.0.pptx",
       "extension": "PPTX",
-      "sizeBytes": 844772,
-      "sizeLabel": "825 KB",
+      "sizeBytes": 846129,
+      "sizeLabel": "827 KB",
       "description": "Guide students into a complete plan for approval.",
       "tags": [],
       "purpose": "Instructional slide deck for introducing or reinforcing a major STARLAB research skill.",
@@ -1205,7 +1205,7 @@
       "path": "Teacher Resources (Start Here)/01_STARLAB_Start_Here_Guide.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/01_STARLAB_Start_Here_Guide.docx",
       "extension": "DOCX",
-      "sizeBytes": 498301,
+      "sizeBytes": 498452,
       "sizeLabel": "487 KB",
       "description": "First-stop guide for launching and orienting to STARLAB.",
       "tags": [],
@@ -1574,8 +1574,8 @@
       "path": "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/README.txt",
       "href": "../Teacher%20Resources%20(Start%20Here)/09_STARLAB_Project_Approval_System_Package/README.txt",
       "extension": "TXT",
-      "sizeBytes": 750,
-      "sizeLabel": "1 KB",
+      "sizeBytes": 1493,
+      "sizeLabel": "2 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
         "approval"
@@ -3929,7 +3929,7 @@
       "path": "STARLAB_Unit_2/Teaching Guides/Week 4/Week 4 - Formal Research Plan Safety Ethics and Approval.docx",
       "href": "../STARLAB_Unit_2/Teaching%20Guides/Week%204/Week%204%20-%20Formal%20Research%20Plan%20Safety%20Ethics%20and%20Approval.docx",
       "extension": "DOCX",
-      "sizeBytes": 41121,
+      "sizeBytes": 41239,
       "sizeLabel": "41 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
@@ -5578,7 +5578,7 @@
       "path": "STARLAB_Unit_3/Teaching Guides/00_Unit_3_Overview_and_Preparation.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/00_Unit_3_Overview_and_Preparation.docx",
       "extension": "DOCX",
-      "sizeBytes": 16525,
+      "sizeBytes": 16689,
       "sizeLabel": "17 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],

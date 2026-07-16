@@ -1179,10 +1179,11 @@ function approvalPage() {
 
     <section class="section">
       <h2>Approval Status Guide</h2>
+      <div class="mode-banner"><strong>Workflow-only tracker states do not grant permission.</strong><span>Not Started, Idea Screening, Planning In Progress, Ready for Conference, Paused, and Completed organize project progress but never authorize testing or data collection.</span></div>
       <div class="grid">
         ${[
           ["Approved for Pilot Testing", "The plan is clear, feasible, and appropriately safe for small-scale testing."],
-          ["Approved With Modifications", "The core idea is acceptable after the named changes are completed and recorded."],
+          ["Approved With Modifications", "The project may advance only after named changes are completed and verified; this status does not by itself authorize testing."],
           ["Needs Revision", "The plan is incomplete, unclear, or not yet testable."],
           ["Needs Safety Review", "More safety information, supervision, or district guidance is required."],
           ["Needs Ethics Review", "The project raises human-participant, privacy, animal, biological, medical, or other ethics concerns."],
@@ -1191,6 +1192,7 @@ function approvalPage() {
           ["Approved for Systematic Data Collection", "Pilot evidence supports the revised method and the project may move into full data collection."]
         ].map(([status, meaning]) => `<article class="card"><strong>${status}</strong><p>${meaning}</p></article>`).join("")}
       </div>
+      <div class="mode-banner"><strong>Permission rule</strong><span>Only Approved for Pilot Testing permits the approved small-scale pilot. Only Approved for Systematic Data Collection permits full data collection. All other statuses require continued planning, review, revision, verification, or pause.</span></div>
     </section>
 
     <section class="section split">
@@ -1567,8 +1569,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-1").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-1").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-2").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-2").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;

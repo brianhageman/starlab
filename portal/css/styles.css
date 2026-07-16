@@ -462,6 +462,8 @@ td a { color: var(--white); font-weight: 750; }
 }
 .mode-banner strong { color: var(--white); }
 .mode-banner span { color: var(--muted); }
+.section > .mode-banner + .grid,
+.section > .grid + .mode-banner { margin-top: 1rem; }
 .card .actions { margin-top: 1rem; }
 .first-time-cta {
   text-align: center;
