@@ -56,10 +56,10 @@ for (let week = 1; week <= 34; week += 1) {
 }
 
 const highVisibilityMappings = {
-  1: { primaryDecks: [1, 3], secondaryDecks: [], required: ["U1 H1", "U1 H2", "U1 H3", "U1 H4", "U1 AppA", "U1 AppB", "U1 AppC"], optional: [] },
-  2: { primaryDecks: [2, 4], secondaryDecks: [], required: ["U1 H5", "U1 H6", "U1 H7", "U1 H8", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppH"], optional: ["U1 AppI"] },
-  3: { primaryDecks: [5], secondaryDecks: [4], required: ["U2 H1", "U2 H2", "U2 H3", "U2 H4", "U2 H5", "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD"], optional: [] },
-  4: { primaryDecks: [5], secondaryDecks: [3], required: ["U2 H6", "U2 H7", "U2 H8", "U2 H9", "U2 H10", "U2 H11", "U2 H12", "U2 H13", "U2 AppE", "U2 AppF", "U2 AppG", "U2 AppH"], optional: ["U2 AppI", "U2 AppJ"] },
+  1: { primaryDecks: [1, 3], secondaryDecks: [], required: ["U1 H1", "U1 H2", "U1 H3", "U1 H4", "U1 AppA", "U1 AppB", "U1 AppC"], optional: ["U1 AppI", "U1 AppJ", "U1 AppL"] },
+  2: { primaryDecks: [2, 4], secondaryDecks: [], required: ["U1 H5", "U1 H6", "U1 H7", "U1 H8", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppH"], optional: ["U1 AppI", "U1 AppK"] },
+  3: { primaryDecks: [5], secondaryDecks: [4], required: ["U2 H1", "U2 H2", "U2 H3", "U2 H4", "U2 H5", "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD"], optional: ["U2 AppK"] },
+  4: { primaryDecks: [5], secondaryDecks: [3], required: ["U2 H6", "U2 H7", "U2 H8", "U2 H9", "U2 H10", "U2 H11", "U2 H12", "U2 H13", "U2 AppE", "U2 AppF", "U2 AppG", "U2 AppH"], optional: ["U2 AppI", "U2 AppJ", "U2 AppL"] },
   5: { primaryDecks: [6, 7], secondaryDecks: [], required: ["U3 H1", "U3 H2", "U3 H3", "U3 AppA", "U3 AppB", "U3 AppC"], optional: [] },
   6: { primaryDecks: [8], secondaryDecks: [], required: ["U3 H4", "U3 H5", "U3 AppD", "U3 AppE"], optional: [] },
   16: { primaryDecks: [], secondaryDecks: [9], required: ["U3 H18", "U3 H19"], optional: ["U3 AppS", "U3 AppT", "U3 AppU"] },
