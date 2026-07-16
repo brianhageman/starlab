@@ -12,6 +12,14 @@ function fail(message) {
   errors.push(message);
 }
 
+function sortedNumbers(values) {
+  return [...new Set(values)].sort((a, b) => a - b);
+}
+
+function sortedDeckLabels(values) {
+  return [...new Set(values)].sort((a, b) => Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, "")));
+}
+
 const byPath = new Map(manifest.resources.map((item) => [item.path, item]));
 const byRef = new Map();
 for (const item of manifest.resources) {
@@ -27,6 +35,14 @@ if (manifest.resources.some((item) => item.path.includes("STARLAB_Unit_5/Appendi
   fail("Retired Unit 5 Appendix P is still present in the manifest.");
 }
 if (courseMap.weeks.length !== 34) fail(`Expected 34 mapped weeks; found ${courseMap.weeks.length}.`);
+
+for (const item of manifest.resources) {
+  if (!item.whenUsed) fail(`Resource is missing whenUsed metadata: ${item.path}`);
+  if (!item.requirementStatus) fail(`Resource is missing requirementStatus metadata: ${item.path}`);
+  if (!Array.isArray(item.audiences) || !item.audiences.length) fail(`Resource is missing audience metadata: ${item.path}`);
+  if (!Array.isArray(item.units) || !item.units.length) fail(`Resource is missing unit relationship metadata: ${item.path}`);
+  if (!Array.isArray(item.relatedDecks)) fail(`Resource is missing relatedDecks metadata: ${item.path}`);
+}
 
 for (const legacyConstant of ["weekFocus", "weekDecks", "weekHandoutPlan"]) {
   if (appSource.includes(`const ${legacyConstant}`)) {
@@ -53,6 +69,67 @@ for (let week = 1; week <= 34; week += 1) {
     if (!Number.isInteger(deck) || deck < 1 || deck > 19) fail(`Week ${week} has invalid deck number ${deck}.`);
     if (!byRef.has(`D${deck}`)) fail(`Week ${week} references missing deck D${deck}.`);
   }
+}
+
+const expectedUsageByRef = new Map();
+for (const week of courseMap.weeks) {
+  for (const [role, references] of [["required", week.required], ["optional", week.optional]]) {
+    for (const ref of references) {
+      const expected = expectedUsageByRef.get(ref) || {
+        requiredWeeks: [],
+        optionalWeeks: [],
+        units: [],
+        primaryDecks: [],
+        revisitDecks: []
+      };
+      expected[`${role}Weeks`].push(week.week);
+      expected.units.push(week.unit);
+      expected.primaryDecks.push(...week.primaryDecks.map((deck) => `Deck ${deck}`));
+      expected.revisitDecks.push(...week.secondaryDecks.map((deck) => `Deck ${deck}`));
+      expectedUsageByRef.set(ref, expected);
+    }
+  }
+}
+
+for (const [ref, expected] of expectedUsageByRef) {
+  const item = byRef.get(ref);
+  if (!item) continue;
+  const requiredWeeks = sortedNumbers(expected.requiredWeeks);
+  const optionalWeeks = sortedNumbers(expected.optionalWeeks);
+  const primaryDecks = sortedDeckLabels(expected.primaryDecks);
+  const revisitDecks = sortedDeckLabels(expected.revisitDecks);
+  const relatedDecks = sortedDeckLabels([...primaryDecks, ...revisitDecks]);
+  const expectedRequired = requiredWeeks.length > 0;
+  if (JSON.stringify(item.weeksRequired) !== JSON.stringify(requiredWeeks)) fail(`${ref} has incorrect required-week metadata.`);
+  if (JSON.stringify(item.weeksOptional) !== JSON.stringify(optionalWeeks)) fail(`${ref} has incorrect optional-week metadata.`);
+  if (JSON.stringify(item.relatedPrimaryDecks) !== JSON.stringify(primaryDecks)) fail(`${ref} has incorrect primary-deck metadata.`);
+  if (JSON.stringify(item.relatedRevisitDecks) !== JSON.stringify(revisitDecks)) fail(`${ref} has incorrect revisit-deck metadata.`);
+  if (JSON.stringify(item.relatedDecks) !== JSON.stringify(relatedDecks)) fail(`${ref} has incorrect combined deck metadata.`);
+  if (item.required !== expectedRequired) fail(`${ref} required/optional metadata does not match the implementation calendar.`);
+  for (const unit of new Set(expected.units)) {
+    if (!item.units.includes(unit)) fail(`${ref} is missing unit relationship ${unit}.`);
+  }
+}
+
+for (let deckNumber = 1; deckNumber <= 19; deckNumber += 1) {
+  const item = byRef.get(`D${deckNumber}`);
+  if (!item) continue;
+  const primaryWeeks = sortedNumbers(courseMap.weeks.filter((week) => week.primaryDecks.includes(deckNumber)).map((week) => week.week));
+  const revisitWeeks = sortedNumbers(courseMap.weeks.filter((week) => week.secondaryDecks.includes(deckNumber)).map((week) => week.week));
+  if (item.unit === "Coursewide") fail(`Deck ${deckNumber} must identify its primary unit.`);
+  if (JSON.stringify(item.relatedDecks) !== JSON.stringify([`Deck ${deckNumber}`])) fail(`Deck ${deckNumber} has incorrect self-relationship metadata.`);
+  if (JSON.stringify(item.primaryWeeks) !== JSON.stringify(primaryWeeks)) fail(`Deck ${deckNumber} has incorrect primary-week metadata.`);
+  if (JSON.stringify(item.revisitWeeks) !== JSON.stringify(revisitWeeks)) fail(`Deck ${deckNumber} has incorrect revisit-week metadata.`);
+  if (!item.whenUsed || !item.requirementStatus) fail(`Deck ${deckNumber} is missing use metadata.`);
+}
+
+for (const week of courseMap.weeks) {
+  const teacherGuide = byRef.get(`U${week.unit.split(" ")[1]} TG W${week.week}`);
+  if (!teacherGuide) continue;
+  const expectedDecks = sortedDeckLabels([...week.primaryDecks, ...week.secondaryDecks].map((deck) => `Deck ${deck}`));
+  if (teacherGuide.whenUsed !== `Week ${week.week}`) fail(`Week ${week.week} teacher guide has incorrect whenUsed metadata.`);
+  if (JSON.stringify(teacherGuide.relatedDecks) !== JSON.stringify(expectedDecks)) fail(`Week ${week.week} teacher guide has incorrect deck relationships.`);
+  if (!teacherGuide.required) fail(`Week ${week.week} teacher guide must be marked as a required planning resource.`);
 }
 
 const highVisibilityMappings = {

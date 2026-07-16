@@ -5,6 +5,8 @@ const curriculumRoot = path.resolve(new URL(".", import.meta.url).pathname, "../
 const portalRoot = path.join(curriculumRoot, "portal");
 const outputFile = path.join(portalRoot, "data", "resources.json");
 const metadataFile = path.join(portalRoot, "data", "resource-metadata.json");
+const courseMapFile = path.join(portalRoot, "data", "course-map.json");
+const unitOrder = ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5", "Unit 6"];
 
 const unitMeta = {
   "Unit 1": {
@@ -73,6 +75,153 @@ const deckMeta = [
   ["19", "Final Reflection and Research Portfolio", "Unit 6", "Close the course with portfolio and reflection."]
 ].map(([number, title, unit, teachingMoment]) => ({ number, title, unit, teachingMoment }));
 
+const studentFacingAppendixRefs = new Set([
+  "U1 AppA", "U1 AppB", "U1 AppC", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppI",
+  "U2 AppA", "U2 AppB", "U2 AppC", "U2 AppD", "U2 AppG", "U2 AppI", "U2 AppJ",
+  "U3 AppA", "U3 AppB", "U3 AppC", "U3 AppD", "U3 AppE", "U3 AppF", "U3 AppG", "U3 AppH",
+  "U3 AppJ", "U3 AppK", "U3 AppL", "U3 AppM", "U3 AppQ", "U3 AppR",
+  "U4 AppA", "U4 AppB", "U4 AppC", "U4 AppD", "U4 AppE", "U4 AppF", "U4 AppG", "U4 AppH",
+  "U4 AppI", "U4 AppJ", "U4 AppK", "U4 AppL", "U4 AppM",
+  "U5 AppA", "U5 AppB", "U5 AppC", "U5 AppD", "U5 AppE", "U5 AppF", "U5 AppG", "U5 AppH",
+  "U5 AppI", "U5 AppJ", "U5 AppK", "U5 AppL", "U5 AppM", "U5 AppO", "U5 AppQ",
+  "U6 AppA", "U6 AppB", "U6 AppC", "U6 AppD", "U6 AppE", "U6 AppF", "U6 AppG", "U6 AppH",
+  "U6 AppO", "U6 AppP", "U6 AppQ"
+]);
+
+const catalogAudienceOverrides = {
+  "U1 AppJ": ["Parent/Guardian"],
+  "U2 AppI": ["Student", "Mentor/Partner"],
+  "U3 AppL": ["Student", "Mentor/Partner"],
+  "U6 AppK": ["Visitor"]
+};
+
+const curatedUsage = {
+  startHereGuide: {
+    whenUsed: "Before course launch; ongoing reference",
+    units: unitOrder,
+    requirementStatus: "Required before launch"
+  },
+  courseProposal: {
+    whenUsed: "District adoption and course setup",
+    audiences: ["Administrator", "Teacher"],
+    requirementStatus: "Reference for adoption"
+  },
+  syllabus: {
+    whenUsed: "Before course launch; Week 1; grading checkpoints",
+    relatedDecks: [1],
+    units: unitOrder,
+    audiences: ["Administrator", "Teacher", "Student"],
+    requirementStatus: "Required before launch"
+  },
+  courseOperations: {
+    whenUsed: "Before course launch; ongoing reference",
+    units: unitOrder,
+    requirementStatus: "Required before launch"
+  },
+  implementationCalendar: {
+    whenUsed: "Before course launch; Weeks 1-34",
+    relatedDecks: Array.from({ length: 19 }, (_, index) => index + 1),
+    units: unitOrder,
+    requirementStatus: "Required planning tool"
+  },
+  masterPrintIndex: {
+    whenUsed: "Before each assigned week or deck",
+    relatedDecks: Array.from({ length: 19 }, (_, index) => index + 1),
+    units: unitOrder,
+    requirementStatus: "Required planning tool"
+  },
+  gradingGuide: {
+    whenUsed: "Before course launch; major assessment checkpoints",
+    units: unitOrder,
+    requirementStatus: "Required grading reference"
+  },
+  mentorToolkit: {
+    whenUsed: "Weeks 3-16; Weeks 28-33 as needed",
+    relatedDecks: [5, 7, 8, 17, 18],
+    units: ["Unit 2", "Unit 3", "Unit 5", "Unit 6"],
+    audiences: ["Teacher", "Mentor/Partner"],
+    requirementStatus: "Optional / As needed"
+  },
+  approvalSystem: {
+    whenUsed: "Weeks 3-5; before any testing or data collection",
+    relatedDecks: [3, 5, 6],
+    units: ["Unit 2", "Unit 3"],
+    requirementStatus: "Required approval reference"
+  },
+  approvalTracker: {
+    whenUsed: "Weeks 3-5; update before any testing or data collection",
+    relatedDecks: [3, 5, 6],
+    units: ["Unit 2", "Unit 3"],
+    requirementStatus: "Required official record"
+  },
+  projectScheduleGuide: {
+    whenUsed: "Weeks 3-16",
+    relatedDecks: [5, 6, 7, 8],
+    units: ["Unit 2", "Unit 3"],
+    audiences: ["Student", "Teacher"],
+    requirementStatus: "Optional planning support"
+  },
+  weeklyProgressStudentGuide: {
+    whenUsed: "Weeks 5-16",
+    relatedDecks: [7, 8, 9],
+    units: ["Unit 3"],
+    audiences: ["Student", "Teacher"],
+    requirementStatus: "Optional student support"
+  },
+  weeklyProgressTracker: {
+    whenUsed: "Weeks 5-16",
+    relatedDecks: [7, 8, 9],
+    units: ["Unit 3"],
+    requirementStatus: "Required progress-monitoring tool"
+  },
+  parentPack: {
+    whenUsed: "Before Week 1; teacher distribution as needed",
+    relatedDecks: [1],
+    units: unitOrder,
+    audiences: ["Teacher", "Parent/Guardian"],
+    requirementStatus: "Optional / Teacher distributed"
+  },
+  studentOnboarding: {
+    whenUsed: "Week 1",
+    relatedDecks: [1, 3],
+    units: ["Unit 1"],
+    audiences: ["Student", "Teacher"],
+    requirementStatus: "Required at course launch"
+  },
+  sampleLibrary: {
+    whenUsed: "Weeks 1-4 as needed",
+    relatedDecks: [1, 2, 4, 5],
+    units: ["Unit 1", "Unit 2"],
+    audiences: ["Teacher", "Student"],
+    requirementStatus: "Optional / As needed"
+  },
+  commonProblems: {
+    whenUsed: "Weeks 5-34 as needed",
+    relatedDecks: [6, 8, 9, 10, 12, 13, 17, 18],
+    units: ["Unit 3", "Unit 4", "Unit 5", "Unit 6"],
+    requirementStatus: "Optional / As needed"
+  },
+  aiPolicy: {
+    whenUsed: "Week 1; ongoing reference",
+    relatedDecks: [3],
+    units: unitOrder,
+    audiences: ["Student", "Teacher"],
+    requirementStatus: "Required course policy"
+  },
+  safetyScopeGuide: {
+    whenUsed: "Weeks 3-5; before any testing or data collection",
+    relatedDecks: [3, 5, 6],
+    units: ["Unit 2", "Unit 3"],
+    requirementStatus: "Required approval reference"
+  },
+  showcasePlanningKit: {
+    whenUsed: "Weeks 21-34",
+    relatedDecks: [16, 17, 18, 19],
+    units: ["Unit 5", "Unit 6"],
+    requirementStatus: "Recommended teacher planning resource"
+  }
+};
+
 const extensionType = {
   ".docx": "Document",
   ".pdf": "PDF",
@@ -115,14 +264,18 @@ function inferType(parts, ext, title) {
   return extensionType[ext] || "Resource";
 }
 
-function inferAudience(type, title) {
+function inferAudiences(type, title, catalogRef) {
+  if (catalogAudienceOverrides[catalogRef]) return catalogAudienceOverrides[catalogRef];
+  if (studentFacingAppendixRefs.has(catalogRef)) return ["Student"];
   const lowered = title.toLowerCase();
-  if (type === "Student Handout") return "Student";
-  if (lowered.includes("parent") || lowered.includes("guardian")) return "Parent/Guardian";
-  if (lowered.includes("mentor") || lowered.includes("partner")) return "Mentor/Partner";
-  if (lowered.includes("proposal") || lowered.includes("syllabus")) return "Administrator";
-  if (lowered.includes("visitor")) return "Visitor";
-  return "Teacher";
+  if (type === "Student Handout") return ["Student"];
+  if (type === "Rubric") return ["Teacher", "Student"];
+  if (type === "Slide Deck") return ["Teacher", "Student"];
+  if (lowered.includes("parent") || lowered.includes("guardian")) return ["Parent/Guardian"];
+  if (lowered.includes("mentor") || lowered.includes("partner")) return ["Mentor/Partner"];
+  if (lowered.includes("proposal") || lowered.includes("syllabus")) return ["Administrator", "Teacher"];
+  if (lowered.includes("visitor")) return ["Visitor"];
+  return ["Teacher"];
 }
 
 function inferWeek(title) {
@@ -158,6 +311,70 @@ function inferCatalogRef(unit, type, title, relatedDeck) {
     return appendix ? `${prefix} App${appendix[1].toUpperCase()}` : "";
   }
   return "";
+}
+
+function unique(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function sortUnits(units) {
+  return unique(units).sort((a, b) => {
+    const aIndex = unitOrder.indexOf(a);
+    const bIndex = unitOrder.indexOf(b);
+    if (aIndex === -1 && bIndex === -1) return a.localeCompare(b);
+    if (aIndex === -1) return 1;
+    if (bIndex === -1) return -1;
+    return aIndex - bIndex;
+  });
+}
+
+function sortDeckLabels(decks) {
+  return unique(decks).sort((a, b) => Number(a.replace(/\D/g, "")) - Number(b.replace(/\D/g, "")));
+}
+
+function formatWeekRanges(weeks) {
+  const ordered = unique(weeks).map(Number).sort((a, b) => a - b);
+  if (!ordered.length) return "";
+  const ranges = [];
+  let start = ordered[0];
+  let end = ordered[0];
+  for (const week of ordered.slice(1)) {
+    if (week === end + 1) {
+      end = week;
+      continue;
+    }
+    ranges.push([start, end]);
+    start = week;
+    end = week;
+  }
+  ranges.push([start, end]);
+  return ranges.map(([first, last]) => first === last ? `Week ${first}` : `Weeks ${first}-${last}`).join(", ");
+}
+
+function defaultRequirementStatus(resource) {
+  if (resource.required) return "Required";
+  if (resource.useCategory === "teacher-reference") return "Optional / Teacher reference";
+  if (resource.useCategory === "optional" || resource.useCategory === "support") return "Optional / As needed";
+  if (resource.useCategory === "teacher-distribution") return "Optional / Teacher distributed";
+  if (resource.useCategory === "administrator") return "Reference for adoption";
+  return "Reference / As needed";
+}
+
+function mappedPrintClassification(resource, requiredWeeks, optionalWeeks) {
+  const mixed = requiredWeeks.length && optionalWeeks.length;
+  if (resource.type === "Student Handout") {
+    if (!requiredWeeks.length) return "optional-student-copy";
+    return mixed ? "required-at-primary-use-optional-elsewhere" : "required-student-copy";
+  }
+  if (resource.type === "Rubric") {
+    if (!requiredWeeks.length) return "optional-practice-reference";
+    return mixed ? "required-when-assessed-optional-practice-reference" : "required-when-assessed";
+  }
+  if (resource.type === "Appendix") {
+    if (!requiredWeeks.length) return resource.audience === "Teacher" ? "optional-teacher-reference" : "optional-support";
+    return mixed ? "required-at-primary-use-optional-reference" : "required-instructional-support";
+  }
+  return resource.printClassification;
 }
 
 function inferTags(title, type, unit, parts) {
@@ -205,12 +422,44 @@ async function walk(dir) {
 }
 
 const files = await walk(curriculumRoot);
+const courseMap = JSON.parse(await readFile(courseMapFile, "utf8"));
 let metadata = { resources: {} };
 try {
   metadata = JSON.parse(await readFile(metadataFile, "utf8"));
 } catch {
   metadata = { resources: {} };
 }
+
+const usageByCatalogRef = new Map();
+const deckUsage = new Map(deckMeta.map((deck) => [Number(deck.number), { primaryWeeks: [], revisitWeeks: [], units: [] }]));
+for (const week of courseMap.weeks) {
+  for (const catalogRef of week.required) {
+    const uses = usageByCatalogRef.get(catalogRef) || [];
+    uses.push({ week: week.week, unit: week.unit, role: "required", primaryDecks: week.primaryDecks, secondaryDecks: week.secondaryDecks });
+    usageByCatalogRef.set(catalogRef, uses);
+  }
+  for (const catalogRef of week.optional) {
+    const uses = usageByCatalogRef.get(catalogRef) || [];
+    uses.push({ week: week.week, unit: week.unit, role: "optional", primaryDecks: week.primaryDecks, secondaryDecks: week.secondaryDecks });
+    usageByCatalogRef.set(catalogRef, uses);
+  }
+  for (const deckNumber of week.primaryDecks) {
+    const use = deckUsage.get(deckNumber);
+    use.primaryWeeks.push(week.week);
+    use.units.push(week.unit);
+  }
+  for (const deckNumber of week.secondaryDecks) {
+    const use = deckUsage.get(deckNumber);
+    use.revisitWeeks.push(week.week);
+    use.units.push(week.unit);
+  }
+}
+
+const curatedUsageByPath = new Map(
+  Object.entries(curatedUsage)
+    .filter(([key]) => courseMap.curatedResources[key])
+    .map(([key, value]) => [courseMap.curatedResources[key], value])
+);
 
 const resources = files.map(({ full, info }, index) => {
   const relativePath = path.relative(curriculumRoot, full);
@@ -222,16 +471,25 @@ const resources = files.map(({ full, info }, index) => {
   const unit = inferUnit(parts, title);
   const type = inferType(parts, ext, title);
   const relatedDeck = inferDeck(title, ext);
+  const catalogRef = inferCatalogRef(unit, type, title, relatedDeck);
+  const audiences = inferAudiences(type, title, catalogRef);
   const resource = {
     id: `res-${String(index + 1).padStart(3, "0")}`,
     title,
     fileName: name,
     unit,
+    units: unit === "Coursewide" ? [] : [unit],
     type,
-    audience: inferAudience(type, title),
+    audience: audiences[0],
+    audiences,
     whenUsed: inferWeek(title),
     relatedDeck,
-    catalogRef: inferCatalogRef(unit, type, title, relatedDeck),
+    relatedDecks: relatedDeck ? [relatedDeck] : [],
+    relatedPrimaryDecks: [],
+    relatedRevisitDecks: [],
+    weeksRequired: [],
+    weeksOptional: [],
+    catalogRef,
     folder: parts.slice(0, -1).join(" / ") || "Root",
     path: relativePath,
     href: webPath,
@@ -245,10 +503,21 @@ const resources = files.map(({ full, info }, index) => {
   resource.description = describe(resource);
   const overrides = metadata.resources?.[relativePath] || {};
   if (overrides.titleOverride) resource.title = overrides.titleOverride;
-  if (overrides.audienceOverride) resource.audience = overrides.audienceOverride;
   if (overrides.whenUsedOverride) resource.whenUsed = overrides.whenUsedOverride;
-  if (overrides.relatedDeckOverride) resource.relatedDeck = overrides.relatedDeckOverride;
-  if (overrides.catalogRefOverride) resource.catalogRef = overrides.catalogRefOverride;
+  if (overrides.relatedDeckOverride) {
+    resource.relatedDeck = overrides.relatedDeckOverride;
+    resource.relatedDecks = [overrides.relatedDeckOverride];
+  }
+  if (overrides.catalogRefOverride) {
+    resource.catalogRef = overrides.catalogRefOverride;
+    const revisedAudiences = inferAudiences(type, title, resource.catalogRef);
+    resource.audience = revisedAudiences[0];
+    resource.audiences = revisedAudiences;
+  }
+  if (overrides.audienceOverride && !studentFacingAppendixRefs.has(resource.catalogRef) && !catalogAudienceOverrides[resource.catalogRef]) {
+    resource.audience = overrides.audienceOverride;
+    resource.audiences = [overrides.audienceOverride];
+  }
   resource.purpose = overrides.purpose || resource.description;
   resource.teacherUse = overrides.teacherUse || "";
   resource.studentUse = overrides.studentUse || "";
@@ -258,6 +527,156 @@ const resources = files.map(({ full, info }, index) => {
   resource.useCategory = overrides.useCategory || "";
   resource.printClassification = overrides.printClassification || "";
   resource.notes = overrides.notes || "";
+  resource.requirementStatus = "";
+  resource.usageNotes = "";
+  return resource;
+});
+
+for (const resource of resources) {
+  const mappedUses = usageByCatalogRef.get(resource.catalogRef) || [];
+  if (mappedUses.length) {
+    const requiredWeeks = unique(mappedUses.filter((use) => use.role === "required").map((use) => use.week)).sort((a, b) => a - b);
+    const optionalWeeks = unique(mappedUses.filter((use) => use.role === "optional").map((use) => use.week)).sort((a, b) => a - b);
+    const allWeeks = unique([...requiredWeeks, ...optionalWeeks]).sort((a, b) => a - b);
+    const primaryDecks = sortDeckLabels(mappedUses.flatMap((use) => use.primaryDecks.map((deck) => `Deck ${deck}`)));
+    const revisitDecks = sortDeckLabels(mappedUses.flatMap((use) => use.secondaryDecks.map((deck) => `Deck ${deck}`)));
+    resource.units = sortUnits([resource.unit, ...mappedUses.map((use) => use.unit)]);
+    resource.whenUsed = formatWeekRanges(allWeeks);
+    resource.weeksRequired = requiredWeeks;
+    resource.weeksOptional = optionalWeeks;
+    resource.relatedPrimaryDecks = primaryDecks;
+    resource.relatedRevisitDecks = revisitDecks;
+    resource.relatedDecks = sortDeckLabels([...primaryDecks, ...revisitDecks]);
+    resource.relatedDeck = resource.relatedDecks[0] || "";
+    resource.required = requiredWeeks.length > 0;
+    resource.requirementStatus = requiredWeeks.length && optionalWeeks.length
+      ? `Required ${formatWeekRanges(requiredWeeks)}; optional/reference ${formatWeekRanges(optionalWeeks)}`
+      : requiredWeeks.length
+        ? "Required"
+        : resource.audience === "Teacher"
+          ? "Optional / Teacher reference"
+          : "Optional";
+    resource.usageNotes = [
+      requiredWeeks.length ? `Required: ${formatWeekRanges(requiredWeeks)}` : "",
+      optionalWeeks.length ? `Optional/reference: ${formatWeekRanges(optionalWeeks)}` : "",
+      primaryDecks.length ? `Primary deck alignment: ${primaryDecks.join(", ")}` : "",
+      revisitDecks.length ? `Revisit/reference deck alignment: ${revisitDecks.join(", ")}` : "",
+      !primaryDecks.length && !revisitDecks.length ? "No new or revisited deck is assigned in the mapped week." : ""
+    ].filter(Boolean).join(". ");
+    resource.printRecommended = requiredWeeks.length > 0 && (
+      resource.type === "Student Handout"
+      || resource.type === "Rubric"
+      || (resource.type === "Appendix" && resource.audience === "Student")
+    );
+    resource.printClassification = mappedPrintClassification(resource, requiredWeeks, optionalWeeks);
+  }
+
+  if (resource.type === "Teacher Guide") {
+    const weeklyGuide = resource.catalogRef.match(/^U(\d) TG W(\d+)$/);
+    if (weeklyGuide) {
+      const week = courseMap.weeks.find((item) => item.week === Number(weeklyGuide[2]));
+      if (week) {
+        resource.units = [week.unit];
+        resource.whenUsed = `Week ${week.week}`;
+        resource.relatedPrimaryDecks = week.primaryDecks.map((deck) => `Deck ${deck}`);
+        resource.relatedRevisitDecks = week.secondaryDecks.map((deck) => `Deck ${deck}`);
+        resource.relatedDecks = sortDeckLabels([...resource.relatedPrimaryDecks, ...resource.relatedRevisitDecks]);
+        resource.relatedDeck = resource.relatedDecks[0] || "";
+        resource.required = true;
+        resource.requirementStatus = "Required planning resource";
+        resource.usageNotes = resource.relatedDecks.length
+          ? `Teacher guide for Week ${week.week}; aligned to ${resource.relatedDecks.join(", ")}.`
+          : `Teacher guide for Week ${week.week}; no new or revisited deck is assigned.`;
+      }
+    } else if (/^Unit \d$/.test(resource.unit)) {
+      const unitWeeks = courseMap.weeks.filter((week) => week.unit === resource.unit);
+      resource.units = [resource.unit];
+      resource.whenUsed = `${unitMeta[resource.unit].weeks} planning`;
+      resource.relatedPrimaryDecks = sortDeckLabels(unitWeeks.flatMap((week) => week.primaryDecks.map((deck) => `Deck ${deck}`)));
+      resource.relatedRevisitDecks = sortDeckLabels(unitWeeks.flatMap((week) => week.secondaryDecks.map((deck) => `Deck ${deck}`)));
+      resource.relatedDecks = sortDeckLabels([...resource.relatedPrimaryDecks, ...resource.relatedRevisitDecks]);
+      resource.relatedDeck = resource.relatedDecks[0] || "";
+      resource.required = true;
+      resource.requirementStatus = "Required unit planning resource";
+      resource.usageNotes = `Use before and during ${unitMeta[resource.unit].weeks}.`;
+    }
+  }
+
+  if (resource.type === "Slide Deck") {
+    const deckNumber = Number(resource.catalogRef.replace(/\D/g, ""));
+    const deck = deckMeta.find((item) => Number(item.number) === deckNumber);
+    const use = deckUsage.get(deckNumber);
+    if (deck && use) {
+      resource.unit = deck.unit;
+      resource.units = unique([deck.unit, ...sortUnits(use.units)]);
+      resource.relatedDeck = `Deck ${deckNumber}`;
+      resource.relatedDecks = [resource.relatedDeck];
+      resource.primaryWeeks = unique(use.primaryWeeks).sort((a, b) => a - b);
+      resource.revisitWeeks = unique(use.revisitWeeks).sort((a, b) => a - b);
+      resource.whenUsed = [
+        resource.primaryWeeks.length ? `Primary: ${formatWeekRanges(resource.primaryWeeks)}` : "",
+        resource.revisitWeeks.length ? `Revisit/reference: ${formatWeekRanges(resource.revisitWeeks)}` : ""
+      ].filter(Boolean).join("; ");
+      resource.required = true;
+      resource.requirementStatus = "Required when assigned";
+      resource.usageNotes = resource.whenUsed;
+    }
+  }
+
+  const curated = curatedUsageByPath.get(resource.path);
+  if (curated) {
+    resource.whenUsed = curated.whenUsed;
+    resource.units = sortUnits(curated.units || resource.units);
+    resource.relatedDecks = sortDeckLabels((curated.relatedDecks || []).map((deck) => `Deck ${deck}`));
+    resource.relatedDeck = resource.relatedDecks[0] || "";
+    if (curated.audiences) {
+      resource.audiences = unique(curated.audiences);
+      resource.audience = resource.audiences[0];
+    }
+    resource.requirementStatus = curated.requirementStatus;
+    resource.required = curated.requirementStatus.startsWith("Required");
+    resource.usageNotes = curated.whenUsed;
+  }
+
+  if (resource.path === "Teacher Resources (Start Here)/09_STARLAB_Project_Approval_System_Package/README.txt") {
+    resource.whenUsed = "Weeks 3-5; approval system setup";
+    resource.units = ["Unit 2", "Unit 3"];
+    resource.relatedDecks = ["Deck 3", "Deck 5", "Deck 6"];
+    resource.relatedDeck = resource.relatedDecks[0];
+    resource.required = false;
+    resource.requirementStatus = "Optional package reference";
+    resource.usageNotes = "Use when setting up the project approval package.";
+  } else if (resource.path.includes("STARLAB_Unit_2/Background Literature Review Examples/")) {
+    resource.whenUsed = "Weeks 3-4 as needed";
+    resource.units = ["Unit 2"];
+    resource.relatedDecks = ["Deck 4", "Deck 5"];
+    resource.relatedDeck = resource.relatedDecks[0];
+    resource.audiences = ["Student", "Teacher"];
+    resource.audience = resource.audiences[0];
+    resource.required = false;
+    resource.requirementStatus = "Optional example / reference";
+    resource.usageNotes = "Use during background research and formal research-plan development as needed.";
+  } else if (/^Unit \d$/.test(resource.unit) && /readme|folder index/i.test(resource.title)) {
+    const unitWeeks = courseMap.weeks.filter((week) => week.unit === resource.unit);
+    resource.whenUsed = `${unitMeta[resource.unit].weeks} reference`;
+    resource.units = [resource.unit];
+    resource.relatedDecks = sortDeckLabels(unitWeeks.flatMap((week) => [...week.primaryDecks, ...week.secondaryDecks].map((deck) => `Deck ${deck}`)));
+    resource.relatedDeck = resource.relatedDecks[0] || "";
+    resource.required = false;
+    resource.requirementStatus = "Optional folder reference";
+    resource.usageNotes = `Folder index for ${resource.unit}.`;
+  } else if (resource.type === "Brand Asset") {
+    resource.whenUsed = "Portal branding";
+    resource.requirementStatus = "Portal asset";
+    resource.usageNotes = "Used by the portal interface rather than a scheduled instructional week.";
+  }
+
+  resource.units = resource.units.length ? resource.units : resource.unit === "Coursewide" ? ["Coursewide"] : [resource.unit];
+  resource.audiences = unique(resource.audiences.length ? resource.audiences : [resource.audience]);
+  resource.audience = resource.audiences[0];
+  resource.relatedDecks = sortDeckLabels(resource.relatedDecks);
+  resource.relatedDeck = resource.relatedDecks[0] || resource.relatedDeck || "";
+  resource.requirementStatus ||= defaultRequirementStatus(resource);
   resource.searchText = [
     resource.title,
     resource.description,
@@ -265,18 +684,26 @@ const resources = files.map(({ full, info }, index) => {
     resource.teacherUse,
     resource.studentUse,
     resource.unit,
+    resource.units.join(" "),
     resource.type,
     resource.audience,
+    resource.audiences.join(" "),
     resource.whenUsed,
     resource.relatedDeck,
+    resource.relatedDecks.join(" "),
+    resource.relatedPrimaryDecks.join(" "),
+    resource.relatedRevisitDecks.join(" "),
     resource.catalogRef,
     resource.folder,
     resource.tags.join(" "),
     resource.keywords.join(" "),
-    resource.useCategory
+    resource.useCategory,
+    resource.requirementStatus,
+    resource.usageNotes
   ].join(" ");
-  return resource;
-}).sort((a, b) => a.unit.localeCompare(b.unit, undefined, { numeric: true }) || a.type.localeCompare(b.type) || a.title.localeCompare(b.title, undefined, { numeric: true }));
+}
+
+resources.sort((a, b) => a.unit.localeCompare(b.unit, undefined, { numeric: true }) || a.type.localeCompare(b.type) || a.title.localeCompare(b.title, undefined, { numeric: true }));
 
 const manifest = {
   generatedAt: new Date().toISOString(),

@@ -25,7 +25,7 @@ Add new files to the existing curriculum folders, then rerun:
 node portal/tools/generate-manifest.mjs
 ```
 
-The generator scans the curriculum root, skips hidden files, portal source files, PD working files, and the optional Arduino bootcamp side quest, then writes `portal/data/resources.json`.
+The generator scans the curriculum root, skips hidden files, portal source files, PD working files, and the optional Arduino bootcamp side quest, then writes `portal/data/resources.json`. Do not edit `resources.json` directly because it is regenerated.
 
 Metadata lives in:
 
@@ -40,13 +40,23 @@ node portal/tools/generate-metadata.mjs
 node portal/tools/generate-manifest.mjs
 ```
 
-The implementation calendar is the source of truth for week, deck, required-print, optional/reference, and milestone chronology. After changing that workbook, update `portal/data/course-map.json`, regenerate the manifest, and run:
+The implementation calendar is the source of truth for week, deck, required-print, optional/reference, and milestone chronology. `course-map.json` drives each mapped resource's:
+
+- `whenUsed`, required weeks, and optional/reference weeks
+- primary and revisit deck relationships
+- unit relationships
+- required, optional, mixed-use, and teacher-reference status
+- print classification for scheduled student materials, appendices, and rubrics
+
+Audience metadata distinguishes teacher-only materials from student-facing appendices, student handouts, family resources, mentor resources, visitor materials, and shared resources. Coursewide high-use tools also carry explicit timing and deck relationships where those relationships are meaningful.
+
+After changing the implementation calendar workbook, update `portal/data/course-map.json`, regenerate the manifest, and run:
 
 ```bash
 node portal/tools/validate-portal.mjs
 ```
 
-The validator checks all 34 weeks, exact catalog references, curated links, case-sensitive file paths, all 19 decks, and the Arduino exclusion. The Project Approval Tracker is the official project approval record; the Safety Scope Guide supports completion of that tracker. Parent/guardian materials remain teacher-distributed resources.
+The validator checks all 34 weeks, exact catalog references, curated links, case-sensitive file paths, all 19 decks, the Arduino exclusion, and the generated timing, unit, audience, deck, and required/optional metadata. The Project Approval Tracker is the official project approval record; the Safety Scope Guide supports completion of that tracker. Parent/guardian materials remain teacher-distributed resources.
 
 Recommended locations:
 
@@ -75,6 +85,6 @@ The files are not copied or renamed.
 
 - Original curriculum files are not moved or renamed.
 - General metadata is inferred from folder and file names; authoritative weekly mappings and curated links live in `portal/data/course-map.json`.
-- The manifest is easy to edit by hand if a resource needs richer descriptions later.
+- Richer descriptions and keywords belong in `portal/data/resource-metadata.json`; generated manifest fields belong in the generator or course map.
 - File previews depend on the browser and operating system; the portal links directly to each file.
 - Public Office previews depend on Microsoft Office Viewer and require publicly accessible file URLs.

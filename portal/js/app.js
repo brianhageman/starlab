@@ -40,14 +40,31 @@ function normalize(value = "") {
   return String(value).toLowerCase().replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
 }
 
+function itemUnits(item) {
+  return item.units?.length ? item.units : [item.unit].filter(Boolean);
+}
+
+function itemAudiences(item) {
+  return item.audiences?.length ? item.audiences : [item.audience].filter(Boolean);
+}
+
+function itemDecks(item) {
+  return item.relatedDecks?.length ? item.relatedDecks : [item.relatedDeck].filter(Boolean);
+}
+
+function relatedDeckLabel(item, fallback = "") {
+  const decks = itemDecks(item);
+  return decks.length ? decks.join(", ") : fallback;
+}
+
 function resources(filter = {}) {
   return manifest.resources.filter((item) => {
-    if (filter.unit && item.unit !== filter.unit) return false;
+    if (filter.unit && item.unit !== filter.unit && !itemUnits(item).includes(filter.unit)) return false;
     if (filter.type && item.type !== filter.type) return false;
-    if (filter.audience && item.audience !== filter.audience) return false;
-    if (filter.deck && item.relatedDeck !== filter.deck) return false;
+    if (filter.audience && !itemAudiences(item).includes(filter.audience)) return false;
+    if (filter.deck && !itemDecks(item).includes(filter.deck)) return false;
     if (filter.query) {
-      const haystack = normalize(item.searchText || [item.title, item.description, item.purpose, item.teacherUse, item.studentUse, item.unit, item.type, item.audience, item.whenUsed, item.relatedDeck, item.folder, item.tags?.join(" "), item.keywords?.join(" "), item.useCategory].join(" "));
+      const haystack = normalize(item.searchText || [item.title, item.description, item.purpose, item.teacherUse, item.studentUse, itemUnits(item).join(" "), item.type, itemAudiences(item).join(" "), item.whenUsed, itemDecks(item).join(" "), item.folder, item.tags?.join(" "), item.keywords?.join(" "), item.useCategory, item.requirementStatus].join(" "));
       const query = normalize(filter.query);
       const terms = query.split(/\s+/).filter(Boolean);
       const words = haystack.split(/[^a-z0-9&]+/).filter(Boolean);
@@ -94,8 +111,13 @@ function resourcesForWeek(week) {
 
 function resourceBadges(item) {
   const badges = [];
-  if (item.audience === "Student") badges.push("Student-facing");
-  if (item.audience === "Teacher") badges.push("Teacher-only");
+  const status = normalize(item.requirementStatus);
+  if (status.includes("required") && status.includes("optional")) badges.push("Mixed use");
+  else if (item.required) badges.push("Required");
+  else if (status.includes("optional") || status.includes("recommended")) badges.push("Optional");
+  else badges.push("Reference");
+  if (itemAudiences(item).includes("Student")) badges.push("Student-facing");
+  else if (itemAudiences(item).includes("Teacher")) badges.push("Teacher-only");
   if (["DOCX", "PPTX", "XLSX"].includes(item.extension)) badges.push("Editable");
   if (["PDF", "PNG", "MP4", "TXT", "MD"].includes(item.extension)) badges.push("Preview");
   if (["Student Handout", "Appendix", "Rubric"].includes(item.type)) badges.push("Print");
@@ -103,8 +125,6 @@ function resourceBadges(item) {
   if (["Rubric", "Tracker"].includes(item.type) || normalize(item.title).includes("assessment")) badges.push("Assessment");
   if (normalize(item.title).includes("checklist")) badges.push("Checklist");
   if (normalize(item.title).includes("approval") || normalize(item.title).includes("safety")) badges.push("Approval");
-  if (item.required) badges.push("Required");
-  if (item.useCategory === "optional") badges.push("Optional");
   if (item.printRecommended) badges.push("Print-ready");
   return [...new Set(badges)].slice(0, 4);
 }
@@ -119,7 +139,7 @@ function card(item) {
         <span class="pill red">${escapeHtml(item.type)}</span>
         <span class="pill">${escapeHtml(item.unit)}</span>
         ${item.whenUsed ? `<span class="pill">${escapeHtml(item.whenUsed)}</span>` : ""}
-        ${item.relatedDeck ? `<span class="pill">${escapeHtml(item.relatedDeck)}</span>` : ""}
+        ${itemDecks(item).length ? `<span class="pill">${escapeHtml(relatedDeckLabel(item))}</span>` : ""}
         <span class="pill">${escapeHtml(item.extension)}</span>
       </div>
     </article>
@@ -1520,15 +1540,16 @@ function indexPage(preset = {}) {
       <h2>${items.length} Resources</h2>
       ${view === "cards" ? `<div class="grid">${items.map(card).join("")}</div>` : `<div class="table-wrap">
         <table>
-          <thead><tr><th>Resource Name</th><th>Unit</th><th>Type</th><th>Audience</th><th>When Used</th><th>Related Deck</th><th>File Location</th><th>Tags</th></tr></thead>
+          <thead><tr><th>Resource Name</th><th>Unit</th><th>Type</th><th>Audience</th><th>Status</th><th>When Used</th><th>Related Decks</th><th>File Location</th><th>Tags</th></tr></thead>
           <tbody>${items.map((item) => `
             <tr>
               <td>${previewLink(item)}<br>${escapeHtml(item.purpose || item.description)}</td>
-              <td>${escapeHtml(item.unit)}</td>
+              <td>${escapeHtml(item.unit === "Coursewide" ? "Coursewide" : itemUnits(item).join(", "))}</td>
               <td>${escapeHtml(item.type)}</td>
-              <td>${escapeHtml(item.audience)}</td>
-              <td>${escapeHtml(item.whenUsed || "TBD")}</td>
-              <td>${escapeHtml(item.relatedDeck || "TBD")}</td>
+              <td>${escapeHtml(itemAudiences(item).join(", "))}</td>
+              <td>${escapeHtml(item.requirementStatus || "Reference / As needed")}</td>
+              <td>${escapeHtml(item.whenUsed || "As needed / not week-mapped")}</td>
+              <td>${escapeHtml(relatedDeckLabel(item, "No direct deck relationship"))}</td>
               <td>${escapeHtml(item.folder)}</td>
               <td>${[...(item.keywords || []), ...(item.tags || [])].slice(0, 8).map((tag) => `<span class="pill">${escapeHtml(tag)}</span>`).join(" ")}</td>
             </tr>`).join("")}</tbody>
@@ -1580,8 +1601,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-7").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-7").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-8").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-8").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;
@@ -1620,8 +1641,9 @@ function openPreview(item) {
         <div class="meta">
           <span class="pill red">${escapeHtml(item.extension)}</span>
           <span class="pill">${escapeHtml(item.sizeLabel)}</span>
+          <span class="pill">${escapeHtml(item.requirementStatus || "Reference / As needed")}</span>
           ${item.whenUsed ? `<span class="pill">${escapeHtml(item.whenUsed)}</span>` : ""}
-          ${item.relatedDeck ? `<span class="pill">${escapeHtml(item.relatedDeck)}</span>` : ""}
+          ${itemDecks(item).length ? `<span class="pill">${escapeHtml(relatedDeckLabel(item))}</span>` : ""}
         </div>
       </div>
       <div class="preview-body">${previewContent(item)}</div>
