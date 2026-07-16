@@ -1277,6 +1277,13 @@ function showcasePage() {
     ["Post Presentation Reflection", "post presentation reflection"],
     ["Portfolio Checklist", "portfolio checklist"]
   ];
+  const showcaseMilestones = Array.isArray(courseMap.showcaseMilestones) ? courseMap.showcaseMilestones : [];
+  const milestoneItems = showcaseMilestones.map((milestone) => {
+    const planningNote = milestone.teacherOnly && milestone.noStudentDeliverable
+      ? " Teacher planning only; this adds no student assignment, handout, deliverable, or print requirement."
+      : "";
+    return `<li><strong>${escapeHtml(milestone.weekLabel)}: ${escapeHtml(milestone.title)}.</strong><span>${escapeHtml(milestone.leadTime)}. ${escapeHtml(milestone.action)}${escapeHtml(planningNote)}</span></li>`;
+  }).join("");
   page("Showcase Planning", "A practical planning hub for preparing every student to present STARLAB research to a genuine public audience.", `
     <section class="section">
       <div class="mode-banner"><strong>A public presentation is required.</strong><span>The venue may be a university poster session, science fair, district event, community presentation, or another authentic public forum. A classroom-only presentation does not satisfy Unit 6.</span></div>
@@ -1284,15 +1291,9 @@ function showcasePage() {
     <section class="section split">
       <div class="card">
         <h2>Showcase Timeline</h2>
+        <p>Advance operations begin in Unit 5 so the public event is secured before student presentation preparation intensifies.</p>
         <ol class="decision-list">
-          <li><strong>Week 21: Set the event.</strong><span>Confirm the public format, target date, audience, space, and district support six to eight weeks ahead.</span></li>
-          <li><strong>Week 24: Confirm the audience.</strong><span>Send invitations or confirm the public event, communication plan, and visitor pathway.</span></li>
-          <li><strong>Week 27: Lock logistics.</strong><span>Finalize technology, accessibility, schedule, room flow, and assessment workflow.</span></li>
-          <li><strong>Weeks 29-30: Refine the message.</strong><span>Students tighten their research story, practice multiple presentation lengths, and gather peer feedback.</span></li>
-          <li><strong>Week 31: Prepare for questions.</strong><span>Students defend evidence, rehearse Q&A, and identify weak spots in claims or visuals.</span></li>
-          <li><strong>Week 32: Finalize logistics.</strong><span>Teacher confirms schedule, room setup, visitor flow, technology, materials, and student readiness.</span></li>
-          <li><strong>Week 33: Host the showcase.</strong><span>Students present to visitors, collect feedback, answer questions, and demonstrate professionalism.</span></li>
-          <li><strong>Week 34: Reflect and archive.</strong><span>Students complete reflection, portfolio, feedback review, and next-step planning.</span></li>
+          ${milestoneItems}
         </ol>
       </div>
       <div class="card">
@@ -1601,8 +1602,8 @@ function route() {
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-8").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-8").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-9").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-9").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;

@@ -64,6 +64,80 @@
     "postPresentationReflection": "STARLAB_Unit_6/Student Handouts/Student_Handout_14_Post_Presentation_Reflection.docx",
     "portfolioChecklist": "STARLAB_Unit_6/Student Handouts/Student_Handout_16_STARLAB_Portfolio_Checklist.docx"
   },
+  "showcaseMilestones": [
+    {
+      "weekLabel": "Week 21",
+      "week": 21,
+      "title": "Set the event framework",
+      "leadTime": "Approximately 12 weeks before Week 33",
+      "action": "Select the public format, tentative date and time, intended audience, venue, and administrative or district support.",
+      "teacherOnly": true,
+      "noStudentDeliverable": true
+    },
+    {
+      "weekLabel": "Week 24",
+      "week": 24,
+      "title": "Confirm the audience and space",
+      "leadTime": "Approximately 9 weeks before Week 33",
+      "action": "Reserve the venue, confirm the public audience pathway, send a save-the-date, and begin district communication or visitor approval steps.",
+      "teacherOnly": true,
+      "noStudentDeliverable": true
+    },
+    {
+      "weekLabel": "Week 27",
+      "week": 27,
+      "title": "Lock invitations and logistics",
+      "leadTime": "Approximately 6 weeks before Week 33",
+      "action": "Send formal invitations and lock technology, accessibility, room flow, assessment workflow, logistics owners, and backup plans.",
+      "teacherOnly": true,
+      "noStudentDeliverable": true
+    },
+    {
+      "weekLabel": "Weeks 29-30",
+      "week": 30,
+      "title": "Refine the message and confirm the run of show",
+      "leadTime": "Approximately 3-4 weeks before Week 33",
+      "action": "Students refine their research story and practice; the teacher confirms the event schedule, guest roles, technology plan, accessibility supports, and presentation order.",
+      "teacherOnly": false,
+      "noStudentDeliverable": false
+    },
+    {
+      "weekLabel": "Week 31",
+      "week": 31,
+      "title": "Prepare for questions",
+      "leadTime": "Approximately 2 weeks before Week 33",
+      "action": "Students rehearse evidence-based Q&A while the teacher confirms guest guidance and feedback collection.",
+      "teacherOnly": false,
+      "noStudentDeliverable": false
+    },
+    {
+      "weekLabel": "Week 32",
+      "week": 32,
+      "title": "Complete the final readiness check",
+      "leadTime": "Approximately 1 week before Week 33",
+      "action": "Verify student readiness, backup plans, room setup, visitor flow, technology, accessibility, event-day printing, and signage.",
+      "teacherOnly": false,
+      "noStudentDeliverable": false
+    },
+    {
+      "weekLabel": "Week 33",
+      "week": 33,
+      "title": "Host the required public showcase",
+      "leadTime": "Presentation week",
+      "action": "Every student presents to a genuine public audience, answers questions, collects feedback, and demonstrates professionalism.",
+      "teacherOnly": false,
+      "noStudentDeliverable": false
+    },
+    {
+      "weekLabel": "Week 34",
+      "week": 34,
+      "title": "Reflect, acknowledge, and archive",
+      "leadTime": "Post-showcase closeout",
+      "action": "Students complete reflection and portfolio closeout; the teacher archives artifacts and sends acknowledgments or thank-you communication.",
+      "teacherOnly": false,
+      "noStudentDeliverable": false
+    }
+  ],
   "weeks": [
     { "week": 1, "unit": "Unit 1", "focus": "Course launch, research culture, curiosity, and ethics", "primaryDecks": [1, 3], "secondaryDecks": [], "required": ["U1 H1", "U1 H2", "U1 H3", "U1 H4", "U1 AppA", "U1 AppB", "U1 AppC"], "optional": ["U1 AppI", "U1 AppJ", "U1 AppL"], "note": "Launch research culture, student identity, interests, and ethics norms. Optional supports include the project card sort, initial family communication, and differentiation notes." },
     { "week": 2, "unit": "Unit 1", "focus": "Experimental design, feasibility, and preliminary research questions", "primaryDecks": [2, 4], "secondaryDecks": [], "required": ["U1 H5", "U1 H6", "U1 H7", "U1 H8", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppH"], "optional": ["U1 AppI", "U1 AppK"], "note": "Move from broad interests toward feasible, testable research questions; use the Unit 1 teacher checklist as an end-of-unit reference." },
@@ -85,13 +159,13 @@
     { "week": 18, "unit": "Unit 4", "focus": "Calculations, statistics, and analysis methods", "primaryDecks": [10], "secondaryDecks": [], "required": ["U4 H5", "U4 H6", "U4 H7", "U4 H8", "U4 AppD", "U4 AppE", "U4 AppF", "U4 AppG"], "optional": [], "note": "Match data and questions to suitable analysis methods." },
     { "week": 19, "unit": "Unit 4", "focus": "Graphs, tables, visuals, error, and uncertainty", "primaryDecks": [11, 12], "secondaryDecks": [], "required": ["U4 H9", "U4 H10", "U4 H11", "U4 H12", "U4 AppH", "U4 AppI", "U4 AppJ", "U4 AppK"], "optional": [], "note": "Create honest visuals and account for error and uncertainty." },
     { "week": 20, "unit": "Unit 4", "focus": "Interpretation, claims, and transition to reporting", "primaryDecks": [], "secondaryDecks": [12], "required": ["U4 H13", "U4 H14", "U4 H15", "U4 H16", "U4 H17", "U4 AppN"], "optional": ["U4 AppL", "U4 AppM", "U4 AppO", "U4 AppP", "U4 AppQ"], "note": "Move from analysis into defensible claims and reporting readiness." },
-    { "week": 21, "unit": "Unit 5", "focus": "Understanding scientific reports", "primaryDecks": [13], "secondaryDecks": [], "required": ["U5 H1", "U5 H2", "U5 AppA", "U5 AppL"], "optional": ["U5 AppR", "U5 AppS"], "note": "Launch public showcase planning now: confirm format, target date, audience, and space. New-chapter implementation and showcase-extension notes are optional teacher references." },
+    { "week": 21, "unit": "Unit 5", "focus": "Understanding scientific reports", "primaryDecks": [13], "secondaryDecks": [], "required": ["U5 H1", "U5 H2", "U5 AppA", "U5 AppL"], "optional": ["U5 AppR", "U5 AppS"], "note": "Teacher-only showcase milestone 1: select the public format, tentative Week 33 date and time, audience, venue, and administrative or district support. No added student deliverable or print requirement." },
     { "week": 22, "unit": "Unit 5", "focus": "Writing the introduction", "primaryDecks": [], "secondaryDecks": [13], "required": ["U5 H3", "U5 AppB", "U5 AppC"], "optional": [], "note": "Draft the report introduction." },
     { "week": 23, "unit": "Unit 5", "focus": "Writing the methods section", "primaryDecks": [], "secondaryDecks": [13], "required": ["U5 H4", "U5 AppD", "U5 AppE"], "optional": [], "note": "Draft a reproducible methods section." },
-    { "week": 24, "unit": "Unit 5", "focus": "Results, figures, tables, and captions", "primaryDecks": [], "secondaryDecks": [11], "required": ["U5 H5", "U5 AppF", "U5 AppG"], "optional": [], "note": "Draft results and send invitations or confirm the public audience." },
+    { "week": 24, "unit": "Unit 5", "focus": "Results, figures, tables, and captions", "primaryDecks": [], "secondaryDecks": [11], "required": ["U5 H5", "U5 AppF", "U5 AppG"], "optional": [], "note": "Teacher-only showcase milestone 2: reserve space, confirm the public audience pathway, send a save-the-date, and begin district communication. No added student deliverable or print requirement." },
     { "week": 25, "unit": "Unit 5", "focus": "Writing the discussion", "primaryDecks": [14], "secondaryDecks": [], "required": ["U5 H6", "U5 AppH", "U5 AppI"], "optional": [], "note": "Write the discussion using claims, evidence, reasoning, and limitations." },
     { "week": 26, "unit": "Unit 5", "focus": "Conclusion and full report assembly", "primaryDecks": [], "secondaryDecks": [13], "required": ["U5 H7", "U5 AppJ", "U5 AppK", "U5 AppL"], "optional": [], "note": "Assemble the complete research report." },
-    { "week": 27, "unit": "Unit 5", "focus": "Peer review and revision", "primaryDecks": [15], "secondaryDecks": [], "required": ["U5 H8", "U5 H9", "U5 AppM", "U5 AppN"], "optional": [], "note": "Revise the report and finalize public event logistics, technology, accessibility, and assessment workflow." },
+    { "week": 27, "unit": "Unit 5", "focus": "Peer review and revision", "primaryDecks": [15], "secondaryDecks": [], "required": ["U5 H8", "U5 H9", "U5 AppM", "U5 AppN"], "optional": [], "note": "Teacher-only showcase milestone 3: send formal invitations and lock technology, accessibility, room flow, assessment workflow, logistics owners, and backup plans. No added student showcase deliverable or print requirement." },
     { "week": 28, "unit": "Unit 5", "focus": "Presentation design and practice", "primaryDecks": [16], "secondaryDecks": [17], "required": ["U5 H10", "U5 H11", "U5 AppO"], "optional": ["U5 AppQ", "U6 AppL"], "note": "Design the presentation product and begin formal practice. Use Unit 6 Appendix L as the optional teacher scoring reference for final oral criteria." },
     { "week": 29, "unit": "Unit 6", "focus": "Final presentation readiness and message refinement", "primaryDecks": [17], "secondaryDecks": [], "required": ["U6 H1", "U6 H2", "U6 H3", "U6 AppA", "U6 AppB", "U6 AppC"], "optional": ["U6 AppL"], "note": "Refine the research story and speaking plan; use the final oral rubric as an optional practice reference." },
     { "week": 30, "unit": "Unit 6", "focus": "Practice presentations and audience adaptation", "primaryDecks": [], "secondaryDecks": [17], "required": ["U6 H4", "U6 H5", "U6 H6", "U6 AppD", "U6 AppE"], "optional": ["U6 AppL"], "note": "Practice for the actual public audience; use the final oral rubric as an optional feedback reference." },

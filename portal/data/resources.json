@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T18:15:44.921Z",
+  "generatedAt": "2026-07-16T18:40:03.119Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -520,8 +520,8 @@
       "path": "Teacher Resources (Start Here)/17_STARLAB_Showcase_Planning_Kit.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/17_STARLAB_Showcase_Planning_Kit.docx",
       "extension": "DOCX",
-      "sizeBytes": 47901,
-      "sizeLabel": "47 KB",
+      "sizeBytes": 48397,
+      "sizeLabel": "48 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
         "showcase"
@@ -1269,8 +1269,8 @@
       "path": "Teacher Resources (Start Here)/05_STARLAB_Full_Course_Implementation_Calendar.xlsx",
       "href": "../Teacher%20Resources%20(Start%20Here)/05_STARLAB_Full_Course_Implementation_Calendar.xlsx",
       "extension": "XLSX",
-      "sizeBytes": 55736,
-      "sizeLabel": "55 KB",
+      "sizeBytes": 56421,
+      "sizeLabel": "56 KB",
       "description": "Spreadsheet tracker or planning tool for course implementation.",
       "tags": [
         "calendar",
@@ -13371,8 +13371,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_21_Understanding_Scientific_Reports.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_21_Understanding_Scientific_Reports.docx",
       "extension": "DOCX",
-      "sizeBytes": 38710,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 38927,
+      "sizeLabel": "39 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
@@ -13548,7 +13548,7 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_24_Results_Figures_Tables_and_Captions.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_24_Results_Figures_Tables_and_Captions.docx",
       "extension": "DOCX",
-      "sizeBytes": 38404,
+      "sizeBytes": 38650,
       "sizeLabel": "38 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
@@ -13718,7 +13718,7 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_27_Peer_Review_and_Revision.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_27_Peer_Review_and_Revision.docx",
       "extension": "DOCX",
-      "sizeBytes": 38095,
+      "sizeBytes": 38317,
       "sizeLabel": "38 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],

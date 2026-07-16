@@ -36,6 +36,32 @@ if (manifest.resources.some((item) => item.path.includes("STARLAB_Unit_5/Appendi
 }
 if (courseMap.weeks.length !== 34) fail(`Expected 34 mapped weeks; found ${courseMap.weeks.length}.`);
 
+const expectedShowcaseMilestoneWeeks = [21, 24, 27, 30, 31, 32, 33, 34];
+const actualShowcaseMilestoneWeeks = (courseMap.showcaseMilestones || []).map((item) => item.week);
+if (JSON.stringify(actualShowcaseMilestoneWeeks) !== JSON.stringify(expectedShowcaseMilestoneWeeks)) {
+  fail("Showcase milestones do not match the authoritative Week 21-34 planning sequence.");
+}
+for (const week of [21, 24, 27]) {
+  const milestone = (courseMap.showcaseMilestones || []).find((item) => item.week === week);
+  if (!milestone?.teacherOnly || !milestone?.noStudentDeliverable) {
+    fail(`Week ${week} showcase milestone must remain teacher-only with no added student deliverable.`);
+  }
+  const mapping = courseMap.weeks.find((item) => item.week === week);
+  if (!mapping?.note.includes("Teacher-only showcase milestone")) {
+    fail(`Week ${week} course note must identify the advance showcase milestone as teacher-only.`);
+  }
+  if (!mapping?.note.toLowerCase().includes("no added student") || !mapping?.note.toLowerCase().includes("print requirement")) {
+    fail(`Week ${week} course note must state that the showcase milestone adds no student deliverable or print requirement.`);
+  }
+}
+const publicShowcaseMilestone = (courseMap.showcaseMilestones || []).find((item) => item.week === 33);
+if (!publicShowcaseMilestone?.action.includes("genuine public audience")) {
+  fail("Week 33 showcase milestone must require a genuine public audience.");
+}
+if (appSource.includes("six to eight weeks ahead")) {
+  fail("Portal still contains the outdated Week 21 showcase lead-time language.");
+}
+
 for (const item of manifest.resources) {
   if (!item.whenUsed) fail(`Resource is missing whenUsed metadata: ${item.path}`);
   if (!item.requirementStatus) fail(`Resource is missing requirementStatus metadata: ${item.path}`);
