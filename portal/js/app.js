@@ -117,6 +117,7 @@ function resourceBadges(item) {
   else if (status.includes("optional") || status.includes("recommended")) badges.push("Optional");
   else badges.push("Reference");
   if (itemAudiences(item).includes("Student")) badges.push("Student-facing");
+  else if (itemAudiences(item).includes("Parent/Guardian")) badges.push("Family-facing");
   else if (itemAudiences(item).includes("Teacher")) badges.push("Teacher-only");
   if (["DOCX", "PPTX", "XLSX"].includes(item.extension)) badges.push("Editable");
   if (["PDF", "PNG", "MP4", "TXT", "MD"].includes(item.extension)) badges.push("Preview");
@@ -198,6 +199,8 @@ function breadcrumbs() {
   } else if (hash === "week" || hash.startsWith("week-")) {
     const week = hash.startsWith("week-") ? hash.split("-")[1] : "1";
     crumbs.push(["This Week's Materials", "#week"], [`Week ${week}`, `#week-${week}`]);
+  } else if (hash === "families") {
+    crumbs.push(["Teacher Resources", "#teacher"], ["Family Communications", "#families"]);
   } else {
     const labels = {
       slides: "Slide Deck Library",
@@ -207,6 +210,7 @@ function breadcrumbs() {
       teacher: "Teacher Resources",
       assessment: "Assessment & Rubrics",
       approval: "Project Approval & Safety",
+      families: "Family Communications",
       mentors: "Mentors & Community Partners",
       showcase: "Showcase Planning",
       templates: "Templates & Trackers",
@@ -230,6 +234,7 @@ function home() {
     ]],
     ["Manage Projects", [
       ["Project Approval & Safety", "#approval"],
+      ["Family Communications", "#families"],
       ["Mentors & Community Partners", "#mentors"],
       ["Templates & Trackers", "#templates"]
     ]],
@@ -634,6 +639,7 @@ function newTeacherMode() {
           ["Full Course Implementation Calendar", "full course implementation calendar"],
           ["Master Print Packet Index", "master print packet index"],
           ["Student Onboarding Packet", "student onboarding packet"],
+          ["Parent/Guardian Communication Pack", "parent guardian communication pack"],
           ["Grading and Assessment Guide", "grading assessment guide"]
         ])}
       </ul>
@@ -675,7 +681,7 @@ function startHere() {
           ["2", "Set up pacing and printing", `Review the ${resourceLink("full course implementation calendar", "implementation calendar")} and ${resourceLink("master print packet index", "print packet index")} before making copies or calendar commitments.`],
           ["3", "Prepare the first two weeks", `Open <a href="#unit-1">Unit 1</a>, <a href="#week-1">Week 1 materials</a>, and the <a href="#slides">slide deck library</a> so the launch feels coherent.`],
           ["4", "Prepare approval systems", `Skim <a href="#approval">Project Approval & Safety</a>, the ${resourceLink("project approval tracker", "approval tracker")}, and the Unit 2 approval materials before students design projects.`],
-          ["5", "Plan communication and support", `Prepare the ${resourceLink("student onboarding packet", "student onboarding packet")}, ${resourceLink("parent guardian communication pack", "parent/guardian pack")}, and <a href="#mentors">mentor workflow</a>.`]
+          ["5", "Plan communication and support", `Open <a href="#families">Family Communications</a>, prepare the ${resourceLink("student onboarding packet", "student onboarding packet")}, and set up the <a href="#mentors">mentor workflow</a>.`]
         ].map(([step, title, detail]) => `
           <article class="path-step">
             <span>${step}</span>
@@ -691,6 +697,7 @@ function startHere() {
           <li>Confirm the yearlong pacing and major deliverables.</li>
           <li>Decide how students will store journals, data, drafts, and approvals.</li>
           <li>Prepare the first print packet and student onboarding materials.</li>
+          <li>Customize the first family message and schedule it through a district-approved communication channel.</li>
           <li>Identify likely mentor, safety, or showcase partners.</li>
         </ul>
       </div>
@@ -941,12 +948,16 @@ function teacherResources() {
     ]]
   ];
   page("Teacher Resource Library", "Implementation resources from the Start Here folder, organized by teacher workflow.", categories.map(([label, entries]) => {
-    return `<section class="section"><h2>${label}</h2><ul class="resource-link-list">${toolkitLinks(entries)}</ul></section>`;
+    const familyHub = label === "Communication and Partnerships"
+      ? `<div class="actions"><a class="button primary" href="#families">Open Family Communications</a><a class="button" href="#mentors">Open Mentor & Partner Support</a></div>`
+      : "";
+    return `<section class="section"><h2>${label}</h2>${familyHub}<ul class="resource-link-list">${toolkitLinks(entries)}</ul></section>`;
   }).join(""));
 }
 
 function topicPage(key) {
   if (key === "approval") return approvalPage();
+  if (key === "families") return familiesPage();
   if (key === "showcase") return showcasePage();
   if (key === "assessment") return assessmentPage();
   if (key === "mentors") return mentorsPage();
@@ -1116,6 +1127,8 @@ const curatedAliases = {
   "ai use policy": "aiPolicy",
   "mentor community partner toolkit": "mentorToolkit",
   "parent guardian communication pack": "parentPack",
+  "initial parent guardian communication": "initialFamilyCommunication",
+  "optional initial parent guardian communication": "initialFamilyCommunication",
   "sample student project library": "sampleLibrary",
   "common problems what to do guide": "commonProblems",
   "how to plan schedule starlab project": "projectScheduleGuide",
@@ -1366,6 +1379,79 @@ function showcasePage() {
   `);
 }
 
+function familiesPage() {
+  const toolkit = [
+    ["Parent/Guardian Communication Pack (Primary Coursewide Source)", "parent guardian communication pack"],
+    ["Optional Initial Parent/Guardian Communication (Short Week 1 Option)", "initial parent guardian communication"],
+    ["Student Onboarding Packet", "student onboarding packet"],
+    ["Project Approval System", "project approval system"],
+    ["Showcase Planning Kit", "showcase planning kit"]
+  ];
+  page("Family Communications", "A teacher-facing hub for customizing and distributing STARLAB messages to parents and guardians through district-approved channels.", `
+    <section class="section">
+      <div class="mode-banner">
+        <strong>For teacher distribution.</strong>
+        <span>This page organizes teacher templates; it is not a public family portal. Customize every message and send it through your school or district's approved communication system.</span>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="card">
+        <h2>Primary Source</h2>
+        <p>Use the ${resourceLink("parent guardian communication pack", "Parent/Guardian Communication Pack")} as the coursewide source. It includes ten ready-to-adapt messages, FAQ language, an optional acknowledgment form, and short LMS or newsletter blurbs.</p>
+      </div>
+      <div class="card">
+        <h2>Short Week 1 Option</h2>
+        <p>Use ${resourceLink("initial parent guardian communication", "Unit 1 Appendix J")} only when you need a brief initial welcome. It does not replace the coursewide pack for approval, progress, reporting, showcase, or closure messages.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Recommended Communication Rhythm</h2>
+      <div class="grid">
+        ${[
+          ["Before or Week 1", "Welcome families, explain authentic research, and establish student ownership."],
+          ["Weeks 1-2", "Explain topic exploration and why students should not rush into a final project."],
+          ["Weeks 3-4", "Explain safety, ethics, project approval, and the rule that testing cannot begin early."],
+          ["Before special work", "Clarify mentor outreach, off-campus work, special materials, or equipment expectations as needed."],
+          ["Weeks 5-16", "Normalize pilot failures and revisions; send the Week 12 progress-report notice at the midpoint."],
+          ["Weeks 21-28", "Explain report drafting, visual evidence, revision, and presentation practice."],
+          ["Weeks 29-34", "Send the public showcase invitation early enough for families and guests to participate."],
+          ["After the showcase", "Celebrate growth, thank families, and reinforce the value of the full research process."]
+        ].map(([timing, detail]) => `<article class="card"><strong>${timing}</strong><p>${detail}</p></article>`).join("")}
+      </div>
+    </section>
+
+    <section class="section split">
+      <div class="card">
+        <h2>Before You Send</h2>
+        <ul class="list">
+          <li>Replace every bracketed placeholder and add current teacher contact information.</li>
+          <li>Use district-approved channels, translation supports, and accessibility practices.</li>
+          <li>Confirm dates, locations, deadlines, costs, and material requests before sharing them.</li>
+          <li>Do not imply that a project is approved until the Project Approval Tracker records the appropriate status.</li>
+          <li>Keep communication professional, documented, and consistent across families.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>District Forms Still Govern</h2>
+        <p>STARLAB communication templates explain the course, but they do not replace district-required permission or compliance forms.</p>
+        <ul class="list">
+          <li>Human-participant consent or assent</li>
+          <li>Media release and public showcase permissions</li>
+          <li>Fieldwork, transportation, or off-campus activity</li>
+          <li>Equipment, chemical, biological, drone, or data-privacy requirements</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Family Communication Toolkit</h2>
+      <ul class="resource-link-list">${toolkitLinks(toolkit)}</ul>
+    </section>
+  `);
+}
+
 function mentorsPage() {
   const toolkit = [
     ["Mentor and Community Partner Toolkit", "mentor community partner toolkit"],
@@ -1472,6 +1558,12 @@ function templatesPage() {
     ["Presentation Planning Guide", "presentation planning guide"],
     ["Portfolio Checklist", "portfolio checklist"]
   ];
+  const communicationTemplates = [
+    ["Parent/Guardian Communication Pack (Primary Coursewide Source)", "parent guardian communication pack"],
+    ["Optional Initial Parent/Guardian Communication (Short Week 1 Option)", "initial parent guardian communication"],
+    ["Mentor and Community Partner Toolkit", "mentor community partner toolkit"],
+    ["Showcase Planning Kit", "showcase planning kit"]
+  ];
   page("Templates & Trackers", "An operations hub for the calendars, spreadsheets, templates, checklists, and trackers that keep STARLAB manageable.", `
     <section class="section">
       <h2>Core Operations Tools</h2>
@@ -1517,6 +1609,12 @@ function templatesPage() {
     <section class="section">
       <h2>Student Planning Templates</h2>
       <ul class="resource-link-list">${toolkitLinks(studentTemplates)}</ul>
+    </section>
+
+    <section class="section">
+      <h2>Communication Templates</h2>
+      <p>Use the <a href="#families">Family Communications hub</a> to choose the correct message, timing, and district distribution pathway.</p>
+      <ul class="resource-link-list">${toolkitLinks(communicationTemplates)}</ul>
     </section>
   `);
 }
@@ -1608,15 +1706,15 @@ function route() {
   else if (hash === "handouts") library("Handout Library", "Student-facing handouts organized by unit and searchable from the master index.", { type: "Student Handout" });
   else if (hash === "appendixes") library("Appendix Library", "Supplemental appendices, rubrics, checklists, and implementation references.", { type: "Appendix" });
   else if (hash === "teacher") teacherResources();
-  else if (["assessment", "approval", "mentors", "showcase", "templates"].includes(hash)) topicPage(hash);
+  else if (["assessment", "approval", "families", "mentors", "showcase", "templates"].includes(hash)) topicPage(hash);
   else if (hash === "index") indexPage();
   else home();
   requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
 }
 
 Promise.all([
-  fetch("data/resources.json?v=20260716-11").then((response) => response.json()),
-  fetch("data/course-map.json?v=20260716-11").then((response) => response.json())
+  fetch("data/resources.json?v=20260716-12").then((response) => response.json()),
+  fetch("data/course-map.json?v=20260716-12").then((response) => response.json())
 ])
   .then(([resourceData, courseData]) => {
     manifest = resourceData;

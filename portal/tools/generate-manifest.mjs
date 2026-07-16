@@ -199,11 +199,19 @@ const curatedUsage = {
     requirementStatus: "Required progress-monitoring tool"
   },
   parentPack: {
-    whenUsed: "Before Week 1; teacher distribution as needed",
-    relatedDecks: [1],
+    whenUsed: "Before or Week 1; Weeks 3-4, 5-16, 21-28, 29-34; after showcase",
     units: unitOrder,
     audiences: ["Teacher", "Parent/Guardian"],
-    requirementStatus: "Optional / Teacher distributed"
+    requirementStatus: "Teacher-distributed communication source; adapt locally"
+  },
+  initialFamilyCommunication: {
+    whenUsed: "Before or Week 1",
+    relatedDecks: [1, 3],
+    units: ["Unit 1"],
+    audiences: ["Teacher", "Parent/Guardian"],
+    requirementStatus: "Optional / Teacher distributed",
+    useCategory: "teacher-distribution",
+    printClassification: "teacher-distribution"
   },
   studentOnboarding: {
     whenUsed: "Week 1",
@@ -663,6 +671,8 @@ for (const resource of resources) {
       resource.requirementStatus = curated.requirementStatus;
       resource.required = curated.requirementStatus.startsWith("Required");
     }
+    if (curated.useCategory) resource.useCategory = curated.useCategory;
+    if (curated.printClassification) resource.printClassification = curated.printClassification;
     if (curated.whenUsed) resource.usageNotes = curated.whenUsed;
     if (curated.purpose) {
       resource.purpose = curated.purpose;

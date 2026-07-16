@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T22:31:55.319Z",
+  "generatedAt": "2026-07-16T23:00:48.843Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -307,7 +307,7 @@
     },
     {
       "id": "res-277",
-      "title": "11 STARLAB Parent Guardian Communication Pack",
+      "title": "STARLAB Parent/Guardian Communication Pack",
       "fileName": "11_STARLAB_Parent_Guardian_Communication_Pack.docx",
       "unit": "Coursewide",
       "units": [
@@ -324,11 +324,9 @@
         "Teacher",
         "Parent/Guardian"
       ],
-      "whenUsed": "Before Week 1; teacher distribution as needed",
-      "relatedDeck": "Deck 1",
-      "relatedDecks": [
-        "Deck 1"
-      ],
+      "whenUsed": "Before or Week 1; Weeks 3-4, 5-16, 21-28, 29-34; after showcase",
+      "relatedDeck": "",
+      "relatedDecks": [],
       "relatedPrimaryDecks": [],
       "relatedRevisitDecks": [],
       "weeksRequired": [],
@@ -338,30 +336,33 @@
       "path": "Teacher Resources (Start Here)/11_STARLAB_Parent_Guardian_Communication_Pack.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/11_STARLAB_Parent_Guardian_Communication_Pack.docx",
       "extension": "DOCX",
-      "sizeBytes": 46121,
+      "sizeBytes": 46239,
       "sizeLabel": "46 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [
         "communication"
       ],
-      "purpose": "STARLAB curriculum or implementation resource.",
-      "teacherUse": "Customize and distribute to families through district-approved teacher communication channels.",
+      "purpose": "Primary coursewide source for teacher-customized family messages, transition updates, showcase invitations, FAQ language, and optional acknowledgment materials.",
+      "teacherUse": "Select the message that matches the current course phase, replace all placeholders, and distribute through district-approved teacher communication channels.",
       "studentUse": "",
       "keywords": [
         "communication",
         "communication template",
         "coursewide",
         "family communication",
+        "family engagement",
+        "parent guardian",
+        "showcase invitation",
         "teacher distribution"
       ],
       "required": false,
       "printRecommended": false,
       "useCategory": "teacher-distribution",
       "printClassification": "teacher-distribution",
-      "notes": "",
-      "requirementStatus": "Optional / Teacher distributed",
-      "usageNotes": "Before Week 1; teacher distribution as needed",
-      "searchText": "11 STARLAB Parent Guardian Communication Pack STARLAB curriculum or implementation resource. STARLAB curriculum or implementation resource. Customize and distribute to families through district-approved teacher communication channels.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Communication Template Teacher Teacher Parent/Guardian Before Week 1; teacher distribution as needed Deck 1 Deck 1    Teacher Resources (Start Here) communication communication communication template coursewide family communication teacher distribution teacher-distribution Optional / Teacher distributed Before Week 1; teacher distribution as needed"
+      "notes": "Authoritative coursewide family communication sequence. Unit 1 Appendix J is the shortened Week 1 option. This pack does not replace district permission, consent, media-release, fieldwork, transportation, or safety forms.",
+      "requirementStatus": "Teacher-distributed communication source; adapt locally",
+      "usageNotes": "Before or Week 1; Weeks 3-4, 5-16, 21-28, 29-34; after showcase",
+      "searchText": "STARLAB Parent/Guardian Communication Pack STARLAB curriculum or implementation resource. Primary coursewide source for teacher-customized family messages, transition updates, showcase invitations, FAQ language, and optional acknowledgment materials. Select the message that matches the current course phase, replace all placeholders, and distribute through district-approved teacher communication channels.  Coursewide Unit 1 Unit 2 Unit 3 Unit 4 Unit 5 Unit 6 Communication Template Teacher Teacher Parent/Guardian Before or Week 1; Weeks 3-4, 5-16, 21-28, 29-34; after showcase      Teacher Resources (Start Here) communication communication communication template coursewide family communication family engagement parent guardian showcase invitation teacher distribution teacher-distribution Teacher-distributed communication source; adapt locally Before or Week 1; Weeks 3-4, 5-16, 21-28, 29-34; after showcase"
     },
     {
       "id": "res-282",
@@ -803,7 +804,7 @@
       "path": "Teacher Resources (Start Here)/04_STARLAB_Course_Operations_Manual.docx",
       "href": "../Teacher%20Resources%20(Start%20Here)/04_STARLAB_Course_Operations_Manual.docx",
       "extension": "DOCX",
-      "sizeBytes": 214843,
+      "sizeBytes": 215022,
       "sizeLabel": "210 KB",
       "description": "STARLAB curriculum or implementation resource.",
       "tags": [],
@@ -2060,18 +2061,19 @@
     },
     {
       "id": "res-031",
-      "title": "Appendix J Optional Initial Parent or Guardian Communication",
+      "title": "Appendix J: Optional Initial Parent/Guardian Communication",
       "fileName": "Appendix_J_Optional_Initial_Parent_or_Guardian_Communication.docx",
       "unit": "Unit 1",
       "units": [
         "Unit 1"
       ],
       "type": "Appendix",
-      "audience": "Parent/Guardian",
+      "audience": "Teacher",
       "audiences": [
+        "Teacher",
         "Parent/Guardian"
       ],
-      "whenUsed": "Week 1",
+      "whenUsed": "Before or Week 1",
       "relatedDeck": "Deck 1",
       "relatedDecks": [
         "Deck 1",
@@ -2091,32 +2093,32 @@
       "path": "STARLAB_Unit_1/Appendixes/Appendix_J_Optional_Initial_Parent_or_Guardian_Communication.docx",
       "href": "../STARLAB_Unit_1/Appendixes/Appendix_J_Optional_Initial_Parent_or_Guardian_Communication.docx",
       "extension": "DOCX",
-      "sizeBytes": 10032,
-      "sizeLabel": "10 KB",
+      "sizeBytes": 10242,
+      "sizeLabel": "11 KB",
       "description": "Supplemental implementation, reference, or instructional support material.",
       "tags": [
         "communication"
       ],
-      "purpose": "Supplemental implementation, reference, or instructional support material.",
-      "teacherUse": "Use as needed when the weekly guide, unit page, or student project context calls for additional support.",
+      "purpose": "Short Week 1 welcome message for teachers who need a concise alternative to the full coursewide communication pack.",
+      "teacherUse": "Customize and send during Week 1 through a district-approved channel; use the Parent/Guardian Communication Pack for later course transitions.",
       "studentUse": "",
       "keywords": [
         "appendix",
         "communication",
-        "extension",
+        "family communication",
+        "parent guardian",
         "optional",
-        "reference",
-        "support",
+        "teacher distribution",
         "unit 1"
       ],
       "required": false,
       "printRecommended": false,
-      "useCategory": "optional",
-      "printClassification": "optional-support",
-      "notes": "",
-      "requirementStatus": "Optional",
-      "usageNotes": "Optional/reference: Week 1. Primary deck alignment: Deck 1, Deck 3",
-      "searchText": "Appendix J Optional Initial Parent or Guardian Communication Supplemental implementation, reference, or instructional support material. Supplemental implementation, reference, or instructional support material. Use as needed when the weekly guide, unit page, or student project context calls for additional support.  Unit 1 Unit 1 Appendix Parent/Guardian Parent/Guardian Week 1 Deck 1 Deck 1 Deck 3 Deck 1 Deck 3  U1 AppJ STARLAB_Unit_1 / Appendixes communication appendix communication extension optional reference support unit 1 optional Optional Optional/reference: Week 1. Primary deck alignment: Deck 1, Deck 3"
+      "useCategory": "teacher-distribution",
+      "printClassification": "teacher-distribution",
+      "notes": "Abbreviated Week 1 option only. The coursewide Parent/Guardian Communication Pack is the primary source for all later messages.",
+      "requirementStatus": "Optional / Teacher distributed",
+      "usageNotes": "Before or Week 1",
+      "searchText": "Appendix J: Optional Initial Parent/Guardian Communication Supplemental implementation, reference, or instructional support material. Short Week 1 welcome message for teachers who need a concise alternative to the full coursewide communication pack. Customize and send during Week 1 through a district-approved channel; use the Parent/Guardian Communication Pack for later course transitions.  Unit 1 Unit 1 Appendix Teacher Teacher Parent/Guardian Before or Week 1 Deck 1 Deck 1 Deck 3 Deck 1 Deck 3  U1 AppJ STARLAB_Unit_1 / Appendixes communication appendix communication family communication parent guardian optional teacher distribution unit 1 teacher-distribution Optional / Teacher distributed Before or Week 1"
     },
     {
       "id": "res-032",

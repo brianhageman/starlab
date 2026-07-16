@@ -37,6 +37,9 @@ if (manifest.resources.some((item) => item.path.includes("STARLAB_Unit_5/Appendi
 if (!courseMap.curatedResources.districtApprovalAddendum) {
   fail("District Approval and Escalation Addendum is missing from curated resources.");
 }
+if (!courseMap.curatedResources.parentPack || !courseMap.curatedResources.initialFamilyCommunication) {
+  fail("Family communication sources are missing from curated resources.");
+}
 if (courseMap.weeks.length !== 34) fail(`Expected 34 mapped weeks; found ${courseMap.weeks.length}.`);
 
 const expectedShowcaseMilestoneWeeks = [21, 24, 27, 30, 31, 32, 33, 34];
@@ -257,6 +260,9 @@ if (!appSource.includes("Local setup is required before Unit 2.")) {
 }
 if (!appSource.includes("Open the District Approval and Escalation Addendum")) {
   fail("Project Approval & Safety page is missing the addendum link.");
+}
+if (!appSource.includes("function familiesPage()") || !appSource.includes("For teacher distribution.")) {
+  fail("Teacher-facing Family Communications hub is missing or does not state the distribution policy.");
 }
 for (const [key, resourcePath] of Object.entries(courseMap.authority)) {
   if (key.endsWith("Rubric")) {
