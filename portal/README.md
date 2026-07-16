@@ -25,7 +25,7 @@ Add new files to the existing curriculum folders, then rerun:
 node portal/tools/generate-manifest.mjs
 ```
 
-The generator scans the curriculum root, skips hidden files, portal source files, and PD working files, then writes `portal/data/resources.json`.
+The generator scans the curriculum root, skips hidden files, portal source files, PD working files, and the optional Arduino bootcamp side quest, then writes `portal/data/resources.json`.
 
 Metadata lives in:
 
@@ -39,6 +39,14 @@ That file adds teacher-friendly purposes, keywords, required/optional flags, pri
 node portal/tools/generate-metadata.mjs
 node portal/tools/generate-manifest.mjs
 ```
+
+The implementation calendar is the source of truth for week, deck, required-print, optional/reference, and milestone chronology. After changing that workbook, update `portal/data/course-map.json`, regenerate the manifest, and run:
+
+```bash
+node portal/tools/validate-portal.mjs
+```
+
+The validator checks all 34 weeks, exact catalog references, curated links, case-sensitive file paths, all 19 decks, and the Arduino exclusion. The Project Approval Tracker is the official project approval record; the Safety Scope Guide supports completion of that tracker. Parent/guardian materials remain teacher-distributed resources.
 
 Recommended locations:
 
@@ -66,7 +74,7 @@ The files are not copied or renamed.
 ## Assumptions and limitations
 
 - Original curriculum files are not moved or renamed.
-- Metadata such as audience, tags, week, and resource type is inferred from folder and file names.
+- General metadata is inferred from folder and file names; authoritative weekly mappings and curated links live in `portal/data/course-map.json`.
 - The manifest is easy to edit by hand if a resource needs richer descriptions later.
 - File previews depend on the browser and operating system; the portal links directly to each file.
 - Public Office previews depend on Microsoft Office Viewer and require publicly accessible file URLs.

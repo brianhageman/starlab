@@ -3,6 +3,7 @@ const nav = document.querySelector(".main-nav");
 const navToggle = document.querySelector(".nav-toggle");
 
 let manifest;
+let courseMap;
 let gameCleanup = null;
 let eggBuffer = "";
 
@@ -49,7 +50,7 @@ const weekFocus = {
   30: "Practice presentations and audience adaptation",
   31: "Q&A preparation and defense of evidence",
   32: "Final showcase preparation",
-  33: "Public presentation showcase or final defense",
+  33: "Required public presentation or showcase",
   34: "Final reflection, portfolio, and next steps"
 };
 const weekDecks = {
@@ -136,7 +137,19 @@ function resources(filter = {}) {
 }
 
 function unitForWeek(week) {
-  return Object.entries(unitWeeks).find(([, weeks]) => weeks.includes(Number(week)))?.[0] || "Coursewide";
+  return courseWeek(week)?.unit || Object.entries(unitWeeks).find(([, weeks]) => weeks.includes(Number(week)))?.[0] || "Coursewide";
+}
+
+function courseWeek(week) {
+  return courseMap?.weeks.find((item) => item.week === Number(week));
+}
+
+function resourceByCatalogRef(catalogRef) {
+  return manifest.resources.find((item) => item.catalogRef === catalogRef);
+}
+
+function resourcesByCatalogRefs(catalogRefs = []) {
+  return catalogRefs.map(resourceByCatalogRef).filter(Boolean);
 }
 
 function weekNumberFromResource(item) {
@@ -150,33 +163,12 @@ function deckNumberFromResource(item) {
 }
 
 function resourcesForWeek(week) {
-  const unit = unitForWeek(week);
-  const decks = weekDecks[week] || [];
-  const deckLabels = decks.map((deck) => `Deck ${deck}`);
-  const unitItems = resources({ unit });
-  const direct = unitItems.filter((item) => weekNumberFromResource(item) === Number(week));
-  const slides = manifest.resources.filter((item) => item.type === "Slide Deck" && deckLabels.includes(item.relatedDeck));
-  const plannedHandouts = plannedHandoutsForWeek(week);
-  const likely = unitItems.filter((item) => {
-    if (direct.includes(item)) return false;
-    if (plannedHandouts.includes(item)) return false;
-    const title = normalize(item.title);
-    if (item.type === "Appendix" && ["approval", "safety", "rubric", "checklist", "guide", "mentor", "graph", "report", "showcase"].some((word) => title.includes(word))) return true;
-    return false;
-  }).slice(0, 10);
-  return [...new Map([...direct, ...slides, ...plannedHandouts, ...likely].map((item) => [item.id, item])).values()];
-}
-
-function plannedHandoutsForWeek(week) {
-  const plan = weekHandoutPlan[Number(week)];
-  if (!plan?.queries) return [];
-  const unit = unitForWeek(week);
-  return plan.queries.map((query) => {
-    return resources({ unit }).find((item) => {
-      const haystack = normalize(`${item.title} ${item.folder} ${item.type}`);
-      return (item.type === "Student Handout" || item.folder.includes("Student")) && haystack.includes(normalize(query));
-    });
-  }).filter(Boolean);
+  const mapping = courseWeek(week);
+  if (!mapping) return [];
+  const teacherGuide = resourceByCatalogRef(`U${mapping.unit.split(" ")[1]} TG W${mapping.week}`);
+  const decks = resourcesByCatalogRefs([...mapping.primaryDecks, ...mapping.secondaryDecks].map((number) => `D${number}`));
+  const mapped = resourcesByCatalogRefs([...mapping.required, ...mapping.optional]);
+  return [...new Map([teacherGuide, ...decks, ...mapped].filter(Boolean).map((item) => [item.id, item])).values()];
 }
 
 function resourceBadges(item) {
@@ -213,8 +205,8 @@ function card(item) {
   `;
 }
 
-function resourceLink(query, label) {
-  const item = resources({ query }).find((resource) => resource.folder.includes("Teacher Resources")) || resources({ query })[0];
+function resourceLink(key, label) {
+  const item = curatedResource(key);
   if (!item) return escapeHtml(label);
   return previewLink(item, label);
 }
@@ -783,18 +775,21 @@ function unitsPage() {
 
 function weekPage(selectedWeek = 1) {
   const week = Number(selectedWeek) || 1;
-  const unit = unitForWeek(week);
-  const handoutPlan = weekHandoutPlan[week] || {};
+  const mapping = courseWeek(week);
+  const unit = mapping?.unit || unitForWeek(week);
   const items = resourcesForWeek(week);
   const teacherGuides = items.filter((item) => item.type === "Teacher Guide" || (item.type === "Document" && item.folder.includes("Teaching")));
   const slides = items.filter((item) => item.type === "Slide Deck");
-  const handouts = items.filter((item) => item.type === "Student Handout" || (item.folder.includes("Student") && item.extension === "DOCX"));
-  const support = items.filter((item) => !teacherGuides.includes(item) && !slides.includes(item) && !handouts.includes(item));
+  const requiredItems = resourcesByCatalogRefs(mapping?.required || []);
+  const optionalItems = resourcesByCatalogRefs(mapping?.optional || []);
+  const handouts = requiredItems.filter((item) => item.type === "Student Handout");
+  const support = requiredItems.filter((item) => item.type !== "Student Handout");
+  const requiredPrint = requiredItems.filter((item) => ["Student Handout", "Appendix", "Rubric"].includes(item.type));
   page("This Week's Materials", "Choose a course week and open the teacher guide, slides, handouts, appendices, and print-ready resources from one place.", `
     <section class="section card">
       <label class="field-label" for="week-select">Choose week</label>
       <select class="week-select" id="week-select">
-        ${Array.from({ length: 34 }, (_, index) => index + 1).map((number) => `<option value="${number}" ${number === week ? "selected" : ""}>Week ${number}: ${escapeHtml(weekFocus[number])}</option>`).join("")}
+        ${courseMap.weeks.map((item) => `<option value="${item.week}" ${item.week === week ? "selected" : ""}>Week ${item.week}: ${escapeHtml(item.focus)}</option>`).join("")}
       </select>
       <div class="meta"><span class="pill red">${escapeHtml(unit)}</span><span class="pill">${escapeHtml(manifest.units[unit]?.weeks || "")}</span></div>
       <div class="week-nav">
@@ -805,8 +800,8 @@ function weekPage(selectedWeek = 1) {
     <section class="section split">
       <div class="card">
         <h2>Week ${week} Focus</h2>
-        <p>${escapeHtml(weekFocus[week])}</p>
-        <p>${escapeHtml(handoutPlan.note || handoutPlan.continue || "Use the resources below to plan this week.")}</p>
+        <p>${escapeHtml(mapping?.focus || weekFocus[week])}</p>
+        <p>${escapeHtml(mapping?.note || "Use the resources below to plan this week.")}</p>
         <ul class="list">
           <li>Open the teacher guide first, then the slide deck.</li>
           <li>Preview handouts before printing or sharing with students.</li>
@@ -814,9 +809,9 @@ function weekPage(selectedWeek = 1) {
         </ul>
       </div>
       <div class="card">
-        <h2>Print Checklist</h2>
+        <h2>Required Student Copies</h2>
         <ul class="list">
-          ${handouts.map((item) => `<li>${previewLink(item)}</li>`).join("") || `<li>${escapeHtml(handoutPlan.continue || "No new handouts are assigned for this week.")}</li>`}
+          ${requiredPrint.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No new required student copies this week. Students may continue using materials already issued.</li>"}
         </ul>
       </div>
     </section>
@@ -826,15 +821,16 @@ function weekPage(selectedWeek = 1) {
         ${[
           ["Open the teacher guide", teacherGuides.length ? `Start with ${teacherGuides.length} teacher-facing guide resource${teacherGuides.length === 1 ? "" : "s"} for this week.` : "No week-specific guide was inferred; use the unit overview and related resources."],
           ["Preview slides", slides.length ? `Preview ${slides.length} slide deck${slides.length === 1 ? "" : "s"} before teaching.` : "No week-specific slide deck was mapped."],
-          ["Print or share student materials", handouts.length ? `${handouts.length} student handout${handouts.length === 1 ? "" : "s"} assigned for this week.` : handoutPlan.continue || "No new handouts assigned."],
-          ["Check support needs", support.length ? "Review appendices, rubrics, trackers, or safety resources before class." : "No extra support resources were inferred for this week."]
+          ["Print or share student materials", requiredPrint.length ? `${requiredPrint.length} required student cop${requiredPrint.length === 1 ? "y" : "ies"} assigned for this week.` : "No new required student copies; students may continue using materials already issued."],
+          ["Check support needs", optionalItems.length ? "Review the optional and teacher-reference resources before class." : "No additional optional resources are mapped for this week."]
         ].map(([title, detail]) => `<article class="card"><strong>${title}</strong><p>${escapeHtml(detail)}</p></article>`).join("")}
       </div>
     </section>
     ${weekSection("Teacher Guide", teacherGuides)}
     ${weekSection("Slide Decks", slides)}
     ${weekSection("Student Handouts", handouts)}
-    ${weekSection("Appendices, Rubrics, and Trackers", support)}
+    ${weekSection("Required Appendices and Rubrics", support)}
+    ${weekSection("Optional / Teacher Reference", optionalItems)}
   `);
   document.querySelector("#week-select")?.addEventListener("change", (event) => {
     location.hash = `#week-${event.target.value}`;
@@ -857,8 +853,7 @@ function unitDetail(number) {
   const deckList = manifest.decks.filter((deck) => deck.unit === unit);
   const buckets = ["Teacher Guide", "Student Handout", "Appendix", "Rubric"].map((type) => [type, resources({ unit, type })]);
   const weeks = unitWeeks[unit] || [];
-  const unitItems = resources({ unit });
-  const printItems = unitPrintItems(unitItems);
+  const printItems = unitPrintItems(unit);
   page(`${unit}: ${meta.title}`, `${meta.weeks}. ${meta.focus}`, `
     <section class="section split">
       <div class="card">
@@ -895,7 +890,8 @@ function unitDetail(number) {
       <div class="card">
         <h2>Print Checklist</h2>
         <ul class="list scroll-list">
-          ${printItems.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No print resources found for this unit.</li>"}
+          ${printItems.required.map((item) => `<li>${previewLink(item)}</li>`).join("") || "<li>No required student copies found for this unit.</li>"}
+          ${printItems.optional.length ? `<li class="list-divider"><strong>Optional / Teacher Reference</strong></li>${printItems.optional.map((item) => `<li>${previewLink(item)}</li>`).join("")}` : ""}
         </ul>
       </div>
     </section>
@@ -908,16 +904,16 @@ function unitDetail(number) {
   `);
 }
 
-function unitPrintItems(items) {
-  const printable = items.filter((item) => {
-    const title = normalize(item.title);
-    if (title.includes("readme") || title.includes("folder index")) return false;
-    return ["Student Handout", "Appendix", "Rubric"].includes(item.type) || item.folder.includes("Student");
-  });
-  return printable.sort((a, b) => {
+function unitPrintItems(unit) {
+  const mappings = courseMap.weeks.filter((item) => item.unit === unit);
+  const sortItems = (items) => [...new Map(items.map((item) => [item.id, item])).values()].sort((a, b) => {
     const rank = (item) => item.type === "Student Handout" || item.folder.includes("Student") ? 0 : item.type === "Rubric" ? 1 : 2;
     return rank(a) - rank(b) || a.title.localeCompare(b.title, undefined, { numeric: true });
-  }).slice(0, 12);
+  });
+  return {
+    required: sortItems(resourcesByCatalogRefs(mappings.flatMap((item) => item.required))),
+    optional: sortItems(resourcesByCatalogRefs(mappings.flatMap((item) => item.optional)))
+  };
 }
 
 function library(title, subtitle, filter) {
@@ -965,7 +961,7 @@ function teacherResources() {
     ]],
     ["Communication and Partnerships", [
       ["Mentor and Community Partner Toolkit", "mentor community partner toolkit"],
-      ["Parent/Guardian Communication Pack", "parent guardian communication pack"]
+      ["Parent/Guardian Communication Pack (For Teacher Distribution)", "parent guardian communication pack"]
     ]],
     ["Project Support", [
       ["Sample Student Project Library", "sample student project library"],
@@ -1019,6 +1015,7 @@ function assessmentPage() {
           ["Oral Presentation", "15%", "Clear communication, evidence defense, Q&A, professionalism, and reflection."]
         ].map(([name, weight, detail]) => `<article class="card"><strong>${name}</strong><p class="eyebrow">${weight}</p><p>${detail}</p></article>`).join("")}
       </div>
+      <p class="section-note">Unit-level percentage tables are optional local suggestions for breaking down work within a unit. They do not replace these six official syllabus categories or add a seventh course category.</p>
     </section>
 
     <section class="section split">
@@ -1061,35 +1058,102 @@ function assessmentPage() {
 
     <section class="section">
       <h2>Assessment Toolkit</h2>
+      <p><strong>Official presentation instruments:</strong> Unit 6 Appendix L is the final summative Oral Presentation rubric. Unit 6 Appendix M scores the public showcase presentation within that same syllabus category.</p>
       <ul class="resource-link-list">${toolkitLinks(toolkit)}</ul>
     </section>
   `);
 }
 
-function findResource(query) {
-  return resources({ query })[0];
+const curatedAliases = {
+  "teacher start here guide": "teacherStartHere",
+  "course operations manual": "courseOperations",
+  "full course implementation calendar": "implementationCalendar",
+  "master print packet index": "masterPrintIndex",
+  "student onboarding packet": "studentOnboarding",
+  "grading assessment guide": "gradingGuide",
+  "grading and assessment guide": "gradingGuide",
+  "starlab syllabus": "syllabus",
+  "course proposal": "courseProposal",
+  "project approval system": "approvalSystem",
+  "starlab project approval system": "approvalSystem",
+  "project approval tracker": "approvalTracker",
+  "safety scope guide": "safetyScopeGuide",
+  "ai use policy": "aiPolicy",
+  "mentor community partner toolkit": "mentorToolkit",
+  "parent guardian communication pack": "parentPack",
+  "sample student project library": "sampleLibrary",
+  "common problems what to do guide": "commonProblems",
+  "how to plan schedule starlab project": "projectScheduleGuide",
+  "weekly progress tracker student guide": "weeklyProgressStudentGuide",
+  "weekly progress tracker": "weeklyProgressTracker",
+  "showcase planning kit": "showcasePlanningKit",
+  "risk assessment matrix": "riskAssessmentMatrix",
+  "safety ethics red flags": "safetyRedFlags",
+  "project approval checklist": "projectApprovalChecklist",
+  "safety risk assessment": "safetyRiskHandout",
+  "ethics approval screening": "ethicsScreeningHandout",
+  "formal research plan safety ethics approval": "week4Guide",
+  "research journal standards": "researchJournalStandards",
+  "journal self assessment": "researchJournalSelfAssessment",
+  "progress report rubric": "progressReportRubric",
+  "unit 4 analysis rubric": "analysisRubric",
+  "scientific report rubric": "scientificReportRubric",
+  "oral presentation rubric": "oralPresentationRubric",
+  "showcase rubric": "showcaseRubric",
+  "showcase planning guide for teachers": "showcaseTeacherGuide",
+  "sample showcase schedule": "sampleShowcaseSchedule",
+  "visitor question guide": "visitorQuestionGuide",
+  "final showcase readiness checklist": "finalShowcaseChecklist",
+  "audience feedback collection form": "audienceFeedback",
+  "presentation product final check": "presentationProductCheck",
+  "post presentation reflection": "postPresentationReflection",
+  "portfolio checklist": "portfolioChecklist",
+  "mentor feedback request template": "mentorFeedbackRequest",
+  "mentor communication guidelines": "mentorCommunication",
+  "teacher conference guide": "teacherConferenceGuide",
+  "research plan conference form": "researchPlanConference",
+  "teacher data check conference prompts": "dataCheckPrompts",
+  "midpoint conference questions": "midpointConference",
+  "conference questions interpretation": "interpretationConference",
+  "audience types communication strategies": "audienceTypes",
+  "formal research plan template": "formalResearchPlanTemplate",
+  "project timeline planner": "projectTimelinePlanner",
+  "data collection plan": "dataCollectionPlan",
+  "data analysis plan": "dataAnalysisPlan",
+  "scientific report template": "scientificReportTemplate",
+  "full report checklist": "fullReportChecklist",
+  "presentation planning guide": "presentationPlanner"
+};
+
+function curatedResource(keyOrAlias) {
+  const key = courseMap.curatedResources[keyOrAlias] ? keyOrAlias : curatedAliases[normalize(keyOrAlias)];
+  const path = key ? courseMap.curatedResources[key] : "";
+  return path ? manifest.resources.find((item) => item.path === path) : null;
 }
 
 function approvalResourceLinks() {
   const links = [
-    ["Project Approval System", "starlab project approval system"],
-    ["Project Approval Tracker", "project approval tracker"],
-    ["Safety Scope Guide by Project Type", "safety scope guide"],
-    ["Risk Assessment Matrix", "risk assessment matrix"],
-    ["Safety and Ethics Red Flags", "safety ethics red flags"],
-    ["Project Approval Checklist", "project approval checklist"],
-    ["Safety and Risk Assessment Handout", "safety risk assessment"],
-    ["Ethics and Approval Screening Handout", "ethics approval screening"],
-    ["Week 4 Teacher Guide", "formal research plan safety ethics approval"]
+    ["Project Approval System", "approvalSystem"],
+    ["Project Approval Tracker - Official Approval Record", "approvalTracker"],
+    ["Safety Scope Guide by Project Type", "safetyScopeGuide"],
+    ["Risk Assessment Matrix", "riskAssessmentMatrix"],
+    ["Safety and Ethics Red Flags", "safetyRedFlags"],
+    ["Project Approval Checklist", "projectApprovalChecklist"],
+    ["Safety and Risk Assessment Handout", "safetyRiskHandout"],
+    ["Ethics and Approval Screening Handout", "ethicsScreeningHandout"],
+    ["Week 4 Teacher Guide", "week4Guide"]
   ];
-  return links.map(([label, query]) => {
-    const item = findResource(query);
+  return links.map(([label, key]) => {
+    const item = curatedResource(key);
     return item ? `<li>${previewLink(item, label)}<span>${escapeHtml(item.unit)} · ${escapeHtml(item.type)}</span></li>` : "";
   }).join("");
 }
 
 function approvalPage() {
   page("Project Approval & Safety", "A decision-support workflow for approving, pausing, redirecting, or escalating student research projects before testing begins.", `
+    <section class="section">
+      <div class="mode-banner"><strong>The Project Approval Tracker is the official approval record.</strong><span>The Safety Scope Guide and screening resources help teachers complete that tracker. Any additional consent, media, fieldwork, equipment, chemical, drone, human-participant, or data-privacy forms are supplied by the district.</span></div>
+    </section>
     <section class="section split">
       <div class="card">
         <h2>Approval Workflow</h2>
@@ -1097,7 +1161,7 @@ function approvalPage() {
           <li><strong>Define the project.</strong><span>Student names the research question, hypothesis or design criteria, variables, materials, procedure, and intended data.</span></li>
           <li><strong>Screen for safety and ethics.</strong><span>Use the risk assessment, ethics screening, red flags, and safety scope guide before any testing.</span></li>
           <li><strong>Check feasibility.</strong><span>Confirm time, materials, supervision, sample size, data quality, and whether the plan can be done in school conditions.</span></li>
-          <li><strong>Choose an approval status.</strong><span>Approve, approve with modifications, request revision, pause for additional review, or reject the current form.</span></li>
+          <li><strong>Choose an official tracker status.</strong><span>Use the exact status options in the Project Approval Tracker.</span></li>
           <li><strong>Record the decision.</strong><span>Update the approval tracker and give students concrete next steps before Unit 3 pilot testing.</span></li>
         </ol>
       </div>
@@ -1117,13 +1181,14 @@ function approvalPage() {
       <h2>Approval Status Guide</h2>
       <div class="grid">
         ${[
-          ["Approved to begin pilot testing", "The plan is clear, feasible, and appropriately safe for small-scale testing."],
-          ["Approved with modifications", "The core idea is acceptable, but students must make named changes before testing."],
-          ["Needs revision", "The plan is incomplete, unclear, or not yet testable."],
-          ["Needs additional safety review", "The teacher needs more information, supervision, or administrative guidance before approving."],
-          ["Needs ethics or administrative review", "The project may involve privacy, human subjects, living organisms, medical claims, restricted materials, or school policy concerns."],
-          ["Needs mentor review", "A content expert should review technical feasibility, specialized procedures, or interpretation risks."],
-          ["Not approved in current form", "The project cannot proceed as written and needs a safer or more feasible redesign."]
+          ["Approved for Pilot Testing", "The plan is clear, feasible, and appropriately safe for small-scale testing."],
+          ["Approved With Modifications", "The core idea is acceptable after the named changes are completed and recorded."],
+          ["Needs Revision", "The plan is incomplete, unclear, or not yet testable."],
+          ["Needs Safety Review", "More safety information, supervision, or district guidance is required."],
+          ["Needs Ethics Review", "The project raises human-participant, privacy, animal, biological, medical, or other ethics concerns."],
+          ["Needs Mentor Review", "A content expert should review technical feasibility, specialized procedures, or interpretation risks."],
+          ["Not Approved in Current Form", "The project cannot proceed as written and needs a safer or more feasible redesign."],
+          ["Approved for Systematic Data Collection", "Pilot evidence supports the revised method and the project may move into full data collection."]
         ].map(([status, meaning]) => `<article class="card"><strong>${status}</strong><p>${meaning}</p></article>`).join("")}
       </div>
     </section>
@@ -1159,8 +1224,8 @@ function approvalPage() {
 }
 
 function toolkitLinks(entries) {
-  return entries.map(([label, query]) => {
-    const item = findResource(query);
+  return entries.map(([label, keyOrAlias]) => {
+    const item = curatedResource(keyOrAlias);
     return item ? `<li>${previewLink(item, label)}<span>${escapeHtml(item.unit)} · ${escapeHtml(item.type)}</span></li>` : "";
   }).join("");
 }
@@ -1179,11 +1244,17 @@ function showcasePage() {
     ["Post Presentation Reflection", "post presentation reflection"],
     ["Portfolio Checklist", "portfolio checklist"]
   ];
-  page("Showcase Planning", "A practical planning hub for moving from final presentation practice to a polished public showcase or final defense.", `
+  page("Showcase Planning", "A practical planning hub for preparing every student to present STARLAB research to a genuine public audience.", `
+    <section class="section">
+      <div class="mode-banner"><strong>A public presentation is required.</strong><span>The venue may be a university poster session, science fair, district event, community presentation, or another authentic public forum. A classroom-only presentation does not satisfy Unit 6.</span></div>
+    </section>
     <section class="section split">
       <div class="card">
         <h2>Showcase Timeline</h2>
         <ol class="decision-list">
+          <li><strong>Week 21: Set the event.</strong><span>Confirm the public format, target date, audience, space, and district support six to eight weeks ahead.</span></li>
+          <li><strong>Week 24: Confirm the audience.</strong><span>Send invitations or confirm the public event, communication plan, and visitor pathway.</span></li>
+          <li><strong>Week 27: Lock logistics.</strong><span>Finalize technology, accessibility, schedule, room flow, and assessment workflow.</span></li>
           <li><strong>Weeks 29-30: Refine the message.</strong><span>Students tighten their research story, practice multiple presentation lengths, and gather peer feedback.</span></li>
           <li><strong>Week 31: Prepare for questions.</strong><span>Students defend evidence, rehearse Q&A, and identify weak spots in claims or visuals.</span></li>
           <li><strong>Week 32: Finalize logistics.</strong><span>Teacher confirms schedule, room setup, visitor flow, technology, materials, and student readiness.</span></li>
@@ -1194,7 +1265,7 @@ function showcasePage() {
       <div class="card">
         <h2>Teacher Planning Questions</h2>
         <ul class="list">
-          <li>Who is the audience: classmates, families, mentors, administrators, community visitors, or judges?</li>
+          <li>Who is the public audience: families, mentors, administrators, community visitors, university guests, or judges?</li>
           <li>Will students present posters, boards, slides, prototypes, demonstrations, or oral defenses?</li>
           <li>What schedule prevents crowding and gives every student meaningful feedback?</li>
           <li>What should visitors ask, notice, and record?</li>
@@ -1242,6 +1313,7 @@ function showcasePage() {
 
     <section class="section">
       <h2>Showcase Toolkit</h2>
+      <p>Use Unit 6 Appendix L as the final summative oral presentation rubric. Use Unit 6 Appendix M to score the public showcase presentation. The Showcase Planning Kit is a teacher readiness guide, not a competing rubric.</p>
       <ul class="resource-link-list">${toolkitLinks(toolkit)}</ul>
     </section>
   `);
@@ -1250,7 +1322,7 @@ function showcasePage() {
 function mentorsPage() {
   const toolkit = [
     ["Mentor and Community Partner Toolkit", "mentor community partner toolkit"],
-    ["Parent/Guardian Communication Pack", "parent guardian communication pack"],
+    ["Parent/Guardian Communication Pack (For Teacher Distribution)", "parent guardian communication pack"],
     ["Mentor Feedback Request Template", "mentor feedback request template"],
     ["Mentor Communication Guidelines", "mentor communication guidelines"],
     ["Teacher Conference Guide", "teacher conference guide"],
@@ -1494,10 +1566,13 @@ function route() {
   requestAnimationFrame(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }));
 }
 
-fetch("data/resources.json")
-  .then((response) => response.json())
-  .then((data) => {
-    manifest = data;
+Promise.all([
+  fetch("data/resources.json").then((response) => response.json()),
+  fetch("data/course-map.json").then((response) => response.json())
+])
+  .then(([resourceData, courseData]) => {
+    manifest = resourceData;
+    courseMap = courseData;
     window.addEventListener("hashchange", route);
     route();
   })

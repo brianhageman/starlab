@@ -40,7 +40,6 @@ Appendixes
  - Appendix_M_Peer_Review_Sentence_Stems.docx
  - Appendix_N_Scientific_Report_Rubric.docx
  - Appendix_O_Presentation_Design_Standards.docx
- - Appendix_P_Oral_Presentation_Rubric.docx
  - Appendix_Q_Question_Bank_for_Practice_Presentations.docx
  - Appendix_R_Teacher_Implementation_Notes_for_New_STARLAB_Chapters.docx
  - Appendix_S_Optional_Extension_-_STARLAB_Research_Showcase_Preparation.docx

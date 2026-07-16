@@ -138,6 +138,28 @@ function inferDeck(title, ext) {
   return deck ? `Deck ${Number(deck[1])}` : "";
 }
 
+function inferCatalogRef(unit, type, title, relatedDeck) {
+  if (type === "Slide Deck" && relatedDeck) {
+    return `D${Number(relatedDeck.replace(/\D/g, ""))}`;
+  }
+  if (!/^Unit \d$/.test(unit)) return "";
+  const prefix = `U${unit.split(" ")[1]}`;
+  if (type === "Teacher Guide") {
+    const week = title.match(/Week\s*[_ -]?(\d+)/i);
+    return week ? `${prefix} TG W${Number(week[1])}` : "";
+  }
+  if (type === "Student Handout") {
+    const numbered = title.match(/(?:Student\s+Handout|Handout)\s*[_ -]?(\d+)/i)
+      || title.match(/^(\d{1,2})\b/);
+    return numbered ? `${prefix} H${Number(numbered[1])}` : "";
+  }
+  if (type === "Appendix" || type === "Rubric") {
+    const appendix = title.match(/Appendix\s*[_ -]?([A-Z])\b/i);
+    return appendix ? `${prefix} App${appendix[1].toUpperCase()}` : "";
+  }
+  return "";
+}
+
 function inferTags(title, type, unit, parts) {
   const source = `${title} ${type} ${unit} ${parts.join(" ")}`.toLowerCase();
   const candidates = [
@@ -170,7 +192,7 @@ async function walk(dir) {
   const entries = await readdir(dir);
   const files = [];
   for (const entry of entries) {
-    if (entry.startsWith(".") || entry === "portal" || entry === "PD_Presentation" || entry === "index.html" || entry.startsWith("STARLAB_District_PD_")) continue;
+    if (entry.startsWith(".") || entry === "portal" || entry === "PD_Presentation" || entry === "STARLAB_Arduino_Smart_Assistant_Bootcamp" || entry === "index.html" || entry.startsWith("STARLAB_District_PD_")) continue;
     const full = path.join(dir, entry);
     const info = await stat(full);
     if (info.isDirectory()) {
@@ -209,6 +231,7 @@ const resources = files.map(({ full, info }, index) => {
     audience: inferAudience(type, title),
     whenUsed: inferWeek(title),
     relatedDeck,
+    catalogRef: inferCatalogRef(unit, type, title, relatedDeck),
     folder: parts.slice(0, -1).join(" / ") || "Root",
     path: relativePath,
     href: webPath,
@@ -222,6 +245,10 @@ const resources = files.map(({ full, info }, index) => {
   resource.description = describe(resource);
   const overrides = metadata.resources?.[relativePath] || {};
   if (overrides.titleOverride) resource.title = overrides.titleOverride;
+  if (overrides.audienceOverride) resource.audience = overrides.audienceOverride;
+  if (overrides.whenUsedOverride) resource.whenUsed = overrides.whenUsedOverride;
+  if (overrides.relatedDeckOverride) resource.relatedDeck = overrides.relatedDeckOverride;
+  if (overrides.catalogRefOverride) resource.catalogRef = overrides.catalogRefOverride;
   resource.purpose = overrides.purpose || resource.description;
   resource.teacherUse = overrides.teacherUse || "";
   resource.studentUse = overrides.studentUse || "";
@@ -229,6 +256,7 @@ const resources = files.map(({ full, info }, index) => {
   resource.required = Boolean(overrides.required);
   resource.printRecommended = Boolean(overrides.printRecommended);
   resource.useCategory = overrides.useCategory || "";
+  resource.printClassification = overrides.printClassification || "";
   resource.notes = overrides.notes || "";
   resource.searchText = [
     resource.title,
@@ -241,6 +269,7 @@ const resources = files.map(({ full, info }, index) => {
     resource.audience,
     resource.whenUsed,
     resource.relatedDeck,
+    resource.catalogRef,
     resource.folder,
     resource.tags.join(" "),
     resource.keywords.join(" "),

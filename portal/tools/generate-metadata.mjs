@@ -30,6 +30,8 @@ function classify(resource) {
   let purpose = resource.description || "STARLAB curriculum resource.";
   let teacherUse = "Use when this resource supports the current unit, week, or workflow.";
   let studentUse = "";
+  let audienceOverride = "";
+  let printClassification = "";
 
   if (resource.type === "Teacher Guide") {
     required = true;
@@ -55,6 +57,7 @@ function classify(resource) {
     purpose = "Student-facing organizer, activity, checklist, or planning document for the research process.";
     teacherUse = "Print or share with students when the related unit or week is taught.";
     studentUse = "Complete during class, conferences, planning, data collection, analysis, reporting, or reflection.";
+    printClassification = "required-student-copy";
   }
 
   if (resource.type === "Appendix") {
@@ -63,6 +66,7 @@ function classify(resource) {
     keywords.push("appendix", "support", "reference");
     purpose = "Supplemental implementation, reference, or instructional support material.";
     teacherUse = "Use as needed when the weekly guide, unit page, or student project context calls for additional support.";
+    printClassification = "optional-or-teacher-reference";
   }
 
   if (resource.type === "Rubric") {
@@ -73,6 +77,7 @@ function classify(resource) {
     purpose = "Assessment criteria or scoring guidance for a STARLAB product, checkpoint, report, or presentation.";
     teacherUse = "Use when scoring, conferencing, or giving feedback on the related student product.";
     studentUse = "Use to understand expectations before submitting or presenting work.";
+    printClassification = "required-when-assessed";
   }
 
   if (resource.type === "Tracker") {
@@ -146,6 +151,25 @@ function classify(resource) {
     required = false;
     useCategory = "optional";
     keywords.push("optional", "extension");
+  }
+
+  if (text.includes("teacher checklist") || text.includes("differentiation and implementation")) {
+    required = false;
+    printRecommended = false;
+    useCategory = "teacher-reference";
+    printClassification = "optional-or-teacher-reference";
+    keywords.push("teacher reference", "optional support", "implementation support");
+    teacherUse = "Keep as an optional teacher reference; it is not a required student print material.";
+  }
+
+  if (text.includes("parent guardian communication pack")) {
+    required = false;
+    printRecommended = false;
+    useCategory = "teacher-distribution";
+    audienceOverride = "Teacher";
+    printClassification = "teacher-distribution";
+    keywords.push("teacher distribution", "family communication");
+    teacherUse = "Customize and distribute to families through district-approved teacher communication channels.";
   }
 
   if (titleText.includes("start here")) {
@@ -227,6 +251,8 @@ function classify(resource) {
     required,
     printRecommended,
     useCategory,
+    audienceOverride,
+    printClassification,
     notes: ""
   };
 }
