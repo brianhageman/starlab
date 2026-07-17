@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-16T23:00:48.843Z",
+  "generatedAt": "2026-07-17T00:03:23.067Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -2954,8 +2954,8 @@
       "path": "STARLAB_Unit_1/Teaching Guides/01_Week_1_Entering_STARLAB_Research_Culture_Curiosity_and_Ethics.docx",
       "href": "../STARLAB_Unit_1/Teaching%20Guides/01_Week_1_Entering_STARLAB_Research_Culture_Curiosity_and_Ethics.docx",
       "extension": "DOCX",
-      "sizeBytes": 13744,
-      "sizeLabel": "14 KB",
+      "sizeBytes": 15951,
+      "sizeLabel": "16 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "ethics"
@@ -3016,8 +3016,8 @@
       "path": "STARLAB_Unit_1/Teaching Guides/02_Week_2_Experimental_Design_Feasibility_and_Preliminary_Research_Questions.docx",
       "href": "../STARLAB_Unit_1/Teaching%20Guides/02_Week_2_Experimental_Design_Feasibility_and_Preliminary_Research_Questions.docx",
       "extension": "DOCX",
-      "sizeBytes": 13656,
-      "sizeLabel": "14 KB",
+      "sizeBytes": 15868,
+      "sizeLabel": "16 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -5159,8 +5159,8 @@
       "path": "STARLAB_Unit_2/Teaching Guides/Week 3/Week 3 - From Project Idea to Testable Plan.docx",
       "href": "../STARLAB_Unit_2/Teaching%20Guides/Week%203/Week%203%20-%20From%20Project%20Idea%20to%20Testable%20Plan.docx",
       "extension": "DOCX",
-      "sizeBytes": 42933,
-      "sizeLabel": "42 KB",
+      "sizeBytes": 37789,
+      "sizeLabel": "37 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -5215,8 +5215,8 @@
       "path": "STARLAB_Unit_2/Teaching Guides/Week 4/Week 4 - Formal Research Plan Safety Ethics and Approval.docx",
       "href": "../STARLAB_Unit_2/Teaching%20Guides/Week%204/Week%204%20-%20Formal%20Research%20Plan%20Safety%20Ethics%20and%20Approval.docx",
       "extension": "DOCX",
-      "sizeBytes": 43471,
-      "sizeLabel": "43 KB",
+      "sizeBytes": 38268,
+      "sizeLabel": "38 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "approval",
@@ -7962,8 +7962,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_05_Launching Pilot Testing and Research Journals.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_05_Launching%20Pilot%20Testing%20and%20Research%20Journals.docx",
       "extension": "DOCX",
-      "sizeBytes": 12848,
-      "sizeLabel": "13 KB",
+      "sizeBytes": 15493,
+      "sizeLabel": "16 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "journal"
@@ -8022,8 +8022,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_06_Pilot Testing, Observation, and Troubleshooting.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_06_Pilot%20Testing%2C%20Observation%2C%20and%20Troubleshooting.docx",
       "extension": "DOCX",
-      "sizeBytes": 12231,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14768,
+      "sizeLabel": "15 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "troubleshooting"
@@ -8078,8 +8078,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_07_Revising Methods and Data Collection Tools.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_07_Revising%20Methods%20and%20Data%20Collection%20Tools.docx",
       "extension": "DOCX",
-      "sizeBytes": 12425,
-      "sizeLabel": "13 KB",
+      "sizeBytes": 15001,
+      "sizeLabel": "15 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data"
@@ -8138,8 +8138,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_08_Beginning Systematic Data Collection.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_08_Beginning%20Systematic%20Data%20Collection.docx",
       "extension": "DOCX",
-      "sizeBytes": 11935,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14444,
+      "sizeLabel": "15 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data"
@@ -8198,8 +8198,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_09_Continuing Data Collection and Monitoring Quality.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_09_Continuing%20Data%20Collection%20and%20Monitoring%20Quality.docx",
       "extension": "DOCX",
-      "sizeBytes": 11783,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14266,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data"
@@ -8258,8 +8258,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_10_Troubleshooting, Iteration, and Mentor Feedback.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_10_Troubleshooting%2C%20Iteration%2C%20and%20Mentor%20Feedback.docx",
       "extension": "DOCX",
-      "sizeBytes": 11888,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14372,
+      "sizeLabel": "15 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "feedback",
@@ -8317,8 +8317,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_11_Expanding Trials and Checking Reliability.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_11_Expanding%20Trials%20and%20Checking%20Reliability.docx",
       "extension": "DOCX",
-      "sizeBytes": 11779,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14248,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -8366,8 +8366,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_12_Midpoint Review and Progress Reporting.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_12_Midpoint%20Review%20and%20Progress%20Reporting.docx",
       "extension": "DOCX",
-      "sizeBytes": 11830,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14334,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
@@ -8423,8 +8423,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_13_Continued Data Collection After Feedback.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_13_Continued%20Data%20Collection%20After%20Feedback.docx",
       "extension": "DOCX",
-      "sizeBytes": 11604,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14075,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data",
@@ -8481,8 +8481,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_14_Completing Major Trials or Prototype Iterations.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_14_Completing%20Major%20Trials%20or%20Prototype%20Iterations.docx",
       "extension": "DOCX",
-      "sizeBytes": 11595,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14096,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -8534,8 +8534,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_15_Data Organization and Completeness Audit.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_15_Data%20Organization%20and%20Completeness%20Audit.docx",
       "extension": "DOCX",
-      "sizeBytes": 11788,
-      "sizeLabel": "12 KB",
+      "sizeBytes": 14290,
+      "sizeLabel": "14 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data"
@@ -8594,8 +8594,8 @@
       "path": "STARLAB_Unit_3/Teaching Guides/Week_16_Unit 3 Closure and Readiness for Analysis.docx",
       "href": "../STARLAB_Unit_3/Teaching%20Guides/Week_16_Unit%203%20Closure%20and%20Readiness%20for%20Analysis.docx",
       "extension": "DOCX",
-      "sizeBytes": 15164,
-      "sizeLabel": "15 KB",
+      "sizeBytes": 17075,
+      "sizeLabel": "17 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "analysis"
@@ -11108,8 +11108,8 @@
       "path": "STARLAB_Unit_4/Teaching_Guides/Week_17_Data_Organization_Cleaning_and_Audit.docx",
       "href": "../STARLAB_Unit_4/Teaching_Guides/Week_17_Data_Organization_Cleaning_and_Audit.docx",
       "extension": "DOCX",
-      "sizeBytes": 39313,
-      "sizeLabel": "39 KB",
+      "sizeBytes": 33291,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "data"
@@ -11168,8 +11168,8 @@
       "path": "STARLAB_Unit_4/Teaching_Guides/Week_18_Calculations_Statistics_and_Analysis_Methods.docx",
       "href": "../STARLAB_Unit_4/Teaching_Guides/Week_18_Calculations_Statistics_and_Analysis_Methods.docx",
       "extension": "DOCX",
-      "sizeBytes": 39221,
-      "sizeLabel": "39 KB",
+      "sizeBytes": 33202,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "analysis"
@@ -11234,8 +11234,8 @@
       "path": "STARLAB_Unit_4/Teaching_Guides/Week_19_Graphs_Tables_Visuals_and_Error_Uncertainty.docx",
       "href": "../STARLAB_Unit_4/Teaching_Guides/Week_19_Graphs_Tables_Visuals_and_Error_Uncertainty.docx",
       "extension": "DOCX",
-      "sizeBytes": 39225,
-      "sizeLabel": "39 KB",
+      "sizeBytes": 33197,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports data organization, analysis, graphing, interpretation, or uncertainty.",
@@ -11292,8 +11292,8 @@
       "path": "STARLAB_Unit_4/Teaching_Guides/Week_20_Interpretation_Claims_and_Transition_to_Reporting.docx",
       "href": "../STARLAB_Unit_4/Teaching_Guides/Week_20_Interpretation_Claims_and_Transition_to_Reporting.docx",
       "extension": "DOCX",
-      "sizeBytes": 39337,
-      "sizeLabel": "39 KB",
+      "sizeBytes": 33321,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
@@ -13568,8 +13568,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_21_Understanding_Scientific_Reports.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_21_Understanding_Scientific_Reports.docx",
       "extension": "DOCX",
-      "sizeBytes": 38927,
-      "sizeLabel": "39 KB",
+      "sizeBytes": 33606,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
@@ -13625,8 +13625,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_22_Writing_the_Introduction.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_22_Writing_the_Introduction.docx",
       "extension": "DOCX",
-      "sizeBytes": 38277,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32911,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "writing"
@@ -13685,8 +13685,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_23_Writing_the_Methods_Section.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_23_Writing_the_Methods_Section.docx",
       "extension": "DOCX",
-      "sizeBytes": 38277,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32947,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "writing"
@@ -13745,8 +13745,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_24_Results_Figures_Tables_and_Captions.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_24_Results_Figures_Tables_and_Captions.docx",
       "extension": "DOCX",
-      "sizeBytes": 38650,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 33349,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -13798,8 +13798,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_25_Writing_the_Discussion.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_25_Writing_the_Discussion.docx",
       "extension": "DOCX",
-      "sizeBytes": 38351,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 33001,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "writing"
@@ -13858,8 +13858,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_26_Conclusion_and_Full_Report_Assembly.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_26_Conclusion_and_Full_Report_Assembly.docx",
       "extension": "DOCX",
-      "sizeBytes": 38075,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32728,
+      "sizeLabel": "32 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports scientific report planning, drafting, revision, or formatting.",
@@ -13915,8 +13915,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_27_Peer_Review_and_Revision.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_27_Peer_Review_and_Revision.docx",
       "extension": "DOCX",
-      "sizeBytes": 38347,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32993,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Teacher-facing weekly guidance for planning instruction, pacing, conferences, and implementation decisions.",
@@ -13971,8 +13971,8 @@
       "path": "STARLAB_Unit_5/Teaching Guides/Week_28_Presentation_Design_and_Practice.docx",
       "href": "../STARLAB_Unit_5/Teaching%20Guides/Week_28_Presentation_Design_and_Practice.docx",
       "extension": "DOCX",
-      "sizeBytes": 38487,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 33075,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "presentation"
@@ -16443,8 +16443,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_29_Final_Presentation_Readiness_and_Message_Refinement.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_29_Final_Presentation_Readiness_and_Message_Refinement.docx",
       "extension": "DOCX",
-      "sizeBytes": 38462,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 33162,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "presentation"
@@ -16502,8 +16502,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_30_Practice_Presentations_and_Audience_Adaptation.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_30_Practice_Presentations_and_Audience_Adaptation.docx",
       "extension": "DOCX",
-      "sizeBytes": 38291,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32971,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "presentation"
@@ -16566,8 +16566,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_31_QandA_Preparation_and_Defense_of_Evidence.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_31_QandA_Preparation_and_Defense_of_Evidence.docx",
       "extension": "DOCX",
-      "sizeBytes": 38232,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32913,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [],
       "purpose": "Supports presentation design, practice, Q&A preparation, or evidence defense.",
@@ -16625,8 +16625,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_32_Final_Showcase_Preparation.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_32_Final_Showcase_Preparation.docx",
       "extension": "DOCX",
-      "sizeBytes": 38235,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32927,
+      "sizeLabel": "33 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "showcase"
@@ -16681,8 +16681,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_33_Public_Presentation_Showcase_or_Final_Defense.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_33_Public_Presentation_Showcase_or_Final_Defense.docx",
       "extension": "DOCX",
-      "sizeBytes": 38093,
-      "sizeLabel": "38 KB",
+      "sizeBytes": 32654,
+      "sizeLabel": "32 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "presentation",
@@ -16746,8 +16746,8 @@
       "path": "STARLAB_Unit_6/Teaching Guides/Week_34_Final_Reflection_Portfolio_and_Next_Steps.docx",
       "href": "../STARLAB_Unit_6/Teaching%20Guides/Week_34_Final_Reflection_Portfolio_and_Next_Steps.docx",
       "extension": "DOCX",
-      "sizeBytes": 41486,
-      "sizeLabel": "41 KB",
+      "sizeBytes": 36189,
+      "sizeLabel": "36 KB",
       "description": "Teacher-facing lesson guidance, pacing, and implementation notes.",
       "tags": [
         "portfolio",
