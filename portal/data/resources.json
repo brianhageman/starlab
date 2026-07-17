@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T00:03:23.067Z",
+  "generatedAt": "2026-07-17T00:14:04.057Z",
   "program": {
     "name": "STARLAB",
     "fullName": "Science Through Advanced Research, Learning, Application, and Building",
@@ -86,115 +86,134 @@
       "number": "01",
       "title": "Authentic Research and Course Launch",
       "unit": "Unit 1",
-      "teachingMoment": "Launch the course and establish research culture."
+      "teachingMoment": "Launch the course and establish research culture.",
+      "fileName": "01_Authentic_Research_and_Course_Launch.pptx"
     },
     {
       "number": "02",
       "title": "From Topic to Research Question",
       "unit": "Unit 1",
-      "teachingMoment": "Help students turn interests into testable questions."
+      "teachingMoment": "Help students turn interests into testable questions.",
+      "fileName": "02_From_Topic_to_Research_Question.pptx"
     },
     {
       "number": "03",
       "title": "Research Ethics, Safety, and Integrity",
       "unit": "Unit 2",
-      "teachingMoment": "Frame ethics, safety, and responsible project choices."
+      "teachingMoment": "Frame ethics, safety, and responsible project choices.",
+      "fileName": "03_Research_Ethics_Safety_and_Integrity.pptx"
     },
     {
       "number": "04",
       "title": "Experimental Design and Engineering Design Basics",
       "unit": "Unit 2",
-      "teachingMoment": "Teach variables, controls, criteria, constraints, and design logic."
+      "teachingMoment": "Teach variables, controls, criteria, constraints, and design logic.",
+      "fileName": "04_Experimental_Design_and_Engineering_Design_Basics.pptx"
     },
     {
       "number": "05",
       "title": "Building a Formal Research Plan",
       "unit": "Unit 2",
-      "teachingMoment": "Guide students into a complete plan for approval."
+      "teachingMoment": "Guide students into a complete plan for approval.",
+      "fileName": "05_Building_a_Formal_Research_Plan.pptx"
     },
     {
       "number": "06",
       "title": "Pilot Testing - Test Small First",
       "unit": "Unit 3",
-      "teachingMoment": "Introduce small-scale testing before full data collection."
+      "teachingMoment": "Introduce small-scale testing before full data collection.",
+      "fileName": "06_Pilot_Testing_Test_Small_First.pptx"
     },
     {
       "number": "07",
       "title": "Research Journals and Scientific Documentation",
       "unit": "Unit 3",
-      "teachingMoment": "Set expectations for documentation and evidence trails."
+      "teachingMoment": "Set expectations for documentation and evidence trails.",
+      "fileName": "07_Research_Journals_and_Scientific_Documentation.pptx"
     },
     {
       "number": "08",
       "title": "Troubleshooting and Responsible Project Pivots",
       "unit": "Unit 3",
-      "teachingMoment": "Support iteration, problem solving, and justified pivots."
+      "teachingMoment": "Support iteration, problem solving, and justified pivots.",
+      "fileName": "08_Troubleshooting_and_Responsible_Project_Pivots.pptx"
     },
     {
       "number": "09",
       "title": "Data Organization: Raw Data vs. Clean Data",
       "unit": "Unit 4",
-      "teachingMoment": "Move students from collected data to analyzable data."
+      "teachingMoment": "Move students from collected data to analyzable data.",
+      "fileName": "09_Data_Organization_Raw_Data_vs_Clean_Data.pptx"
     },
     {
       "number": "10",
       "title": "Choosing the Right Data Analysis Method",
       "unit": "Unit 4",
-      "teachingMoment": "Match research questions and data types to analysis methods."
+      "teachingMoment": "Match research questions and data types to analysis methods.",
+      "fileName": "10_Choosing_the_Right_Data_Analysis_Method.pptx"
     },
     {
       "number": "11",
       "title": "Graphing and Visual Ethics",
       "unit": "Unit 4",
-      "teachingMoment": "Create honest, useful graphs and tables."
+      "teachingMoment": "Create honest, useful graphs and tables.",
+      "fileName": "11_Graphing_and_Visual_Ethics.pptx"
     },
     {
       "number": "12",
       "title": "Error, Uncertainty, and Limitations",
       "unit": "Unit 4",
-      "teachingMoment": "Interpret uncertainty without overclaiming."
+      "teachingMoment": "Interpret uncertainty without overclaiming.",
+      "fileName": "12_Error_Uncertainty_and_Limitations.pptx"
     },
     {
       "number": "13",
       "title": "Scientific Report Structure",
       "unit": "Unit 5",
-      "teachingMoment": "Introduce the full research report architecture."
+      "teachingMoment": "Introduce the full research report architecture.",
+      "fileName": "13_Scientific_Report_Structure.pptx"
     },
     {
       "number": "14",
       "title": "Writing the Discussion: Claim, Evidence, Reasoning",
       "unit": "Unit 5",
-      "teachingMoment": "Build rigorous discussion and interpretation writing."
+      "teachingMoment": "Build rigorous discussion and interpretation writing.",
+      "fileName": "14_Writing_the_Discussion_Claim_Evidence_Reasoning.pptx"
     },
     {
       "number": "15",
       "title": "Peer Review and Scientific Revision",
       "unit": "Unit 5",
-      "teachingMoment": "Support useful critique and revision."
+      "teachingMoment": "Support useful critique and revision.",
+      "fileName": "15_Peer_Review_and_Scientific_Revision.pptx"
     },
     {
       "number": "16",
       "title": "Designing a Research Poster or Presentation Board",
       "unit": "Unit 5",
-      "teachingMoment": "Prepare visual communication products."
+      "teachingMoment": "Prepare visual communication products.",
+      "fileName": "16_Designing_a_Research_Poster_or_Presentation_Board.pptx"
     },
     {
       "number": "17",
       "title": "Oral Presentation Skills for Research",
       "unit": "Unit 5",
-      "teachingMoment": "Develop formal scientific speaking skills."
+      "teachingMoment": "Develop formal scientific speaking skills.",
+      "fileName": "17_Oral_Presentation_Skills_for_Research.pptx"
     },
     {
       "number": "18",
       "title": "Answering Questions Like a Scientist",
       "unit": "Unit 6",
-      "teachingMoment": "Prepare students for Q&A and evidence defense."
+      "teachingMoment": "Prepare students for Q&A and evidence defense.",
+      "fileName": "18_Answering_Questions_Like_a_Scientist.pptx"
     },
     {
       "number": "19",
       "title": "Final Reflection and Research Portfolio",
       "unit": "Unit 6",
-      "teachingMoment": "Close the course with portfolio and reflection."
+      "teachingMoment": "Close the course with portfolio and reflection.",
+      "fileName": "19_Final_Reflection_and_Research_Portfolio.pptx"
     }
   ],
   "resources": [
@@ -1504,8 +1523,8 @@
     },
     {
       "id": "res-276",
-      "title": "STARLAB Weekly Progress Tracker (1)",
-      "fileName": "STARLAB_Weekly_Progress_Tracker (1).xlsx",
+      "title": "STARLAB Weekly Progress Tracker",
+      "fileName": "STARLAB_Weekly_Progress_Tracker.xlsx",
       "unit": "Coursewide",
       "units": [
         "Unit 3"
@@ -1528,8 +1547,8 @@
       "weeksOptional": [],
       "catalogRef": "",
       "folder": "Teacher Resources (Start Here) / 10_STARLAB_Project_Tracker_System_Package",
-      "path": "Teacher Resources (Start Here)/10_STARLAB_Project_Tracker_System_Package/STARLAB_Weekly_Progress_Tracker (1).xlsx",
-      "href": "../Teacher%20Resources%20(Start%20Here)/10_STARLAB_Project_Tracker_System_Package/STARLAB_Weekly_Progress_Tracker%20(1).xlsx",
+      "path": "Teacher Resources (Start Here)/10_STARLAB_Project_Tracker_System_Package/STARLAB_Weekly_Progress_Tracker.xlsx",
+      "href": "../Teacher%20Resources%20(Start%20Here)/10_STARLAB_Project_Tracker_System_Package/STARLAB_Weekly_Progress_Tracker.xlsx",
       "extension": "XLSX",
       "sizeBytes": 16550,
       "sizeLabel": "17 KB",
@@ -1555,7 +1574,7 @@
       "notes": "",
       "requirementStatus": "Required progress-monitoring tool",
       "usageNotes": "Weeks 5-16",
-      "searchText": "STARLAB Weekly Progress Tracker (1) Spreadsheet tracker or planning tool for course implementation. Spreadsheet or tracker for monitoring course implementation, approvals, progress, printing, or planning. Use as an operational dashboard or record-keeping tool.  Coursewide Unit 3 Tracker Teacher Teacher Weeks 5-16 Deck 7 Deck 7 Deck 8 Deck 9    Teacher Resources (Start Here) / 10_STARLAB_Project_Tracker_System_Package tracker coursewide management monitoring operations spreadsheet tracker operations Required progress-monitoring tool Weeks 5-16"
+      "searchText": "STARLAB Weekly Progress Tracker Spreadsheet tracker or planning tool for course implementation. Spreadsheet or tracker for monitoring course implementation, approvals, progress, printing, or planning. Use as an operational dashboard or record-keeping tool.  Coursewide Unit 3 Tracker Teacher Teacher Weeks 5-16 Deck 7 Deck 7 Deck 8 Deck 9    Teacher Resources (Start Here) / 10_STARLAB_Project_Tracker_System_Package tracker coursewide management monitoring operations spreadsheet tracker operations Required progress-monitoring tool Weeks 5-16"
     },
     {
       "id": "res-022",
@@ -2288,8 +2307,8 @@
     },
     {
       "id": "res-002",
-      "title": "01 Authentic Research Course Launch 2.0",
-      "fileName": "01_Authentic_Research_Course_Launch_2.0.pptx",
+      "title": "Deck 1: Authentic Research and Course Launch",
+      "fileName": "01_Authentic_Research_and_Course_Launch.pptx",
       "unit": "Unit 1",
       "units": [
         "Unit 1"
@@ -2311,8 +2330,8 @@
       "weeksOptional": [],
       "catalogRef": "D1",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/01_Authentic_Research_Course_Launch_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/01_Authentic_Research_Course_Launch_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/01_Authentic_Research_and_Course_Launch.pptx",
+      "href": "../STARLAB_Slide_Decks_All/01_Authentic_Research_and_Course_Launch.pptx",
       "extension": "PPTX",
       "sizeBytes": 808207,
       "sizeLabel": "790 KB",
@@ -2340,12 +2359,12 @@
         1
       ],
       "revisitWeeks": [],
-      "searchText": "01 Authentic Research Course Launch 2.0 Launch the course and establish research culture. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 1 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 1 Deck 1 Deck 1   D1 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 1"
+      "searchText": "Deck 1: Authentic Research and Course Launch Launch the course and establish research culture. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 1 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 1 Deck 1 Deck 1   D1 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 1"
     },
     {
       "id": "res-003",
-      "title": "02 From Topic to Research Question 2.0",
-      "fileName": "02_From_Topic_to_Research_Question_2.0.pptx",
+      "title": "Deck 2: From Topic to Research Question",
+      "fileName": "02_From_Topic_to_Research_Question.pptx",
       "unit": "Unit 1",
       "units": [
         "Unit 1"
@@ -2367,8 +2386,8 @@
       "weeksOptional": [],
       "catalogRef": "D2",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/02_From_Topic_to_Research_Question_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/02_From_Topic_to_Research_Question_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/02_From_Topic_to_Research_Question.pptx",
+      "href": "../STARLAB_Slide_Decks_All/02_From_Topic_to_Research_Question.pptx",
       "extension": "PPTX",
       "sizeBytes": 813337,
       "sizeLabel": "795 KB",
@@ -2396,7 +2415,7 @@
         2
       ],
       "revisitWeeks": [],
-      "searchText": "02 From Topic to Research Question 2.0 Help students turn interests into testable questions. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 1 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 2 Deck 2 Deck 2   D2 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 2"
+      "searchText": "Deck 2: From Topic to Research Question Help students turn interests into testable questions. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 1 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 2 Deck 2 Deck 2   D2 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 2"
     },
     {
       "id": "res-034",
@@ -4105,8 +4124,8 @@
     },
     {
       "id": "res-004",
-      "title": "03 Research Ethics Safety Integrity 2.0",
-      "fileName": "03_Research_Ethics_Safety_Integrity_2.0.pptx",
+      "title": "Deck 3: Research Ethics, Safety, and Integrity",
+      "fileName": "03_Research_Ethics_Safety_and_Integrity.pptx",
       "unit": "Unit 2",
       "units": [
         "Unit 2",
@@ -4129,8 +4148,8 @@
       "weeksOptional": [],
       "catalogRef": "D3",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/03_Research_Ethics_Safety_Integrity_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/03_Research_Ethics_Safety_Integrity_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/03_Research_Ethics_Safety_and_Integrity.pptx",
+      "href": "../STARLAB_Slide_Decks_All/03_Research_Ethics_Safety_and_Integrity.pptx",
       "extension": "PPTX",
       "sizeBytes": 832188,
       "sizeLabel": "813 KB",
@@ -4168,12 +4187,12 @@
       "revisitWeeks": [
         4
       ],
-      "searchText": "03 Research Ethics Safety Integrity 2.0 Frame ethics, safety, and responsible project choices. Supports safety, risk, ethics, and feasibility decisions for student research. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Unit 2 Unit 2 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 1; Revisit/reference: Week 4 Deck 3 Deck 3   D3 STARLAB_Slide_Decks_All ethics safety classroom teaching coursewide direct instruction ethics presentation red flags risk safety screening slide deck slides core Required when assigned Primary: Week 1; Revisit/reference: Week 4"
+      "searchText": "Deck 3: Research Ethics, Safety, and Integrity Frame ethics, safety, and responsible project choices. Supports safety, risk, ethics, and feasibility decisions for student research. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Unit 2 Unit 2 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 1; Revisit/reference: Week 4 Deck 3 Deck 3   D3 STARLAB_Slide_Decks_All ethics safety classroom teaching coursewide direct instruction ethics presentation red flags risk safety screening slide deck slides core Required when assigned Primary: Week 1; Revisit/reference: Week 4"
     },
     {
       "id": "res-005",
-      "title": "04 Experimental Engineering Design Basics 2.0",
-      "fileName": "04_Experimental_Engineering_Design_Basics_2.0.pptx",
+      "title": "Deck 4: Experimental Design and Engineering Design Basics",
+      "fileName": "04_Experimental_Design_and_Engineering_Design_Basics.pptx",
       "unit": "Unit 2",
       "units": [
         "Unit 2",
@@ -4196,8 +4215,8 @@
       "weeksOptional": [],
       "catalogRef": "D4",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/04_Experimental_Engineering_Design_Basics_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/04_Experimental_Engineering_Design_Basics_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/04_Experimental_Design_and_Engineering_Design_Basics.pptx",
+      "href": "../STARLAB_Slide_Decks_All/04_Experimental_Design_and_Engineering_Design_Basics.pptx",
       "extension": "PPTX",
       "sizeBytes": 832322,
       "sizeLabel": "813 KB",
@@ -4227,12 +4246,12 @@
       "revisitWeeks": [
         3
       ],
-      "searchText": "04 Experimental Engineering Design Basics 2.0 Teach variables, controls, criteria, constraints, and design logic. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 2 Unit 2 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 2; Revisit/reference: Week 3 Deck 4 Deck 4   D4 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 2; Revisit/reference: Week 3"
+      "searchText": "Deck 4: Experimental Design and Engineering Design Basics Teach variables, controls, criteria, constraints, and design logic. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 2 Unit 2 Unit 1 Slide Deck Teacher Teacher Student Primary: Week 2; Revisit/reference: Week 3 Deck 4 Deck 4   D4 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 2; Revisit/reference: Week 3"
     },
     {
       "id": "res-006",
-      "title": "05 Building a Formal Research Plan 2.0",
-      "fileName": "05_Building_a_Formal_Research_Plan_2.0.pptx",
+      "title": "Deck 5: Building a Formal Research Plan",
+      "fileName": "05_Building_a_Formal_Research_Plan.pptx",
       "unit": "Unit 2",
       "units": [
         "Unit 2"
@@ -4254,8 +4273,8 @@
       "weeksOptional": [],
       "catalogRef": "D5",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan.pptx",
+      "href": "../STARLAB_Slide_Decks_All/05_Building_a_Formal_Research_Plan.pptx",
       "extension": "PPTX",
       "sizeBytes": 845967,
       "sizeLabel": "827 KB",
@@ -4284,7 +4303,7 @@
         4
       ],
       "revisitWeeks": [],
-      "searchText": "05 Building a Formal Research Plan 2.0 Guide students into a complete plan for approval. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 2 Unit 2 Slide Deck Teacher Teacher Student Primary: Weeks 3-4 Deck 5 Deck 5   D5 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Weeks 3-4"
+      "searchText": "Deck 5: Building a Formal Research Plan Guide students into a complete plan for approval. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 2 Unit 2 Slide Deck Teacher Teacher Student Primary: Weeks 3-4 Deck 5 Deck 5   D5 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Weeks 3-4"
     },
     {
       "id": "res-064",
@@ -6559,8 +6578,8 @@
     },
     {
       "id": "res-007",
-      "title": "06 Pilot Testing 2.0",
-      "fileName": "06_Pilot_Testing_2.0.pptx",
+      "title": "Deck 6: Pilot Testing - Test Small First",
+      "fileName": "06_Pilot_Testing_Test_Small_First.pptx",
       "unit": "Unit 3",
       "units": [
         "Unit 3"
@@ -6582,8 +6601,8 @@
       "weeksOptional": [],
       "catalogRef": "D6",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/06_Pilot_Testing_2.0.pptx",
-      "href": "../STARLAB_Slide_Decks_All/06_Pilot_Testing_2.0.pptx",
+      "path": "STARLAB_Slide_Decks_All/06_Pilot_Testing_Test_Small_First.pptx",
+      "href": "../STARLAB_Slide_Decks_All/06_Pilot_Testing_Test_Small_First.pptx",
       "extension": "PPTX",
       "sizeBytes": 711217,
       "sizeLabel": "695 KB",
@@ -6611,12 +6630,12 @@
         5
       ],
       "revisitWeeks": [],
-      "searchText": "06 Pilot Testing 2.0 Introduce small-scale testing before full data collection. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 5 Deck 6 Deck 6   D6 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 5"
+      "searchText": "Deck 6: Pilot Testing - Test Small First Introduce small-scale testing before full data collection. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 5 Deck 6 Deck 6   D6 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 5"
     },
     {
       "id": "res-008",
-      "title": "07 Research Journals",
-      "fileName": "07_Research_Journals.pptx",
+      "title": "Deck 7: Research Journals and Scientific Documentation",
+      "fileName": "07_Research_Journals_and_Scientific_Documentation.pptx",
       "unit": "Unit 3",
       "units": [
         "Unit 3"
@@ -6638,8 +6657,8 @@
       "weeksOptional": [],
       "catalogRef": "D7",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/07_Research_Journals.pptx",
-      "href": "../STARLAB_Slide_Decks_All/07_Research_Journals.pptx",
+      "path": "STARLAB_Slide_Decks_All/07_Research_Journals_and_Scientific_Documentation.pptx",
+      "href": "../STARLAB_Slide_Decks_All/07_Research_Journals_and_Scientific_Documentation.pptx",
       "extension": "PPTX",
       "sizeBytes": 706982,
       "sizeLabel": "691 KB",
@@ -6674,12 +6693,12 @@
         5
       ],
       "revisitWeeks": [],
-      "searchText": "07 Research Journals Set expectations for documentation and evidence trails. Supports research journal expectations, documentation habits, or self-assessment. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 5 Deck 7 Deck 7   D7 STARLAB_Slide_Decks_All journal classroom teaching coursewide direct instruction documentation evidence trail journal presentation reflection research journal slide deck slides core Required when assigned Primary: Week 5"
+      "searchText": "Deck 7: Research Journals and Scientific Documentation Set expectations for documentation and evidence trails. Supports research journal expectations, documentation habits, or self-assessment. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 5 Deck 7 Deck 7   D7 STARLAB_Slide_Decks_All journal classroom teaching coursewide direct instruction documentation evidence trail journal presentation reflection research journal slide deck slides core Required when assigned Primary: Week 5"
     },
     {
       "id": "res-009",
-      "title": "08 Troubleshooting Responsible Project Pivots",
-      "fileName": "08_Troubleshooting_Responsible_Project_Pivots.pptx",
+      "title": "Deck 8: Troubleshooting and Responsible Project Pivots",
+      "fileName": "08_Troubleshooting_and_Responsible_Project_Pivots.pptx",
       "unit": "Unit 3",
       "units": [
         "Unit 3"
@@ -6701,8 +6720,8 @@
       "weeksOptional": [],
       "catalogRef": "D8",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/08_Troubleshooting_Responsible_Project_Pivots.pptx",
-      "href": "../STARLAB_Slide_Decks_All/08_Troubleshooting_Responsible_Project_Pivots.pptx",
+      "path": "STARLAB_Slide_Decks_All/08_Troubleshooting_and_Responsible_Project_Pivots.pptx",
+      "href": "../STARLAB_Slide_Decks_All/08_Troubleshooting_and_Responsible_Project_Pivots.pptx",
       "extension": "PPTX",
       "sizeBytes": 825509,
       "sizeLabel": "807 KB",
@@ -6737,7 +6756,7 @@
         10,
         13
       ],
-      "searchText": "08 Troubleshooting Responsible Project Pivots Support iteration, problem solving, and justified pivots. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13 Deck 8 Deck 8   D8 STARLAB_Slide_Decks_All troubleshooting classroom teaching coursewide direct instruction presentation slide deck slides troubleshooting core Required when assigned Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13"
+      "searchText": "Deck 8: Troubleshooting and Responsible Project Pivots Support iteration, problem solving, and justified pivots. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 3 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13 Deck 8 Deck 8   D8 STARLAB_Slide_Decks_All troubleshooting classroom teaching coursewide direct instruction presentation slide deck slides troubleshooting core Required when assigned Primary: Week 6; Revisit/reference: Week 7, Week 10, Week 13"
     },
     {
       "id": "res-103",
@@ -9731,8 +9750,8 @@
     },
     {
       "id": "res-010",
-      "title": "09 Data Organization",
-      "fileName": "09_Data_Organization.pptx",
+      "title": "Deck 9: Data Organization: Raw Data vs. Clean Data",
+      "fileName": "09_Data_Organization_Raw_Data_vs_Clean_Data.pptx",
       "unit": "Unit 4",
       "units": [
         "Unit 4",
@@ -9755,8 +9774,8 @@
       "weeksOptional": [],
       "catalogRef": "D9",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/09_Data_Organization.pptx",
-      "href": "../STARLAB_Slide_Decks_All/09_Data_Organization.pptx",
+      "path": "STARLAB_Slide_Decks_All/09_Data_Organization_Raw_Data_vs_Clean_Data.pptx",
+      "href": "../STARLAB_Slide_Decks_All/09_Data_Organization_Raw_Data_vs_Clean_Data.pptx",
       "extension": "PPTX",
       "sizeBytes": 824741,
       "sizeLabel": "806 KB",
@@ -9795,11 +9814,11 @@
         9,
         16
       ],
-      "searchText": "09 Data Organization Move students from collected data to analyzable data. Supports data organization, analysis, graphing, interpretation, or uncertainty. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 15, Week 17; Revisit/reference: Week 9, Week 16 Deck 9 Deck 9   D9 STARLAB_Slide_Decks_All data analysis classroom teaching coursewide data direct instruction graphing interpretation presentation slide deck slides statistics core Required when assigned Primary: Week 15, Week 17; Revisit/reference: Week 9, Week 16"
+      "searchText": "Deck 9: Data Organization: Raw Data vs. Clean Data Move students from collected data to analyzable data. Supports data organization, analysis, graphing, interpretation, or uncertainty. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Unit 3 Slide Deck Teacher Teacher Student Primary: Week 15, Week 17; Revisit/reference: Week 9, Week 16 Deck 9 Deck 9   D9 STARLAB_Slide_Decks_All data analysis classroom teaching coursewide data direct instruction graphing interpretation presentation slide deck slides statistics core Required when assigned Primary: Week 15, Week 17; Revisit/reference: Week 9, Week 16"
     },
     {
       "id": "res-011",
-      "title": "10 Choosing the Right Data Analysis Method",
+      "title": "Deck 10: Choosing the Right Data Analysis Method",
       "fileName": "10_Choosing_the_Right_Data_Analysis_Method.pptx",
       "unit": "Unit 4",
       "units": [
@@ -9860,11 +9879,11 @@
         18
       ],
       "revisitWeeks": [],
-      "searchText": "10 Choosing the Right Data Analysis Method Match research questions and data types to analysis methods. Supports data organization, analysis, graphing, interpretation, or uncertainty. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Slide Deck Teacher Teacher Student Primary: Weeks 17-18 Deck 10 Deck 10   D10 STARLAB_Slide_Decks_All analysis data analysis classroom teaching coursewide data direct instruction graphing interpretation presentation slide deck slides statistics core Required when assigned Primary: Weeks 17-18"
+      "searchText": "Deck 10: Choosing the Right Data Analysis Method Match research questions and data types to analysis methods. Supports data organization, analysis, graphing, interpretation, or uncertainty. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Slide Deck Teacher Teacher Student Primary: Weeks 17-18 Deck 10 Deck 10   D10 STARLAB_Slide_Decks_All analysis data analysis classroom teaching coursewide data direct instruction graphing interpretation presentation slide deck slides statistics core Required when assigned Primary: Weeks 17-18"
     },
     {
       "id": "res-012",
-      "title": "11 Graphing and Visual Ethics",
+      "title": "Deck 11: Graphing and Visual Ethics",
       "fileName": "11_Graphing_and_Visual_Ethics.pptx",
       "unit": "Unit 4",
       "units": [
@@ -9932,12 +9951,12 @@
       "revisitWeeks": [
         24
       ],
-      "searchText": "11 Graphing and Visual Ethics Create honest, useful graphs and tables. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Unit 4 Unit 4 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 19; Revisit/reference: Week 24 Deck 11 Deck 11   D11 STARLAB_Slide_Decks_All ethics graphing analysis classroom teaching coursewide data direct instruction ethics graphing interpretation presentation red flags risk safety screening slide deck slides statistics core Required when assigned Primary: Week 19; Revisit/reference: Week 24"
+      "searchText": "Deck 11: Graphing and Visual Ethics Create honest, useful graphs and tables. Supports data organization, analysis, graphing, interpretation, or uncertainty. Use before students begin testing and whenever a project changes risk level. Use to identify risks, ethical concerns, and approval needs before testing. Unit 4 Unit 4 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 19; Revisit/reference: Week 24 Deck 11 Deck 11   D11 STARLAB_Slide_Decks_All ethics graphing analysis classroom teaching coursewide data direct instruction ethics graphing interpretation presentation red flags risk safety screening slide deck slides statistics core Required when assigned Primary: Week 19; Revisit/reference: Week 24"
     },
     {
       "id": "res-013",
-      "title": "12 Error Uncertainty Limitations",
-      "fileName": "12_Error_Uncertainty_Limitations.pptx",
+      "title": "Deck 12: Error, Uncertainty, and Limitations",
+      "fileName": "12_Error_Uncertainty_and_Limitations.pptx",
       "unit": "Unit 4",
       "units": [
         "Unit 4"
@@ -9959,8 +9978,8 @@
       "weeksOptional": [],
       "catalogRef": "D12",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/12_Error_Uncertainty_Limitations.pptx",
-      "href": "../STARLAB_Slide_Decks_All/12_Error_Uncertainty_Limitations.pptx",
+      "path": "STARLAB_Slide_Decks_All/12_Error_Uncertainty_and_Limitations.pptx",
+      "href": "../STARLAB_Slide_Decks_All/12_Error_Uncertainty_and_Limitations.pptx",
       "extension": "PPTX",
       "sizeBytes": 831011,
       "sizeLabel": "812 KB",
@@ -9990,7 +10009,7 @@
       "revisitWeeks": [
         20
       ],
-      "searchText": "12 Error Uncertainty Limitations Interpret uncertainty without overclaiming. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Slide Deck Teacher Teacher Student Primary: Week 19; Revisit/reference: Week 20 Deck 12 Deck 12   D12 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 19; Revisit/reference: Week 20"
+      "searchText": "Deck 12: Error, Uncertainty, and Limitations Interpret uncertainty without overclaiming. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 4 Unit 4 Slide Deck Teacher Teacher Student Primary: Week 19; Revisit/reference: Week 20 Deck 12 Deck 12   D12 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 19; Revisit/reference: Week 20"
     },
     {
       "id": "res-154",
@@ -12519,7 +12538,7 @@
     },
     {
       "id": "res-014",
-      "title": "13 Scientific Report Structure",
+      "title": "Deck 13: Scientific Report Structure",
       "fileName": "13_Scientific_Report_Structure.pptx",
       "unit": "Unit 5",
       "units": [
@@ -12579,12 +12598,12 @@
         23,
         26
       ],
-      "searchText": "13 Scientific Report Structure Introduce the full research report architecture. Supports scientific report planning, drafting, revision, or formatting. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 21; Revisit/reference: Weeks 22-23, Week 26 Deck 13 Deck 13   D13 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction drafting presentation report revision scientific writing slide deck slides core Required when assigned Primary: Week 21; Revisit/reference: Weeks 22-23, Week 26"
+      "searchText": "Deck 13: Scientific Report Structure Introduce the full research report architecture. Supports scientific report planning, drafting, revision, or formatting. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 21; Revisit/reference: Weeks 22-23, Week 26 Deck 13 Deck 13   D13 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction drafting presentation report revision scientific writing slide deck slides core Required when assigned Primary: Week 21; Revisit/reference: Weeks 22-23, Week 26"
     },
     {
       "id": "res-015",
-      "title": "14 Writing the Discussion CER",
-      "fileName": "14_Writing_the_Discussion_CER.pptx",
+      "title": "Deck 14: Writing the Discussion: Claim, Evidence, Reasoning",
+      "fileName": "14_Writing_the_Discussion_Claim_Evidence_Reasoning.pptx",
       "unit": "Unit 5",
       "units": [
         "Unit 5"
@@ -12606,8 +12625,8 @@
       "weeksOptional": [],
       "catalogRef": "D14",
       "folder": "STARLAB_Slide_Decks_All",
-      "path": "STARLAB_Slide_Decks_All/14_Writing_the_Discussion_CER.pptx",
-      "href": "../STARLAB_Slide_Decks_All/14_Writing_the_Discussion_CER.pptx",
+      "path": "STARLAB_Slide_Decks_All/14_Writing_the_Discussion_Claim_Evidence_Reasoning.pptx",
+      "href": "../STARLAB_Slide_Decks_All/14_Writing_the_Discussion_Claim_Evidence_Reasoning.pptx",
       "extension": "PPTX",
       "sizeBytes": 817290,
       "sizeLabel": "799 KB",
@@ -12642,11 +12661,11 @@
         25
       ],
       "revisitWeeks": [],
-      "searchText": "14 Writing the Discussion CER Build rigorous discussion and interpretation writing. Supports scientific report planning, drafting, revision, or formatting. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 25 Deck 14 Deck 14   D14 STARLAB_Slide_Decks_All writing classroom teaching coursewide direct instruction drafting presentation report revision scientific writing slide deck slides writing core Required when assigned Primary: Week 25"
+      "searchText": "Deck 14: Writing the Discussion: Claim, Evidence, Reasoning Build rigorous discussion and interpretation writing. Supports scientific report planning, drafting, revision, or formatting. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 25 Deck 14 Deck 14   D14 STARLAB_Slide_Decks_All writing classroom teaching coursewide direct instruction drafting presentation report revision scientific writing slide deck slides writing core Required when assigned Primary: Week 25"
     },
     {
       "id": "res-016",
-      "title": "15 Peer Review and Scientific Revision",
+      "title": "Deck 15: Peer Review and Scientific Revision",
       "fileName": "15_Peer_Review_and_Scientific_Revision.pptx",
       "unit": "Unit 5",
       "units": [
@@ -12698,11 +12717,11 @@
         27
       ],
       "revisitWeeks": [],
-      "searchText": "15 Peer Review and Scientific Revision Support useful critique and revision. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 27 Deck 15 Deck 15   D15 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 27"
+      "searchText": "Deck 15: Peer Review and Scientific Revision Support useful critique and revision. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Slide Deck Teacher Teacher Student Primary: Week 27 Deck 15 Deck 15   D15 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 27"
     },
     {
       "id": "res-017",
-      "title": "16 Designing a Research Poster or Presentation Board",
+      "title": "Deck 16: Designing a Research Poster or Presentation Board",
       "fileName": "16_Designing_a_Research_Poster_or_Presentation_Board.pptx",
       "unit": "Unit 5",
       "units": [
@@ -12762,11 +12781,11 @@
       "revisitWeeks": [
         32
       ],
-      "searchText": "16 Designing a Research Poster or Presentation Board Prepare visual communication products. Supports presentation design, practice, Q&A preparation, or evidence defense. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 28; Revisit/reference: Week 32 Deck 16 Deck 16   D16 STARLAB_Slide_Decks_All presentation classroom teaching coursewide direct instruction evidence defense oral communication presentation q&a slide deck slides core Required when assigned Primary: Week 28; Revisit/reference: Week 32"
+      "searchText": "Deck 16: Designing a Research Poster or Presentation Board Prepare visual communication products. Supports presentation design, practice, Q&A preparation, or evidence defense. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 28; Revisit/reference: Week 32 Deck 16 Deck 16   D16 STARLAB_Slide_Decks_All presentation classroom teaching coursewide direct instruction evidence defense oral communication presentation q&a slide deck slides core Required when assigned Primary: Week 28; Revisit/reference: Week 32"
     },
     {
       "id": "res-018",
-      "title": "17 Oral Presentation Skills for Research",
+      "title": "Deck 17: Oral Presentation Skills for Research",
       "fileName": "17_Oral_Presentation_Skills_for_Research.pptx",
       "unit": "Unit 5",
       "units": [
@@ -12827,7 +12846,7 @@
         28,
         30
       ],
-      "searchText": "17 Oral Presentation Skills for Research Develop formal scientific speaking skills. Supports presentation design, practice, Q&A preparation, or evidence defense. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 29; Revisit/reference: Week 28, Week 30 Deck 17 Deck 17   D17 STARLAB_Slide_Decks_All presentation classroom teaching coursewide direct instruction evidence defense oral communication presentation q&a slide deck slides core Required when assigned Primary: Week 29; Revisit/reference: Week 28, Week 30"
+      "searchText": "Deck 17: Oral Presentation Skills for Research Develop formal scientific speaking skills. Supports presentation design, practice, Q&A preparation, or evidence defense. Preview before class and use during direct instruction or guided discussion.  Unit 5 Unit 5 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 29; Revisit/reference: Week 28, Week 30 Deck 17 Deck 17   D17 STARLAB_Slide_Decks_All presentation classroom teaching coursewide direct instruction evidence defense oral communication presentation q&a slide deck slides core Required when assigned Primary: Week 29; Revisit/reference: Week 28, Week 30"
     },
     {
       "id": "res-197",
@@ -15156,7 +15175,7 @@
     },
     {
       "id": "res-019",
-      "title": "18 Answering Questions Like a Scientist",
+      "title": "Deck 18: Answering Questions Like a Scientist",
       "fileName": "18_Answering_Questions_Like_a_Scientist.pptx",
       "unit": "Unit 6",
       "units": [
@@ -15210,11 +15229,11 @@
       "revisitWeeks": [
         32
       ],
-      "searchText": "18 Answering Questions Like a Scientist Prepare students for Q&A and evidence defense. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 6 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 31; Revisit/reference: Week 32 Deck 18 Deck 18   D18 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 31; Revisit/reference: Week 32"
+      "searchText": "Deck 18: Answering Questions Like a Scientist Prepare students for Q&A and evidence defense. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 6 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 31; Revisit/reference: Week 32 Deck 18 Deck 18   D18 STARLAB_Slide_Decks_All  classroom teaching coursewide direct instruction presentation slide deck slides core Required when assigned Primary: Week 31; Revisit/reference: Week 32"
     },
     {
       "id": "res-020",
-      "title": "19 Final Reflection and Research Portfolio",
+      "title": "Deck 19: Final Reflection and Research Portfolio",
       "fileName": "19_Final_Reflection_and_Research_Portfolio.pptx",
       "unit": "Unit 6",
       "units": [
@@ -15271,7 +15290,7 @@
         34
       ],
       "revisitWeeks": [],
-      "searchText": "19 Final Reflection and Research Portfolio Close the course with portfolio and reflection. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 6 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 34 Deck 19 Deck 19   D19 STARLAB_Slide_Decks_All portfolio reflection classroom teaching coursewide direct instruction portfolio presentation reflection slide deck slides core Required when assigned Primary: Week 34"
+      "searchText": "Deck 19: Final Reflection and Research Portfolio Close the course with portfolio and reflection. Instructional slide deck for introducing or reinforcing a major STARLAB research skill. Preview before class and use during direct instruction or guided discussion.  Unit 6 Unit 6 Slide Deck Teacher Teacher Student Primary: Week 34 Deck 19 Deck 19   D19 STARLAB_Slide_Decks_All portfolio reflection classroom teaching coursewide direct instruction portfolio presentation reflection slide deck slides core Required when assigned Primary: Week 34"
     },
     {
       "id": "res-237",

@@ -53,6 +53,11 @@ const unitMeta = {
   }
 };
 
+function canonicalDeckFileName(number, title) {
+  const slug = title.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+  return `${number}_${slug}.pptx`;
+}
+
 const deckMeta = [
   ["01", "Authentic Research and Course Launch", "Unit 1", "Launch the course and establish research culture."],
   ["02", "From Topic to Research Question", "Unit 1", "Help students turn interests into testable questions."],
@@ -73,7 +78,13 @@ const deckMeta = [
   ["17", "Oral Presentation Skills for Research", "Unit 5", "Develop formal scientific speaking skills."],
   ["18", "Answering Questions Like a Scientist", "Unit 6", "Prepare students for Q&A and evidence defense."],
   ["19", "Final Reflection and Research Portfolio", "Unit 6", "Close the course with portfolio and reflection."]
-].map(([number, title, unit, teachingMoment]) => ({ number, title, unit, teachingMoment }));
+].map(([number, title, unit, teachingMoment]) => ({
+  number,
+  title,
+  unit,
+  teachingMoment,
+  fileName: canonicalDeckFileName(number, title)
+}));
 
 const studentFacingAppendixRefs = new Set([
   "U1 AppA", "U1 AppB", "U1 AppC", "U1 AppD", "U1 AppE", "U1 AppF", "U1 AppG", "U1 AppI",
@@ -535,6 +546,11 @@ const resources = files.map(({ full, info }, index) => {
   resource.description = describe(resource);
   const overrides = metadata.resources?.[relativePath] || {};
   if (overrides.titleOverride) resource.title = overrides.titleOverride;
+  if (resource.type === "Slide Deck" && resource.relatedDeck) {
+    const deckNumber = Number(resource.relatedDeck.replace(/\D/g, ""));
+    const deck = deckMeta.find((item) => Number(item.number) === deckNumber);
+    if (deck) resource.title = `Deck ${deckNumber}: ${deck.title}`;
+  }
   if (overrides.whenUsedOverride) resource.whenUsed = overrides.whenUsedOverride;
   if (overrides.relatedDeckOverride) {
     resource.relatedDeck = overrides.relatedDeckOverride;

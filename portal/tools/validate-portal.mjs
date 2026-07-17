@@ -5,6 +5,7 @@ const curriculumRoot = path.resolve(new URL(".", import.meta.url).pathname, "../
 const portalRoot = path.join(curriculumRoot, "portal");
 const manifest = JSON.parse(await readFile(path.join(portalRoot, "data", "resources.json"), "utf8"));
 const courseMap = JSON.parse(await readFile(path.join(portalRoot, "data", "course-map.json"), "utf8"));
+const resourceMetadata = JSON.parse(await readFile(path.join(portalRoot, "data", "resource-metadata.json"), "utf8"));
 const appSource = await readFile(path.join(portalRoot, "js", "app.js"), "utf8");
 const errors = [];
 
@@ -21,6 +22,9 @@ function sortedDeckLabels(values) {
 }
 
 const byPath = new Map(manifest.resources.map((item) => [item.path, item]));
+for (const resourcePath of Object.keys(resourceMetadata.resources || {})) {
+  if (!byPath.has(resourcePath)) fail(`Resource metadata points to a missing manifest path: ${resourcePath}`);
+}
 const byRef = new Map();
 for (const item of manifest.resources) {
   if (!item.catalogRef) continue;
@@ -146,13 +150,24 @@ for (const [ref, expected] of expectedUsageByRef) {
 for (let deckNumber = 1; deckNumber <= 19; deckNumber += 1) {
   const item = byRef.get(`D${deckNumber}`);
   if (!item) continue;
+  const deck = manifest.decks.find((entry) => Number(entry.number) === deckNumber);
   const primaryWeeks = sortedNumbers(courseMap.weeks.filter((week) => week.primaryDecks.includes(deckNumber)).map((week) => week.week));
   const revisitWeeks = sortedNumbers(courseMap.weeks.filter((week) => week.secondaryDecks.includes(deckNumber)).map((week) => week.week));
+  if (!deck) fail(`Deck ${deckNumber} is missing canonical metadata.`);
+  if (deck && item.title !== `Deck ${deckNumber}: ${deck.title}`) fail(`Deck ${deckNumber} does not use its canonical display title.`);
+  if (deck && item.fileName !== deck.fileName) fail(`Deck ${deckNumber} does not use its canonical file name.`);
   if (item.unit === "Coursewide") fail(`Deck ${deckNumber} must identify its primary unit.`);
   if (JSON.stringify(item.relatedDecks) !== JSON.stringify([`Deck ${deckNumber}`])) fail(`Deck ${deckNumber} has incorrect self-relationship metadata.`);
   if (JSON.stringify(item.primaryWeeks) !== JSON.stringify(primaryWeeks)) fail(`Deck ${deckNumber} has incorrect primary-week metadata.`);
   if (JSON.stringify(item.revisitWeeks) !== JSON.stringify(revisitWeeks)) fail(`Deck ${deckNumber} has incorrect revisit-week metadata.`);
   if (!item.whenUsed || !item.requirementStatus) fail(`Deck ${deckNumber} is missing use metadata.`);
+}
+
+const weeklyProgressTrackerPath = courseMap.curatedResources.weeklyProgressTracker;
+const weeklyProgressTracker = byPath.get(weeklyProgressTrackerPath);
+if (!weeklyProgressTracker) fail("The canonical STARLAB Weekly Progress Tracker is missing.");
+if (weeklyProgressTracker?.fileName !== "STARLAB_Weekly_Progress_Tracker.xlsx") {
+  fail("The STARLAB Weekly Progress Tracker still uses a file-copy suffix.");
 }
 
 for (const week of courseMap.weeks) {
